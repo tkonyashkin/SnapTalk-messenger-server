@@ -1,0 +1,325 @@
+syntax = "proto3";
+
+package messenger;
+
+// Общие типы сообщений
+enum MessageType {
+  TEXT = 0;
+  AUDIO = 1;
+  VIDEO = 2;
+  VOICE = 5;
+  STICKER = 3;
+  EMOJI = 4;
+}
+
+// Типов файлов
+enum FileType {
+  UNKNOWN = 0;
+  DOCUMENT = 1;
+  IMAGE = 2;
+  AUDIO = 3;
+  VIDEO = 4;
+}
+
+// Cтатус сообщения
+enum MessageStatus {
+  SENT = 0;
+  DELIVERED = 1;
+  READ = 2;
+  DELETED = 3;
+}
+
+// Типы статусов пользователя
+enum UserStatus {
+  ONLINE = 0;
+  OFFLINE = 1;
+}
+// Аутентификация и управление пользователями
+message RegisterRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message RegisterResponse {
+  bool success = 1;
+  string error = 2;
+}
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  bool success = 1;
+  string error = 2;
+  string token = 3; // Токен для аутентификации
+}
+
+message LogoutRequest {
+  string token = 1;
+}
+
+message LogoutResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+message UserProfile {
+  string userId = 1;
+  string username = 2;
+  UserStatus status = 3;
+}
+
+message UpdateUserProfileRequest {
+  UserProfile profile = 1;
+}
+
+message UpdateUserProfileResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+message UpdateMessageStatusRequest {
+  string messageId = 1;
+  MessageStatus status = 2;
+}
+
+message UpdateMessageStatusResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+// Управления контактами
+message AddContactRequest {
+  string userId = 1;
+  string contactId = 2;
+}
+
+message AddContactResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+message RemoveContactRequest {
+  string userId = 1;
+  string contactId = 2;
+}
+
+message RemoveContactResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+message ContactList {
+  string userId = 1;
+  repeated string contactIds = 2;
+}
+
+// Сообщение в чате
+message ChatMessage {
+  string id = 1;
+  string senderId = 2;
+  MessageType type = 3;
+  string content = 4; // Для текстовых сообщений или ссылки на медиа
+  int64 timestamp = 5;
+}
+
+// Аудио/видео сообщение, которое можно записать в чате
+message MediaMessage {
+  string id = 1;
+  bytes data = 2;
+  MessageType type = 3;
+}
+
+// Голосовое сообщение
+message VoiceMessage {
+  string id = 1;
+  string senderId = 2;
+  bytes data = 3; // Данные голосового сообщения
+  int64 timestamp = 4; // Время отправки
+}
+
+// Сообщения для удаления и редактирования сообщений
+message DeleteMessageRequest {
+  string messageId = 1;
+}
+
+message DeleteMessageResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+message EditMessageRequest {
+  string messageId = 1;
+  string newContent = 2;
+}
+
+message EditMessageResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+// Групповой чат
+message GroupChat {
+  string id = 1;
+  string name = 2;
+  repeated string memberIds = 3;
+  repeated Role roles = 4;
+  string folderId = 5; // Идентификатор папки, в которую входит чат
+}
+
+// Сообщения для управления участниками группы
+message AddGroupMemberRequest {
+  string groupId = 1;
+  string memberId = 2;
+}
+
+message AddGroupMemberResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+message RemoveGroupMemberRequest {
+  string groupId = 1;
+  string memberId = 2;
+}
+
+message RemoveGroupMemberResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+// Папка для группировки чатов
+message ChatFolder {
+  string id = 1;
+  string userId = 2;
+  string name = 3;
+  repeated string groupChatIds = 4; // Идентификаторы групповых чатов в папке
+}
+
+// Описания файла
+message FileMessage {
+  string id = 1;
+  string senderId = 2;
+  FileType type = 3;
+  string filename = 4;
+  bytes data = 5;
+  int64 timestamp = 6;
+}
+
+// Запроса поиска
+message SearchRequest {
+  string query = 1; // Поисковый запрос
+  string userId = 2; // Идентификатор пользователя, который инициирует поиск
+  int32 limit = 3; // Ограничение на количество результатов
+}
+
+// Ответа поиска по сообщениям
+message SearchMessagesResponse {
+  repeated ChatMessage messages = 1;
+}
+
+// Ответа поиска по чатам
+message SearchChatsResponse {
+  repeated GroupChat chats = 1;
+}
+
+// Роль в групповом чате
+message Role {
+  string name = 1;
+  repeated string permissions = 2; // Список строковых идентификаторов прав
+}
+
+// Напоминание
+message Reminder {
+  string id = 1;
+  string userId = 2;
+  string message = 3;
+  int64 timestamp = 4; // Время, когда напоминание должно быть отправлено
+}
+
+// Управление уведомлениями
+message NotificationSettings {
+  string userId = 1;
+  bool enableNotifications = 2;
+}
+
+message UpdateNotificationSettingsRequest {
+  NotificationSettings settings = 1;
+}
+
+message UpdateNotificationSettingsResponse {
+  bool success = 1;
+  string error = 2;
+}
+
+// Задача в списке дел
+message ToDoItem {
+  string id = 1;
+  string userId = 2;
+  string description = 3;
+  bool completed = 4;
+}
+
+// Сервисы
+service MessengerService {
+  rpc SendMessage(ChatMessage) returns (ChatMessage);
+  rpc SendMediaMessage(MediaMessage) returns (MediaMessage);
+  rpc SendVoiceMessage(VoiceMessage) returns (VoiceMessage);
+  rpc CreateGroupChat(GroupChat) returns (GroupChat);
+  rpc UpdateGroupChat(GroupChat) returns (GroupChat);
+  rpc AssignRoleToUser(Role) returns (Role);
+  rpc CreateReminder(Reminder) returns (Reminder);
+  rpc MarkToDoItemCompleted(ToDoItem) returns (ToDoItem);
+
+  // Методы для удаления и редактирования сообщений
+  rpc DeleteMessage(DeleteMessageRequest) returns (DeleteMessageResponse);
+  rpc EditMessage(EditMessageRequest) returns (EditMessageResponse);
+
+  // Методы для аутентификации и управления пользователями
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+  rpc Login(LoginRequest) returns (LoginResponse);
+  rpc Logout(LogoutRequest) returns (LogoutResponse);
+  rpc UpdateUserProfile(UpdateUserProfileRequest) returns (UpdateUserProfileResponse);
+  rpc UpdateMessageStatus(UpdateMessageStatusRequest) returns (UpdateMessageStatusResponse);
+
+  // Методы для управления контактами
+  rpc AddContact(AddContactRequest) returns (AddContactResponse);
+  rpc RemoveContact(RemoveContactRequest) returns (RemoveContactResponse);
+
+  // Методы для работы с папками чатов
+  rpc CreateChatFolder(ChatFolder) returns (ChatFolder);
+  rpc UpdateChatFolder(ChatFolder) returns (ChatFolder);
+  rpc DeleteChatFolder(ChatFolder) returns (ChatFolder);
+  rpc GetChatFolders(string) returns (stream ChatFolder);
+
+  // Методы для управления участниками группы
+  rpc AddGroupMember(AddGroupMemberRequest) returns (AddGroupMemberResponse);
+  rpc RemoveGroupMember(RemoveGroupMemberRequest) returns (RemoveGroupMemberResponse);
+
+  // Методы для получения списка чатов и сообщений
+  rpc GetGroupChats(string) returns (stream GroupChat);
+  rpc GetChatMessages(string) returns (stream ChatMessage);
+
+  // Метод для отправки файла
+  rpc SendFile(FileMessage) returns (FileMessage);
+
+  // Методы поиска
+  rpc SearchMessages(SearchRequest) returns (SearchMessagesResponse);
+  rpc SearchChats(SearchRequest) returns (SearchChatsResponse);
+
+  // Методы для управления напоминаниями
+  rpc UpdateReminder(Reminder) returns (Reminder);
+  rpc DeleteReminder(Reminder) returns (Reminder);
+  rpc GetReminders(string) returns (stream Reminder);
+
+  // Методы для управления уведомлениями
+  rpc UpdateNotificationSettings(UpdateNotificationSettingsRequest) returns (UpdateNotificationSettingsResponse);
+
+  // Методы для управления списком дел
+  rpc CreateToDoItem(ToDoItem) returns (ToDoItem);
+  rpc UpdateToDoItem(ToDoItem) returns (ToDoItem);
+  rpc DeleteToDoItem(ToDoItem) returns (ToDoItem);
+  rpc GetToDoList(string) returns (stream ToDoItem);
+}
+

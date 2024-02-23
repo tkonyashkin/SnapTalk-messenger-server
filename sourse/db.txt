@@ -1,0 +1,43 @@
+\\user
+{
+  "_id": ObjectId("6396206592200d6243076047"),
+  "username": "john",
+  "password": "secret",
+  "email": "john@example.com",
+  "phone_number": "+1234567890",
+  "status_id": ObjectId("6396206592200d624307604c"),
+  "last_seen": ISODate("2023-08-10T18:30:00Z")
+}
+\\message
+{
+  "_id": ObjectId("6396206592200d6243076048"),
+  "sender_id": ObjectId("6396206592200d6243076047"),
+  "receiver_id": ObjectId("6396206592200d6243076049"),
+  "timestamp": ISODate("2023-08-10T18:30:00Z"),
+  "status": "delivered"
+}
+\\content (message_text)
+{
+  "_id": ObjectId("6396206592200d6243076048"),
+  "attachments": [],
+  "message_text": "Hello, world!"
+}
+\\user_status
+{
+  "status_id": ObjectId("6396206592200d624307604c"),
+  "name": "Online",
+  "description": "The user is online.",
+  "icon": "path/to/online_icon.png"
+}
+\\chat
+{
+  "_id": ObjectId("6396206592200d624307604a"),
+  "name": "My Chat",
+  "type": "personal",
+  "members": [
+    ObjectId("6396206592200d6243076047"),
+    ObjectId("6396206592200d6243076049")
+  ],
+  "last_message_id": ObjectId("6396206592200d6243076048"),
+  "last_message_timestamp": ISODate("2023-08-10T18:30:00Z")
+}
