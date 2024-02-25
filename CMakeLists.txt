@@ -16,6 +16,8 @@ include_directories(include/)
 
 add_executable(main ${SRC_LIST})
 
+include(common.cmake)
+
 get_filename_component(messenger_proto "sourse/messenger.proto" ABSOLUTE)
 get_filename_component(messenger_proto_path "${messenger_proto}" PATH)
 
