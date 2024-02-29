@@ -10,7 +10,7 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 
 set(CMAKE_CXX_FLAGS_DEBUG_INIT "-g -fsanitize=address")
 
-set(SRC_LIST source/main.cpp)
+set(SRC_LIST sourse/main.cpp)
 
 include_directories(include/)
 
