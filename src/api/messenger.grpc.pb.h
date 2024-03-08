@@ -338,6 +338,31 @@ class MessengerService final {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::ToDoItem>>(PrepareAsyncDeleteToDoItemRaw(context, request, cq));
     }
     // rpc GetToDoList(string) returns (stream ToDoItem);
+    // Методы для получения задач из списка дел
+    virtual ::grpc::Status GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::messenger::GetToDoItemsOffsetResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsOffsetResponse>> AsyncGetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsOffsetResponse>>(AsyncGetToDoItemsOffsetRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsOffsetResponse>> PrepareAsyncGetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsOffsetResponse>>(PrepareAsyncGetToDoItemsOffsetRaw(context, request, cq));
+    }
+    virtual ::grpc::Status GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::messenger::GetToDoItemsResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsResponse>> AsyncGetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsResponse>>(AsyncGetToDoItemsRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsResponse>> PrepareAsyncGetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsResponse>>(PrepareAsyncGetToDoItemsRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientReaderInterface< ::messenger::ToDoItem>> GetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request) {
+      return std::unique_ptr< ::grpc::ClientReaderInterface< ::messenger::ToDoItem>>(GetNewToDoItemsRaw(context, request));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::messenger::ToDoItem>> AsyncGetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq, void* tag) {
+      return std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::messenger::ToDoItem>>(AsyncGetNewToDoItemsRaw(context, request, cq, tag));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::messenger::ToDoItem>> PrepareAsyncGetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncReaderInterface< ::messenger::ToDoItem>>(PrepareAsyncGetNewToDoItemsRaw(context, request, cq));
+    }
+    // Поток новых задач
     class async_interface {
      public:
       virtual ~async_interface() {}
@@ -434,6 +459,13 @@ class MessengerService final {
       virtual void DeleteToDoItem(::grpc::ClientContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response, std::function<void(::grpc::Status)>) = 0;
       virtual void DeleteToDoItem(::grpc::ClientContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       // rpc GetToDoList(string) returns (stream ToDoItem);
+      // Методы для получения задач из списка дел
+      virtual void GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest* request, ::grpc::ClientReadReactor< ::messenger::ToDoItem>* reactor) = 0;
+      // Поток новых задач
     };
     typedef class async_interface experimental_async_interface;
     virtual class async_interface* async() { return nullptr; }
@@ -522,6 +554,13 @@ class MessengerService final {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::ToDoItem>* PrepareAsyncUpdateToDoItemRaw(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::ToDoItem>* AsyncDeleteToDoItemRaw(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::ToDoItem>* PrepareAsyncDeleteToDoItemRaw(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsOffsetResponse>* AsyncGetToDoItemsOffsetRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsOffsetResponse>* PrepareAsyncGetToDoItemsOffsetRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsResponse>* AsyncGetToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::messenger::GetToDoItemsResponse>* PrepareAsyncGetToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientReaderInterface< ::messenger::ToDoItem>* GetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request) = 0;
+    virtual ::grpc::ClientAsyncReaderInterface< ::messenger::ToDoItem>* AsyncGetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq, void* tag) = 0;
+    virtual ::grpc::ClientAsyncReaderInterface< ::messenger::ToDoItem>* PrepareAsyncGetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
@@ -812,6 +851,29 @@ class MessengerService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::ToDoItem>> PrepareAsyncDeleteToDoItem(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::ToDoItem>>(PrepareAsyncDeleteToDoItemRaw(context, request, cq));
     }
+    ::grpc::Status GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::messenger::GetToDoItemsOffsetResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>> AsyncGetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>>(AsyncGetToDoItemsOffsetRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>> PrepareAsyncGetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>>(PrepareAsyncGetToDoItemsOffsetRaw(context, request, cq));
+    }
+    ::grpc::Status GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::messenger::GetToDoItemsResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>> AsyncGetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>>(AsyncGetToDoItemsRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>> PrepareAsyncGetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>>(PrepareAsyncGetToDoItemsRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientReader< ::messenger::ToDoItem>> GetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request) {
+      return std::unique_ptr< ::grpc::ClientReader< ::messenger::ToDoItem>>(GetNewToDoItemsRaw(context, request));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncReader< ::messenger::ToDoItem>> AsyncGetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq, void* tag) {
+      return std::unique_ptr< ::grpc::ClientAsyncReader< ::messenger::ToDoItem>>(AsyncGetNewToDoItemsRaw(context, request, cq, tag));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncReader< ::messenger::ToDoItem>> PrepareAsyncGetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncReader< ::messenger::ToDoItem>>(PrepareAsyncGetNewToDoItemsRaw(context, request, cq));
+    }
     class async final :
       public StubInterface::async_interface {
      public:
@@ -892,6 +954,11 @@ class MessengerService final {
       void UpdateToDoItem(::grpc::ClientContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response, ::grpc::ClientUnaryReactor* reactor) override;
       void DeleteToDoItem(::grpc::ClientContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response, std::function<void(::grpc::Status)>) override;
       void DeleteToDoItem(::grpc::ClientContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest* request, ::grpc::ClientReadReactor< ::messenger::ToDoItem>* reactor) override;
      private:
       friend class Stub;
       explicit async(Stub* stub): stub_(stub) { }
@@ -986,6 +1053,13 @@ class MessengerService final {
     ::grpc::ClientAsyncResponseReader< ::messenger::ToDoItem>* PrepareAsyncUpdateToDoItemRaw(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::messenger::ToDoItem>* AsyncDeleteToDoItemRaw(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::messenger::ToDoItem>* PrepareAsyncDeleteToDoItemRaw(::grpc::ClientContext* context, const ::messenger::ToDoItem& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>* AsyncGetToDoItemsOffsetRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>* PrepareAsyncGetToDoItemsOffsetRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>* AsyncGetToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>* PrepareAsyncGetToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientReader< ::messenger::ToDoItem>* GetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request) override;
+    ::grpc::ClientAsyncReader< ::messenger::ToDoItem>* AsyncGetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
+    ::grpc::ClientAsyncReader< ::messenger::ToDoItem>* PrepareAsyncGetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_SendMessage_;
     const ::grpc::internal::RpcMethod rpcmethod_CreateGroupChat_;
     const ::grpc::internal::RpcMethod rpcmethod_UpdateGroupChat_;
@@ -1026,6 +1100,9 @@ class MessengerService final {
     const ::grpc::internal::RpcMethod rpcmethod_CreateToDoItem_;
     const ::grpc::internal::RpcMethod rpcmethod_UpdateToDoItem_;
     const ::grpc::internal::RpcMethod rpcmethod_DeleteToDoItem_;
+    const ::grpc::internal::RpcMethod rpcmethod_GetToDoItemsOffset_;
+    const ::grpc::internal::RpcMethod rpcmethod_GetToDoItems_;
+    const ::grpc::internal::RpcMethod rpcmethod_GetNewToDoItems_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
 
@@ -1089,6 +1166,11 @@ class MessengerService final {
     virtual ::grpc::Status UpdateToDoItem(::grpc::ServerContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response);
     virtual ::grpc::Status DeleteToDoItem(::grpc::ServerContext* context, const ::messenger::ToDoItem* request, ::messenger::ToDoItem* response);
     // rpc GetToDoList(string) returns (stream ToDoItem);
+    // Методы для получения задач из списка дел
+    virtual ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response);
+    virtual ::grpc::Status GetToDoItems(::grpc::ServerContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response);
+    virtual ::grpc::Status GetNewToDoItems(::grpc::ServerContext* context, const ::messenger::GetNewToDoItemsRequest* request, ::grpc::ServerWriter< ::messenger::ToDoItem>* writer);
+    // Поток новых задач
   };
   template <class BaseClass>
   class WithAsyncMethod_SendMessage : public BaseClass {
@@ -1890,7 +1972,67 @@ class MessengerService final {
       ::grpc::Service::RequestAsyncUnary(39, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
-  typedef WithAsyncMethod_SendMessage<WithAsyncMethod_CreateGroupChat<WithAsyncMethod_UpdateGroupChat<WithAsyncMethod_AssignRoleToUser<WithAsyncMethod_CreateReminder<WithAsyncMethod_MarkToDoItemCompleted<WithAsyncMethod_DeleteMessage<WithAsyncMethod_EditMessage<WithAsyncMethod_Register<WithAsyncMethod_Login<WithAsyncMethod_Logout<WithAsyncMethod_UpdateUserProfile<WithAsyncMethod_UpdateMessageStatus<WithAsyncMethod_AddContact<WithAsyncMethod_RemoveContact<WithAsyncMethod_CreateChatFolder<WithAsyncMethod_UpdateChatFolder<WithAsyncMethod_DeleteChatFolder<WithAsyncMethod_GetFoldersOffset<WithAsyncMethod_GetFolders<WithAsyncMethod_GetNewFolders<WithAsyncMethod_AddChatToFolder<WithAsyncMethod_RemoveChatFromFolder<WithAsyncMethod_AddGroupMember<WithAsyncMethod_RemoveGroupMember<WithAsyncMethod_GetMessagesOffset<WithAsyncMethod_GetMessagesConversion<WithAsyncMethod_GetNewMessages<WithAsyncMethod_GetGroupChatsOffset<WithAsyncMethod_GetGroupChatsConversion<WithAsyncMethod_GetNewGroupChats<WithAsyncMethod_SendFile<WithAsyncMethod_SearchMessages<WithAsyncMethod_SearchChats<WithAsyncMethod_UpdateReminder<WithAsyncMethod_DeleteReminder<WithAsyncMethod_UpdateNotificationSettings<WithAsyncMethod_CreateToDoItem<WithAsyncMethod_UpdateToDoItem<WithAsyncMethod_DeleteToDoItem<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > AsyncService;
+  template <class BaseClass>
+  class WithAsyncMethod_GetToDoItemsOffset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_GetToDoItemsOffset() {
+      ::grpc::Service::MarkMethodAsync(40);
+    }
+    ~WithAsyncMethod_GetToDoItemsOffset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestGetToDoItemsOffset(::grpc::ServerContext* context, ::messenger::GetToDoItemsOffsetRequest* request, ::grpc::ServerAsyncResponseWriter< ::messenger::GetToDoItemsOffsetResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(40, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_GetToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_GetToDoItems() {
+      ::grpc::Service::MarkMethodAsync(41);
+    }
+    ~WithAsyncMethod_GetToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestGetToDoItems(::grpc::ServerContext* context, ::messenger::GetToDoItemsRequest* request, ::grpc::ServerAsyncResponseWriter< ::messenger::GetToDoItemsResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(41, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_GetNewToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_GetNewToDoItems() {
+      ::grpc::Service::MarkMethodAsync(42);
+    }
+    ~WithAsyncMethod_GetNewToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetNewToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/, ::grpc::ServerWriter< ::messenger::ToDoItem>* /*writer*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestGetNewToDoItems(::grpc::ServerContext* context, ::messenger::GetNewToDoItemsRequest* request, ::grpc::ServerAsyncWriter< ::messenger::ToDoItem>* writer, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncServerStreaming(42, context, request, writer, new_call_cq, notification_cq, tag);
+    }
+  };
+  typedef WithAsyncMethod_SendMessage<WithAsyncMethod_CreateGroupChat<WithAsyncMethod_UpdateGroupChat<WithAsyncMethod_AssignRoleToUser<WithAsyncMethod_CreateReminder<WithAsyncMethod_MarkToDoItemCompleted<WithAsyncMethod_DeleteMessage<WithAsyncMethod_EditMessage<WithAsyncMethod_Register<WithAsyncMethod_Login<WithAsyncMethod_Logout<WithAsyncMethod_UpdateUserProfile<WithAsyncMethod_UpdateMessageStatus<WithAsyncMethod_AddContact<WithAsyncMethod_RemoveContact<WithAsyncMethod_CreateChatFolder<WithAsyncMethod_UpdateChatFolder<WithAsyncMethod_DeleteChatFolder<WithAsyncMethod_GetFoldersOffset<WithAsyncMethod_GetFolders<WithAsyncMethod_GetNewFolders<WithAsyncMethod_AddChatToFolder<WithAsyncMethod_RemoveChatFromFolder<WithAsyncMethod_AddGroupMember<WithAsyncMethod_RemoveGroupMember<WithAsyncMethod_GetMessagesOffset<WithAsyncMethod_GetMessagesConversion<WithAsyncMethod_GetNewMessages<WithAsyncMethod_GetGroupChatsOffset<WithAsyncMethod_GetGroupChatsConversion<WithAsyncMethod_GetNewGroupChats<WithAsyncMethod_SendFile<WithAsyncMethod_SearchMessages<WithAsyncMethod_SearchChats<WithAsyncMethod_UpdateReminder<WithAsyncMethod_DeleteReminder<WithAsyncMethod_UpdateNotificationSettings<WithAsyncMethod_CreateToDoItem<WithAsyncMethod_UpdateToDoItem<WithAsyncMethod_DeleteToDoItem<WithAsyncMethod_GetToDoItemsOffset<WithAsyncMethod_GetToDoItems<WithAsyncMethod_GetNewToDoItems<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > AsyncService;
   template <class BaseClass>
   class WithCallbackMethod_SendMessage : public BaseClass {
    private:
@@ -2956,7 +3098,83 @@ class MessengerService final {
     virtual ::grpc::ServerUnaryReactor* DeleteToDoItem(
       ::grpc::CallbackServerContext* /*context*/, const ::messenger::ToDoItem* /*request*/, ::messenger::ToDoItem* /*response*/)  { return nullptr; }
   };
-  typedef WithCallbackMethod_SendMessage<WithCallbackMethod_CreateGroupChat<WithCallbackMethod_UpdateGroupChat<WithCallbackMethod_AssignRoleToUser<WithCallbackMethod_CreateReminder<WithCallbackMethod_MarkToDoItemCompleted<WithCallbackMethod_DeleteMessage<WithCallbackMethod_EditMessage<WithCallbackMethod_Register<WithCallbackMethod_Login<WithCallbackMethod_Logout<WithCallbackMethod_UpdateUserProfile<WithCallbackMethod_UpdateMessageStatus<WithCallbackMethod_AddContact<WithCallbackMethod_RemoveContact<WithCallbackMethod_CreateChatFolder<WithCallbackMethod_UpdateChatFolder<WithCallbackMethod_DeleteChatFolder<WithCallbackMethod_GetFoldersOffset<WithCallbackMethod_GetFolders<WithCallbackMethod_GetNewFolders<WithCallbackMethod_AddChatToFolder<WithCallbackMethod_RemoveChatFromFolder<WithCallbackMethod_AddGroupMember<WithCallbackMethod_RemoveGroupMember<WithCallbackMethod_GetMessagesOffset<WithCallbackMethod_GetMessagesConversion<WithCallbackMethod_GetNewMessages<WithCallbackMethod_GetGroupChatsOffset<WithCallbackMethod_GetGroupChatsConversion<WithCallbackMethod_GetNewGroupChats<WithCallbackMethod_SendFile<WithCallbackMethod_SearchMessages<WithCallbackMethod_SearchChats<WithCallbackMethod_UpdateReminder<WithCallbackMethod_DeleteReminder<WithCallbackMethod_UpdateNotificationSettings<WithCallbackMethod_CreateToDoItem<WithCallbackMethod_UpdateToDoItem<WithCallbackMethod_DeleteToDoItem<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > CallbackService;
+  template <class BaseClass>
+  class WithCallbackMethod_GetToDoItemsOffset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_GetToDoItemsOffset() {
+      ::grpc::Service::MarkMethodCallback(40,
+          new ::grpc::internal::CallbackUnaryHandler< ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response) { return this->GetToDoItemsOffset(context, request, response); }));}
+    void SetMessageAllocatorFor_GetToDoItemsOffset(
+        ::grpc::MessageAllocator< ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(40);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_GetToDoItemsOffset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* GetToDoItemsOffset(
+      ::grpc::CallbackServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_GetToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_GetToDoItems() {
+      ::grpc::Service::MarkMethodCallback(41,
+          new ::grpc::internal::CallbackUnaryHandler< ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response) { return this->GetToDoItems(context, request, response); }));}
+    void SetMessageAllocatorFor_GetToDoItems(
+        ::grpc::MessageAllocator< ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(41);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_GetToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* GetToDoItems(
+      ::grpc::CallbackServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_GetNewToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_GetNewToDoItems() {
+      ::grpc::Service::MarkMethodCallback(42,
+          new ::grpc::internal::CallbackServerStreamingHandler< ::messenger::GetNewToDoItemsRequest, ::messenger::ToDoItem>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::messenger::GetNewToDoItemsRequest* request) { return this->GetNewToDoItems(context, request); }));
+    }
+    ~WithCallbackMethod_GetNewToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetNewToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/, ::grpc::ServerWriter< ::messenger::ToDoItem>* /*writer*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerWriteReactor< ::messenger::ToDoItem>* GetNewToDoItems(
+      ::grpc::CallbackServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/)  { return nullptr; }
+  };
+  typedef WithCallbackMethod_SendMessage<WithCallbackMethod_CreateGroupChat<WithCallbackMethod_UpdateGroupChat<WithCallbackMethod_AssignRoleToUser<WithCallbackMethod_CreateReminder<WithCallbackMethod_MarkToDoItemCompleted<WithCallbackMethod_DeleteMessage<WithCallbackMethod_EditMessage<WithCallbackMethod_Register<WithCallbackMethod_Login<WithCallbackMethod_Logout<WithCallbackMethod_UpdateUserProfile<WithCallbackMethod_UpdateMessageStatus<WithCallbackMethod_AddContact<WithCallbackMethod_RemoveContact<WithCallbackMethod_CreateChatFolder<WithCallbackMethod_UpdateChatFolder<WithCallbackMethod_DeleteChatFolder<WithCallbackMethod_GetFoldersOffset<WithCallbackMethod_GetFolders<WithCallbackMethod_GetNewFolders<WithCallbackMethod_AddChatToFolder<WithCallbackMethod_RemoveChatFromFolder<WithCallbackMethod_AddGroupMember<WithCallbackMethod_RemoveGroupMember<WithCallbackMethod_GetMessagesOffset<WithCallbackMethod_GetMessagesConversion<WithCallbackMethod_GetNewMessages<WithCallbackMethod_GetGroupChatsOffset<WithCallbackMethod_GetGroupChatsConversion<WithCallbackMethod_GetNewGroupChats<WithCallbackMethod_SendFile<WithCallbackMethod_SearchMessages<WithCallbackMethod_SearchChats<WithCallbackMethod_UpdateReminder<WithCallbackMethod_DeleteReminder<WithCallbackMethod_UpdateNotificationSettings<WithCallbackMethod_CreateToDoItem<WithCallbackMethod_UpdateToDoItem<WithCallbackMethod_DeleteToDoItem<WithCallbackMethod_GetToDoItemsOffset<WithCallbackMethod_GetToDoItems<WithCallbackMethod_GetNewToDoItems<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_SendMessage : public BaseClass {
@@ -3634,6 +3852,57 @@ class MessengerService final {
     }
     // disable synchronous version of this method
     ::grpc::Status DeleteToDoItem(::grpc::ServerContext* /*context*/, const ::messenger::ToDoItem* /*request*/, ::messenger::ToDoItem* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_GetToDoItemsOffset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_GetToDoItemsOffset() {
+      ::grpc::Service::MarkMethodGeneric(40);
+    }
+    ~WithGenericMethod_GetToDoItemsOffset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_GetToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_GetToDoItems() {
+      ::grpc::Service::MarkMethodGeneric(41);
+    }
+    ~WithGenericMethod_GetToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_GetNewToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_GetNewToDoItems() {
+      ::grpc::Service::MarkMethodGeneric(42);
+    }
+    ~WithGenericMethod_GetNewToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetNewToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/, ::grpc::ServerWriter< ::messenger::ToDoItem>* /*writer*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -4436,6 +4705,66 @@ class MessengerService final {
     }
     void RequestDeleteToDoItem(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(39, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_GetToDoItemsOffset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_GetToDoItemsOffset() {
+      ::grpc::Service::MarkMethodRaw(40);
+    }
+    ~WithRawMethod_GetToDoItemsOffset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestGetToDoItemsOffset(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(40, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_GetToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_GetToDoItems() {
+      ::grpc::Service::MarkMethodRaw(41);
+    }
+    ~WithRawMethod_GetToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestGetToDoItems(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(41, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_GetNewToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_GetNewToDoItems() {
+      ::grpc::Service::MarkMethodRaw(42);
+    }
+    ~WithRawMethod_GetNewToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetNewToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/, ::grpc::ServerWriter< ::messenger::ToDoItem>* /*writer*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestGetNewToDoItems(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncWriter< ::grpc::ByteBuffer>* writer, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncServerStreaming(42, context, request, writer, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -5317,6 +5646,72 @@ class MessengerService final {
     }
     virtual ::grpc::ServerUnaryReactor* DeleteToDoItem(
       ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_GetToDoItemsOffset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_GetToDoItemsOffset() {
+      ::grpc::Service::MarkMethodRawCallback(40,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetToDoItemsOffset(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_GetToDoItemsOffset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* GetToDoItemsOffset(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_GetToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_GetToDoItems() {
+      ::grpc::Service::MarkMethodRawCallback(41,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetToDoItems(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_GetToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* GetToDoItems(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_GetNewToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_GetNewToDoItems() {
+      ::grpc::Service::MarkMethodRawCallback(42,
+          new ::grpc::internal::CallbackServerStreamingHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const::grpc::ByteBuffer* request) { return this->GetNewToDoItems(context, request); }));
+    }
+    ~WithRawCallbackMethod_GetNewToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status GetNewToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/, ::grpc::ServerWriter< ::messenger::ToDoItem>* /*writer*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerWriteReactor< ::grpc::ByteBuffer>* GetNewToDoItems(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_SendMessage : public BaseClass {
@@ -6317,7 +6712,61 @@ class MessengerService final {
     // replace default version of method with streamed unary
     virtual ::grpc::Status StreamedDeleteToDoItem(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::messenger::ToDoItem,::messenger::ToDoItem>* server_unary_streamer) = 0;
   };
-  typedef WithStreamedUnaryMethod_SendMessage<WithStreamedUnaryMethod_CreateGroupChat<WithStreamedUnaryMethod_UpdateGroupChat<WithStreamedUnaryMethod_AssignRoleToUser<WithStreamedUnaryMethod_CreateReminder<WithStreamedUnaryMethod_MarkToDoItemCompleted<WithStreamedUnaryMethod_DeleteMessage<WithStreamedUnaryMethod_EditMessage<WithStreamedUnaryMethod_Register<WithStreamedUnaryMethod_Login<WithStreamedUnaryMethod_Logout<WithStreamedUnaryMethod_UpdateUserProfile<WithStreamedUnaryMethod_UpdateMessageStatus<WithStreamedUnaryMethod_AddContact<WithStreamedUnaryMethod_RemoveContact<WithStreamedUnaryMethod_CreateChatFolder<WithStreamedUnaryMethod_UpdateChatFolder<WithStreamedUnaryMethod_DeleteChatFolder<WithStreamedUnaryMethod_GetFoldersOffset<WithStreamedUnaryMethod_GetFolders<WithStreamedUnaryMethod_AddChatToFolder<WithStreamedUnaryMethod_RemoveChatFromFolder<WithStreamedUnaryMethod_AddGroupMember<WithStreamedUnaryMethod_RemoveGroupMember<WithStreamedUnaryMethod_GetMessagesOffset<WithStreamedUnaryMethod_GetMessagesConversion<WithStreamedUnaryMethod_GetGroupChatsOffset<WithStreamedUnaryMethod_GetGroupChatsConversion<WithStreamedUnaryMethod_SendFile<WithStreamedUnaryMethod_SearchMessages<WithStreamedUnaryMethod_SearchChats<WithStreamedUnaryMethod_UpdateReminder<WithStreamedUnaryMethod_DeleteReminder<WithStreamedUnaryMethod_UpdateNotificationSettings<WithStreamedUnaryMethod_CreateToDoItem<WithStreamedUnaryMethod_UpdateToDoItem<WithStreamedUnaryMethod_DeleteToDoItem<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > StreamedUnaryService;
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetToDoItemsOffset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_GetToDoItemsOffset() {
+      ::grpc::Service::MarkMethodStreamed(40,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse>* streamer) {
+                       return this->StreamedGetToDoItemsOffset(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_GetToDoItemsOffset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetToDoItemsOffset(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsOffsetRequest* /*request*/, ::messenger::GetToDoItemsOffsetResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetToDoItemsOffset(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::messenger::GetToDoItemsOffsetRequest,::messenger::GetToDoItemsOffsetResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_GetToDoItems() {
+      ::grpc::Service::MarkMethodStreamed(41,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse>* streamer) {
+                       return this->StreamedGetToDoItems(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_GetToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetToDoItemsRequest* /*request*/, ::messenger::GetToDoItemsResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetToDoItems(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::messenger::GetToDoItemsRequest,::messenger::GetToDoItemsResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_SendMessage<WithStreamedUnaryMethod_CreateGroupChat<WithStreamedUnaryMethod_UpdateGroupChat<WithStreamedUnaryMethod_AssignRoleToUser<WithStreamedUnaryMethod_CreateReminder<WithStreamedUnaryMethod_MarkToDoItemCompleted<WithStreamedUnaryMethod_DeleteMessage<WithStreamedUnaryMethod_EditMessage<WithStreamedUnaryMethod_Register<WithStreamedUnaryMethod_Login<WithStreamedUnaryMethod_Logout<WithStreamedUnaryMethod_UpdateUserProfile<WithStreamedUnaryMethod_UpdateMessageStatus<WithStreamedUnaryMethod_AddContact<WithStreamedUnaryMethod_RemoveContact<WithStreamedUnaryMethod_CreateChatFolder<WithStreamedUnaryMethod_UpdateChatFolder<WithStreamedUnaryMethod_DeleteChatFolder<WithStreamedUnaryMethod_GetFoldersOffset<WithStreamedUnaryMethod_GetFolders<WithStreamedUnaryMethod_AddChatToFolder<WithStreamedUnaryMethod_RemoveChatFromFolder<WithStreamedUnaryMethod_AddGroupMember<WithStreamedUnaryMethod_RemoveGroupMember<WithStreamedUnaryMethod_GetMessagesOffset<WithStreamedUnaryMethod_GetMessagesConversion<WithStreamedUnaryMethod_GetGroupChatsOffset<WithStreamedUnaryMethod_GetGroupChatsConversion<WithStreamedUnaryMethod_SendFile<WithStreamedUnaryMethod_SearchMessages<WithStreamedUnaryMethod_SearchChats<WithStreamedUnaryMethod_UpdateReminder<WithStreamedUnaryMethod_DeleteReminder<WithStreamedUnaryMethod_UpdateNotificationSettings<WithStreamedUnaryMethod_CreateToDoItem<WithStreamedUnaryMethod_UpdateToDoItem<WithStreamedUnaryMethod_DeleteToDoItem<WithStreamedUnaryMethod_GetToDoItemsOffset<WithStreamedUnaryMethod_GetToDoItems<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > StreamedUnaryService;
   template <class BaseClass>
   class WithSplitStreamingMethod_GetNewFolders : public BaseClass {
    private:
@@ -6399,8 +6848,35 @@ class MessengerService final {
     // replace default version of method with split streamed
     virtual ::grpc::Status StreamedGetNewGroupChats(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::messenger::GetNewGroupChatsRequest,::messenger::GroupChat>* server_split_streamer) = 0;
   };
-  typedef WithSplitStreamingMethod_GetNewFolders<WithSplitStreamingMethod_GetNewMessages<WithSplitStreamingMethod_GetNewGroupChats<Service > > > SplitStreamedService;
-  typedef WithStreamedUnaryMethod_SendMessage<WithStreamedUnaryMethod_CreateGroupChat<WithStreamedUnaryMethod_UpdateGroupChat<WithStreamedUnaryMethod_AssignRoleToUser<WithStreamedUnaryMethod_CreateReminder<WithStreamedUnaryMethod_MarkToDoItemCompleted<WithStreamedUnaryMethod_DeleteMessage<WithStreamedUnaryMethod_EditMessage<WithStreamedUnaryMethod_Register<WithStreamedUnaryMethod_Login<WithStreamedUnaryMethod_Logout<WithStreamedUnaryMethod_UpdateUserProfile<WithStreamedUnaryMethod_UpdateMessageStatus<WithStreamedUnaryMethod_AddContact<WithStreamedUnaryMethod_RemoveContact<WithStreamedUnaryMethod_CreateChatFolder<WithStreamedUnaryMethod_UpdateChatFolder<WithStreamedUnaryMethod_DeleteChatFolder<WithStreamedUnaryMethod_GetFoldersOffset<WithStreamedUnaryMethod_GetFolders<WithSplitStreamingMethod_GetNewFolders<WithStreamedUnaryMethod_AddChatToFolder<WithStreamedUnaryMethod_RemoveChatFromFolder<WithStreamedUnaryMethod_AddGroupMember<WithStreamedUnaryMethod_RemoveGroupMember<WithStreamedUnaryMethod_GetMessagesOffset<WithStreamedUnaryMethod_GetMessagesConversion<WithSplitStreamingMethod_GetNewMessages<WithStreamedUnaryMethod_GetGroupChatsOffset<WithStreamedUnaryMethod_GetGroupChatsConversion<WithSplitStreamingMethod_GetNewGroupChats<WithStreamedUnaryMethod_SendFile<WithStreamedUnaryMethod_SearchMessages<WithStreamedUnaryMethod_SearchChats<WithStreamedUnaryMethod_UpdateReminder<WithStreamedUnaryMethod_DeleteReminder<WithStreamedUnaryMethod_UpdateNotificationSettings<WithStreamedUnaryMethod_CreateToDoItem<WithStreamedUnaryMethod_UpdateToDoItem<WithStreamedUnaryMethod_DeleteToDoItem<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > StreamedService;
+  template <class BaseClass>
+  class WithSplitStreamingMethod_GetNewToDoItems : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithSplitStreamingMethod_GetNewToDoItems() {
+      ::grpc::Service::MarkMethodStreamed(42,
+        new ::grpc::internal::SplitServerStreamingHandler<
+          ::messenger::GetNewToDoItemsRequest, ::messenger::ToDoItem>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerSplitStreamer<
+                     ::messenger::GetNewToDoItemsRequest, ::messenger::ToDoItem>* streamer) {
+                       return this->StreamedGetNewToDoItems(context,
+                         streamer);
+                  }));
+    }
+    ~WithSplitStreamingMethod_GetNewToDoItems() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetNewToDoItems(::grpc::ServerContext* /*context*/, const ::messenger::GetNewToDoItemsRequest* /*request*/, ::grpc::ServerWriter< ::messenger::ToDoItem>* /*writer*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedGetNewToDoItems(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::messenger::GetNewToDoItemsRequest,::messenger::ToDoItem>* server_split_streamer) = 0;
+  };
+  typedef WithSplitStreamingMethod_GetNewFolders<WithSplitStreamingMethod_GetNewMessages<WithSplitStreamingMethod_GetNewGroupChats<WithSplitStreamingMethod_GetNewToDoItems<Service > > > > SplitStreamedService;
+  typedef WithStreamedUnaryMethod_SendMessage<WithStreamedUnaryMethod_CreateGroupChat<WithStreamedUnaryMethod_UpdateGroupChat<WithStreamedUnaryMethod_AssignRoleToUser<WithStreamedUnaryMethod_CreateReminder<WithStreamedUnaryMethod_MarkToDoItemCompleted<WithStreamedUnaryMethod_DeleteMessage<WithStreamedUnaryMethod_EditMessage<WithStreamedUnaryMethod_Register<WithStreamedUnaryMethod_Login<WithStreamedUnaryMethod_Logout<WithStreamedUnaryMethod_UpdateUserProfile<WithStreamedUnaryMethod_UpdateMessageStatus<WithStreamedUnaryMethod_AddContact<WithStreamedUnaryMethod_RemoveContact<WithStreamedUnaryMethod_CreateChatFolder<WithStreamedUnaryMethod_UpdateChatFolder<WithStreamedUnaryMethod_DeleteChatFolder<WithStreamedUnaryMethod_GetFoldersOffset<WithStreamedUnaryMethod_GetFolders<WithSplitStreamingMethod_GetNewFolders<WithStreamedUnaryMethod_AddChatToFolder<WithStreamedUnaryMethod_RemoveChatFromFolder<WithStreamedUnaryMethod_AddGroupMember<WithStreamedUnaryMethod_RemoveGroupMember<WithStreamedUnaryMethod_GetMessagesOffset<WithStreamedUnaryMethod_GetMessagesConversion<WithSplitStreamingMethod_GetNewMessages<WithStreamedUnaryMethod_GetGroupChatsOffset<WithStreamedUnaryMethod_GetGroupChatsConversion<WithSplitStreamingMethod_GetNewGroupChats<WithStreamedUnaryMethod_SendFile<WithStreamedUnaryMethod_SearchMessages<WithStreamedUnaryMethod_SearchChats<WithStreamedUnaryMethod_UpdateReminder<WithStreamedUnaryMethod_DeleteReminder<WithStreamedUnaryMethod_UpdateNotificationSettings<WithStreamedUnaryMethod_CreateToDoItem<WithStreamedUnaryMethod_UpdateToDoItem<WithStreamedUnaryMethod_DeleteToDoItem<WithStreamedUnaryMethod_GetToDoItemsOffset<WithStreamedUnaryMethod_GetToDoItems<WithSplitStreamingMethod_GetNewToDoItems<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace messenger

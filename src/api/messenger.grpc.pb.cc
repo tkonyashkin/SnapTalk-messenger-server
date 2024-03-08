@@ -62,6 +62,9 @@ static const char* MessengerService_method_names[] = {
   "/messenger.MessengerService/CreateToDoItem",
   "/messenger.MessengerService/UpdateToDoItem",
   "/messenger.MessengerService/DeleteToDoItem",
+  "/messenger.MessengerService/GetToDoItemsOffset",
+  "/messenger.MessengerService/GetToDoItems",
+  "/messenger.MessengerService/GetNewToDoItems",
 };
 
 std::unique_ptr< MessengerService::Stub> MessengerService::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -111,6 +114,9 @@ MessengerService::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& c
   , rpcmethod_CreateToDoItem_(MessengerService_method_names[37], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   , rpcmethod_UpdateToDoItem_(MessengerService_method_names[38], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   , rpcmethod_DeleteToDoItem_(MessengerService_method_names[39], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_GetToDoItemsOffset_(MessengerService_method_names[40], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_GetToDoItems_(MessengerService_method_names[41], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_GetNewToDoItems_(MessengerService_method_names[42], options.suffix_for_stats(),::grpc::internal::RpcMethod::SERVER_STREAMING, channel)
   {}
 
 ::grpc::Status MessengerService::Stub::SendMessage(::grpc::ClientContext* context, const ::messenger::SentMessage& request, ::messenger::ChatMessage* response) {
@@ -1012,6 +1018,68 @@ void MessengerService::Stub::async::DeleteToDoItem(::grpc::ClientContext* contex
   return result;
 }
 
+::grpc::Status MessengerService::Stub::GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::messenger::GetToDoItemsOffsetResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetToDoItemsOffset_, context, request, response);
+}
+
+void MessengerService::Stub::async::GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetToDoItemsOffset_, context, request, response, std::move(f));
+}
+
+void MessengerService::Stub::async::GetToDoItemsOffset(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetToDoItemsOffset_, context, request, response, reactor);
+}
+
+::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>* MessengerService::Stub::PrepareAsyncGetToDoItemsOffsetRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::messenger::GetToDoItemsOffsetResponse, ::messenger::GetToDoItemsOffsetRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetToDoItemsOffset_, context, request);
+}
+
+::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsOffsetResponse>* MessengerService::Stub::AsyncGetToDoItemsOffsetRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsOffsetRequest& request, ::grpc::CompletionQueue* cq) {
+  auto* result =
+    this->PrepareAsyncGetToDoItemsOffsetRaw(context, request, cq);
+  result->StartCall();
+  return result;
+}
+
+::grpc::Status MessengerService::Stub::GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::messenger::GetToDoItemsResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetToDoItems_, context, request, response);
+}
+
+void MessengerService::Stub::async::GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetToDoItems_, context, request, response, std::move(f));
+}
+
+void MessengerService::Stub::async::GetToDoItems(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetToDoItems_, context, request, response, reactor);
+}
+
+::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>* MessengerService::Stub::PrepareAsyncGetToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::messenger::GetToDoItemsResponse, ::messenger::GetToDoItemsRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetToDoItems_, context, request);
+}
+
+::grpc::ClientAsyncResponseReader< ::messenger::GetToDoItemsResponse>* MessengerService::Stub::AsyncGetToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+  auto* result =
+    this->PrepareAsyncGetToDoItemsRaw(context, request, cq);
+  result->StartCall();
+  return result;
+}
+
+::grpc::ClientReader< ::messenger::ToDoItem>* MessengerService::Stub::GetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request) {
+  return ::grpc::internal::ClientReaderFactory< ::messenger::ToDoItem>::Create(channel_.get(), rpcmethod_GetNewToDoItems_, context, request);
+}
+
+void MessengerService::Stub::async::GetNewToDoItems(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest* request, ::grpc::ClientReadReactor< ::messenger::ToDoItem>* reactor) {
+  ::grpc::internal::ClientCallbackReaderFactory< ::messenger::ToDoItem>::Create(stub_->channel_.get(), stub_->rpcmethod_GetNewToDoItems_, context, request, reactor);
+}
+
+::grpc::ClientAsyncReader< ::messenger::ToDoItem>* MessengerService::Stub::AsyncGetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq, void* tag) {
+  return ::grpc::internal::ClientAsyncReaderFactory< ::messenger::ToDoItem>::Create(channel_.get(), cq, rpcmethod_GetNewToDoItems_, context, request, true, tag);
+}
+
+::grpc::ClientAsyncReader< ::messenger::ToDoItem>* MessengerService::Stub::PrepareAsyncGetNewToDoItemsRaw(::grpc::ClientContext* context, const ::messenger::GetNewToDoItemsRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncReaderFactory< ::messenger::ToDoItem>::Create(channel_.get(), cq, rpcmethod_GetNewToDoItems_, context, request, false, nullptr);
+}
+
 MessengerService::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MessengerService_method_names[0],
@@ -1413,6 +1481,36 @@ MessengerService::Service::Service() {
              ::messenger::ToDoItem* resp) {
                return service->DeleteToDoItem(ctx, req, resp);
              }, this)));
+  AddMethod(new ::grpc::internal::RpcServiceMethod(
+      MessengerService_method_names[40],
+      ::grpc::internal::RpcMethod::NORMAL_RPC,
+      new ::grpc::internal::RpcMethodHandler< MessengerService::Service, ::messenger::GetToDoItemsOffsetRequest, ::messenger::GetToDoItemsOffsetResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+          [](MessengerService::Service* service,
+             ::grpc::ServerContext* ctx,
+             const ::messenger::GetToDoItemsOffsetRequest* req,
+             ::messenger::GetToDoItemsOffsetResponse* resp) {
+               return service->GetToDoItemsOffset(ctx, req, resp);
+             }, this)));
+  AddMethod(new ::grpc::internal::RpcServiceMethod(
+      MessengerService_method_names[41],
+      ::grpc::internal::RpcMethod::NORMAL_RPC,
+      new ::grpc::internal::RpcMethodHandler< MessengerService::Service, ::messenger::GetToDoItemsRequest, ::messenger::GetToDoItemsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+          [](MessengerService::Service* service,
+             ::grpc::ServerContext* ctx,
+             const ::messenger::GetToDoItemsRequest* req,
+             ::messenger::GetToDoItemsResponse* resp) {
+               return service->GetToDoItems(ctx, req, resp);
+             }, this)));
+  AddMethod(new ::grpc::internal::RpcServiceMethod(
+      MessengerService_method_names[42],
+      ::grpc::internal::RpcMethod::SERVER_STREAMING,
+      new ::grpc::internal::ServerStreamingHandler< MessengerService::Service, ::messenger::GetNewToDoItemsRequest, ::messenger::ToDoItem>(
+          [](MessengerService::Service* service,
+             ::grpc::ServerContext* ctx,
+             const ::messenger::GetNewToDoItemsRequest* req,
+             ::grpc::ServerWriter<::messenger::ToDoItem>* writer) {
+               return service->GetNewToDoItems(ctx, req, writer);
+             }, this)));
 }
 
 MessengerService::Service::~Service() {
@@ -1695,6 +1793,27 @@ MessengerService::Service::~Service() {
   (void) context;
   (void) request;
   (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status MessengerService::Service::GetToDoItemsOffset(::grpc::ServerContext* context, const ::messenger::GetToDoItemsOffsetRequest* request, ::messenger::GetToDoItemsOffsetResponse* response) {
+  (void) context;
+  (void) request;
+  (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status MessengerService::Service::GetToDoItems(::grpc::ServerContext* context, const ::messenger::GetToDoItemsRequest* request, ::messenger::GetToDoItemsResponse* response) {
+  (void) context;
+  (void) request;
+  (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status MessengerService::Service::GetNewToDoItems(::grpc::ServerContext* context, const ::messenger::GetNewToDoItemsRequest* request, ::grpc::ServerWriter< ::messenger::ToDoItem>* writer) {
+  (void) context;
+  (void) request;
+  (void) writer;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 

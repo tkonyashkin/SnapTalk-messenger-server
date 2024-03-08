@@ -599,6 +599,91 @@ struct LoginRequestDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LoginRequestDefaultTypeInternal _LoginRequest_default_instance_;
 
+inline constexpr GetToDoItemsRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : userid_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        offset_{::int64_t{0}},
+        count_{0},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GetToDoItemsRequest::GetToDoItemsRequest(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct GetToDoItemsRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetToDoItemsRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GetToDoItemsRequestDefaultTypeInternal() {}
+  union {
+    GetToDoItemsRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetToDoItemsRequestDefaultTypeInternal _GetToDoItemsRequest_default_instance_;
+
+inline constexpr GetToDoItemsOffsetResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : offset_{::int64_t{0}},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GetToDoItemsOffsetResponse::GetToDoItemsOffsetResponse(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct GetToDoItemsOffsetResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetToDoItemsOffsetResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GetToDoItemsOffsetResponseDefaultTypeInternal() {}
+  union {
+    GetToDoItemsOffsetResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetToDoItemsOffsetResponseDefaultTypeInternal _GetToDoItemsOffsetResponse_default_instance_;
+
+inline constexpr GetToDoItemsOffsetRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : userid_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GetToDoItemsOffsetRequest::GetToDoItemsOffsetRequest(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct GetToDoItemsOffsetRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetToDoItemsOffsetRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GetToDoItemsOffsetRequestDefaultTypeInternal() {}
+  union {
+    GetToDoItemsOffsetRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetToDoItemsOffsetRequestDefaultTypeInternal _GetToDoItemsOffsetRequest_default_instance_;
+
+inline constexpr GetNewToDoItemsRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : userid_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        offset_{::int64_t{0}},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GetNewToDoItemsRequest::GetNewToDoItemsRequest(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct GetNewToDoItemsRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetNewToDoItemsRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GetNewToDoItemsRequestDefaultTypeInternal() {}
+  union {
+    GetNewToDoItemsRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetNewToDoItemsRequestDefaultTypeInternal _GetNewToDoItemsRequest_default_instance_;
+
 inline constexpr GetNewMessagesRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : chatid_(
@@ -1329,6 +1414,25 @@ struct RoleDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RoleDefaultTypeInternal _Role_default_instance_;
 
+inline constexpr GetToDoItemsResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : items_{},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GetToDoItemsResponse::GetToDoItemsResponse(::_pbi::ConstantInitialized)
+    : _impl_(::_pbi::ConstantInitialized()) {}
+struct GetToDoItemsResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetToDoItemsResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GetToDoItemsResponseDefaultTypeInternal() {}
+  union {
+    GetToDoItemsResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetToDoItemsResponseDefaultTypeInternal _GetToDoItemsResponse_default_instance_;
+
 inline constexpr GetMessagesConversionResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : messages_{},
@@ -1453,7 +1557,7 @@ struct GetGroupChatsConversionResponseDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetGroupChatsConversionResponseDefaultTypeInternal _GetGroupChatsConversionResponse_default_instance_;
 }  // namespace messenger
-static ::_pb::Metadata file_level_metadata_messenger_2eproto[64];
+static ::_pb::Metadata file_level_metadata_messenger_2eproto[69];
 static const ::_pb::EnumDescriptor* file_level_enum_descriptors_messenger_2eproto[4];
 static constexpr const ::_pb::ServiceDescriptor**
     file_level_service_descriptors_messenger_2eproto = nullptr;
@@ -2103,6 +2207,54 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.userid_),
     PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.description_),
     PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.completed_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetRequest, _impl_.userid_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetResponse, _impl_.offset_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.offset_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.count_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsResponse, _impl_.items_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewToDoItemsRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewToDoItemsRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewToDoItemsRequest, _impl_.offset_),
 };
 
 static const ::_pbi::MigrationSchema
@@ -2171,6 +2323,11 @@ static const ::_pbi::MigrationSchema
         {612, 621, -1, sizeof(::messenger::UpdateNotificationSettingsRequest)},
         {622, -1, -1, sizeof(::messenger::UpdateNotificationSettingsResponse)},
         {632, -1, -1, sizeof(::messenger::ToDoItem)},
+        {644, -1, -1, sizeof(::messenger::GetToDoItemsOffsetRequest)},
+        {653, -1, -1, sizeof(::messenger::GetToDoItemsOffsetResponse)},
+        {662, -1, -1, sizeof(::messenger::GetToDoItemsRequest)},
+        {673, -1, -1, sizeof(::messenger::GetToDoItemsResponse)},
+        {682, -1, -1, sizeof(::messenger::GetNewToDoItemsRequest)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -2238,6 +2395,11 @@ static const ::_pb::Message* const file_default_instances[] = {
     &::messenger::_UpdateNotificationSettingsRequest_default_instance_._instance,
     &::messenger::_UpdateNotificationSettingsResponse_default_instance_._instance,
     &::messenger::_ToDoItem_default_instance_._instance,
+    &::messenger::_GetToDoItemsOffsetRequest_default_instance_._instance,
+    &::messenger::_GetToDoItemsOffsetResponse_default_instance_._instance,
+    &::messenger::_GetToDoItemsRequest_default_instance_._instance,
+    &::messenger::_GetToDoItemsResponse_default_instance_._instance,
+    &::messenger::_GetNewToDoItemsRequest_default_instance_._instance,
 };
 const char descriptor_table_protodef_messenger_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
     "\n\017messenger.proto\022\tmessenger\"5\n\017Register"
@@ -2340,123 +2502,137 @@ const char descriptor_table_protodef_messenger_2eproto[] PROTOBUF_SECTION_VARIAB
     "tingsResponse\022\017\n\007success\030\001 \001(\010\022\r\n\005error\030"
     "\002 \001(\t\"N\n\010ToDoItem\022\n\n\002id\030\001 \001(\t\022\016\n\006userId\030"
     "\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\021\n\tcompleted\030"
-    "\004 \001(\010*\203\006\n\013MessageType\022\010\n\004TEXT\020\000\022\t\n\005AUDIO"
-    "\020\001\022\t\n\005VIDEO\020\002\022\t\n\005VOICE\020\005\022\013\n\007STICKER\020\003\022\t\n"
-    "\005EMOJI\020\004\022\027\n\023USER_AVATAR_CHANGED\020\006\022\025\n\021USE"
-    "R_NAME_CHANGED\020\007\022\025\n\021CHAT_NAME_CHANGED\020\010\022"
-    "\027\n\023CHAT_AVATAR_CHANGED\020\t\022\024\n\020USER_JOINED_"
-    "CHAT\020\n\022\022\n\016USER_LEFT_CHAT\020\013\022\031\n\025USER_KICKE"
-    "D_FROM_CHAT\020\014\022\031\n\025USER_BANNED_FROM_CHAT\020\r"
-    "\022\033\n\027USER_UNBANNED_FROM_CHAT\020\016\022\021\n\rROLE_AS"
-    "SIGNED\020\017\022\020\n\014ROLE_REVOKED\020\020\022\027\n\023PERMISSION"
-    "S_UPDATED\020\021\022\034\n\030CHAT_DESCRIPTION_CHANGED\020"
-    "\022\022\031\n\025CHAT_SETTINGS_UPDATED\020\023\022\022\n\016MESSAGE_"
-    "PINNED\020\024\022\024\n\020MESSAGE_UNPINNED\020\025\022\026\n\022CHAT_M"
-    "EMBERS_ADDED\020\026\022\030\n\024CHAT_MEMBERS_REMOVED\020\027"
-    "\022\034\n\030PRIVACY_SETTINGS_UPDATED\020\030\022\035\n\031SECURI"
-    "TY_SETTINGS_UPDATED\020\031\022\026\n\022GROUP_CHAT_CREA"
-    "TED\020\032\022\030\n\024GROUP_CHAT_DISBANDED\020\033\022\027\n\023USER_"
-    "STATUS_CHANGED\020\034\022 \n\034CUSTOM_NOTIFICATIONS"
-    "_UPDATED\020\035\022\021\n\rCHAT_ARCHIVED\020\036\022\023\n\017CHAT_UN"
-    "ARCHIVED\020\037\022\030\n\024NEW_DEVICE_SIGNED_IN\020 \022\025\n\021"
-    "DEVICE_SIGNED_OUT\020!*_\n\010FileType\022\020\n\014UNKNO"
-    "WN_FILE\020\000\022\021\n\rDOCUMENT_FILE\020\001\022\016\n\nIMAGE_FI"
-    "LE\020\002\022\016\n\nAUDIO_FILE\020\003\022\016\n\nVIDEO_FILE\020\004*2\n\r"
-    "MessageStatus\022\010\n\004SENT\020\000\022\r\n\tDELIVERED\020\001\022\010"
-    "\n\004READ\020\002*%\n\nUserStatus\022\n\n\006ONLINE\020\000\022\013\n\007OF"
-    "FLINE\020\0012\214\031\n\020MessengerService\022=\n\013SendMess"
-    "age\022\026.messenger.SentMessage\032\026.messenger."
-    "ChatMessage\022=\n\017CreateGroupChat\022\024.messeng"
-    "er.GroupChat\032\024.messenger.GroupChat\022=\n\017Up"
-    "dateGroupChat\022\024.messenger.GroupChat\032\024.me"
-    "ssenger.GroupChat\0224\n\020AssignRoleToUser\022\017."
-    "messenger.Role\032\017.messenger.Role\022:\n\016Creat"
-    "eReminder\022\023.messenger.Reminder\032\023.messeng"
-    "er.Reminder\022A\n\025MarkToDoItemCompleted\022\023.m"
-    "essenger.ToDoItem\032\023.messenger.ToDoItem\022R"
-    "\n\rDeleteMessage\022\037.messenger.DeleteMessag"
-    "eRequest\032 .messenger.DeleteMessageRespon"
-    "se\022L\n\013EditMessage\022\035.messenger.EditMessag"
-    "eRequest\032\036.messenger.EditMessageResponse"
-    "\022C\n\010Register\022\032.messenger.RegisterRequest"
-    "\032\033.messenger.RegisterResponse\022:\n\005Login\022\027"
-    ".messenger.LoginRequest\032\030.messenger.Logi"
-    "nResponse\022=\n\006Logout\022\030.messenger.LogoutRe"
-    "quest\032\031.messenger.LogoutResponse\022^\n\021Upda"
-    "teUserProfile\022#.messenger.UpdateUserProf"
-    "ileRequest\032$.messenger.UpdateUserProfile"
-    "Response\022d\n\023UpdateMessageStatus\022%.messen"
-    "ger.UpdateMessageStatusRequest\032&.messeng"
-    "er.UpdateMessageStatusResponse\022I\n\nAddCon"
-    "tact\022\034.messenger.AddContactRequest\032\035.mes"
-    "senger.AddContactResponse\022R\n\rRemoveConta"
-    "ct\022\037.messenger.RemoveContactRequest\032 .me"
-    "ssenger.RemoveContactResponse\022[\n\020CreateC"
-    "hatFolder\022\".messenger.CreateChatFolderRe"
-    "quest\032#.messenger.CreateChatFolderRespon"
-    "se\022[\n\020UpdateChatFolder\022\".messenger.Updat"
-    "eChatFolderRequest\032#.messenger.UpdateCha"
-    "tFolderResponse\022[\n\020DeleteChatFolder\022\".me"
-    "ssenger.DeleteChatFolderRequest\032#.messen"
-    "ger.DeleteChatFolderResponse\022[\n\020GetFolde"
-    "rsOffset\022\".messenger.GetFoldersOffsetReq"
-    "uest\032#.messenger.GetFoldersOffsetRespons"
-    "e\022I\n\nGetFolders\022\034.messenger.GetFoldersRe"
-    "quest\032\035.messenger.GetFoldersResponse\022I\n\r"
-    "GetNewFolders\022\037.messenger.GetNewFoldersR"
-    "equest\032\025.messenger.ChatFolder0\001\022X\n\017AddCh"
-    "atToFolder\022!.messenger.AddChatToFolderRe"
-    "quest\032\".messenger.AddChatToFolderRespons"
-    "e\022g\n\024RemoveChatFromFolder\022&.messenger.Re"
-    "moveChatFromFolderRequest\032\'.messenger.Re"
-    "moveChatFromFolderResponse\022U\n\016AddGroupMe"
-    "mber\022 .messenger.AddGroupMemberRequest\032!"
-    ".messenger.AddGroupMemberResponse\022^\n\021Rem"
-    "oveGroupMember\022#.messenger.RemoveGroupMe"
-    "mberRequest\032$.messenger.RemoveGroupMembe"
-    "rResponse\022^\n\021GetMessagesOffset\022#.messeng"
-    "er.GetMessagesOffsetRequest\032$.messenger."
-    "GetMessagesOffsetResponse\022j\n\025GetMessages"
-    "Conversion\022\'.messenger.GetMessagesConver"
-    "sionRequest\032(.messenger.GetMessagesConve"
-    "rsionResponse\022L\n\016GetNewMessages\022 .messen"
-    "ger.GetNewMessagesRequest\032\026.messenger.Ch"
-    "atMessage0\001\022d\n\023GetGroupChatsOffset\022%.mes"
-    "senger.GetGroupChatsOffsetRequest\032&.mess"
-    "enger.GetGroupChatsOffsetResponse\022p\n\027Get"
-    "GroupChatsConversion\022).messenger.GetGrou"
-    "pChatsConversionRequest\032*.messenger.GetG"
-    "roupChatsConversionResponse\022N\n\020GetNewGro"
-    "upChats\022\".messenger.GetNewGroupChatsRequ"
-    "est\032\024.messenger.GroupChat0\001\022:\n\010SendFile\022"
-    "\026.messenger.FileMessage\032\026.messenger.File"
-    "Message\022M\n\016SearchMessages\022\030.messenger.Se"
-    "archRequest\032!.messenger.SearchMessagesRe"
-    "sponse\022G\n\013SearchChats\022\030.messenger.Search"
-    "Request\032\036.messenger.SearchChatsResponse\022"
-    ":\n\016UpdateReminder\022\023.messenger.Reminder\032\023"
-    ".messenger.Reminder\022:\n\016DeleteReminder\022\023."
-    "messenger.Reminder\032\023.messenger.Reminder\022"
-    "y\n\032UpdateNotificationSettings\022,.messenge"
-    "r.UpdateNotificationSettingsRequest\032-.me"
-    "ssenger.UpdateNotificationSettingsRespon"
-    "se\022:\n\016CreateToDoItem\022\023.messenger.ToDoIte"
-    "m\032\023.messenger.ToDoItem\022:\n\016UpdateToDoItem"
-    "\022\023.messenger.ToDoItem\032\023.messenger.ToDoIt"
-    "em\022:\n\016DeleteToDoItem\022\023.messenger.ToDoIte"
-    "m\032\023.messenger.ToDoItemb\006proto3"
+    "\004 \001(\010\"+\n\031GetToDoItemsOffsetRequest\022\016\n\006us"
+    "erId\030\001 \001(\t\",\n\032GetToDoItemsOffsetResponse"
+    "\022\016\n\006offset\030\001 \001(\003\"D\n\023GetToDoItemsRequest\022"
+    "\016\n\006userId\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\022\r\n\005count"
+    "\030\003 \001(\005\":\n\024GetToDoItemsResponse\022\"\n\005items\030"
+    "\001 \003(\0132\023.messenger.ToDoItem\"8\n\026GetNewToDo"
+    "ItemsRequest\022\016\n\006userId\030\001 \001(\t\022\016\n\006offset\030\002"
+    " \001(\003*\203\006\n\013MessageType\022\010\n\004TEXT\020\000\022\t\n\005AUDIO\020"
+    "\001\022\t\n\005VIDEO\020\002\022\t\n\005VOICE\020\005\022\013\n\007STICKER\020\003\022\t\n\005"
+    "EMOJI\020\004\022\027\n\023USER_AVATAR_CHANGED\020\006\022\025\n\021USER"
+    "_NAME_CHANGED\020\007\022\025\n\021CHAT_NAME_CHANGED\020\010\022\027"
+    "\n\023CHAT_AVATAR_CHANGED\020\t\022\024\n\020USER_JOINED_C"
+    "HAT\020\n\022\022\n\016USER_LEFT_CHAT\020\013\022\031\n\025USER_KICKED"
+    "_FROM_CHAT\020\014\022\031\n\025USER_BANNED_FROM_CHAT\020\r\022"
+    "\033\n\027USER_UNBANNED_FROM_CHAT\020\016\022\021\n\rROLE_ASS"
+    "IGNED\020\017\022\020\n\014ROLE_REVOKED\020\020\022\027\n\023PERMISSIONS"
+    "_UPDATED\020\021\022\034\n\030CHAT_DESCRIPTION_CHANGED\020\022"
+    "\022\031\n\025CHAT_SETTINGS_UPDATED\020\023\022\022\n\016MESSAGE_P"
+    "INNED\020\024\022\024\n\020MESSAGE_UNPINNED\020\025\022\026\n\022CHAT_ME"
+    "MBERS_ADDED\020\026\022\030\n\024CHAT_MEMBERS_REMOVED\020\027\022"
+    "\034\n\030PRIVACY_SETTINGS_UPDATED\020\030\022\035\n\031SECURIT"
+    "Y_SETTINGS_UPDATED\020\031\022\026\n\022GROUP_CHAT_CREAT"
+    "ED\020\032\022\030\n\024GROUP_CHAT_DISBANDED\020\033\022\027\n\023USER_S"
+    "TATUS_CHANGED\020\034\022 \n\034CUSTOM_NOTIFICATIONS_"
+    "UPDATED\020\035\022\021\n\rCHAT_ARCHIVED\020\036\022\023\n\017CHAT_UNA"
+    "RCHIVED\020\037\022\030\n\024NEW_DEVICE_SIGNED_IN\020 \022\025\n\021D"
+    "EVICE_SIGNED_OUT\020!*_\n\010FileType\022\020\n\014UNKNOW"
+    "N_FILE\020\000\022\021\n\rDOCUMENT_FILE\020\001\022\016\n\nIMAGE_FIL"
+    "E\020\002\022\016\n\nAUDIO_FILE\020\003\022\016\n\nVIDEO_FILE\020\004*2\n\rM"
+    "essageStatus\022\010\n\004SENT\020\000\022\r\n\tDELIVERED\020\001\022\010\n"
+    "\004READ\020\002*%\n\nUserStatus\022\n\n\006ONLINE\020\000\022\013\n\007OFF"
+    "LINE\020\0012\215\033\n\020MessengerService\022=\n\013SendMessa"
+    "ge\022\026.messenger.SentMessage\032\026.messenger.C"
+    "hatMessage\022=\n\017CreateGroupChat\022\024.messenge"
+    "r.GroupChat\032\024.messenger.GroupChat\022=\n\017Upd"
+    "ateGroupChat\022\024.messenger.GroupChat\032\024.mes"
+    "senger.GroupChat\0224\n\020AssignRoleToUser\022\017.m"
+    "essenger.Role\032\017.messenger.Role\022:\n\016Create"
+    "Reminder\022\023.messenger.Reminder\032\023.messenge"
+    "r.Reminder\022A\n\025MarkToDoItemCompleted\022\023.me"
+    "ssenger.ToDoItem\032\023.messenger.ToDoItem\022R\n"
+    "\rDeleteMessage\022\037.messenger.DeleteMessage"
+    "Request\032 .messenger.DeleteMessageRespons"
+    "e\022L\n\013EditMessage\022\035.messenger.EditMessage"
+    "Request\032\036.messenger.EditMessageResponse\022"
+    "C\n\010Register\022\032.messenger.RegisterRequest\032"
+    "\033.messenger.RegisterResponse\022:\n\005Login\022\027."
+    "messenger.LoginRequest\032\030.messenger.Login"
+    "Response\022=\n\006Logout\022\030.messenger.LogoutReq"
+    "uest\032\031.messenger.LogoutResponse\022^\n\021Updat"
+    "eUserProfile\022#.messenger.UpdateUserProfi"
+    "leRequest\032$.messenger.UpdateUserProfileR"
+    "esponse\022d\n\023UpdateMessageStatus\022%.messeng"
+    "er.UpdateMessageStatusRequest\032&.messenge"
+    "r.UpdateMessageStatusResponse\022I\n\nAddCont"
+    "act\022\034.messenger.AddContactRequest\032\035.mess"
+    "enger.AddContactResponse\022R\n\rRemoveContac"
+    "t\022\037.messenger.RemoveContactRequest\032 .mes"
+    "senger.RemoveContactResponse\022[\n\020CreateCh"
+    "atFolder\022\".messenger.CreateChatFolderReq"
+    "uest\032#.messenger.CreateChatFolderRespons"
+    "e\022[\n\020UpdateChatFolder\022\".messenger.Update"
+    "ChatFolderRequest\032#.messenger.UpdateChat"
+    "FolderResponse\022[\n\020DeleteChatFolder\022\".mes"
+    "senger.DeleteChatFolderRequest\032#.messeng"
+    "er.DeleteChatFolderResponse\022[\n\020GetFolder"
+    "sOffset\022\".messenger.GetFoldersOffsetRequ"
+    "est\032#.messenger.GetFoldersOffsetResponse"
+    "\022I\n\nGetFolders\022\034.messenger.GetFoldersReq"
+    "uest\032\035.messenger.GetFoldersResponse\022I\n\rG"
+    "etNewFolders\022\037.messenger.GetNewFoldersRe"
+    "quest\032\025.messenger.ChatFolder0\001\022X\n\017AddCha"
+    "tToFolder\022!.messenger.AddChatToFolderReq"
+    "uest\032\".messenger.AddChatToFolderResponse"
+    "\022g\n\024RemoveChatFromFolder\022&.messenger.Rem"
+    "oveChatFromFolderRequest\032\'.messenger.Rem"
+    "oveChatFromFolderResponse\022U\n\016AddGroupMem"
+    "ber\022 .messenger.AddGroupMemberRequest\032!."
+    "messenger.AddGroupMemberResponse\022^\n\021Remo"
+    "veGroupMember\022#.messenger.RemoveGroupMem"
+    "berRequest\032$.messenger.RemoveGroupMember"
+    "Response\022^\n\021GetMessagesOffset\022#.messenge"
+    "r.GetMessagesOffsetRequest\032$.messenger.G"
+    "etMessagesOffsetResponse\022j\n\025GetMessagesC"
+    "onversion\022\'.messenger.GetMessagesConvers"
+    "ionRequest\032(.messenger.GetMessagesConver"
+    "sionResponse\022L\n\016GetNewMessages\022 .messeng"
+    "er.GetNewMessagesRequest\032\026.messenger.Cha"
+    "tMessage0\001\022d\n\023GetGroupChatsOffset\022%.mess"
+    "enger.GetGroupChatsOffsetRequest\032&.messe"
+    "nger.GetGroupChatsOffsetResponse\022p\n\027GetG"
+    "roupChatsConversion\022).messenger.GetGroup"
+    "ChatsConversionRequest\032*.messenger.GetGr"
+    "oupChatsConversionResponse\022N\n\020GetNewGrou"
+    "pChats\022\".messenger.GetNewGroupChatsReque"
+    "st\032\024.messenger.GroupChat0\001\022:\n\010SendFile\022\026"
+    ".messenger.FileMessage\032\026.messenger.FileM"
+    "essage\022M\n\016SearchMessages\022\030.messenger.Sea"
+    "rchRequest\032!.messenger.SearchMessagesRes"
+    "ponse\022G\n\013SearchChats\022\030.messenger.SearchR"
+    "equest\032\036.messenger.SearchChatsResponse\022:"
+    "\n\016UpdateReminder\022\023.messenger.Reminder\032\023."
+    "messenger.Reminder\022:\n\016DeleteReminder\022\023.m"
+    "essenger.Reminder\032\023.messenger.Reminder\022y"
+    "\n\032UpdateNotificationSettings\022,.messenger"
+    ".UpdateNotificationSettingsRequest\032-.mes"
+    "senger.UpdateNotificationSettingsRespons"
+    "e\022:\n\016CreateToDoItem\022\023.messenger.ToDoItem"
+    "\032\023.messenger.ToDoItem\022:\n\016UpdateToDoItem\022"
+    "\023.messenger.ToDoItem\032\023.messenger.ToDoIte"
+    "m\022:\n\016DeleteToDoItem\022\023.messenger.ToDoItem"
+    "\032\023.messenger.ToDoItem\022a\n\022GetToDoItemsOff"
+    "set\022$.messenger.GetToDoItemsOffsetReques"
+    "t\032%.messenger.GetToDoItemsOffsetResponse"
+    "\022O\n\014GetToDoItems\022\036.messenger.GetToDoItem"
+    "sRequest\032\037.messenger.GetToDoItemsRespons"
+    "e\022K\n\017GetNewToDoItems\022!.messenger.GetNewT"
+    "oDoItemsRequest\032\023.messenger.ToDoItem0\001b\006"
+    "proto3"
 };
 static ::absl::once_flag descriptor_table_messenger_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_messenger_2eproto = {
     false,
     false,
-    8190,
+    8726,
     descriptor_table_protodef_messenger_2eproto,
     "messenger.proto",
     &descriptor_table_messenger_2eproto_once,
     nullptr,
     0,
-    64,
+    69,
     schemas,
     file_default_instances,
     TableStruct_messenger_2eproto::offsets,
@@ -16314,6 +16490,1022 @@ void ToDoItem::InternalSwap(ToDoItem* PROTOBUF_RESTRICT other) {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_messenger_2eproto_getter, &descriptor_table_messenger_2eproto_once,
       file_level_metadata_messenger_2eproto[63]);
+}
+// ===================================================================
+
+class GetToDoItemsOffsetRequest::_Internal {
+ public:
+};
+
+GetToDoItemsOffsetRequest::GetToDoItemsOffsetRequest(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:messenger.GetToDoItemsOffsetRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsOffsetRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : userid_(arena, from.userid_),
+        _cached_size_{0} {}
+
+GetToDoItemsOffsetRequest::GetToDoItemsOffsetRequest(
+    ::google::protobuf::Arena* arena,
+    const GetToDoItemsOffsetRequest& from)
+    : ::google::protobuf::Message(arena) {
+  GetToDoItemsOffsetRequest* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+
+  // @@protoc_insertion_point(copy_constructor:messenger.GetToDoItemsOffsetRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsOffsetRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : userid_(arena),
+        _cached_size_{0} {}
+
+inline void GetToDoItemsOffsetRequest::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+GetToDoItemsOffsetRequest::~GetToDoItemsOffsetRequest() {
+  // @@protoc_insertion_point(destructor:messenger.GetToDoItemsOffsetRequest)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void GetToDoItemsOffsetRequest::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.userid_.Destroy();
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void GetToDoItemsOffsetRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:messenger.GetToDoItemsOffsetRequest)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.userid_.ClearToEmpty();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* GetToDoItemsOffsetRequest::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 50, 2> GetToDoItemsOffsetRequest::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_GetToDoItemsOffsetRequest_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // string userId = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetRequest, _impl_.userid_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string userId = 1;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetRequest, _impl_.userid_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\43\6\0\0\0\0\0\0"
+    "messenger.GetToDoItemsOffsetRequest"
+    "userId"
+  }},
+};
+
+::uint8_t* GetToDoItemsOffsetRequest::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:messenger.GetToDoItemsOffsetRequest)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // string userId = 1;
+  if (!this->_internal_userid().empty()) {
+    const std::string& _s = this->_internal_userid();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetToDoItemsOffsetRequest.userId");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:messenger.GetToDoItemsOffsetRequest)
+  return target;
+}
+
+::size_t GetToDoItemsOffsetRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:messenger.GetToDoItemsOffsetRequest)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string userId = 1;
+  if (!this->_internal_userid().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_userid());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData GetToDoItemsOffsetRequest::_class_data_ = {
+    GetToDoItemsOffsetRequest::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* GetToDoItemsOffsetRequest::GetClassData() const {
+  return &_class_data_;
+}
+
+void GetToDoItemsOffsetRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<GetToDoItemsOffsetRequest*>(&to_msg);
+  auto& from = static_cast<const GetToDoItemsOffsetRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:messenger.GetToDoItemsOffsetRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_userid().empty()) {
+    _this->_internal_set_userid(from._internal_userid());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GetToDoItemsOffsetRequest::CopyFrom(const GetToDoItemsOffsetRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:messenger.GetToDoItemsOffsetRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool GetToDoItemsOffsetRequest::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* GetToDoItemsOffsetRequest::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void GetToDoItemsOffsetRequest::InternalSwap(GetToDoItemsOffsetRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+}
+
+::google::protobuf::Metadata GetToDoItemsOffsetRequest::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_messenger_2eproto_getter, &descriptor_table_messenger_2eproto_once,
+      file_level_metadata_messenger_2eproto[64]);
+}
+// ===================================================================
+
+class GetToDoItemsOffsetResponse::_Internal {
+ public:
+};
+
+GetToDoItemsOffsetResponse::GetToDoItemsOffsetResponse(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:messenger.GetToDoItemsOffsetResponse)
+}
+GetToDoItemsOffsetResponse::GetToDoItemsOffsetResponse(
+    ::google::protobuf::Arena* arena, const GetToDoItemsOffsetResponse& from)
+    : GetToDoItemsOffsetResponse(arena) {
+  MergeFrom(from);
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsOffsetResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : _cached_size_{0} {}
+
+inline void GetToDoItemsOffsetResponse::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.offset_ = {};
+}
+GetToDoItemsOffsetResponse::~GetToDoItemsOffsetResponse() {
+  // @@protoc_insertion_point(destructor:messenger.GetToDoItemsOffsetResponse)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void GetToDoItemsOffsetResponse::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void GetToDoItemsOffsetResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:messenger.GetToDoItemsOffsetResponse)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.offset_ = ::int64_t{0};
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* GetToDoItemsOffsetResponse::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 0, 2> GetToDoItemsOffsetResponse::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_GetToDoItemsOffsetResponse_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // int64 offset = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetToDoItemsOffsetResponse, _impl_.offset_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetResponse, _impl_.offset_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int64 offset = 1;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetResponse, _impl_.offset_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+  }},
+  // no aux_entries
+  {{
+  }},
+};
+
+::uint8_t* GetToDoItemsOffsetResponse::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:messenger.GetToDoItemsOffsetResponse)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // int64 offset = 1;
+  if (this->_internal_offset() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<1>(
+            stream, this->_internal_offset(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:messenger.GetToDoItemsOffsetResponse)
+  return target;
+}
+
+::size_t GetToDoItemsOffsetResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:messenger.GetToDoItemsOffsetResponse)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int64 offset = 1;
+  if (this->_internal_offset() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_offset());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData GetToDoItemsOffsetResponse::_class_data_ = {
+    GetToDoItemsOffsetResponse::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* GetToDoItemsOffsetResponse::GetClassData() const {
+  return &_class_data_;
+}
+
+void GetToDoItemsOffsetResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<GetToDoItemsOffsetResponse*>(&to_msg);
+  auto& from = static_cast<const GetToDoItemsOffsetResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:messenger.GetToDoItemsOffsetResponse)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_offset() != 0) {
+    _this->_internal_set_offset(from._internal_offset());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GetToDoItemsOffsetResponse::CopyFrom(const GetToDoItemsOffsetResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:messenger.GetToDoItemsOffsetResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool GetToDoItemsOffsetResponse::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* GetToDoItemsOffsetResponse::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void GetToDoItemsOffsetResponse::InternalSwap(GetToDoItemsOffsetResponse* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+        swap(_impl_.offset_, other->_impl_.offset_);
+}
+
+::google::protobuf::Metadata GetToDoItemsOffsetResponse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_messenger_2eproto_getter, &descriptor_table_messenger_2eproto_once,
+      file_level_metadata_messenger_2eproto[65]);
+}
+// ===================================================================
+
+class GetToDoItemsRequest::_Internal {
+ public:
+};
+
+GetToDoItemsRequest::GetToDoItemsRequest(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:messenger.GetToDoItemsRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : userid_(arena, from.userid_),
+        _cached_size_{0} {}
+
+GetToDoItemsRequest::GetToDoItemsRequest(
+    ::google::protobuf::Arena* arena,
+    const GetToDoItemsRequest& from)
+    : ::google::protobuf::Message(arena) {
+  GetToDoItemsRequest* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, offset_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, offset_),
+           offsetof(Impl_, count_) -
+               offsetof(Impl_, offset_) +
+               sizeof(Impl_::count_));
+
+  // @@protoc_insertion_point(copy_constructor:messenger.GetToDoItemsRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : userid_(arena),
+        _cached_size_{0} {}
+
+inline void GetToDoItemsRequest::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, offset_),
+           0,
+           offsetof(Impl_, count_) -
+               offsetof(Impl_, offset_) +
+               sizeof(Impl_::count_));
+}
+GetToDoItemsRequest::~GetToDoItemsRequest() {
+  // @@protoc_insertion_point(destructor:messenger.GetToDoItemsRequest)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void GetToDoItemsRequest::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.userid_.Destroy();
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void GetToDoItemsRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:messenger.GetToDoItemsRequest)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.userid_.ClearToEmpty();
+  ::memset(&_impl_.offset_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.count_) -
+      reinterpret_cast<char*>(&_impl_.offset_)) + sizeof(_impl_.count_));
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* GetToDoItemsRequest::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_GetToDoItemsRequest_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // string userId = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.userid_)}},
+    // int64 offset = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetToDoItemsRequest, _impl_.offset_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.offset_)}},
+    // int32 count = 3;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GetToDoItemsRequest, _impl_.count_), 63>(),
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.count_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string userId = 1;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.userid_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int64 offset = 2;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.offset_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+    // int32 count = 3;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.count_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }},
+  // no aux_entries
+  {{
+    "\35\6\0\0\0\0\0\0"
+    "messenger.GetToDoItemsRequest"
+    "userId"
+  }},
+};
+
+::uint8_t* GetToDoItemsRequest::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:messenger.GetToDoItemsRequest)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // string userId = 1;
+  if (!this->_internal_userid().empty()) {
+    const std::string& _s = this->_internal_userid();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetToDoItemsRequest.userId");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // int64 offset = 2;
+  if (this->_internal_offset() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<2>(
+            stream, this->_internal_offset(), target);
+  }
+
+  // int32 count = 3;
+  if (this->_internal_count() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_count(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:messenger.GetToDoItemsRequest)
+  return target;
+}
+
+::size_t GetToDoItemsRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:messenger.GetToDoItemsRequest)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string userId = 1;
+  if (!this->_internal_userid().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_userid());
+  }
+
+  // int64 offset = 2;
+  if (this->_internal_offset() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_offset());
+  }
+
+  // int32 count = 3;
+  if (this->_internal_count() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_count());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData GetToDoItemsRequest::_class_data_ = {
+    GetToDoItemsRequest::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* GetToDoItemsRequest::GetClassData() const {
+  return &_class_data_;
+}
+
+void GetToDoItemsRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<GetToDoItemsRequest*>(&to_msg);
+  auto& from = static_cast<const GetToDoItemsRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:messenger.GetToDoItemsRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_userid().empty()) {
+    _this->_internal_set_userid(from._internal_userid());
+  }
+  if (from._internal_offset() != 0) {
+    _this->_internal_set_offset(from._internal_offset());
+  }
+  if (from._internal_count() != 0) {
+    _this->_internal_set_count(from._internal_count());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GetToDoItemsRequest::CopyFrom(const GetToDoItemsRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:messenger.GetToDoItemsRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool GetToDoItemsRequest::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* GetToDoItemsRequest::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void GetToDoItemsRequest::InternalSwap(GetToDoItemsRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.count_)
+      + sizeof(GetToDoItemsRequest::_impl_.count_)
+      - PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.offset_)>(
+          reinterpret_cast<char*>(&_impl_.offset_),
+          reinterpret_cast<char*>(&other->_impl_.offset_));
+}
+
+::google::protobuf::Metadata GetToDoItemsRequest::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_messenger_2eproto_getter, &descriptor_table_messenger_2eproto_once,
+      file_level_metadata_messenger_2eproto[66]);
+}
+// ===================================================================
+
+class GetToDoItemsResponse::_Internal {
+ public:
+};
+
+GetToDoItemsResponse::GetToDoItemsResponse(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:messenger.GetToDoItemsResponse)
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : items_{visibility, arena, from.items_},
+        _cached_size_{0} {}
+
+GetToDoItemsResponse::GetToDoItemsResponse(
+    ::google::protobuf::Arena* arena,
+    const GetToDoItemsResponse& from)
+    : ::google::protobuf::Message(arena) {
+  GetToDoItemsResponse* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+
+  // @@protoc_insertion_point(copy_constructor:messenger.GetToDoItemsResponse)
+}
+inline PROTOBUF_NDEBUG_INLINE GetToDoItemsResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : items_{visibility, arena},
+        _cached_size_{0} {}
+
+inline void GetToDoItemsResponse::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+GetToDoItemsResponse::~GetToDoItemsResponse() {
+  // @@protoc_insertion_point(destructor:messenger.GetToDoItemsResponse)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void GetToDoItemsResponse::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void GetToDoItemsResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:messenger.GetToDoItemsResponse)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.items_.Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* GetToDoItemsResponse::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 1, 0, 2> GetToDoItemsResponse::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_GetToDoItemsResponse_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // repeated .messenger.ToDoItem items = 1;
+    {::_pbi::TcParser::FastMtR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsResponse, _impl_.items_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated .messenger.ToDoItem items = 1;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsResponse, _impl_.items_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::messenger::ToDoItem>()},
+  }}, {{
+  }},
+};
+
+::uint8_t* GetToDoItemsResponse::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:messenger.GetToDoItemsResponse)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // repeated .messenger.ToDoItem items = 1;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_items_size()); i < n; i++) {
+    const auto& repfield = this->_internal_items().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:messenger.GetToDoItemsResponse)
+  return target;
+}
+
+::size_t GetToDoItemsResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:messenger.GetToDoItemsResponse)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .messenger.ToDoItem items = 1;
+  total_size += 1UL * this->_internal_items_size();
+  for (const auto& msg : this->_internal_items()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData GetToDoItemsResponse::_class_data_ = {
+    GetToDoItemsResponse::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* GetToDoItemsResponse::GetClassData() const {
+  return &_class_data_;
+}
+
+void GetToDoItemsResponse::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<GetToDoItemsResponse*>(&to_msg);
+  auto& from = static_cast<const GetToDoItemsResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:messenger.GetToDoItemsResponse)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_internal_mutable_items()->MergeFrom(
+      from._internal_items());
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GetToDoItemsResponse::CopyFrom(const GetToDoItemsResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:messenger.GetToDoItemsResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool GetToDoItemsResponse::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* GetToDoItemsResponse::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void GetToDoItemsResponse::InternalSwap(GetToDoItemsResponse* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.items_.InternalSwap(&other->_impl_.items_);
+}
+
+::google::protobuf::Metadata GetToDoItemsResponse::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_messenger_2eproto_getter, &descriptor_table_messenger_2eproto_once,
+      file_level_metadata_messenger_2eproto[67]);
+}
+// ===================================================================
+
+class GetNewToDoItemsRequest::_Internal {
+ public:
+};
+
+GetNewToDoItemsRequest::GetNewToDoItemsRequest(::google::protobuf::Arena* arena)
+    : ::google::protobuf::Message(arena) {
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:messenger.GetNewToDoItemsRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE GetNewToDoItemsRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from)
+      : userid_(arena, from.userid_),
+        _cached_size_{0} {}
+
+GetNewToDoItemsRequest::GetNewToDoItemsRequest(
+    ::google::protobuf::Arena* arena,
+    const GetNewToDoItemsRequest& from)
+    : ::google::protobuf::Message(arena) {
+  GetNewToDoItemsRequest* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.offset_ = from._impl_.offset_;
+
+  // @@protoc_insertion_point(copy_constructor:messenger.GetNewToDoItemsRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE GetNewToDoItemsRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : userid_(arena),
+        _cached_size_{0} {}
+
+inline void GetNewToDoItemsRequest::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.offset_ = {};
+}
+GetNewToDoItemsRequest::~GetNewToDoItemsRequest() {
+  // @@protoc_insertion_point(destructor:messenger.GetNewToDoItemsRequest)
+  _internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  SharedDtor();
+}
+inline void GetNewToDoItemsRequest::SharedDtor() {
+  ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.userid_.Destroy();
+  _impl_.~Impl_();
+}
+
+PROTOBUF_NOINLINE void GetNewToDoItemsRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:messenger.GetNewToDoItemsRequest)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.userid_.ClearToEmpty();
+  _impl_.offset_ = ::int64_t{0};
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+const char* GetNewToDoItemsRequest::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
+  return ptr;
+}
+
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewToDoItemsRequest::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_GetNewToDoItemsRequest_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallback,  // fallback
+  }, {{
+    // int64 offset = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetNewToDoItemsRequest, _impl_.offset_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.offset_)}},
+    // string userId = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.userid_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string userId = 1;
+    {PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.userid_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int64 offset = 2;
+    {PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.offset_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+  }},
+  // no aux_entries
+  {{
+    "\40\6\0\0\0\0\0\0"
+    "messenger.GetNewToDoItemsRequest"
+    "userId"
+  }},
+};
+
+::uint8_t* GetNewToDoItemsRequest::_InternalSerialize(
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:messenger.GetNewToDoItemsRequest)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  // string userId = 1;
+  if (!this->_internal_userid().empty()) {
+    const std::string& _s = this->_internal_userid();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewToDoItemsRequest.userId");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // int64 offset = 2;
+  if (this->_internal_offset() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<2>(
+            stream, this->_internal_offset(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:messenger.GetNewToDoItemsRequest)
+  return target;
+}
+
+::size_t GetNewToDoItemsRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:messenger.GetNewToDoItemsRequest)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string userId = 1;
+  if (!this->_internal_userid().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_userid());
+  }
+
+  // int64 offset = 2;
+  if (this->_internal_offset() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_offset());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::google::protobuf::Message::ClassData GetNewToDoItemsRequest::_class_data_ = {
+    GetNewToDoItemsRequest::MergeImpl,
+    nullptr,  // OnDemandRegisterArenaDtor
+};
+const ::google::protobuf::Message::ClassData* GetNewToDoItemsRequest::GetClassData() const {
+  return &_class_data_;
+}
+
+void GetNewToDoItemsRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg) {
+  auto* const _this = static_cast<GetNewToDoItemsRequest*>(&to_msg);
+  auto& from = static_cast<const GetNewToDoItemsRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:messenger.GetNewToDoItemsRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_userid().empty()) {
+    _this->_internal_set_userid(from._internal_userid());
+  }
+  if (from._internal_offset() != 0) {
+    _this->_internal_set_offset(from._internal_offset());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GetNewToDoItemsRequest::CopyFrom(const GetNewToDoItemsRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:messenger.GetNewToDoItemsRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+PROTOBUF_NOINLINE bool GetNewToDoItemsRequest::IsInitialized() const {
+  return true;
+}
+
+::_pbi::CachedSize* GetNewToDoItemsRequest::AccessCachedSize() const {
+  return &_impl_._cached_size_;
+}
+void GetNewToDoItemsRequest::InternalSwap(GetNewToDoItemsRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+        swap(_impl_.offset_, other->_impl_.offset_);
+}
+
+::google::protobuf::Metadata GetNewToDoItemsRequest::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_messenger_2eproto_getter, &descriptor_table_messenger_2eproto_once,
+      file_level_metadata_messenger_2eproto[68]);
 }
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace messenger

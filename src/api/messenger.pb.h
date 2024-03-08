@@ -156,6 +156,21 @@ extern GetNewGroupChatsRequestDefaultTypeInternal _GetNewGroupChatsRequest_defau
 class GetNewMessagesRequest;
 struct GetNewMessagesRequestDefaultTypeInternal;
 extern GetNewMessagesRequestDefaultTypeInternal _GetNewMessagesRequest_default_instance_;
+class GetNewToDoItemsRequest;
+struct GetNewToDoItemsRequestDefaultTypeInternal;
+extern GetNewToDoItemsRequestDefaultTypeInternal _GetNewToDoItemsRequest_default_instance_;
+class GetToDoItemsOffsetRequest;
+struct GetToDoItemsOffsetRequestDefaultTypeInternal;
+extern GetToDoItemsOffsetRequestDefaultTypeInternal _GetToDoItemsOffsetRequest_default_instance_;
+class GetToDoItemsOffsetResponse;
+struct GetToDoItemsOffsetResponseDefaultTypeInternal;
+extern GetToDoItemsOffsetResponseDefaultTypeInternal _GetToDoItemsOffsetResponse_default_instance_;
+class GetToDoItemsRequest;
+struct GetToDoItemsRequestDefaultTypeInternal;
+extern GetToDoItemsRequestDefaultTypeInternal _GetToDoItemsRequest_default_instance_;
+class GetToDoItemsResponse;
+struct GetToDoItemsResponseDefaultTypeInternal;
+extern GetToDoItemsResponseDefaultTypeInternal _GetToDoItemsResponse_default_instance_;
 class GroupChat;
 struct GroupChatDefaultTypeInternal;
 extern GroupChatDefaultTypeInternal _GroupChat_default_instance_;
@@ -5374,6 +5389,760 @@ class LoginRequest final :
                               ::google::protobuf::Arena* arena, const Impl_& from);
     ::google::protobuf::internal::ArenaStringPtr username_;
     ::google::protobuf::internal::ArenaStringPtr password_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_messenger_2eproto;
+};// -------------------------------------------------------------------
+
+class GetToDoItemsRequest final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:messenger.GetToDoItemsRequest) */ {
+ public:
+  inline GetToDoItemsRequest() : GetToDoItemsRequest(nullptr) {}
+  ~GetToDoItemsRequest() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR GetToDoItemsRequest(::google::protobuf::internal::ConstantInitialized);
+
+  inline GetToDoItemsRequest(const GetToDoItemsRequest& from)
+      : GetToDoItemsRequest(nullptr, from) {}
+  GetToDoItemsRequest(GetToDoItemsRequest&& from) noexcept
+    : GetToDoItemsRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline GetToDoItemsRequest& operator=(const GetToDoItemsRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetToDoItemsRequest& operator=(GetToDoItemsRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetToDoItemsRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetToDoItemsRequest* internal_default_instance() {
+    return reinterpret_cast<const GetToDoItemsRequest*>(
+               &_GetToDoItemsRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    66;
+
+  friend void swap(GetToDoItemsRequest& a, GetToDoItemsRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetToDoItemsRequest* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetToDoItemsRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetToDoItemsRequest* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetToDoItemsRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const GetToDoItemsRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const GetToDoItemsRequest& from) {
+    GetToDoItemsRequest::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(GetToDoItemsRequest* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "messenger.GetToDoItemsRequest";
+  }
+  protected:
+  explicit GetToDoItemsRequest(::google::protobuf::Arena* arena);
+  GetToDoItemsRequest(::google::protobuf::Arena* arena, const GetToDoItemsRequest& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kOffsetFieldNumber = 2,
+    kCountFieldNumber = 3,
+  };
+  // string userId = 1;
+  void clear_userid() ;
+  const std::string& userid() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_userid(Arg_&& arg, Args_... args);
+  std::string* mutable_userid();
+  PROTOBUF_NODISCARD std::string* release_userid();
+  void set_allocated_userid(std::string* value);
+
+  private:
+  const std::string& _internal_userid() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+      const std::string& value);
+  std::string* _internal_mutable_userid();
+
+  public:
+  // int64 offset = 2;
+  void clear_offset() ;
+  ::int64_t offset() const;
+  void set_offset(::int64_t value);
+
+  private:
+  ::int64_t _internal_offset() const;
+  void _internal_set_offset(::int64_t value);
+
+  public:
+  // int32 count = 3;
+  void clear_count() ;
+  ::int32_t count() const;
+  void set_count(::int32_t value);
+
+  private:
+  ::int32_t _internal_count() const;
+  void _internal_set_count(::int32_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:messenger.GetToDoItemsRequest)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      2, 3, 0,
+      44, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::int64_t offset_;
+    ::int32_t count_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_messenger_2eproto;
+};// -------------------------------------------------------------------
+
+class GetToDoItemsOffsetResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:messenger.GetToDoItemsOffsetResponse) */ {
+ public:
+  inline GetToDoItemsOffsetResponse() : GetToDoItemsOffsetResponse(nullptr) {}
+  ~GetToDoItemsOffsetResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR GetToDoItemsOffsetResponse(::google::protobuf::internal::ConstantInitialized);
+
+  inline GetToDoItemsOffsetResponse(const GetToDoItemsOffsetResponse& from)
+      : GetToDoItemsOffsetResponse(nullptr, from) {}
+  GetToDoItemsOffsetResponse(GetToDoItemsOffsetResponse&& from) noexcept
+    : GetToDoItemsOffsetResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline GetToDoItemsOffsetResponse& operator=(const GetToDoItemsOffsetResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetToDoItemsOffsetResponse& operator=(GetToDoItemsOffsetResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetToDoItemsOffsetResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetToDoItemsOffsetResponse* internal_default_instance() {
+    return reinterpret_cast<const GetToDoItemsOffsetResponse*>(
+               &_GetToDoItemsOffsetResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    65;
+
+  friend void swap(GetToDoItemsOffsetResponse& a, GetToDoItemsOffsetResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetToDoItemsOffsetResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetToDoItemsOffsetResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetToDoItemsOffsetResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetToDoItemsOffsetResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const GetToDoItemsOffsetResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const GetToDoItemsOffsetResponse& from) {
+    GetToDoItemsOffsetResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(GetToDoItemsOffsetResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "messenger.GetToDoItemsOffsetResponse";
+  }
+  protected:
+  explicit GetToDoItemsOffsetResponse(::google::protobuf::Arena* arena);
+  GetToDoItemsOffsetResponse(::google::protobuf::Arena* arena, const GetToDoItemsOffsetResponse& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kOffsetFieldNumber = 1,
+  };
+  // int64 offset = 1;
+  void clear_offset() ;
+  ::int64_t offset() const;
+  void set_offset(::int64_t value);
+
+  private:
+  ::int64_t _internal_offset() const;
+  void _internal_set_offset(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:messenger.GetToDoItemsOffsetResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 1, 0,
+      0, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::int64_t offset_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_messenger_2eproto;
+};// -------------------------------------------------------------------
+
+class GetToDoItemsOffsetRequest final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:messenger.GetToDoItemsOffsetRequest) */ {
+ public:
+  inline GetToDoItemsOffsetRequest() : GetToDoItemsOffsetRequest(nullptr) {}
+  ~GetToDoItemsOffsetRequest() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR GetToDoItemsOffsetRequest(::google::protobuf::internal::ConstantInitialized);
+
+  inline GetToDoItemsOffsetRequest(const GetToDoItemsOffsetRequest& from)
+      : GetToDoItemsOffsetRequest(nullptr, from) {}
+  GetToDoItemsOffsetRequest(GetToDoItemsOffsetRequest&& from) noexcept
+    : GetToDoItemsOffsetRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline GetToDoItemsOffsetRequest& operator=(const GetToDoItemsOffsetRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetToDoItemsOffsetRequest& operator=(GetToDoItemsOffsetRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetToDoItemsOffsetRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetToDoItemsOffsetRequest* internal_default_instance() {
+    return reinterpret_cast<const GetToDoItemsOffsetRequest*>(
+               &_GetToDoItemsOffsetRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    64;
+
+  friend void swap(GetToDoItemsOffsetRequest& a, GetToDoItemsOffsetRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetToDoItemsOffsetRequest* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetToDoItemsOffsetRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetToDoItemsOffsetRequest* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetToDoItemsOffsetRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const GetToDoItemsOffsetRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const GetToDoItemsOffsetRequest& from) {
+    GetToDoItemsOffsetRequest::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(GetToDoItemsOffsetRequest* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "messenger.GetToDoItemsOffsetRequest";
+  }
+  protected:
+  explicit GetToDoItemsOffsetRequest(::google::protobuf::Arena* arena);
+  GetToDoItemsOffsetRequest(::google::protobuf::Arena* arena, const GetToDoItemsOffsetRequest& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+  };
+  // string userId = 1;
+  void clear_userid() ;
+  const std::string& userid() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_userid(Arg_&& arg, Args_... args);
+  std::string* mutable_userid();
+  PROTOBUF_NODISCARD std::string* release_userid();
+  void set_allocated_userid(std::string* value);
+
+  private:
+  const std::string& _internal_userid() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+      const std::string& value);
+  std::string* _internal_mutable_userid();
+
+  public:
+  // @@protoc_insertion_point(class_scope:messenger.GetToDoItemsOffsetRequest)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 1, 0,
+      50, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::ArenaStringPtr userid_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_messenger_2eproto;
+};// -------------------------------------------------------------------
+
+class GetNewToDoItemsRequest final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:messenger.GetNewToDoItemsRequest) */ {
+ public:
+  inline GetNewToDoItemsRequest() : GetNewToDoItemsRequest(nullptr) {}
+  ~GetNewToDoItemsRequest() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR GetNewToDoItemsRequest(::google::protobuf::internal::ConstantInitialized);
+
+  inline GetNewToDoItemsRequest(const GetNewToDoItemsRequest& from)
+      : GetNewToDoItemsRequest(nullptr, from) {}
+  GetNewToDoItemsRequest(GetNewToDoItemsRequest&& from) noexcept
+    : GetNewToDoItemsRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline GetNewToDoItemsRequest& operator=(const GetNewToDoItemsRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetNewToDoItemsRequest& operator=(GetNewToDoItemsRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetNewToDoItemsRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetNewToDoItemsRequest* internal_default_instance() {
+    return reinterpret_cast<const GetNewToDoItemsRequest*>(
+               &_GetNewToDoItemsRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    68;
+
+  friend void swap(GetNewToDoItemsRequest& a, GetNewToDoItemsRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetNewToDoItemsRequest* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetNewToDoItemsRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetNewToDoItemsRequest* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetNewToDoItemsRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const GetNewToDoItemsRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const GetNewToDoItemsRequest& from) {
+    GetNewToDoItemsRequest::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(GetNewToDoItemsRequest* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "messenger.GetNewToDoItemsRequest";
+  }
+  protected:
+  explicit GetNewToDoItemsRequest(::google::protobuf::Arena* arena);
+  GetNewToDoItemsRequest(::google::protobuf::Arena* arena, const GetNewToDoItemsRequest& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kOffsetFieldNumber = 2,
+  };
+  // string userId = 1;
+  void clear_userid() ;
+  const std::string& userid() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_userid(Arg_&& arg, Args_... args);
+  std::string* mutable_userid();
+  PROTOBUF_NODISCARD std::string* release_userid();
+  void set_allocated_userid(std::string* value);
+
+  private:
+  const std::string& _internal_userid() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+      const std::string& value);
+  std::string* _internal_mutable_userid();
+
+  public:
+  // int64 offset = 2;
+  void clear_offset() ;
+  ::int64_t offset() const;
+  void set_offset(::int64_t value);
+
+  private:
+  ::int64_t _internal_offset() const;
+  void _internal_set_offset(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:messenger.GetNewToDoItemsRequest)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      1, 2, 0,
+      47, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::int64_t offset_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -11782,6 +12551,189 @@ class Role final :
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     ::google::protobuf::internal::ArenaStringPtr name_;
     ::messenger::Permissions* permissions_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_messenger_2eproto;
+};// -------------------------------------------------------------------
+
+class GetToDoItemsResponse final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:messenger.GetToDoItemsResponse) */ {
+ public:
+  inline GetToDoItemsResponse() : GetToDoItemsResponse(nullptr) {}
+  ~GetToDoItemsResponse() override;
+  template<typename = void>
+  explicit PROTOBUF_CONSTEXPR GetToDoItemsResponse(::google::protobuf::internal::ConstantInitialized);
+
+  inline GetToDoItemsResponse(const GetToDoItemsResponse& from)
+      : GetToDoItemsResponse(nullptr, from) {}
+  GetToDoItemsResponse(GetToDoItemsResponse&& from) noexcept
+    : GetToDoItemsResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline GetToDoItemsResponse& operator=(const GetToDoItemsResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetToDoItemsResponse& operator=(GetToDoItemsResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetArena() == from.GetArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetToDoItemsResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetToDoItemsResponse* internal_default_instance() {
+    return reinterpret_cast<const GetToDoItemsResponse*>(
+               &_GetToDoItemsResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    67;
+
+  friend void swap(GetToDoItemsResponse& a, GetToDoItemsResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetToDoItemsResponse* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() != nullptr &&
+        GetArena() == other->GetArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetArena() == other->GetArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetToDoItemsResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetToDoItemsResponse* New(::google::protobuf::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetToDoItemsResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const GetToDoItemsResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom( const GetToDoItemsResponse& from) {
+    GetToDoItemsResponse::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::google::protobuf::Message& to_msg, const ::google::protobuf::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  ::size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::google::protobuf::internal::ParseContext* ctx) final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target, ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  ::google::protobuf::internal::CachedSize* AccessCachedSize() const final;
+  void SharedCtor(::google::protobuf::Arena* arena);
+  void SharedDtor();
+  void InternalSwap(GetToDoItemsResponse* other);
+
+  private:
+  friend class ::google::protobuf::internal::AnyMetadata;
+  static ::absl::string_view FullMessageName() {
+    return "messenger.GetToDoItemsResponse";
+  }
+  protected:
+  explicit GetToDoItemsResponse(::google::protobuf::Arena* arena);
+  GetToDoItemsResponse(::google::protobuf::Arena* arena, const GetToDoItemsResponse& from);
+  public:
+
+  static const ClassData _class_data_;
+  const ::google::protobuf::Message::ClassData*GetClassData() const final;
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kItemsFieldNumber = 1,
+  };
+  // repeated .messenger.ToDoItem items = 1;
+  int items_size() const;
+  private:
+  int _internal_items_size() const;
+
+  public:
+  void clear_items() ;
+  ::messenger::ToDoItem* mutable_items(int index);
+  ::google::protobuf::RepeatedPtrField< ::messenger::ToDoItem >*
+      mutable_items();
+  private:
+  const ::google::protobuf::RepeatedPtrField<::messenger::ToDoItem>& _internal_items() const;
+  ::google::protobuf::RepeatedPtrField<::messenger::ToDoItem>* _internal_mutable_items();
+  public:
+  const ::messenger::ToDoItem& items(int index) const;
+  ::messenger::ToDoItem* add_items();
+  const ::google::protobuf::RepeatedPtrField< ::messenger::ToDoItem >&
+      items() const;
+  // @@protoc_insertion_point(class_scope:messenger.GetToDoItemsResponse)
+ private:
+  class _Internal;
+
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 1, 1,
+      0, 2>
+      _table_;
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+
+        inline explicit constexpr Impl_(
+            ::google::protobuf::internal::ConstantInitialized) noexcept;
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena);
+        inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                              ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::RepeatedPtrField< ::messenger::ToDoItem > items_;
+    mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
   union { Impl_ _impl_; };
@@ -19117,6 +20069,326 @@ inline void ToDoItem::_internal_set_completed(bool value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
   _impl_.completed_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// GetToDoItemsOffsetRequest
+
+// string userId = 1;
+inline void GetToDoItemsOffsetRequest::clear_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.userid_.ClearToEmpty();
+}
+inline const std::string& GetToDoItemsOffsetRequest::userid() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsOffsetRequest.userId)
+  return _internal_userid();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void GetToDoItemsOffsetRequest::set_userid(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsOffsetRequest.userId)
+}
+inline std::string* GetToDoItemsOffsetRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_userid();
+  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsOffsetRequest.userId)
+  return _s;
+}
+inline const std::string& GetToDoItemsOffsetRequest::_internal_userid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.userid_.Get();
+}
+inline void GetToDoItemsOffsetRequest::_internal_set_userid(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.userid_.Set(value, GetArena());
+}
+inline std::string* GetToDoItemsOffsetRequest::_internal_mutable_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.userid_.Mutable( GetArena());
+}
+inline std::string* GetToDoItemsOffsetRequest::release_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:messenger.GetToDoItemsOffsetRequest.userId)
+  return _impl_.userid_.Release();
+}
+inline void GetToDoItemsOffsetRequest::set_allocated_userid(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.userid_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.userid_.IsDefault()) {
+          _impl_.userid_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetToDoItemsOffsetRequest.userId)
+}
+
+// -------------------------------------------------------------------
+
+// GetToDoItemsOffsetResponse
+
+// int64 offset = 1;
+inline void GetToDoItemsOffsetResponse::clear_offset() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.offset_ = ::int64_t{0};
+}
+inline ::int64_t GetToDoItemsOffsetResponse::offset() const {
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsOffsetResponse.offset)
+  return _internal_offset();
+}
+inline void GetToDoItemsOffsetResponse::set_offset(::int64_t value) {
+  _internal_set_offset(value);
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsOffsetResponse.offset)
+}
+inline ::int64_t GetToDoItemsOffsetResponse::_internal_offset() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.offset_;
+}
+inline void GetToDoItemsOffsetResponse::_internal_set_offset(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.offset_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// GetToDoItemsRequest
+
+// string userId = 1;
+inline void GetToDoItemsRequest::clear_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.userid_.ClearToEmpty();
+}
+inline const std::string& GetToDoItemsRequest::userid() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsRequest.userId)
+  return _internal_userid();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void GetToDoItemsRequest::set_userid(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsRequest.userId)
+}
+inline std::string* GetToDoItemsRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_userid();
+  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsRequest.userId)
+  return _s;
+}
+inline const std::string& GetToDoItemsRequest::_internal_userid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.userid_.Get();
+}
+inline void GetToDoItemsRequest::_internal_set_userid(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.userid_.Set(value, GetArena());
+}
+inline std::string* GetToDoItemsRequest::_internal_mutable_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.userid_.Mutable( GetArena());
+}
+inline std::string* GetToDoItemsRequest::release_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:messenger.GetToDoItemsRequest.userId)
+  return _impl_.userid_.Release();
+}
+inline void GetToDoItemsRequest::set_allocated_userid(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.userid_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.userid_.IsDefault()) {
+          _impl_.userid_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetToDoItemsRequest.userId)
+}
+
+// int64 offset = 2;
+inline void GetToDoItemsRequest::clear_offset() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.offset_ = ::int64_t{0};
+}
+inline ::int64_t GetToDoItemsRequest::offset() const {
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsRequest.offset)
+  return _internal_offset();
+}
+inline void GetToDoItemsRequest::set_offset(::int64_t value) {
+  _internal_set_offset(value);
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsRequest.offset)
+}
+inline ::int64_t GetToDoItemsRequest::_internal_offset() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.offset_;
+}
+inline void GetToDoItemsRequest::_internal_set_offset(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.offset_ = value;
+}
+
+// int32 count = 3;
+inline void GetToDoItemsRequest::clear_count() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.count_ = 0;
+}
+inline ::int32_t GetToDoItemsRequest::count() const {
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsRequest.count)
+  return _internal_count();
+}
+inline void GetToDoItemsRequest::set_count(::int32_t value) {
+  _internal_set_count(value);
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsRequest.count)
+}
+inline ::int32_t GetToDoItemsRequest::_internal_count() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.count_;
+}
+inline void GetToDoItemsRequest::_internal_set_count(::int32_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.count_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// GetToDoItemsResponse
+
+// repeated .messenger.ToDoItem items = 1;
+inline int GetToDoItemsResponse::_internal_items_size() const {
+  return _internal_items().size();
+}
+inline int GetToDoItemsResponse::items_size() const {
+  return _internal_items_size();
+}
+inline void GetToDoItemsResponse::clear_items() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.items_.Clear();
+}
+inline ::messenger::ToDoItem* GetToDoItemsResponse::mutable_items(int index)
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsResponse.items)
+  return _internal_mutable_items()->Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField<::messenger::ToDoItem>* GetToDoItemsResponse::mutable_items()
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_list:messenger.GetToDoItemsResponse.items)
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  return _internal_mutable_items();
+}
+inline const ::messenger::ToDoItem& GetToDoItemsResponse::items(int index) const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsResponse.items)
+  return _internal_items().Get(index);
+}
+inline ::messenger::ToDoItem* GetToDoItemsResponse::add_items() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ::messenger::ToDoItem* _add = _internal_mutable_items()->Add();
+  // @@protoc_insertion_point(field_add:messenger.GetToDoItemsResponse.items)
+  return _add;
+}
+inline const ::google::protobuf::RepeatedPtrField<::messenger::ToDoItem>& GetToDoItemsResponse::items() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_list:messenger.GetToDoItemsResponse.items)
+  return _internal_items();
+}
+inline const ::google::protobuf::RepeatedPtrField<::messenger::ToDoItem>&
+GetToDoItemsResponse::_internal_items() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.items_;
+}
+inline ::google::protobuf::RepeatedPtrField<::messenger::ToDoItem>*
+GetToDoItemsResponse::_internal_mutable_items() {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return &_impl_.items_;
+}
+
+// -------------------------------------------------------------------
+
+// GetNewToDoItemsRequest
+
+// string userId = 1;
+inline void GetNewToDoItemsRequest::clear_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.userid_.ClearToEmpty();
+}
+inline const std::string& GetNewToDoItemsRequest::userid() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:messenger.GetNewToDoItemsRequest.userId)
+  return _internal_userid();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void GetNewToDoItemsRequest::set_userid(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetNewToDoItemsRequest.userId)
+}
+inline std::string* GetNewToDoItemsRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_userid();
+  // @@protoc_insertion_point(field_mutable:messenger.GetNewToDoItemsRequest.userId)
+  return _s;
+}
+inline const std::string& GetNewToDoItemsRequest::_internal_userid() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.userid_.Get();
+}
+inline void GetNewToDoItemsRequest::_internal_set_userid(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.userid_.Set(value, GetArena());
+}
+inline std::string* GetNewToDoItemsRequest::_internal_mutable_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.userid_.Mutable( GetArena());
+}
+inline std::string* GetNewToDoItemsRequest::release_userid() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:messenger.GetNewToDoItemsRequest.userId)
+  return _impl_.userid_.Release();
+}
+inline void GetNewToDoItemsRequest::set_allocated_userid(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.userid_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.userid_.IsDefault()) {
+          _impl_.userid_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewToDoItemsRequest.userId)
+}
+
+// int64 offset = 2;
+inline void GetNewToDoItemsRequest::clear_offset() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.offset_ = ::int64_t{0};
+}
+inline ::int64_t GetNewToDoItemsRequest::offset() const {
+  // @@protoc_insertion_point(field_get:messenger.GetNewToDoItemsRequest.offset)
+  return _internal_offset();
+}
+inline void GetNewToDoItemsRequest::set_offset(::int64_t value) {
+  _internal_set_offset(value);
+  // @@protoc_insertion_point(field_set:messenger.GetNewToDoItemsRequest.offset)
+}
+inline ::int64_t GetNewToDoItemsRequest::_internal_offset() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.offset_;
+}
+inline void GetNewToDoItemsRequest::_internal_set_offset(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.offset_ = value;
 }
 
 #ifdef __GNUC__

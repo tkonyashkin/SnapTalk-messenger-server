@@ -25,6 +25,12 @@ using grpc::Status;
 using namespace messenger;
 
 class MessengerServiceImpl final : public MessengerService::Service {
-public:
-    
+    public:
+        Status SendMessage(ServerContext* context, const SentMessage* request, ChatMessage* response) override {
+            response->set_id("123");
+            response->set_type(messenger::MessageType::TEXT);
+            response->set_content("Hello, world!");
+            return Status::OK;
+        }    
 };
+    
