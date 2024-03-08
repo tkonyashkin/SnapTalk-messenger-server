@@ -420,6 +420,20 @@ message ToDoItem {
   bool completed = 4;
 }
 
+message GetToDoItemsOffsetRequest {
+  string userId = 1;
+}
+
+message GetToDoItemsOffsetResponse {
+  int64 offset = 1; // Смещение
+}
+
+message GetToDoItemsRequest {
+  string userId = 1;
+  int64 offset = 2;
+  int32 count = 3;
+}
+
 // Сервисы
 service MessengerService {
   rpc SendMessage(SentMessage) returns (ChatMessage);
@@ -490,6 +504,11 @@ service MessengerService {
   rpc UpdateToDoItem(ToDoItem) returns (ToDoItem);
   rpc DeleteToDoItem(ToDoItem) returns (ToDoItem);
   // rpc GetToDoList(string) returns (stream ToDoItem);
+
+  // Методы для получения задач из списка дел
+  rpc GetToDoItemsOffset(GetToDoItemsOffsetRequest) returns (GetToDoItemsOffsetResponse);
+  rpc GetToDoItems(GetToDoItemsRequest) returns (GetToDoItemsResponse);
+  rpc GetNewToDoItems(GetNewToDoItemsRequest) returns (stream ToDoItem); // Поток новых задач
 }
 
 
