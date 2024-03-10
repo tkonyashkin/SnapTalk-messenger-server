@@ -6,6 +6,7 @@ build/
 *.sln
 *.vcxproj
 *.vcxproj.filters
+*.cmake
 
 # Prerequisites
 *.d
@@ -15,6 +16,8 @@ build/
 *.lo
 *.o
 *.obj
+*.out
+messenger_service
 
 # Precompiled Headers
 *.gch
