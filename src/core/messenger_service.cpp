@@ -4,6 +4,7 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <thread>
 
 #include <grpc/grpc.h>
 #include <grpcpp/security/server_credentials.h>
@@ -31,6 +32,38 @@ class MessengerServiceImpl final : public MessengerService::Service {
             response->set_type(messenger::MessageType::TEXT);
             response->set_content("Hello, world!");
             return Status::OK;
-        }    
+        }
+
+        Status GetMessagesOffset(ServerContext* context, const GetMessagesOffsetRequest* request, GetMessagesOffsetResponse* response) override {
+        response->set_offset(50);
+        return Status::OK;
+        }
+
+        Status GetMessagesConversion(ServerContext* context, const GetMessagesConversionRequest* request, GetMessagesConversionResponse* response) override {
+            for (int i = 0; i < request->count(); ++i) {
+                ChatMessage* message = response->add_messages();
+                message->set_id("123");
+                message->set_type(messenger::MessageType::TEXT);
+                message->set_content("Hello, world!");
+            }
+        return Status::OK;
+        }
+
+        Status GetNewMessages(ServerContext* context, const GetNewMessagesRequest* request, ::grpc::ServerWriter<ChatMessage>* writer) override {
+    int i = 0;
+    while (true) {
+        ChatMessage message;
+        message.set_id(std::to_string(i++));
+        message.set_type(messenger::MessageType::TEXT);
+        message.set_content("Hello, world!");
+        writer->Write(message);
+
+        std::this_thread::sleep_for(std::chrono::seconds(10));
+    }
+    return Status::OK;
+}
+
+
+
 };
     
