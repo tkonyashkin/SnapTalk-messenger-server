@@ -446,42 +446,42 @@ message GetNewToDoItemsRequest {
 // Сервисы
 service MessengerService {
   rpc SendMessage(SentMessage) returns (ChatMessage);
-  rpc CreateGroupChat(GroupChat) returns (GroupChat);
-  rpc UpdateGroupChat(GroupChat) returns (GroupChat);
-  rpc AssignRoleToUser(Role) returns (Role);
-  rpc CreateReminder(Reminder) returns (Reminder);
-  rpc MarkToDoItemCompleted(ToDoItem) returns (ToDoItem);
+  // rpc CreateGroupChat(GroupChat) returns (GroupChat);
+  // rpc UpdateGroupChat(GroupChat) returns (GroupChat);
+  // rpc AssignRoleToUser(Role) returns (Role);
+  // rpc CreateReminder(Reminder) returns (Reminder);
+  // rpc MarkToDoItemCompleted(ToDoItem) returns (ToDoItem);
 
   // Методы для удаления и редактирования сообщений
-  rpc DeleteMessage(DeleteMessageRequest) returns (DeleteMessageResponse);
-  rpc EditMessage(EditMessageRequest) returns (EditMessageResponse);
+  // rpc DeleteMessage(DeleteMessageRequest) returns (DeleteMessageResponse);
+  // rpc EditMessage(EditMessageRequest) returns (EditMessageResponse);
 
   // Методы для аутентификации и управления пользователями
-  rpc Register(RegisterRequest) returns (RegisterResponse);
-  rpc Login(LoginRequest) returns (LoginResponse);
-  rpc Logout(LogoutRequest) returns (LogoutResponse);
-  rpc UpdateUserProfile(UpdateUserProfileRequest) returns (UpdateUserProfileResponse);
-  rpc UpdateMessageStatus(UpdateMessageStatusRequest) returns (UpdateMessageStatusResponse);
+  // rpc Register(RegisterRequest) returns (RegisterResponse);
+  // rpc Login(LoginRequest) returns (LoginResponse);
+  // rpc Logout(LogoutRequest) returns (LogoutResponse);
+  // rpc UpdateUserProfile(UpdateUserProfileRequest) returns (UpdateUserProfileResponse);
+  // rpc UpdateMessageStatus(UpdateMessageStatusRequest) returns (UpdateMessageStatusResponse);
 
   // Методы для управления контактами
-  rpc AddContact(AddContactRequest) returns (AddContactResponse);
-  rpc RemoveContact(RemoveContactRequest) returns (RemoveContactResponse);
+  // rpc AddContact(AddContactRequest) returns (AddContactResponse);
+  // rpc RemoveContact(RemoveContactRequest) returns (RemoveContactResponse);
 
   // Методы для работы с папками чатов
-  rpc CreateChatFolder(CreateChatFolderRequest) returns (CreateChatFolderResponse);
-  rpc UpdateChatFolder(UpdateChatFolderRequest) returns (UpdateChatFolderResponse);
-  rpc DeleteChatFolder(DeleteChatFolderRequest) returns (DeleteChatFolderResponse);
+  // rpc CreateChatFolder(CreateChatFolderRequest) returns (CreateChatFolderResponse);
+  // rpc UpdateChatFolder(UpdateChatFolderRequest) returns (UpdateChatFolderResponse);
+  // rpc DeleteChatFolder(DeleteChatFolderRequest) returns (DeleteChatFolderResponse);
   
-  rpc GetFoldersOffset(GetFoldersOffsetRequest) returns (GetFoldersOffsetResponse);
-  rpc GetFolders(GetFoldersRequest) returns (GetFoldersResponse);
-  rpc GetNewFolders(GetNewFoldersRequest) returns (stream ChatFolder); // Поток новых папок
+  // rpc GetFoldersOffset(GetFoldersOffsetRequest) returns (GetFoldersOffsetResponse);
+  // rpc GetFolders(GetFoldersRequest) returns (GetFoldersResponse);
+  // rpc GetNewFolders(GetNewFoldersRequest) returns (stream ChatFolder); // Поток новых папок
 
-  rpc AddChatToFolder(AddChatToFolderRequest) returns (AddChatToFolderResponse);
-  rpc RemoveChatFromFolder(RemoveChatFromFolderRequest) returns (RemoveChatFromFolderResponse);
+  // rpc AddChatToFolder(AddChatToFolderRequest) returns (AddChatToFolderResponse);
+  // rpc RemoveChatFromFolder(RemoveChatFromFolderRequest) returns (RemoveChatFromFolderResponse);
   
-  // Методы для управления участниками группы
-  rpc AddGroupMember(AddGroupMemberRequest) returns (AddGroupMemberResponse);
-  rpc RemoveGroupMember(RemoveGroupMemberRequest) returns (RemoveGroupMemberResponse);
+  // // Методы для управления участниками группы
+  // rpc AddGroupMember(AddGroupMemberRequest) returns (AddGroupMemberResponse);
+  // rpc RemoveGroupMember(RemoveGroupMemberRequest) returns (RemoveGroupMemberResponse);
 
   // Методы для получения списка чатов и сообщений
   // rpc GetGroupChats(string) returns (stream GroupChat);
@@ -490,34 +490,34 @@ service MessengerService {
   rpc GetMessagesConversion(GetMessagesConversionRequest) returns (GetMessagesConversionResponse);
   rpc GetNewMessages(GetNewMessagesRequest) returns (stream ChatMessage);
 
-  rpc GetGroupChatsOffset(GetGroupChatsOffsetRequest) returns (GetGroupChatsOffsetResponse);
-  rpc GetGroupChatsConversion(GetGroupChatsConversionRequest) returns (GetGroupChatsConversionResponse);
-  rpc GetNewGroupChats(GetNewGroupChatsRequest) returns (stream GroupChat);
-  // Метод для отправки файла
-  rpc SendFile(FileMessage) returns (FileMessage);
+  // rpc GetGroupChatsOffset(GetGroupChatsOffsetRequest) returns (GetGroupChatsOffsetResponse);
+  // rpc GetGroupChatsConversion(GetGroupChatsConversionRequest) returns (GetGroupChatsConversionResponse);
+  // rpc GetNewGroupChats(GetNewGroupChatsRequest) returns (stream GroupChat);
+  // // Метод для отправки файла
+  // rpc SendFile(FileMessage) returns (FileMessage);
 
-  // Методы поиска
-  rpc SearchMessages(SearchRequest) returns (SearchMessagesResponse);
-  rpc SearchChats(SearchRequest) returns (SearchChatsResponse);
+  // // Методы поиска
+  // rpc SearchMessages(SearchRequest) returns (SearchMessagesResponse);
+  // rpc SearchChats(SearchRequest) returns (SearchChatsResponse);
 
-  // Методы для управления напоминаниями
-  rpc UpdateReminder(Reminder) returns (Reminder);
-  rpc DeleteReminder(Reminder) returns (Reminder);
-  // rpc GetReminders(string) returns (stream Reminder);
+  // // Методы для управления напоминаниями
+  // rpc UpdateReminder(Reminder) returns (Reminder);
+  // rpc DeleteReminder(Reminder) returns (Reminder);
+  // // rpc GetReminders(string) returns (stream Reminder);
 
-  // Методы для управления уведомлениями
-  rpc UpdateNotificationSettings(UpdateNotificationSettingsRequest) returns (UpdateNotificationSettingsResponse);
+  // // Методы для управления уведомлениями
+  // rpc UpdateNotificationSettings(UpdateNotificationSettingsRequest) returns (UpdateNotificationSettingsResponse);
 
-  // Методы для управления списком дел
-  rpc CreateToDoItem(ToDoItem) returns (ToDoItem);
-  rpc UpdateToDoItem(ToDoItem) returns (ToDoItem);
-  rpc DeleteToDoItem(ToDoItem) returns (ToDoItem);
-  // rpc GetToDoList(string) returns (stream ToDoItem);
+  // // Методы для управления списком дел
+  // rpc CreateToDoItem(ToDoItem) returns (ToDoItem);
+  // rpc UpdateToDoItem(ToDoItem) returns (ToDoItem);
+  // rpc DeleteToDoItem(ToDoItem) returns (ToDoItem);
+  // // rpc GetToDoList(string) returns (stream ToDoItem);
 
-  // Методы для получения задач из списка дел
-  rpc GetToDoItemsOffset(GetToDoItemsOffsetRequest) returns (GetToDoItemsOffsetResponse);
-  rpc GetToDoItems(GetToDoItemsRequest) returns (GetToDoItemsResponse);
-  rpc GetNewToDoItems(GetNewToDoItemsRequest) returns (stream ToDoItem); // Поток новых задач
+  // // Методы для получения задач из списка дел
+  // rpc GetToDoItemsOffset(GetToDoItemsOffsetRequest) returns (GetToDoItemsOffsetResponse);
+  // rpc GetToDoItems(GetToDoItemsRequest) returns (GetToDoItemsResponse);
+  // rpc GetNewToDoItems(GetNewToDoItemsRequest) returns (stream ToDoItem); // Поток новых задач
 }
 
 
