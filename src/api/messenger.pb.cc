@@ -24,7 +24,7 @@ namespace messenger {
 
 inline constexpr UserProfile::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         username_(
@@ -115,7 +115,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr UpdateMessageStatusRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : messageid_(
+      : message_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         status_{static_cast< ::messenger::MessageStatus >(0)},
@@ -156,7 +156,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr UpdateChatFolderRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : folderid_(
+      : folder_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         newname_(
@@ -183,7 +183,7 @@ inline constexpr ToDoItem::Impl_::Impl_(
       : id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        userid_(
+        user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         description_(
@@ -208,7 +208,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr SentMessage::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : id_(
+      : chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         content_(
@@ -236,7 +236,7 @@ inline constexpr SearchRequest::Impl_::Impl_(
       : query_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        userid_(
+        user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         limit_{0},
@@ -280,10 +280,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr RemoveGroupMemberRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : groupid_(
+      : group_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        memberid_(
+        member_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -326,10 +326,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr RemoveContactRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        contactid_(
+        contact_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -369,10 +369,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr RemoveChatFromFolderRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : folderid_(
+      : folder_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        chatid_(
+        chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -396,7 +396,7 @@ inline constexpr Reminder::Impl_::Impl_(
       : id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        userid_(
+        user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         message_(
@@ -487,7 +487,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr NotificationSettings::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         enablenotifications_{false},
@@ -601,7 +601,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetToDoItemsRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -643,7 +643,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetToDoItemsOffsetRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -664,7 +664,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetNewToDoItemsRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -686,7 +686,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetNewMessagesRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : chatid_(
+      : chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -708,7 +708,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetNewGroupChatsRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -730,7 +730,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetNewFoldersRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -770,9 +770,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetMessagesOffsetRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : chatid_(
+      : chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
+        offset_{::int64_t{0}},
         _cached_size_{0} {}
 
 template <typename>
@@ -791,7 +792,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetMessagesConversionRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : chatid_(
+      : chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -833,7 +834,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetGroupChatsOffsetRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -854,7 +855,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetGroupChatsConversionRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -877,7 +878,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetFoldersRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         offset_{::int64_t{0}},
@@ -919,7 +920,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GetFoldersOffsetRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -943,7 +944,7 @@ inline constexpr FileMessage::Impl_::Impl_(
       : id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        senderid_(
+        sender_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         filename_(
@@ -993,7 +994,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr EditMessageRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : messageid_(
+      : message_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         newcontent_(
@@ -1039,7 +1040,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr DeleteMessageRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : messageid_(
+      : message_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1079,7 +1080,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr DeleteChatFolderRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : folderid_(
+      : folder_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1100,7 +1101,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr CreateChatFolderRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         name_(
@@ -1124,8 +1125,8 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr ContactList::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : contactids_{},
-        userid_(
+      : contact_ids_{},
+        user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1146,10 +1147,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr ChatMessage::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : id_(
+      : chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        senderid_(
+        id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         content_(
@@ -1174,11 +1175,11 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr ChatFolder::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : groupchatids_{},
+      : groupchat_ids_{},
         id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        userid_(
+        user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         name_(
@@ -1224,10 +1225,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr AddGroupMemberRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : groupid_(
+      : group_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        memberid_(
+        member_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1270,10 +1271,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr AddContactRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : userid_(
+      : user_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        contactid_(
+        contact_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1313,10 +1314,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr AddChatToFolderRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : folderid_(
+      : folder_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        chatid_(
+        chat_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1492,7 +1493,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr GroupChat::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : memberids_{},
+      : member_ids_{},
         roles_{},
         id_(
             &::google::protobuf::internal::fixed_address_empty_string,
@@ -1500,7 +1501,7 @@ inline constexpr GroupChat::Impl_::Impl_(
         name_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
-        folderid_(
+        folder_id_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
         _cached_size_{0} {}
@@ -1631,7 +1632,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::UserProfile, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::UserProfile, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::UserProfile, _impl_.username_),
     PROTOBUF_FIELD_OFFSET(::messenger::UserProfile, _impl_.status_),
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateUserProfileRequest, _impl_._has_bits_),
@@ -1662,7 +1663,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::UpdateMessageStatusRequest, _impl_.messageid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::UpdateMessageStatusRequest, _impl_.message_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateMessageStatusRequest, _impl_.status_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateMessageStatusResponse, _internal_metadata_),
@@ -1682,8 +1683,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::AddContactRequest, _impl_.userid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::AddContactRequest, _impl_.contactid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::AddContactRequest, _impl_.user_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::AddContactRequest, _impl_.contact_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::AddContactResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1702,8 +1703,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::RemoveContactRequest, _impl_.userid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::RemoveContactRequest, _impl_.contactid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::RemoveContactRequest, _impl_.user_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::RemoveContactRequest, _impl_.contact_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::RemoveContactResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1722,8 +1723,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::ContactList, _impl_.userid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::ContactList, _impl_.contactids_),
+    PROTOBUF_FIELD_OFFSET(::messenger::ContactList, _impl_.user_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::ContactList, _impl_.contact_ids_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::SentMessage, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1732,7 +1733,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::SentMessage, _impl_.id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::SentMessage, _impl_.chat_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::SentMessage, _impl_.type_),
     PROTOBUF_FIELD_OFFSET(::messenger::SentMessage, _impl_.content_),
     ~0u,  // no _has_bits_
@@ -1743,7 +1744,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesOffsetRequest, _impl_.chatid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesOffsetRequest, _impl_.chat_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesOffsetRequest, _impl_.offset_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesOffsetResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1761,7 +1763,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesConversionRequest, _impl_.chatid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesConversionRequest, _impl_.chat_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesConversionRequest, _impl_.offset_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetMessagesConversionRequest, _impl_.count_),
     ~0u,  // no _has_bits_
@@ -1781,8 +1783,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::messenger::ChatMessage, _impl_.chat_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::ChatMessage, _impl_.id_),
-    PROTOBUF_FIELD_OFFSET(::messenger::ChatMessage, _impl_.senderid_),
     PROTOBUF_FIELD_OFFSET(::messenger::ChatMessage, _impl_.type_),
     PROTOBUF_FIELD_OFFSET(::messenger::ChatMessage, _impl_.content_),
     ~0u,  // no _has_bits_
@@ -1793,7 +1795,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::DeleteMessageRequest, _impl_.messageid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::DeleteMessageRequest, _impl_.message_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::DeleteMessageResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1812,7 +1814,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::EditMessageRequest, _impl_.messageid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::EditMessageRequest, _impl_.message_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::EditMessageRequest, _impl_.newcontent_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::EditMessageResponse, _internal_metadata_),
@@ -1834,9 +1836,9 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.name_),
-    PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.memberids_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.member_ids_),
     PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.roles_),
-    PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.folderid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GroupChat, _impl_.folder_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::GetNewMessagesRequest, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1845,7 +1847,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetNewMessagesRequest, _impl_.chatid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewMessagesRequest, _impl_.chat_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetNewMessagesRequest, _impl_.offset_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsOffsetRequest, _internal_metadata_),
@@ -1855,7 +1857,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsOffsetRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsOffsetRequest, _impl_.user_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsOffsetResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1873,7 +1875,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsConversionRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsConversionRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsConversionRequest, _impl_.offset_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetGroupChatsConversionRequest, _impl_.count_),
     ~0u,  // no _has_bits_
@@ -1893,7 +1895,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetNewGroupChatsRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewGroupChatsRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetNewGroupChatsRequest, _impl_.offset_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::AddGroupMemberRequest, _internal_metadata_),
@@ -1903,8 +1905,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::AddGroupMemberRequest, _impl_.groupid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::AddGroupMemberRequest, _impl_.memberid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::AddGroupMemberRequest, _impl_.group_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::AddGroupMemberRequest, _impl_.member_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::AddGroupMemberResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1923,8 +1925,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::RemoveGroupMemberRequest, _impl_.groupid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::RemoveGroupMemberRequest, _impl_.memberid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::RemoveGroupMemberRequest, _impl_.group_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::RemoveGroupMemberRequest, _impl_.member_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::RemoveGroupMemberResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1944,9 +1946,9 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::messenger::ChatFolder, _impl_.id_),
-    PROTOBUF_FIELD_OFFSET(::messenger::ChatFolder, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::ChatFolder, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::ChatFolder, _impl_.name_),
-    PROTOBUF_FIELD_OFFSET(::messenger::ChatFolder, _impl_.groupchatids_),
+    PROTOBUF_FIELD_OFFSET(::messenger::ChatFolder, _impl_.groupchat_ids_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::CreateChatFolderRequest, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -1955,7 +1957,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::CreateChatFolderRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::CreateChatFolderRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::CreateChatFolderRequest, _impl_.name_),
     PROTOBUF_FIELD_OFFSET(::messenger::CreateChatFolderResponse, _impl_._has_bits_),
     PROTOBUF_FIELD_OFFSET(::messenger::CreateChatFolderResponse, _internal_metadata_),
@@ -1975,7 +1977,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::UpdateChatFolderRequest, _impl_.folderid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::UpdateChatFolderRequest, _impl_.folder_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateChatFolderRequest, _impl_.newname_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateChatFolderResponse, _internal_metadata_),
@@ -1994,7 +1996,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::DeleteChatFolderRequest, _impl_.folderid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::DeleteChatFolderRequest, _impl_.folder_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::DeleteChatFolderResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2012,7 +2014,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersOffsetRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersOffsetRequest, _impl_.user_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersOffsetResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2030,7 +2032,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersRequest, _impl_.offset_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetFoldersRequest, _impl_.count_),
     ~0u,  // no _has_bits_
@@ -2050,7 +2052,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetNewFoldersRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewFoldersRequest, _impl_.user_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::AddChatToFolderRequest, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2059,8 +2061,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::AddChatToFolderRequest, _impl_.folderid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::AddChatToFolderRequest, _impl_.chatid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::AddChatToFolderRequest, _impl_.folder_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::AddChatToFolderRequest, _impl_.chat_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::AddChatToFolderResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2078,8 +2080,8 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::RemoveChatFromFolderRequest, _impl_.folderid_),
-    PROTOBUF_FIELD_OFFSET(::messenger::RemoveChatFromFolderRequest, _impl_.chatid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::RemoveChatFromFolderRequest, _impl_.folder_id_),
+    PROTOBUF_FIELD_OFFSET(::messenger::RemoveChatFromFolderRequest, _impl_.chat_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::RemoveChatFromFolderResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2098,7 +2100,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::messenger::FileMessage, _impl_.id_),
-    PROTOBUF_FIELD_OFFSET(::messenger::FileMessage, _impl_.senderid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::FileMessage, _impl_.sender_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::FileMessage, _impl_.type_),
     PROTOBUF_FIELD_OFFSET(::messenger::FileMessage, _impl_.filename_),
     PROTOBUF_FIELD_OFFSET(::messenger::FileMessage, _impl_.data_),
@@ -2111,7 +2113,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::messenger::SearchRequest, _impl_.query_),
-    PROTOBUF_FIELD_OFFSET(::messenger::SearchRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::SearchRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::SearchRequest, _impl_.limit_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::SearchMessagesResponse, _internal_metadata_),
@@ -2162,7 +2164,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::messenger::Reminder, _impl_.id_),
-    PROTOBUF_FIELD_OFFSET(::messenger::Reminder, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::Reminder, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::Reminder, _impl_.message_),
     PROTOBUF_FIELD_OFFSET(::messenger::Reminder, _impl_.timestamp_),
     ~0u,  // no _has_bits_
@@ -2173,7 +2175,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::NotificationSettings, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::NotificationSettings, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::NotificationSettings, _impl_.enablenotifications_),
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateNotificationSettingsRequest, _impl_._has_bits_),
     PROTOBUF_FIELD_OFFSET(::messenger::UpdateNotificationSettingsRequest, _internal_metadata_),
@@ -2204,7 +2206,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
     PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.id_),
-    PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.description_),
     PROTOBUF_FIELD_OFFSET(::messenger::ToDoItem, _impl_.completed_),
     ~0u,  // no _has_bits_
@@ -2215,7 +2217,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetRequest, _impl_.user_id_),
     ~0u,  // no _has_bits_
     PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsOffsetResponse, _internal_metadata_),
     ~0u,  // no _extensions_
@@ -2233,7 +2235,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.offset_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetToDoItemsRequest, _impl_.count_),
     ~0u,  // no _has_bits_
@@ -2253,7 +2255,7 @@ const ::uint32_t TableStruct_messenger_2eproto::offsets[] PROTOBUF_SECTION_VARIA
     ~0u,  // no _inlined_string_donated_
     ~0u,  // no _split_
     ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::messenger::GetNewToDoItemsRequest, _impl_.userid_),
+    PROTOBUF_FIELD_OFFSET(::messenger::GetNewToDoItemsRequest, _impl_.user_id_),
     PROTOBUF_FIELD_OFFSET(::messenger::GetNewToDoItemsRequest, _impl_.offset_),
 };
 
@@ -2277,57 +2279,57 @@ static const ::_pbi::MigrationSchema
         {151, -1, -1, sizeof(::messenger::ContactList)},
         {161, -1, -1, sizeof(::messenger::SentMessage)},
         {172, -1, -1, sizeof(::messenger::GetMessagesOffsetRequest)},
-        {181, -1, -1, sizeof(::messenger::GetMessagesOffsetResponse)},
-        {190, -1, -1, sizeof(::messenger::GetMessagesConversionRequest)},
-        {201, -1, -1, sizeof(::messenger::GetMessagesConversionResponse)},
-        {210, -1, -1, sizeof(::messenger::ChatMessage)},
-        {222, -1, -1, sizeof(::messenger::DeleteMessageRequest)},
-        {231, -1, -1, sizeof(::messenger::DeleteMessageResponse)},
-        {241, -1, -1, sizeof(::messenger::EditMessageRequest)},
-        {251, -1, -1, sizeof(::messenger::EditMessageResponse)},
-        {261, -1, -1, sizeof(::messenger::GroupChat)},
-        {274, -1, -1, sizeof(::messenger::GetNewMessagesRequest)},
-        {284, -1, -1, sizeof(::messenger::GetGroupChatsOffsetRequest)},
-        {293, -1, -1, sizeof(::messenger::GetGroupChatsOffsetResponse)},
-        {302, -1, -1, sizeof(::messenger::GetGroupChatsConversionRequest)},
-        {313, -1, -1, sizeof(::messenger::GetGroupChatsConversionResponse)},
-        {322, -1, -1, sizeof(::messenger::GetNewGroupChatsRequest)},
-        {332, -1, -1, sizeof(::messenger::AddGroupMemberRequest)},
-        {342, -1, -1, sizeof(::messenger::AddGroupMemberResponse)},
-        {352, -1, -1, sizeof(::messenger::RemoveGroupMemberRequest)},
-        {362, -1, -1, sizeof(::messenger::RemoveGroupMemberResponse)},
-        {372, -1, -1, sizeof(::messenger::ChatFolder)},
-        {384, -1, -1, sizeof(::messenger::CreateChatFolderRequest)},
-        {394, 403, -1, sizeof(::messenger::CreateChatFolderResponse)},
-        {404, -1, -1, sizeof(::messenger::UpdateChatFolderRequest)},
-        {414, -1, -1, sizeof(::messenger::UpdateChatFolderResponse)},
-        {423, -1, -1, sizeof(::messenger::DeleteChatFolderRequest)},
-        {432, -1, -1, sizeof(::messenger::DeleteChatFolderResponse)},
-        {441, -1, -1, sizeof(::messenger::GetFoldersOffsetRequest)},
-        {450, -1, -1, sizeof(::messenger::GetFoldersOffsetResponse)},
-        {459, -1, -1, sizeof(::messenger::GetFoldersRequest)},
-        {470, -1, -1, sizeof(::messenger::GetFoldersResponse)},
-        {479, -1, -1, sizeof(::messenger::GetNewFoldersRequest)},
-        {488, -1, -1, sizeof(::messenger::AddChatToFolderRequest)},
-        {498, -1, -1, sizeof(::messenger::AddChatToFolderResponse)},
-        {507, -1, -1, sizeof(::messenger::RemoveChatFromFolderRequest)},
-        {517, -1, -1, sizeof(::messenger::RemoveChatFromFolderResponse)},
-        {526, -1, -1, sizeof(::messenger::FileMessage)},
-        {539, -1, -1, sizeof(::messenger::SearchRequest)},
-        {550, -1, -1, sizeof(::messenger::SearchMessagesResponse)},
-        {559, -1, -1, sizeof(::messenger::SearchChatsResponse)},
-        {568, -1, -1, sizeof(::messenger::Permissions)},
-        {578, 588, -1, sizeof(::messenger::Role)},
-        {590, -1, -1, sizeof(::messenger::Reminder)},
-        {602, -1, -1, sizeof(::messenger::NotificationSettings)},
-        {612, 621, -1, sizeof(::messenger::UpdateNotificationSettingsRequest)},
-        {622, -1, -1, sizeof(::messenger::UpdateNotificationSettingsResponse)},
-        {632, -1, -1, sizeof(::messenger::ToDoItem)},
-        {644, -1, -1, sizeof(::messenger::GetToDoItemsOffsetRequest)},
-        {653, -1, -1, sizeof(::messenger::GetToDoItemsOffsetResponse)},
-        {662, -1, -1, sizeof(::messenger::GetToDoItemsRequest)},
-        {673, -1, -1, sizeof(::messenger::GetToDoItemsResponse)},
-        {682, -1, -1, sizeof(::messenger::GetNewToDoItemsRequest)},
+        {182, -1, -1, sizeof(::messenger::GetMessagesOffsetResponse)},
+        {191, -1, -1, sizeof(::messenger::GetMessagesConversionRequest)},
+        {202, -1, -1, sizeof(::messenger::GetMessagesConversionResponse)},
+        {211, -1, -1, sizeof(::messenger::ChatMessage)},
+        {223, -1, -1, sizeof(::messenger::DeleteMessageRequest)},
+        {232, -1, -1, sizeof(::messenger::DeleteMessageResponse)},
+        {242, -1, -1, sizeof(::messenger::EditMessageRequest)},
+        {252, -1, -1, sizeof(::messenger::EditMessageResponse)},
+        {262, -1, -1, sizeof(::messenger::GroupChat)},
+        {275, -1, -1, sizeof(::messenger::GetNewMessagesRequest)},
+        {285, -1, -1, sizeof(::messenger::GetGroupChatsOffsetRequest)},
+        {294, -1, -1, sizeof(::messenger::GetGroupChatsOffsetResponse)},
+        {303, -1, -1, sizeof(::messenger::GetGroupChatsConversionRequest)},
+        {314, -1, -1, sizeof(::messenger::GetGroupChatsConversionResponse)},
+        {323, -1, -1, sizeof(::messenger::GetNewGroupChatsRequest)},
+        {333, -1, -1, sizeof(::messenger::AddGroupMemberRequest)},
+        {343, -1, -1, sizeof(::messenger::AddGroupMemberResponse)},
+        {353, -1, -1, sizeof(::messenger::RemoveGroupMemberRequest)},
+        {363, -1, -1, sizeof(::messenger::RemoveGroupMemberResponse)},
+        {373, -1, -1, sizeof(::messenger::ChatFolder)},
+        {385, -1, -1, sizeof(::messenger::CreateChatFolderRequest)},
+        {395, 404, -1, sizeof(::messenger::CreateChatFolderResponse)},
+        {405, -1, -1, sizeof(::messenger::UpdateChatFolderRequest)},
+        {415, -1, -1, sizeof(::messenger::UpdateChatFolderResponse)},
+        {424, -1, -1, sizeof(::messenger::DeleteChatFolderRequest)},
+        {433, -1, -1, sizeof(::messenger::DeleteChatFolderResponse)},
+        {442, -1, -1, sizeof(::messenger::GetFoldersOffsetRequest)},
+        {451, -1, -1, sizeof(::messenger::GetFoldersOffsetResponse)},
+        {460, -1, -1, sizeof(::messenger::GetFoldersRequest)},
+        {471, -1, -1, sizeof(::messenger::GetFoldersResponse)},
+        {480, -1, -1, sizeof(::messenger::GetNewFoldersRequest)},
+        {489, -1, -1, sizeof(::messenger::AddChatToFolderRequest)},
+        {499, -1, -1, sizeof(::messenger::AddChatToFolderResponse)},
+        {508, -1, -1, sizeof(::messenger::RemoveChatFromFolderRequest)},
+        {518, -1, -1, sizeof(::messenger::RemoveChatFromFolderResponse)},
+        {527, -1, -1, sizeof(::messenger::FileMessage)},
+        {540, -1, -1, sizeof(::messenger::SearchRequest)},
+        {551, -1, -1, sizeof(::messenger::SearchMessagesResponse)},
+        {560, -1, -1, sizeof(::messenger::SearchChatsResponse)},
+        {569, -1, -1, sizeof(::messenger::Permissions)},
+        {579, 589, -1, sizeof(::messenger::Role)},
+        {591, -1, -1, sizeof(::messenger::Reminder)},
+        {603, -1, -1, sizeof(::messenger::NotificationSettings)},
+        {613, 622, -1, sizeof(::messenger::UpdateNotificationSettingsRequest)},
+        {623, -1, -1, sizeof(::messenger::UpdateNotificationSettingsResponse)},
+        {633, -1, -1, sizeof(::messenger::ToDoItem)},
+        {645, -1, -1, sizeof(::messenger::GetToDoItemsOffsetRequest)},
+        {654, -1, -1, sizeof(::messenger::GetToDoItemsOffsetResponse)},
+        {663, -1, -1, sizeof(::messenger::GetToDoItemsRequest)},
+        {674, -1, -1, sizeof(::messenger::GetToDoItemsResponse)},
+        {683, -1, -1, sizeof(::messenger::GetNewToDoItemsRequest)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -2410,145 +2412,147 @@ const char descriptor_table_protodef_messenger_2eproto[] PROTOBUF_SECTION_VARIAB
     "onse\022\017\n\007success\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\022\r\n\005"
     "token\030\003 \001(\t\"\036\n\rLogoutRequest\022\r\n\005token\030\001 "
     "\001(\t\"0\n\016LogoutResponse\022\017\n\007success\030\001 \001(\010\022\r"
-    "\n\005error\030\002 \001(\t\"V\n\013UserProfile\022\016\n\006userId\030\001"
-    " \001(\t\022\020\n\010username\030\002 \001(\t\022%\n\006status\030\003 \001(\0162\025"
-    ".messenger.UserStatus\"C\n\030UpdateUserProfi"
-    "leRequest\022\'\n\007profile\030\001 \001(\0132\026.messenger.U"
-    "serProfile\";\n\031UpdateUserProfileResponse\022"
-    "\017\n\007success\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\"Y\n\032Updat"
-    "eMessageStatusRequest\022\021\n\tmessageId\030\001 \001(\t"
-    "\022(\n\006status\030\002 \001(\0162\030.messenger.MessageStat"
-    "us\"=\n\033UpdateMessageStatusResponse\022\017\n\007suc"
-    "cess\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\"6\n\021AddContactR"
-    "equest\022\016\n\006userId\030\001 \001(\t\022\021\n\tcontactId\030\002 \001("
-    "\t\"4\n\022AddContactResponse\022\017\n\007success\030\001 \001(\010"
-    "\022\r\n\005error\030\002 \001(\t\"9\n\024RemoveContactRequest\022"
-    "\016\n\006userId\030\001 \001(\t\022\021\n\tcontactId\030\002 \001(\t\"7\n\025Re"
-    "moveContactResponse\022\017\n\007success\030\001 \001(\010\022\r\n\005"
-    "error\030\002 \001(\t\"1\n\013ContactList\022\016\n\006userId\030\001 \001"
-    "(\t\022\022\n\ncontactIds\030\002 \003(\t\"P\n\013SentMessage\022\n\n"
-    "\002id\030\001 \001(\t\022$\n\004type\030\002 \001(\0162\026.messenger.Mess"
-    "ageType\022\017\n\007content\030\003 \001(\t\"*\n\030GetMessagesO"
-    "ffsetRequest\022\016\n\006chatId\030\001 \001(\t\"+\n\031GetMessa"
-    "gesOffsetResponse\022\016\n\006offset\030\001 \001(\003\"M\n\034Get"
-    "MessagesConversionRequest\022\016\n\006chatId\030\001 \001("
-    "\t\022\016\n\006offset\030\002 \001(\003\022\r\n\005count\030\003 \001(\005\"I\n\035GetM"
-    "essagesConversionResponse\022(\n\010messages\030\001 "
-    "\003(\0132\026.messenger.ChatMessage\"b\n\013ChatMessa"
-    "ge\022\n\n\002id\030\001 \001(\t\022\020\n\010senderId\030\002 \001(\t\022$\n\004type"
-    "\030\003 \001(\0162\026.messenger.MessageType\022\017\n\007conten"
-    "t\030\004 \001(\014\")\n\024DeleteMessageRequest\022\021\n\tmessa"
-    "geId\030\001 \001(\t\"7\n\025DeleteMessageResponse\022\017\n\007s"
-    "uccess\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\";\n\022EditMessa"
-    "geRequest\022\021\n\tmessageId\030\001 \001(\t\022\022\n\nnewConte"
-    "nt\030\002 \001(\014\"5\n\023EditMessageResponse\022\017\n\007succe"
-    "ss\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\"j\n\tGroupChat\022\n\n\002"
-    "id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\021\n\tmemberIds\030\003 \003("
-    "\t\022\036\n\005roles\030\004 \003(\0132\017.messenger.Role\022\020\n\010fol"
-    "derId\030\005 \001(\t\"7\n\025GetNewMessagesRequest\022\016\n\006"
-    "chatId\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\",\n\032GetGroup"
-    "ChatsOffsetRequest\022\016\n\006userId\030\001 \001(\t\"-\n\033Ge"
-    "tGroupChatsOffsetResponse\022\016\n\006offset\030\001 \001("
-    "\003\"O\n\036GetGroupChatsConversionRequest\022\016\n\006u"
-    "serId\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\022\r\n\005count\030\003 \001"
-    "(\005\"F\n\037GetGroupChatsConversionResponse\022#\n"
-    "\005chats\030\001 \003(\0132\024.messenger.GroupChat\"9\n\027Ge"
-    "tNewGroupChatsRequest\022\016\n\006userId\030\001 \001(\t\022\016\n"
-    "\006offset\030\002 \001(\003\":\n\025AddGroupMemberRequest\022\017"
-    "\n\007groupId\030\001 \001(\t\022\020\n\010memberId\030\002 \001(\t\"8\n\026Add"
+    "\n\005error\030\002 \001(\t\"W\n\013UserProfile\022\017\n\007user_id\030"
+    "\001 \001(\t\022\020\n\010username\030\002 \001(\t\022%\n\006status\030\003 \001(\0162"
+    "\025.messenger.UserStatus\"C\n\030UpdateUserProf"
+    "ileRequest\022\'\n\007profile\030\001 \001(\0132\026.messenger."
+    "UserProfile\";\n\031UpdateUserProfileResponse"
+    "\022\017\n\007success\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\"Z\n\032Upda"
+    "teMessageStatusRequest\022\022\n\nmessage_id\030\001 \001"
+    "(\t\022(\n\006status\030\002 \001(\0162\030.messenger.MessageSt"
+    "atus\"=\n\033UpdateMessageStatusResponse\022\017\n\007s"
+    "uccess\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\"8\n\021AddContac"
+    "tRequest\022\017\n\007user_id\030\001 \001(\t\022\022\n\ncontact_id\030"
+    "\002 \001(\t\"4\n\022AddContactResponse\022\017\n\007success\030\001"
+    " \001(\010\022\r\n\005error\030\002 \001(\t\";\n\024RemoveContactRequ"
+    "est\022\017\n\007user_id\030\001 \001(\t\022\022\n\ncontact_id\030\002 \001(\t"
+    "\"7\n\025RemoveContactResponse\022\017\n\007success\030\001 \001"
+    "(\010\022\r\n\005error\030\002 \001(\t\"3\n\013ContactList\022\017\n\007user"
+    "_id\030\001 \001(\t\022\023\n\013contact_ids\030\002 \003(\t\"U\n\013SentMe"
+    "ssage\022\017\n\007chat_id\030\001 \001(\t\022$\n\004type\030\003 \001(\0162\026.m"
+    "essenger.MessageType\022\017\n\007content\030\004 \001(\t\";\n"
+    "\030GetMessagesOffsetRequest\022\017\n\007chat_id\030\001 \001"
+    "(\t\022\016\n\006offset\030\002 \001(\003\"+\n\031GetMessagesOffsetR"
+    "esponse\022\016\n\006offset\030\001 \001(\003\"N\n\034GetMessagesCo"
+    "nversionRequest\022\017\n\007chat_id\030\001 \001(\t\022\016\n\006offs"
+    "et\030\002 \001(\003\022\r\n\005count\030\003 \001(\005\"I\n\035GetMessagesCo"
+    "nversionResponse\022(\n\010messages\030\001 \003(\0132\026.mes"
+    "senger.ChatMessage\"a\n\013ChatMessage\022\017\n\007cha"
+    "t_id\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022$\n\004type\030\003 \001(\0162\026.m"
+    "essenger.MessageType\022\017\n\007content\030\004 \001(\014\"*\n"
+    "\024DeleteMessageRequest\022\022\n\nmessage_id\030\001 \001("
+    "\t\"7\n\025DeleteMessageResponse\022\017\n\007success\030\001 "
+    "\001(\010\022\r\n\005error\030\002 \001(\t\"<\n\022EditMessageRequest"
+    "\022\022\n\nmessage_id\030\001 \001(\t\022\022\n\nnewContent\030\002 \001(\014"
+    "\"5\n\023EditMessageResponse\022\017\n\007success\030\001 \001(\010"
+    "\022\r\n\005error\030\002 \001(\t\"l\n\tGroupChat\022\n\n\002id\030\001 \001(\t"
+    "\022\014\n\004name\030\002 \001(\t\022\022\n\nmember_ids\030\003 \003(\t\022\036\n\005ro"
+    "les\030\004 \003(\0132\017.messenger.Role\022\021\n\tfolder_id\030"
+    "\005 \001(\t\"8\n\025GetNewMessagesRequest\022\017\n\007chat_i"
+    "d\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\"-\n\032GetGroupChats"
+    "OffsetRequest\022\017\n\007user_id\030\001 \001(\t\"-\n\033GetGro"
+    "upChatsOffsetResponse\022\016\n\006offset\030\001 \001(\003\"P\n"
+    "\036GetGroupChatsConversionRequest\022\017\n\007user_"
+    "id\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\022\r\n\005count\030\003 \001(\005\""
+    "F\n\037GetGroupChatsConversionResponse\022#\n\005ch"
+    "ats\030\001 \003(\0132\024.messenger.GroupChat\":\n\027GetNe"
+    "wGroupChatsRequest\022\017\n\007user_id\030\001 \001(\t\022\016\n\006o"
+    "ffset\030\002 \001(\003\"<\n\025AddGroupMemberRequest\022\020\n\010"
+    "group_id\030\001 \001(\t\022\021\n\tmember_id\030\002 \001(\t\"8\n\026Add"
     "GroupMemberResponse\022\017\n\007success\030\001 \001(\010\022\r\n\005"
-    "error\030\002 \001(\t\"=\n\030RemoveGroupMemberRequest\022"
-    "\017\n\007groupId\030\001 \001(\t\022\020\n\010memberId\030\002 \001(\t\";\n\031Re"
-    "moveGroupMemberResponse\022\017\n\007success\030\001 \001(\010"
-    "\022\r\n\005error\030\002 \001(\t\"L\n\nChatFolder\022\n\n\002id\030\001 \001("
-    "\t\022\016\n\006userId\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\024\n\014group"
-    "ChatIds\030\004 \003(\t\"7\n\027CreateChatFolderRequest"
-    "\022\016\n\006userId\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\"A\n\030Create"
-    "ChatFolderResponse\022%\n\006folder\030\001 \001(\0132\025.mes"
-    "senger.ChatFolder\"<\n\027UpdateChatFolderReq"
-    "uest\022\020\n\010folderId\030\001 \001(\t\022\017\n\007newName\030\002 \001(\t\""
-    "+\n\030UpdateChatFolderResponse\022\017\n\007success\030\001"
-    " \001(\010\"+\n\027DeleteChatFolderRequest\022\020\n\010folde"
-    "rId\030\001 \001(\t\"+\n\030DeleteChatFolderResponse\022\017\n"
-    "\007success\030\001 \001(\010\")\n\027GetFoldersOffsetReques"
-    "t\022\016\n\006userId\030\001 \001(\t\"*\n\030GetFoldersOffsetRes"
-    "ponse\022\016\n\006offset\030\001 \001(\003\"B\n\021GetFoldersReque"
-    "st\022\016\n\006userId\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\022\r\n\005co"
-    "unt\030\003 \001(\005\"<\n\022GetFoldersResponse\022&\n\007folde"
-    "rs\030\001 \003(\0132\025.messenger.ChatFolder\"&\n\024GetNe"
-    "wFoldersRequest\022\016\n\006userId\030\001 \001(\t\":\n\026AddCh"
-    "atToFolderRequest\022\020\n\010folderId\030\001 \001(\t\022\016\n\006c"
-    "hatId\030\002 \001(\t\"*\n\027AddChatToFolderResponse\022\017"
-    "\n\007success\030\001 \001(\010\"\?\n\033RemoveChatFromFolderR"
-    "equest\022\020\n\010folderId\030\001 \001(\t\022\016\n\006chatId\030\002 \001(\t"
-    "\"/\n\034RemoveChatFromFolderResponse\022\017\n\007succ"
-    "ess\030\001 \001(\010\"n\n\013FileMessage\022\n\n\002id\030\001 \001(\t\022\020\n\010"
-    "senderId\030\002 \001(\t\022!\n\004type\030\003 \001(\0162\023.messenger"
-    ".FileType\022\020\n\010filename\030\004 \001(\t\022\014\n\004data\030\005 \001("
-    "\014\"=\n\rSearchRequest\022\r\n\005query\030\001 \001(\t\022\016\n\006use"
-    "rId\030\002 \001(\t\022\r\n\005limit\030\003 \001(\005\"B\n\026SearchMessag"
-    "esResponse\022(\n\010messages\030\001 \003(\0132\026.messenger"
-    ".ChatMessage\":\n\023SearchChatsResponse\022#\n\005c"
-    "hats\030\001 \003(\0132\024.messenger.GroupChat\")\n\013Perm"
-    "issions\022\r\n\005write\030\001 \001(\010\022\013\n\003ban\030\002 \001(\010\"A\n\004R"
-    "ole\022\014\n\004name\030\001 \001(\t\022+\n\013permissions\030\002 \001(\0132\026"
-    ".messenger.Permissions\"J\n\010Reminder\022\n\n\002id"
-    "\030\001 \001(\t\022\016\n\006userId\030\002 \001(\t\022\017\n\007message\030\003 \001(\t\022"
-    "\021\n\ttimestamp\030\004 \001(\003\"C\n\024NotificationSettin"
-    "gs\022\016\n\006userId\030\001 \001(\t\022\033\n\023enableNotification"
-    "s\030\002 \001(\010\"V\n!UpdateNotificationSettingsReq"
-    "uest\0221\n\010settings\030\001 \001(\0132\037.messenger.Notif"
-    "icationSettings\"D\n\"UpdateNotificationSet"
-    "tingsResponse\022\017\n\007success\030\001 \001(\010\022\r\n\005error\030"
-    "\002 \001(\t\"N\n\010ToDoItem\022\n\n\002id\030\001 \001(\t\022\016\n\006userId\030"
-    "\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\021\n\tcompleted\030"
-    "\004 \001(\010\"+\n\031GetToDoItemsOffsetRequest\022\016\n\006us"
-    "erId\030\001 \001(\t\",\n\032GetToDoItemsOffsetResponse"
-    "\022\016\n\006offset\030\001 \001(\003\"D\n\023GetToDoItemsRequest\022"
-    "\016\n\006userId\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003\022\r\n\005count"
-    "\030\003 \001(\005\":\n\024GetToDoItemsResponse\022\"\n\005items\030"
-    "\001 \003(\0132\023.messenger.ToDoItem\"8\n\026GetNewToDo"
-    "ItemsRequest\022\016\n\006userId\030\001 \001(\t\022\016\n\006offset\030\002"
-    " \001(\003*\203\006\n\013MessageType\022\010\n\004TEXT\020\000\022\t\n\005AUDIO\020"
-    "\001\022\t\n\005VIDEO\020\002\022\t\n\005VOICE\020\005\022\013\n\007STICKER\020\003\022\t\n\005"
-    "EMOJI\020\004\022\027\n\023USER_AVATAR_CHANGED\020\006\022\025\n\021USER"
-    "_NAME_CHANGED\020\007\022\025\n\021CHAT_NAME_CHANGED\020\010\022\027"
-    "\n\023CHAT_AVATAR_CHANGED\020\t\022\024\n\020USER_JOINED_C"
-    "HAT\020\n\022\022\n\016USER_LEFT_CHAT\020\013\022\031\n\025USER_KICKED"
-    "_FROM_CHAT\020\014\022\031\n\025USER_BANNED_FROM_CHAT\020\r\022"
-    "\033\n\027USER_UNBANNED_FROM_CHAT\020\016\022\021\n\rROLE_ASS"
-    "IGNED\020\017\022\020\n\014ROLE_REVOKED\020\020\022\027\n\023PERMISSIONS"
-    "_UPDATED\020\021\022\034\n\030CHAT_DESCRIPTION_CHANGED\020\022"
-    "\022\031\n\025CHAT_SETTINGS_UPDATED\020\023\022\022\n\016MESSAGE_P"
-    "INNED\020\024\022\024\n\020MESSAGE_UNPINNED\020\025\022\026\n\022CHAT_ME"
-    "MBERS_ADDED\020\026\022\030\n\024CHAT_MEMBERS_REMOVED\020\027\022"
-    "\034\n\030PRIVACY_SETTINGS_UPDATED\020\030\022\035\n\031SECURIT"
-    "Y_SETTINGS_UPDATED\020\031\022\026\n\022GROUP_CHAT_CREAT"
-    "ED\020\032\022\030\n\024GROUP_CHAT_DISBANDED\020\033\022\027\n\023USER_S"
-    "TATUS_CHANGED\020\034\022 \n\034CUSTOM_NOTIFICATIONS_"
-    "UPDATED\020\035\022\021\n\rCHAT_ARCHIVED\020\036\022\023\n\017CHAT_UNA"
-    "RCHIVED\020\037\022\030\n\024NEW_DEVICE_SIGNED_IN\020 \022\025\n\021D"
-    "EVICE_SIGNED_OUT\020!*_\n\010FileType\022\020\n\014UNKNOW"
-    "N_FILE\020\000\022\021\n\rDOCUMENT_FILE\020\001\022\016\n\nIMAGE_FIL"
-    "E\020\002\022\016\n\nAUDIO_FILE\020\003\022\016\n\nVIDEO_FILE\020\004*2\n\rM"
-    "essageStatus\022\010\n\004SENT\020\000\022\r\n\tDELIVERED\020\001\022\010\n"
-    "\004READ\020\002*%\n\nUserStatus\022\n\n\006ONLINE\020\000\022\013\n\007OFF"
-    "LINE\020\0012\353\002\n\020MessengerService\022=\n\013SendMessa"
-    "ge\022\026.messenger.SentMessage\032\026.messenger.C"
-    "hatMessage\022^\n\021GetMessagesOffset\022#.messen"
-    "ger.GetMessagesOffsetRequest\032$.messenger"
-    ".GetMessagesOffsetResponse\022j\n\025GetMessage"
-    "sConversion\022\'.messenger.GetMessagesConve"
-    "rsionRequest\032(.messenger.GetMessagesConv"
-    "ersionResponse\022L\n\016GetNewMessages\022 .messe"
-    "nger.GetNewMessagesRequest\032\026.messenger.C"
-    "hatMessage0\001b\006proto3"
+    "error\030\002 \001(\t\"\?\n\030RemoveGroupMemberRequest\022"
+    "\020\n\010group_id\030\001 \001(\t\022\021\n\tmember_id\030\002 \001(\t\";\n\031"
+    "RemoveGroupMemberResponse\022\017\n\007success\030\001 \001"
+    "(\010\022\r\n\005error\030\002 \001(\t\"N\n\nChatFolder\022\n\n\002id\030\001 "
+    "\001(\t\022\017\n\007user_id\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\025\n\rgr"
+    "oupChat_ids\030\004 \003(\t\"8\n\027CreateChatFolderReq"
+    "uest\022\017\n\007user_id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\"A\n\030C"
+    "reateChatFolderResponse\022%\n\006folder\030\001 \001(\0132"
+    "\025.messenger.ChatFolder\"=\n\027UpdateChatFold"
+    "erRequest\022\021\n\tfolder_id\030\001 \001(\t\022\017\n\007newName\030"
+    "\002 \001(\t\"+\n\030UpdateChatFolderResponse\022\017\n\007suc"
+    "cess\030\001 \001(\010\",\n\027DeleteChatFolderRequest\022\021\n"
+    "\tfolder_id\030\001 \001(\t\"+\n\030DeleteChatFolderResp"
+    "onse\022\017\n\007success\030\001 \001(\010\"*\n\027GetFoldersOffse"
+    "tRequest\022\017\n\007user_id\030\001 \001(\t\"*\n\030GetFoldersO"
+    "ffsetResponse\022\016\n\006offset\030\001 \001(\003\"C\n\021GetFold"
+    "ersRequest\022\017\n\007user_id\030\001 \001(\t\022\016\n\006offset\030\002 "
+    "\001(\003\022\r\n\005count\030\003 \001(\005\"<\n\022GetFoldersResponse"
+    "\022&\n\007folders\030\001 \003(\0132\025.messenger.ChatFolder"
+    "\"\'\n\024GetNewFoldersRequest\022\017\n\007user_id\030\001 \001("
+    "\t\"<\n\026AddChatToFolderRequest\022\021\n\tfolder_id"
+    "\030\001 \001(\t\022\017\n\007chat_id\030\002 \001(\t\"*\n\027AddChatToFold"
+    "erResponse\022\017\n\007success\030\001 \001(\010\"A\n\033RemoveCha"
+    "tFromFolderRequest\022\021\n\tfolder_id\030\001 \001(\t\022\017\n"
+    "\007chat_id\030\002 \001(\t\"/\n\034RemoveChatFromFolderRe"
+    "sponse\022\017\n\007success\030\001 \001(\010\"o\n\013FileMessage\022\n"
+    "\n\002id\030\001 \001(\t\022\021\n\tsender_id\030\002 \001(\t\022!\n\004type\030\003 "
+    "\001(\0162\023.messenger.FileType\022\020\n\010filename\030\004 \001"
+    "(\t\022\014\n\004data\030\005 \001(\014\">\n\rSearchRequest\022\r\n\005que"
+    "ry\030\001 \001(\t\022\017\n\007user_id\030\002 \001(\t\022\r\n\005limit\030\003 \001(\005"
+    "\"B\n\026SearchMessagesResponse\022(\n\010messages\030\001"
+    " \003(\0132\026.messenger.ChatMessage\":\n\023SearchCh"
+    "atsResponse\022#\n\005chats\030\001 \003(\0132\024.messenger.G"
+    "roupChat\")\n\013Permissions\022\r\n\005write\030\001 \001(\010\022\013"
+    "\n\003ban\030\002 \001(\010\"A\n\004Role\022\014\n\004name\030\001 \001(\t\022+\n\013per"
+    "missions\030\002 \001(\0132\026.messenger.Permissions\"K"
+    "\n\010Reminder\022\n\n\002id\030\001 \001(\t\022\017\n\007user_id\030\002 \001(\t\022"
+    "\017\n\007message\030\003 \001(\t\022\021\n\ttimestamp\030\004 \001(\003\"D\n\024N"
+    "otificationSettings\022\017\n\007user_id\030\001 \001(\t\022\033\n\023"
+    "enableNotifications\030\002 \001(\010\"V\n!UpdateNotif"
+    "icationSettingsRequest\0221\n\010settings\030\001 \001(\013"
+    "2\037.messenger.NotificationSettings\"D\n\"Upd"
+    "ateNotificationSettingsResponse\022\017\n\007succe"
+    "ss\030\001 \001(\010\022\r\n\005error\030\002 \001(\t\"O\n\010ToDoItem\022\n\n\002i"
+    "d\030\001 \001(\t\022\017\n\007user_id\030\002 \001(\t\022\023\n\013description\030"
+    "\003 \001(\t\022\021\n\tcompleted\030\004 \001(\010\",\n\031GetToDoItems"
+    "OffsetRequest\022\017\n\007user_id\030\001 \001(\t\",\n\032GetToD"
+    "oItemsOffsetResponse\022\016\n\006offset\030\001 \001(\003\"E\n\023"
+    "GetToDoItemsRequest\022\017\n\007user_id\030\001 \001(\t\022\016\n\006"
+    "offset\030\002 \001(\003\022\r\n\005count\030\003 \001(\005\":\n\024GetToDoIt"
+    "emsResponse\022\"\n\005items\030\001 \003(\0132\023.messenger.T"
+    "oDoItem\"9\n\026GetNewToDoItemsRequest\022\017\n\007use"
+    "r_id\030\001 \001(\t\022\016\n\006offset\030\002 \001(\003*\203\006\n\013MessageTy"
+    "pe\022\010\n\004TEXT\020\000\022\t\n\005AUDIO\020\001\022\t\n\005VIDEO\020\002\022\t\n\005VO"
+    "ICE\020\005\022\013\n\007STICKER\020\003\022\t\n\005EMOJI\020\004\022\027\n\023USER_AV"
+    "ATAR_CHANGED\020\006\022\025\n\021USER_NAME_CHANGED\020\007\022\025\n"
+    "\021CHAT_NAME_CHANGED\020\010\022\027\n\023CHAT_AVATAR_CHAN"
+    "GED\020\t\022\024\n\020USER_JOINED_CHAT\020\n\022\022\n\016USER_LEFT"
+    "_CHAT\020\013\022\031\n\025USER_KICKED_FROM_CHAT\020\014\022\031\n\025US"
+    "ER_BANNED_FROM_CHAT\020\r\022\033\n\027USER_UNBANNED_F"
+    "ROM_CHAT\020\016\022\021\n\rROLE_ASSIGNED\020\017\022\020\n\014ROLE_RE"
+    "VOKED\020\020\022\027\n\023PERMISSIONS_UPDATED\020\021\022\034\n\030CHAT"
+    "_DESCRIPTION_CHANGED\020\022\022\031\n\025CHAT_SETTINGS_"
+    "UPDATED\020\023\022\022\n\016MESSAGE_PINNED\020\024\022\024\n\020MESSAGE"
+    "_UNPINNED\020\025\022\026\n\022CHAT_MEMBERS_ADDED\020\026\022\030\n\024C"
+    "HAT_MEMBERS_REMOVED\020\027\022\034\n\030PRIVACY_SETTING"
+    "S_UPDATED\020\030\022\035\n\031SECURITY_SETTINGS_UPDATED"
+    "\020\031\022\026\n\022GROUP_CHAT_CREATED\020\032\022\030\n\024GROUP_CHAT"
+    "_DISBANDED\020\033\022\027\n\023USER_STATUS_CHANGED\020\034\022 \n"
+    "\034CUSTOM_NOTIFICATIONS_UPDATED\020\035\022\021\n\rCHAT_"
+    "ARCHIVED\020\036\022\023\n\017CHAT_UNARCHIVED\020\037\022\030\n\024NEW_D"
+    "EVICE_SIGNED_IN\020 \022\025\n\021DEVICE_SIGNED_OUT\020!"
+    "*_\n\010FileType\022\020\n\014UNKNOWN_FILE\020\000\022\021\n\rDOCUME"
+    "NT_FILE\020\001\022\016\n\nIMAGE_FILE\020\002\022\016\n\nAUDIO_FILE\020"
+    "\003\022\016\n\nVIDEO_FILE\020\004*2\n\rMessageStatus\022\010\n\004SE"
+    "NT\020\000\022\r\n\tDELIVERED\020\001\022\010\n\004READ\020\002*%\n\nUserSta"
+    "tus\022\n\n\006ONLINE\020\000\022\013\n\007OFFLINE\020\0012\353\002\n\020Messeng"
+    "erService\022=\n\013SendMessage\022\026.messenger.Sen"
+    "tMessage\032\026.messenger.ChatMessage\022^\n\021GetM"
+    "essagesOffset\022#.messenger.GetMessagesOff"
+    "setRequest\032$.messenger.GetMessagesOffset"
+    "Response\022j\n\025GetMessagesConversion\022\'.mess"
+    "enger.GetMessagesConversionRequest\032(.mes"
+    "senger.GetMessagesConversionResponse\022L\n\016"
+    "GetNewMessages\022 .messenger.GetNewMessage"
+    "sRequest\032\026.messenger.ChatMessage0\001b\006prot"
+    "o3"
 };
 static ::absl::once_flag descriptor_table_messenger_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_messenger_2eproto = {
     false,
     false,
-    5620,
+    5682,
     descriptor_table_protodef_messenger_2eproto,
     "messenger.proto",
     &descriptor_table_messenger_2eproto_once,
@@ -3934,7 +3938,7 @@ UserProfile::UserProfile(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE UserProfile::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         username_(arena, from.username_),
         _cached_size_{0} {}
 
@@ -3954,7 +3958,7 @@ UserProfile::UserProfile(
 inline PROTOBUF_NDEBUG_INLINE UserProfile::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         username_(arena),
         _cached_size_{0} {}
 
@@ -3969,7 +3973,7 @@ UserProfile::~UserProfile() {
 }
 inline void UserProfile::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.username_.Destroy();
   _impl_.~Impl_();
 }
@@ -3981,7 +3985,7 @@ PROTOBUF_NOINLINE void UserProfile::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.username_.ClearToEmpty();
   _impl_.status_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -3995,7 +3999,7 @@ const char* UserProfile::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 44, 2> UserProfile::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 45, 2> UserProfile::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -4010,9 +4014,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> UserProfile::_table_ = {
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UserProfile, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UserProfile, _impl_.user_id_)}},
     // string username = 2;
     {::_pbi::TcParser::FastUS1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(UserProfile, _impl_.username_)}},
@@ -4022,8 +4026,8 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> UserProfile::_table_ = {
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(UserProfile, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(UserProfile, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // string username = 2;
     {PROTOBUF_FIELD_OFFSET(UserProfile, _impl_.username_), 0, 0,
@@ -4034,9 +4038,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> UserProfile::_table_ = {
   }},
   // no aux_entries
   {{
-    "\25\6\10\0\0\0\0\0"
+    "\25\7\10\0\0\0\0\0"
     "messenger.UserProfile"
-    "userId"
+    "user_id"
     "username"
   }},
 };
@@ -4048,11 +4052,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> UserProfile::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.UserProfile.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.UserProfile.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -4088,10 +4092,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> UserProfile::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // string username = 2;
@@ -4125,8 +4129,8 @@ void UserProfile::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (!from._internal_username().empty()) {
     _this->_internal_set_username(from._internal_username());
@@ -4156,7 +4160,7 @@ void UserProfile::InternalSwap(UserProfile* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.username_, &other->_impl_.username_, arena);
   swap(_impl_.status_, other->_impl_.status_);
 }
@@ -4602,7 +4606,7 @@ UpdateMessageStatusRequest::UpdateMessageStatusRequest(::google::protobuf::Arena
 inline PROTOBUF_NDEBUG_INLINE UpdateMessageStatusRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : messageid_(arena, from.messageid_),
+      : message_id_(arena, from.message_id_),
         _cached_size_{0} {}
 
 UpdateMessageStatusRequest::UpdateMessageStatusRequest(
@@ -4621,7 +4625,7 @@ UpdateMessageStatusRequest::UpdateMessageStatusRequest(
 inline PROTOBUF_NDEBUG_INLINE UpdateMessageStatusRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : messageid_(arena),
+      : message_id_(arena),
         _cached_size_{0} {}
 
 inline void UpdateMessageStatusRequest::SharedCtor(::_pb::Arena* arena) {
@@ -4635,7 +4639,7 @@ UpdateMessageStatusRequest::~UpdateMessageStatusRequest() {
 }
 inline void UpdateMessageStatusRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.messageid_.Destroy();
+  _impl_.message_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -4646,7 +4650,7 @@ PROTOBUF_NOINLINE void UpdateMessageStatusRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.messageid_.ClearToEmpty();
+  _impl_.message_id_.ClearToEmpty();
   _impl_.status_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -4659,7 +4663,7 @@ const char* UpdateMessageStatusRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 54, 2> UpdateMessageStatusRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 55, 2> UpdateMessageStatusRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -4676,14 +4680,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> UpdateMessageStatusRequest::_table_ =
     // .messenger.MessageStatus status = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(UpdateMessageStatusRequest, _impl_.status_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(UpdateMessageStatusRequest, _impl_.status_)}},
-    // string messageId = 1;
+    // string message_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UpdateMessageStatusRequest, _impl_.messageid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UpdateMessageStatusRequest, _impl_.message_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string messageId = 1;
-    {PROTOBUF_FIELD_OFFSET(UpdateMessageStatusRequest, _impl_.messageid_), 0, 0,
+    // string message_id = 1;
+    {PROTOBUF_FIELD_OFFSET(UpdateMessageStatusRequest, _impl_.message_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // .messenger.MessageStatus status = 2;
     {PROTOBUF_FIELD_OFFSET(UpdateMessageStatusRequest, _impl_.status_), 0, 0,
@@ -4691,9 +4695,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> UpdateMessageStatusRequest::_table_ =
   }},
   // no aux_entries
   {{
-    "\44\11\0\0\0\0\0\0"
+    "\44\12\0\0\0\0\0\0"
     "messenger.UpdateMessageStatusRequest"
-    "messageId"
+    "message_id"
   }},
 };
 
@@ -4704,11 +4708,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> UpdateMessageStatusRequest::_table_ =
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string messageId = 1;
-  if (!this->_internal_messageid().empty()) {
-    const std::string& _s = this->_internal_messageid();
+  // string message_id = 1;
+  if (!this->_internal_message_id().empty()) {
+    const std::string& _s = this->_internal_message_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.UpdateMessageStatusRequest.messageId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.UpdateMessageStatusRequest.message_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -4736,10 +4740,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> UpdateMessageStatusRequest::_table_ =
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string messageId = 1;
-  if (!this->_internal_messageid().empty()) {
+  // string message_id = 1;
+  if (!this->_internal_message_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_messageid());
+                                    this->_internal_message_id());
   }
 
   // .messenger.MessageStatus status = 2;
@@ -4767,8 +4771,8 @@ void UpdateMessageStatusRequest::MergeImpl(::google::protobuf::Message& to_msg, 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_messageid().empty()) {
-    _this->_internal_set_messageid(from._internal_messageid());
+  if (!from._internal_message_id().empty()) {
+    _this->_internal_set_message_id(from._internal_message_id());
   }
   if (from._internal_status() != 0) {
     _this->_internal_set_status(from._internal_status());
@@ -4795,7 +4799,7 @@ void UpdateMessageStatusRequest::InternalSwap(UpdateMessageStatusRequest* PROTOB
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.messageid_, &other->_impl_.messageid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_id_, &other->_impl_.message_id_, arena);
   swap(_impl_.status_, other->_impl_.status_);
 }
 
@@ -5033,8 +5037,8 @@ AddContactRequest::AddContactRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE AddContactRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
-        contactid_(arena, from.contactid_),
+      : user_id_(arena, from.user_id_),
+        contact_id_(arena, from.contact_id_),
         _cached_size_{0} {}
 
 AddContactRequest::AddContactRequest(
@@ -5052,8 +5056,8 @@ AddContactRequest::AddContactRequest(
 inline PROTOBUF_NDEBUG_INLINE AddContactRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
-        contactid_(arena),
+      : user_id_(arena),
+        contact_id_(arena),
         _cached_size_{0} {}
 
 inline void AddContactRequest::SharedCtor(::_pb::Arena* arena) {
@@ -5066,8 +5070,8 @@ AddContactRequest::~AddContactRequest() {
 }
 inline void AddContactRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
-  _impl_.contactid_.Destroy();
+  _impl_.user_id_.Destroy();
+  _impl_.contact_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -5078,8 +5082,8 @@ PROTOBUF_NOINLINE void AddContactRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
-  _impl_.contactid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
+  _impl_.contact_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -5091,7 +5095,7 @@ const char* AddContactRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 51, 2> AddContactRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 53, 2> AddContactRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -5105,28 +5109,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 51, 2> AddContactRequest::_table_ = {
     &_AddContactRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string contactId = 2;
+    // string contact_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.contactid_)}},
-    // string userId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.contact_id_)}},
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string contactId = 2;
-    {PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.contactid_), 0, 0,
+    // string contact_id = 2;
+    {PROTOBUF_FIELD_OFFSET(AddContactRequest, _impl_.contact_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\33\6\11\0\0\0\0\0"
+    "\33\7\12\0\0\0\0\0"
     "messenger.AddContactRequest"
-    "userId"
-    "contactId"
+    "user_id"
+    "contact_id"
   }},
 };
 
@@ -5137,19 +5141,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 51, 2> AddContactRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddContactRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddContactRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string contactId = 2;
-  if (!this->_internal_contactid().empty()) {
-    const std::string& _s = this->_internal_contactid();
+  // string contact_id = 2;
+  if (!this->_internal_contact_id().empty()) {
+    const std::string& _s = this->_internal_contact_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddContactRequest.contactId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddContactRequest.contact_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -5170,16 +5174,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 51, 2> AddContactRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
-  // string contactId = 2;
-  if (!this->_internal_contactid().empty()) {
+  // string contact_id = 2;
+  if (!this->_internal_contact_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_contactid());
+                                    this->_internal_contact_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -5201,11 +5205,11 @@ void AddContactRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::g
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
-  if (!from._internal_contactid().empty()) {
-    _this->_internal_set_contactid(from._internal_contactid());
+  if (!from._internal_contact_id().empty()) {
+    _this->_internal_set_contact_id(from._internal_contact_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -5229,8 +5233,8 @@ void AddContactRequest::InternalSwap(AddContactRequest* PROTOBUF_RESTRICT other)
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contactid_, &other->_impl_.contactid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contact_id_, &other->_impl_.contact_id_, arena);
 }
 
 ::google::protobuf::Metadata AddContactRequest::GetMetadata() const {
@@ -5467,8 +5471,8 @@ RemoveContactRequest::RemoveContactRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE RemoveContactRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
-        contactid_(arena, from.contactid_),
+      : user_id_(arena, from.user_id_),
+        contact_id_(arena, from.contact_id_),
         _cached_size_{0} {}
 
 RemoveContactRequest::RemoveContactRequest(
@@ -5486,8 +5490,8 @@ RemoveContactRequest::RemoveContactRequest(
 inline PROTOBUF_NDEBUG_INLINE RemoveContactRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
-        contactid_(arena),
+      : user_id_(arena),
+        contact_id_(arena),
         _cached_size_{0} {}
 
 inline void RemoveContactRequest::SharedCtor(::_pb::Arena* arena) {
@@ -5500,8 +5504,8 @@ RemoveContactRequest::~RemoveContactRequest() {
 }
 inline void RemoveContactRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
-  _impl_.contactid_.Destroy();
+  _impl_.user_id_.Destroy();
+  _impl_.contact_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -5512,8 +5516,8 @@ PROTOBUF_NOINLINE void RemoveContactRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
-  _impl_.contactid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
+  _impl_.contact_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -5525,7 +5529,7 @@ const char* RemoveContactRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 54, 2> RemoveContactRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 56, 2> RemoveContactRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -5539,28 +5543,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> RemoveContactRequest::_table_ = {
     &_RemoveContactRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string contactId = 2;
+    // string contact_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.contactid_)}},
-    // string userId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.contact_id_)}},
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string contactId = 2;
-    {PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.contactid_), 0, 0,
+    // string contact_id = 2;
+    {PROTOBUF_FIELD_OFFSET(RemoveContactRequest, _impl_.contact_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\36\6\11\0\0\0\0\0"
+    "\36\7\12\0\0\0\0\0"
     "messenger.RemoveContactRequest"
-    "userId"
-    "contactId"
+    "user_id"
+    "contact_id"
   }},
 };
 
@@ -5571,19 +5575,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> RemoveContactRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveContactRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveContactRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string contactId = 2;
-  if (!this->_internal_contactid().empty()) {
-    const std::string& _s = this->_internal_contactid();
+  // string contact_id = 2;
+  if (!this->_internal_contact_id().empty()) {
+    const std::string& _s = this->_internal_contact_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveContactRequest.contactId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveContactRequest.contact_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -5604,16 +5608,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 54, 2> RemoveContactRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
-  // string contactId = 2;
-  if (!this->_internal_contactid().empty()) {
+  // string contact_id = 2;
+  if (!this->_internal_contact_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_contactid());
+                                    this->_internal_contact_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -5635,11 +5639,11 @@ void RemoveContactRequest::MergeImpl(::google::protobuf::Message& to_msg, const 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
-  if (!from._internal_contactid().empty()) {
-    _this->_internal_set_contactid(from._internal_contactid());
+  if (!from._internal_contact_id().empty()) {
+    _this->_internal_set_contact_id(from._internal_contact_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -5663,8 +5667,8 @@ void RemoveContactRequest::InternalSwap(RemoveContactRequest* PROTOBUF_RESTRICT 
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contactid_, &other->_impl_.contactid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.contact_id_, &other->_impl_.contact_id_, arena);
 }
 
 ::google::protobuf::Metadata RemoveContactRequest::GetMetadata() const {
@@ -5901,8 +5905,8 @@ ContactList::ContactList(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE ContactList::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : contactids_{visibility, arena, from.contactids_},
-        userid_(arena, from.userid_),
+      : contact_ids_{visibility, arena, from.contact_ids_},
+        user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 ContactList::ContactList(
@@ -5920,8 +5924,8 @@ ContactList::ContactList(
 inline PROTOBUF_NDEBUG_INLINE ContactList::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : contactids_{visibility, arena},
-        userid_(arena),
+      : contact_ids_{visibility, arena},
+        user_id_(arena),
         _cached_size_{0} {}
 
 inline void ContactList::SharedCtor(::_pb::Arena* arena) {
@@ -5934,7 +5938,7 @@ ContactList::~ContactList() {
 }
 inline void ContactList::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -5945,8 +5949,8 @@ PROTOBUF_NOINLINE void ContactList::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.contactids_.Clear();
-  _impl_.userid_.ClearToEmpty();
+  _impl_.contact_ids_.Clear();
+  _impl_.user_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -5958,7 +5962,7 @@ const char* ContactList::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 46, 2> ContactList::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 48, 2> ContactList::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -5972,28 +5976,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> ContactList::_table_ = {
     &_ContactList_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // repeated string contactIds = 2;
+    // repeated string contact_ids = 2;
     {::_pbi::TcParser::FastUR1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ContactList, _impl_.contactids_)}},
-    // string userId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ContactList, _impl_.contact_ids_)}},
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ContactList, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ContactList, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(ContactList, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(ContactList, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // repeated string contactIds = 2;
-    {PROTOBUF_FIELD_OFFSET(ContactList, _impl_.contactids_), 0, 0,
+    // repeated string contact_ids = 2;
+    {PROTOBUF_FIELD_OFFSET(ContactList, _impl_.contact_ids_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
   }},
   // no aux_entries
   {{
-    "\25\6\12\0\0\0\0\0"
+    "\25\7\13\0\0\0\0\0"
     "messenger.ContactList"
-    "userId"
-    "contactIds"
+    "user_id"
+    "contact_ids"
   }},
 };
 
@@ -6004,19 +6008,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> ContactList::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ContactList.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ContactList.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // repeated string contactIds = 2;
-  for (int i = 0, n = this->_internal_contactids_size(); i < n; ++i) {
-    const auto& s = this->_internal_contactids().Get(i);
+  // repeated string contact_ids = 2;
+  for (int i = 0, n = this->_internal_contact_ids_size(); i < n; ++i) {
+    const auto& s = this->_internal_contact_ids().Get(i);
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ContactList.contactIds");
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ContactList.contact_ids");
     target = stream->WriteString(2, s, target);
   }
 
@@ -6037,16 +6041,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> ContactList::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated string contactIds = 2;
-  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_contactids().size());
-  for (int i = 0, n = _internal_contactids().size(); i < n; ++i) {
+  // repeated string contact_ids = 2;
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_contact_ids().size());
+  for (int i = 0, n = _internal_contact_ids().size(); i < n; ++i) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-        _internal_contactids().Get(i));
+        _internal_contact_ids().Get(i));
   }
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -6068,9 +6072,9 @@ void ContactList::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_contactids()->MergeFrom(from._internal_contactids());
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  _this->_internal_mutable_contact_ids()->MergeFrom(from._internal_contact_ids());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -6094,8 +6098,8 @@ void ContactList::InternalSwap(ContactList* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.contactids_.InternalSwap(&other->_impl_.contactids_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  _impl_.contact_ids_.InternalSwap(&other->_impl_.contact_ids_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
 }
 
 ::google::protobuf::Metadata ContactList::GetMetadata() const {
@@ -6117,7 +6121,7 @@ SentMessage::SentMessage(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE SentMessage::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : id_(arena, from.id_),
+      : chat_id_(arena, from.chat_id_),
         content_(arena, from.content_),
         _cached_size_{0} {}
 
@@ -6137,7 +6141,7 @@ SentMessage::SentMessage(
 inline PROTOBUF_NDEBUG_INLINE SentMessage::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : id_(arena),
+      : chat_id_(arena),
         content_(arena),
         _cached_size_{0} {}
 
@@ -6152,7 +6156,7 @@ SentMessage::~SentMessage() {
 }
 inline void SentMessage::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.id_.Destroy();
+  _impl_.chat_id_.Destroy();
   _impl_.content_.Destroy();
   _impl_.~Impl_();
 }
@@ -6164,7 +6168,7 @@ PROTOBUF_NOINLINE void SentMessage::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.id_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
   _impl_.content_.ClearToEmpty();
   _impl_.type_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -6178,13 +6182,13 @@ const char* SentMessage::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 39, 2> SentMessage::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 44, 2> SentMessage::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    3, 24,  // max_field_number, fast_idx_mask
+    4, 24,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967288,  // skipmap
+    4294967282,  // skipmap
     offsetof(decltype(_table_), field_entries),
     3,  // num_field_entries
     0,  // num_aux_entries
@@ -6192,34 +6196,34 @@ const ::_pbi::TcParseTable<2, 3, 0, 39, 2> SentMessage::_table_ = {
     &_SentMessage_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
+    // string content = 4;
+    {::_pbi::TcParser::FastUS1,
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.content_)}},
+    // string chat_id = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.chat_id_)}},
     {::_pbi::TcParser::MiniParse, {}},
-    // string id = 1;
-    {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.id_)}},
-    // .messenger.MessageType type = 2;
+    // .messenger.MessageType type = 3;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SentMessage, _impl_.type_), 63>(),
-     {16, 63, 0, PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.type_)}},
-    // string content = 3;
-    {::_pbi::TcParser::FastUS1,
-     {26, 63, 0, PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.content_)}},
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.type_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string id = 1;
-    {PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.id_), 0, 0,
+    // string chat_id = 1;
+    {PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // .messenger.MessageType type = 2;
+    // .messenger.MessageType type = 3;
     {PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.type_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
-    // string content = 3;
+    // string content = 4;
     {PROTOBUF_FIELD_OFFSET(SentMessage, _impl_.content_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\25\2\0\7\0\0\0\0"
+    "\25\7\0\7\0\0\0\0"
     "messenger.SentMessage"
-    "id"
+    "chat_id"
     "content"
   }},
 };
@@ -6231,27 +6235,27 @@ const ::_pbi::TcParseTable<2, 3, 0, 39, 2> SentMessage::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string id = 1;
-  if (!this->_internal_id().empty()) {
-    const std::string& _s = this->_internal_id();
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.SentMessage.id");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.SentMessage.chat_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // .messenger.MessageType type = 2;
+  // .messenger.MessageType type = 3;
   if (this->_internal_type() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
-        2, this->_internal_type(), target);
+        3, this->_internal_type(), target);
   }
 
-  // string content = 3;
+  // string content = 4;
   if (!this->_internal_content().empty()) {
     const std::string& _s = this->_internal_content();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
         _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.SentMessage.content");
-    target = stream->WriteStringMaybeAliased(3, _s, target);
+    target = stream->WriteStringMaybeAliased(4, _s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6271,19 +6275,19 @@ const ::_pbi::TcParseTable<2, 3, 0, 39, 2> SentMessage::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string id = 1;
-  if (!this->_internal_id().empty()) {
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_id());
+                                    this->_internal_chat_id());
   }
 
-  // string content = 3;
+  // string content = 4;
   if (!this->_internal_content().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_content());
   }
 
-  // .messenger.MessageType type = 2;
+  // .messenger.MessageType type = 3;
   if (this->_internal_type() != 0) {
     total_size += 1 +
                   ::_pbi::WireFormatLite::EnumSize(this->_internal_type());
@@ -6308,8 +6312,8 @@ void SentMessage::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_id().empty()) {
-    _this->_internal_set_id(from._internal_id());
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
   }
   if (!from._internal_content().empty()) {
     _this->_internal_set_content(from._internal_content());
@@ -6339,7 +6343,7 @@ void SentMessage::InternalSwap(SentMessage* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.content_, &other->_impl_.content_, arena);
   swap(_impl_.type_, other->_impl_.type_);
 }
@@ -6363,7 +6367,7 @@ GetMessagesOffsetRequest::GetMessagesOffsetRequest(::google::protobuf::Arena* ar
 inline PROTOBUF_NDEBUG_INLINE GetMessagesOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : chatid_(arena, from.chatid_),
+      : chat_id_(arena, from.chat_id_),
         _cached_size_{0} {}
 
 GetMessagesOffsetRequest::GetMessagesOffsetRequest(
@@ -6375,17 +6379,19 @@ GetMessagesOffsetRequest::GetMessagesOffsetRequest(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_);
+  _impl_.offset_ = from._impl_.offset_;
 
   // @@protoc_insertion_point(copy_constructor:messenger.GetMessagesOffsetRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE GetMessagesOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : chatid_(arena),
+      : chat_id_(arena),
         _cached_size_{0} {}
 
 inline void GetMessagesOffsetRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.offset_ = {};
 }
 GetMessagesOffsetRequest::~GetMessagesOffsetRequest() {
   // @@protoc_insertion_point(destructor:messenger.GetMessagesOffsetRequest)
@@ -6394,7 +6400,7 @@ GetMessagesOffsetRequest::~GetMessagesOffsetRequest() {
 }
 inline void GetMessagesOffsetRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.chatid_.Destroy();
+  _impl_.chat_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -6405,7 +6411,8 @@ PROTOBUF_NOINLINE void GetMessagesOffsetRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
+  _impl_.offset_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -6417,35 +6424,41 @@ const char* GetMessagesOffsetRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 49, 2> GetMessagesOffsetRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 50, 2> GetMessagesOffsetRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 8,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    2,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     &_GetMessagesOffsetRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string chatId = 1;
+    // int64 offset = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetMessagesOffsetRequest, _impl_.offset_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetMessagesOffsetRequest, _impl_.offset_)}},
+    // string chat_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetMessagesOffsetRequest, _impl_.chatid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetMessagesOffsetRequest, _impl_.chat_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string chatId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetMessagesOffsetRequest, _impl_.chatid_), 0, 0,
+    // string chat_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetMessagesOffsetRequest, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int64 offset = 2;
+    {PROTOBUF_FIELD_OFFSET(GetMessagesOffsetRequest, _impl_.offset_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
   }},
   // no aux_entries
   {{
-    "\42\6\0\0\0\0\0\0"
+    "\42\7\0\0\0\0\0\0"
     "messenger.GetMessagesOffsetRequest"
-    "chatId"
+    "chat_id"
   }},
 };
 
@@ -6456,12 +6469,19 @@ const ::_pbi::TcParseTable<0, 1, 0, 49, 2> GetMessagesOffsetRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string chatId = 1;
-  if (!this->_internal_chatid().empty()) {
-    const std::string& _s = this->_internal_chatid();
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetMessagesOffsetRequest.chatId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetMessagesOffsetRequest.chat_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // int64 offset = 2;
+  if (this->_internal_offset() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt64ToArrayWithField<2>(
+            stream, this->_internal_offset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6481,10 +6501,16 @@ const ::_pbi::TcParseTable<0, 1, 0, 49, 2> GetMessagesOffsetRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string chatId = 1;
-  if (!this->_internal_chatid().empty()) {
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_chatid());
+                                    this->_internal_chat_id());
+  }
+
+  // int64 offset = 2;
+  if (this->_internal_offset() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+        this->_internal_offset());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -6506,8 +6532,11 @@ void GetMessagesOffsetRequest::MergeImpl(::google::protobuf::Message& to_msg, co
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_chatid().empty()) {
-    _this->_internal_set_chatid(from._internal_chatid());
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
+  }
+  if (from._internal_offset() != 0) {
+    _this->_internal_set_offset(from._internal_offset());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -6531,7 +6560,8 @@ void GetMessagesOffsetRequest::InternalSwap(GetMessagesOffsetRequest* PROTOBUF_R
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chatid_, &other->_impl_.chatid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
+        swap(_impl_.offset_, other->_impl_.offset_);
 }
 
 ::google::protobuf::Metadata GetMessagesOffsetRequest::GetMetadata() const {
@@ -6723,7 +6753,7 @@ GetMessagesConversionRequest::GetMessagesConversionRequest(::google::protobuf::A
 inline PROTOBUF_NDEBUG_INLINE GetMessagesConversionRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : chatid_(arena, from.chatid_),
+      : chat_id_(arena, from.chat_id_),
         _cached_size_{0} {}
 
 GetMessagesConversionRequest::GetMessagesConversionRequest(
@@ -6748,7 +6778,7 @@ GetMessagesConversionRequest::GetMessagesConversionRequest(
 inline PROTOBUF_NDEBUG_INLINE GetMessagesConversionRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : chatid_(arena),
+      : chat_id_(arena),
         _cached_size_{0} {}
 
 inline void GetMessagesConversionRequest::SharedCtor(::_pb::Arena* arena) {
@@ -6767,7 +6797,7 @@ GetMessagesConversionRequest::~GetMessagesConversionRequest() {
 }
 inline void GetMessagesConversionRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.chatid_.Destroy();
+  _impl_.chat_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -6778,7 +6808,7 @@ PROTOBUF_NOINLINE void GetMessagesConversionRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
   ::memset(&_impl_.offset_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.count_) -
       reinterpret_cast<char*>(&_impl_.offset_)) + sizeof(_impl_.count_));
@@ -6793,7 +6823,7 @@ const char* GetMessagesConversionRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 53, 2> GetMessagesConversionRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 54, 2> GetMessagesConversionRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -6808,9 +6838,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 53, 2> GetMessagesConversionRequest::_table_
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
-    // string chatId = 1;
+    // string chat_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.chatid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.chat_id_)}},
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetMessagesConversionRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.offset_)}},
@@ -6820,8 +6850,8 @@ const ::_pbi::TcParseTable<2, 3, 0, 53, 2> GetMessagesConversionRequest::_table_
   }}, {{
     65535, 65535
   }}, {{
-    // string chatId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.chatid_), 0, 0,
+    // string chat_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.offset_), 0, 0,
@@ -6832,9 +6862,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 53, 2> GetMessagesConversionRequest::_table_
   }},
   // no aux_entries
   {{
-    "\46\6\0\0\0\0\0\0"
+    "\46\7\0\0\0\0\0\0"
     "messenger.GetMessagesConversionRequest"
-    "chatId"
+    "chat_id"
   }},
 };
 
@@ -6845,11 +6875,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 53, 2> GetMessagesConversionRequest::_table_
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string chatId = 1;
-  if (!this->_internal_chatid().empty()) {
-    const std::string& _s = this->_internal_chatid();
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetMessagesConversionRequest.chatId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetMessagesConversionRequest.chat_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -6884,10 +6914,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 53, 2> GetMessagesConversionRequest::_table_
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string chatId = 1;
-  if (!this->_internal_chatid().empty()) {
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_chatid());
+                                    this->_internal_chat_id());
   }
 
   // int64 offset = 2;
@@ -6921,8 +6951,8 @@ void GetMessagesConversionRequest::MergeImpl(::google::protobuf::Message& to_msg
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_chatid().empty()) {
-    _this->_internal_set_chatid(from._internal_chatid());
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -6952,7 +6982,7 @@ void GetMessagesConversionRequest::InternalSwap(GetMessagesConversionRequest* PR
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chatid_, &other->_impl_.chatid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(GetMessagesConversionRequest, _impl_.count_)
       + sizeof(GetMessagesConversionRequest::_impl_.count_)
@@ -7163,8 +7193,8 @@ ChatMessage::ChatMessage(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE ChatMessage::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : id_(arena, from.id_),
-        senderid_(arena, from.senderid_),
+      : chat_id_(arena, from.chat_id_),
+        id_(arena, from.id_),
         content_(arena, from.content_),
         _cached_size_{0} {}
 
@@ -7184,8 +7214,8 @@ ChatMessage::ChatMessage(
 inline PROTOBUF_NDEBUG_INLINE ChatMessage::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : id_(arena),
-        senderid_(arena),
+      : chat_id_(arena),
+        id_(arena),
         content_(arena),
         _cached_size_{0} {}
 
@@ -7200,8 +7230,8 @@ ChatMessage::~ChatMessage() {
 }
 inline void ChatMessage::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
+  _impl_.chat_id_.Destroy();
   _impl_.id_.Destroy();
-  _impl_.senderid_.Destroy();
   _impl_.content_.Destroy();
   _impl_.~Impl_();
 }
@@ -7213,8 +7243,8 @@ PROTOBUF_NOINLINE void ChatMessage::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  _impl_.chat_id_.ClearToEmpty();
   _impl_.id_.ClearToEmpty();
-  _impl_.senderid_.ClearToEmpty();
   _impl_.content_.ClearToEmpty();
   _impl_.type_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -7228,7 +7258,7 @@ const char* ChatMessage::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 0, 40, 2> ChatMessage::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 0, 39, 2> ChatMessage::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -7245,23 +7275,23 @@ const ::_pbi::TcParseTable<2, 4, 0, 40, 2> ChatMessage::_table_ = {
     // bytes content = 4;
     {::_pbi::TcParser::FastBS1,
      {34, 63, 0, PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.content_)}},
-    // string id = 1;
+    // string chat_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.id_)}},
-    // string senderId = 2;
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.chat_id_)}},
+    // string id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.senderid_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.id_)}},
     // .messenger.MessageType type = 3;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(ChatMessage, _impl_.type_), 63>(),
      {24, 63, 0, PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.type_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string id = 1;
-    {PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.id_), 0, 0,
+    // string chat_id = 1;
+    {PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string senderId = 2;
-    {PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.senderid_), 0, 0,
+    // string id = 2;
+    {PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // .messenger.MessageType type = 3;
     {PROTOBUF_FIELD_OFFSET(ChatMessage, _impl_.type_), 0, 0,
@@ -7272,10 +7302,10 @@ const ::_pbi::TcParseTable<2, 4, 0, 40, 2> ChatMessage::_table_ = {
   }},
   // no aux_entries
   {{
-    "\25\2\10\0\0\0\0\0"
+    "\25\7\2\0\0\0\0\0"
     "messenger.ChatMessage"
+    "chat_id"
     "id"
-    "senderId"
   }},
 };
 
@@ -7286,19 +7316,19 @@ const ::_pbi::TcParseTable<2, 4, 0, 40, 2> ChatMessage::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string id = 1;
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatMessage.chat_id");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
+  }
+
+  // string id = 2;
   if (!this->_internal_id().empty()) {
     const std::string& _s = this->_internal_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
         _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatMessage.id");
-    target = stream->WriteStringMaybeAliased(1, _s, target);
-  }
-
-  // string senderId = 2;
-  if (!this->_internal_senderid().empty()) {
-    const std::string& _s = this->_internal_senderid();
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatMessage.senderId");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -7332,16 +7362,16 @@ const ::_pbi::TcParseTable<2, 4, 0, 40, 2> ChatMessage::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string id = 1;
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                    this->_internal_chat_id());
+  }
+
+  // string id = 2;
   if (!this->_internal_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_id());
-  }
-
-  // string senderId = 2;
-  if (!this->_internal_senderid().empty()) {
-    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_senderid());
   }
 
   // bytes content = 4;
@@ -7375,11 +7405,11 @@ void ChatMessage::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
+  }
   if (!from._internal_id().empty()) {
     _this->_internal_set_id(from._internal_id());
-  }
-  if (!from._internal_senderid().empty()) {
-    _this->_internal_set_senderid(from._internal_senderid());
   }
   if (!from._internal_content().empty()) {
     _this->_internal_set_content(from._internal_content());
@@ -7409,8 +7439,8 @@ void ChatMessage::InternalSwap(ChatMessage* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.senderid_, &other->_impl_.senderid_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.content_, &other->_impl_.content_, arena);
   swap(_impl_.type_, other->_impl_.type_);
 }
@@ -7434,7 +7464,7 @@ DeleteMessageRequest::DeleteMessageRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE DeleteMessageRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : messageid_(arena, from.messageid_),
+      : message_id_(arena, from.message_id_),
         _cached_size_{0} {}
 
 DeleteMessageRequest::DeleteMessageRequest(
@@ -7452,7 +7482,7 @@ DeleteMessageRequest::DeleteMessageRequest(
 inline PROTOBUF_NDEBUG_INLINE DeleteMessageRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : messageid_(arena),
+      : message_id_(arena),
         _cached_size_{0} {}
 
 inline void DeleteMessageRequest::SharedCtor(::_pb::Arena* arena) {
@@ -7465,7 +7495,7 @@ DeleteMessageRequest::~DeleteMessageRequest() {
 }
 inline void DeleteMessageRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.messageid_.Destroy();
+  _impl_.message_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -7476,7 +7506,7 @@ PROTOBUF_NOINLINE void DeleteMessageRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.messageid_.ClearToEmpty();
+  _impl_.message_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -7488,7 +7518,7 @@ const char* DeleteMessageRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 48, 2> DeleteMessageRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 49, 2> DeleteMessageRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -7502,21 +7532,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> DeleteMessageRequest::_table_ = {
     &_DeleteMessageRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string messageId = 1;
+    // string message_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(DeleteMessageRequest, _impl_.messageid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(DeleteMessageRequest, _impl_.message_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string messageId = 1;
-    {PROTOBUF_FIELD_OFFSET(DeleteMessageRequest, _impl_.messageid_), 0, 0,
+    // string message_id = 1;
+    {PROTOBUF_FIELD_OFFSET(DeleteMessageRequest, _impl_.message_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\36\11\0\0\0\0\0\0"
+    "\36\12\0\0\0\0\0\0"
     "messenger.DeleteMessageRequest"
-    "messageId"
+    "message_id"
   }},
 };
 
@@ -7527,11 +7557,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> DeleteMessageRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string messageId = 1;
-  if (!this->_internal_messageid().empty()) {
-    const std::string& _s = this->_internal_messageid();
+  // string message_id = 1;
+  if (!this->_internal_message_id().empty()) {
+    const std::string& _s = this->_internal_message_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.DeleteMessageRequest.messageId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.DeleteMessageRequest.message_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -7552,10 +7582,10 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> DeleteMessageRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string messageId = 1;
-  if (!this->_internal_messageid().empty()) {
+  // string message_id = 1;
+  if (!this->_internal_message_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_messageid());
+                                    this->_internal_message_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -7577,8 +7607,8 @@ void DeleteMessageRequest::MergeImpl(::google::protobuf::Message& to_msg, const 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_messageid().empty()) {
-    _this->_internal_set_messageid(from._internal_messageid());
+  if (!from._internal_message_id().empty()) {
+    _this->_internal_set_message_id(from._internal_message_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -7602,7 +7632,7 @@ void DeleteMessageRequest::InternalSwap(DeleteMessageRequest* PROTOBUF_RESTRICT 
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.messageid_, &other->_impl_.messageid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_id_, &other->_impl_.message_id_, arena);
 }
 
 ::google::protobuf::Metadata DeleteMessageRequest::GetMetadata() const {
@@ -7839,7 +7869,7 @@ EditMessageRequest::EditMessageRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE EditMessageRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : messageid_(arena, from.messageid_),
+      : message_id_(arena, from.message_id_),
         newcontent_(arena, from.newcontent_),
         _cached_size_{0} {}
 
@@ -7858,7 +7888,7 @@ EditMessageRequest::EditMessageRequest(
 inline PROTOBUF_NDEBUG_INLINE EditMessageRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : messageid_(arena),
+      : message_id_(arena),
         newcontent_(arena),
         _cached_size_{0} {}
 
@@ -7872,7 +7902,7 @@ EditMessageRequest::~EditMessageRequest() {
 }
 inline void EditMessageRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.messageid_.Destroy();
+  _impl_.message_id_.Destroy();
   _impl_.newcontent_.Destroy();
   _impl_.~Impl_();
 }
@@ -7884,7 +7914,7 @@ PROTOBUF_NOINLINE void EditMessageRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.messageid_.ClearToEmpty();
+  _impl_.message_id_.ClearToEmpty();
   _impl_.newcontent_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -7897,7 +7927,7 @@ const char* EditMessageRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 46, 2> EditMessageRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 47, 2> EditMessageRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -7914,14 +7944,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> EditMessageRequest::_table_ = {
     // bytes newContent = 2;
     {::_pbi::TcParser::FastBS1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(EditMessageRequest, _impl_.newcontent_)}},
-    // string messageId = 1;
+    // string message_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(EditMessageRequest, _impl_.messageid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(EditMessageRequest, _impl_.message_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string messageId = 1;
-    {PROTOBUF_FIELD_OFFSET(EditMessageRequest, _impl_.messageid_), 0, 0,
+    // string message_id = 1;
+    {PROTOBUF_FIELD_OFFSET(EditMessageRequest, _impl_.message_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // bytes newContent = 2;
     {PROTOBUF_FIELD_OFFSET(EditMessageRequest, _impl_.newcontent_), 0, 0,
@@ -7929,9 +7959,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> EditMessageRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\34\11\0\0\0\0\0\0"
+    "\34\12\0\0\0\0\0\0"
     "messenger.EditMessageRequest"
-    "messageId"
+    "message_id"
   }},
 };
 
@@ -7942,11 +7972,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> EditMessageRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string messageId = 1;
-  if (!this->_internal_messageid().empty()) {
-    const std::string& _s = this->_internal_messageid();
+  // string message_id = 1;
+  if (!this->_internal_message_id().empty()) {
+    const std::string& _s = this->_internal_message_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.EditMessageRequest.messageId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.EditMessageRequest.message_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -7973,10 +8003,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> EditMessageRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string messageId = 1;
-  if (!this->_internal_messageid().empty()) {
+  // string message_id = 1;
+  if (!this->_internal_message_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_messageid());
+                                    this->_internal_message_id());
   }
 
   // bytes newContent = 2;
@@ -8004,8 +8034,8 @@ void EditMessageRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_messageid().empty()) {
-    _this->_internal_set_messageid(from._internal_messageid());
+  if (!from._internal_message_id().empty()) {
+    _this->_internal_set_message_id(from._internal_message_id());
   }
   if (!from._internal_newcontent().empty()) {
     _this->_internal_set_newcontent(from._internal_newcontent());
@@ -8032,7 +8062,7 @@ void EditMessageRequest::InternalSwap(EditMessageRequest* PROTOBUF_RESTRICT othe
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.messageid_, &other->_impl_.messageid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_id_, &other->_impl_.message_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.newcontent_, &other->_impl_.newcontent_, arena);
 }
 
@@ -8270,11 +8300,11 @@ GroupChat::GroupChat(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE GroupChat::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : memberids_{visibility, arena, from.memberids_},
+      : member_ids_{visibility, arena, from.member_ids_},
         roles_{visibility, arena, from.roles_},
         id_(arena, from.id_),
         name_(arena, from.name_),
-        folderid_(arena, from.folderid_),
+        folder_id_(arena, from.folder_id_),
         _cached_size_{0} {}
 
 GroupChat::GroupChat(
@@ -8292,11 +8322,11 @@ GroupChat::GroupChat(
 inline PROTOBUF_NDEBUG_INLINE GroupChat::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : memberids_{visibility, arena},
+      : member_ids_{visibility, arena},
         roles_{visibility, arena},
         id_(arena),
         name_(arena),
-        folderid_(arena),
+        folder_id_(arena),
         _cached_size_{0} {}
 
 inline void GroupChat::SharedCtor(::_pb::Arena* arena) {
@@ -8311,7 +8341,7 @@ inline void GroupChat::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.id_.Destroy();
   _impl_.name_.Destroy();
-  _impl_.folderid_.Destroy();
+  _impl_.folder_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -8322,11 +8352,11 @@ PROTOBUF_NOINLINE void GroupChat::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.memberids_.Clear();
+  _impl_.member_ids_.Clear();
   _impl_.roles_.Clear();
   _impl_.id_.ClearToEmpty();
   _impl_.name_.ClearToEmpty();
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -8338,7 +8368,7 @@ const char* GroupChat::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
+const ::_pbi::TcParseTable<3, 5, 1, 53, 2> GroupChat::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -8359,15 +8389,15 @@ const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
     // string name = 2;
     {::_pbi::TcParser::FastUS1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.name_)}},
-    // repeated string memberIds = 3;
+    // repeated string member_ids = 3;
     {::_pbi::TcParser::FastUR1,
-     {26, 63, 0, PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.memberids_)}},
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.member_ids_)}},
     // repeated .messenger.Role roles = 4;
     {::_pbi::TcParser::FastMtR1,
      {34, 63, 0, PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.roles_)}},
-    // string folderId = 5;
+    // string folder_id = 5;
     {::_pbi::TcParser::FastUS1,
-     {42, 63, 0, PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.folderid_)}},
+     {42, 63, 0, PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.folder_id_)}},
     {::_pbi::TcParser::MiniParse, {}},
     {::_pbi::TcParser::MiniParse, {}},
   }}, {{
@@ -8379,24 +8409,24 @@ const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
     // string name = 2;
     {PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.name_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // repeated string memberIds = 3;
-    {PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.memberids_), 0, 0,
+    // repeated string member_ids = 3;
+    {PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.member_ids_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
     // repeated .messenger.Role roles = 4;
     {PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.roles_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
-    // string folderId = 5;
-    {PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.folderid_), 0, 0,
+    // string folder_id = 5;
+    {PROTOBUF_FIELD_OFFSET(GroupChat, _impl_.folder_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }}, {{
     {::_pbi::TcParser::GetTable<::messenger::Role>()},
   }}, {{
-    "\23\2\4\11\0\10\0\0"
+    "\23\2\4\12\0\11\0\0"
     "messenger.GroupChat"
     "id"
     "name"
-    "memberIds"
-    "folderId"
+    "member_ids"
+    "folder_id"
   }},
 };
 
@@ -8423,11 +8453,11 @@ const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
-  // repeated string memberIds = 3;
-  for (int i = 0, n = this->_internal_memberids_size(); i < n; ++i) {
-    const auto& s = this->_internal_memberids().Get(i);
+  // repeated string member_ids = 3;
+  for (int i = 0, n = this->_internal_member_ids_size(); i < n; ++i) {
+    const auto& s = this->_internal_member_ids().Get(i);
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GroupChat.memberIds");
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GroupChat.member_ids");
     target = stream->WriteString(3, s, target);
   }
 
@@ -8439,11 +8469,11 @@ const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
         InternalWriteMessage(4, repfield, repfield.GetCachedSize(), target, stream);
   }
 
-  // string folderId = 5;
-  if (!this->_internal_folderid().empty()) {
-    const std::string& _s = this->_internal_folderid();
+  // string folder_id = 5;
+  if (!this->_internal_folder_id().empty()) {
+    const std::string& _s = this->_internal_folder_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GroupChat.folderId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GroupChat.folder_id");
     target = stream->WriteStringMaybeAliased(5, _s, target);
   }
 
@@ -8464,11 +8494,11 @@ const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated string memberIds = 3;
-  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_memberids().size());
-  for (int i = 0, n = _internal_memberids().size(); i < n; ++i) {
+  // repeated string member_ids = 3;
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_member_ids().size());
+  for (int i = 0, n = _internal_member_ids().size(); i < n; ++i) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-        _internal_memberids().Get(i));
+        _internal_member_ids().Get(i));
   }
   // repeated .messenger.Role roles = 4;
   total_size += 1UL * this->_internal_roles_size();
@@ -8488,10 +8518,10 @@ const ::_pbi::TcParseTable<3, 5, 1, 51, 2> GroupChat::_table_ = {
                                     this->_internal_name());
   }
 
-  // string folderId = 5;
-  if (!this->_internal_folderid().empty()) {
+  // string folder_id = 5;
+  if (!this->_internal_folder_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_folderid());
+                                    this->_internal_folder_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -8513,7 +8543,7 @@ void GroupChat::MergeImpl(::google::protobuf::Message& to_msg, const ::google::p
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_memberids()->MergeFrom(from._internal_memberids());
+  _this->_internal_mutable_member_ids()->MergeFrom(from._internal_member_ids());
   _this->_internal_mutable_roles()->MergeFrom(
       from._internal_roles());
   if (!from._internal_id().empty()) {
@@ -8522,8 +8552,8 @@ void GroupChat::MergeImpl(::google::protobuf::Message& to_msg, const ::google::p
   if (!from._internal_name().empty()) {
     _this->_internal_set_name(from._internal_name());
   }
-  if (!from._internal_folderid().empty()) {
-    _this->_internal_set_folderid(from._internal_folderid());
+  if (!from._internal_folder_id().empty()) {
+    _this->_internal_set_folder_id(from._internal_folder_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -8547,11 +8577,11 @@ void GroupChat::InternalSwap(GroupChat* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.memberids_.InternalSwap(&other->_impl_.memberids_);
+  _impl_.member_ids_.InternalSwap(&other->_impl_.member_ids_);
   _impl_.roles_.InternalSwap(&other->_impl_.roles_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, &other->_impl_.name_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folderid_, &other->_impl_.folderid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folder_id_, &other->_impl_.folder_id_, arena);
 }
 
 ::google::protobuf::Metadata GroupChat::GetMetadata() const {
@@ -8573,7 +8603,7 @@ GetNewMessagesRequest::GetNewMessagesRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE GetNewMessagesRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : chatid_(arena, from.chatid_),
+      : chat_id_(arena, from.chat_id_),
         _cached_size_{0} {}
 
 GetNewMessagesRequest::GetNewMessagesRequest(
@@ -8592,7 +8622,7 @@ GetNewMessagesRequest::GetNewMessagesRequest(
 inline PROTOBUF_NDEBUG_INLINE GetNewMessagesRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : chatid_(arena),
+      : chat_id_(arena),
         _cached_size_{0} {}
 
 inline void GetNewMessagesRequest::SharedCtor(::_pb::Arena* arena) {
@@ -8606,7 +8636,7 @@ GetNewMessagesRequest::~GetNewMessagesRequest() {
 }
 inline void GetNewMessagesRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.chatid_.Destroy();
+  _impl_.chat_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -8617,7 +8647,7 @@ PROTOBUF_NOINLINE void GetNewMessagesRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
   _impl_.offset_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -8630,7 +8660,7 @@ const char* GetNewMessagesRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 46, 2> GetNewMessagesRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewMessagesRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -8647,14 +8677,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> GetNewMessagesRequest::_table_ = {
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetNewMessagesRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewMessagesRequest, _impl_.offset_)}},
-    // string chatId = 1;
+    // string chat_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewMessagesRequest, _impl_.chatid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewMessagesRequest, _impl_.chat_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string chatId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetNewMessagesRequest, _impl_.chatid_), 0, 0,
+    // string chat_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetNewMessagesRequest, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetNewMessagesRequest, _impl_.offset_), 0, 0,
@@ -8662,9 +8692,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> GetNewMessagesRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\37\6\0\0\0\0\0\0"
+    "\37\7\0\0\0\0\0\0"
     "messenger.GetNewMessagesRequest"
-    "chatId"
+    "chat_id"
   }},
 };
 
@@ -8675,11 +8705,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> GetNewMessagesRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string chatId = 1;
-  if (!this->_internal_chatid().empty()) {
-    const std::string& _s = this->_internal_chatid();
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewMessagesRequest.chatId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewMessagesRequest.chat_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -8707,10 +8737,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 46, 2> GetNewMessagesRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string chatId = 1;
-  if (!this->_internal_chatid().empty()) {
+  // string chat_id = 1;
+  if (!this->_internal_chat_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_chatid());
+                                    this->_internal_chat_id());
   }
 
   // int64 offset = 2;
@@ -8738,8 +8768,8 @@ void GetNewMessagesRequest::MergeImpl(::google::protobuf::Message& to_msg, const
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_chatid().empty()) {
-    _this->_internal_set_chatid(from._internal_chatid());
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -8766,7 +8796,7 @@ void GetNewMessagesRequest::InternalSwap(GetNewMessagesRequest* PROTOBUF_RESTRIC
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chatid_, &other->_impl_.chatid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
         swap(_impl_.offset_, other->_impl_.offset_);
 }
 
@@ -8789,7 +8819,7 @@ GetGroupChatsOffsetRequest::GetGroupChatsOffsetRequest(::google::protobuf::Arena
 inline PROTOBUF_NDEBUG_INLINE GetGroupChatsOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetGroupChatsOffsetRequest::GetGroupChatsOffsetRequest(
@@ -8807,7 +8837,7 @@ GetGroupChatsOffsetRequest::GetGroupChatsOffsetRequest(
 inline PROTOBUF_NDEBUG_INLINE GetGroupChatsOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetGroupChatsOffsetRequest::SharedCtor(::_pb::Arena* arena) {
@@ -8820,7 +8850,7 @@ GetGroupChatsOffsetRequest::~GetGroupChatsOffsetRequest() {
 }
 inline void GetGroupChatsOffsetRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -8831,7 +8861,7 @@ PROTOBUF_NOINLINE void GetGroupChatsOffsetRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -8843,7 +8873,7 @@ const char* GetGroupChatsOffsetRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 51, 2> GetGroupChatsOffsetRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 52, 2> GetGroupChatsOffsetRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -8857,21 +8887,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 51, 2> GetGroupChatsOffsetRequest::_table_ =
     &_GetGroupChatsOffsetRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetGroupChatsOffsetRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetGroupChatsOffsetRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetGroupChatsOffsetRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetGroupChatsOffsetRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\44\6\0\0\0\0\0\0"
+    "\44\7\0\0\0\0\0\0"
     "messenger.GetGroupChatsOffsetRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -8882,11 +8912,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 51, 2> GetGroupChatsOffsetRequest::_table_ =
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetGroupChatsOffsetRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetGroupChatsOffsetRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -8907,10 +8937,10 @@ const ::_pbi::TcParseTable<0, 1, 0, 51, 2> GetGroupChatsOffsetRequest::_table_ =
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -8932,8 +8962,8 @@ void GetGroupChatsOffsetRequest::MergeImpl(::google::protobuf::Message& to_msg, 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -8957,7 +8987,7 @@ void GetGroupChatsOffsetRequest::InternalSwap(GetGroupChatsOffsetRequest* PROTOB
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
 }
 
 ::google::protobuf::Metadata GetGroupChatsOffsetRequest::GetMetadata() const {
@@ -9149,7 +9179,7 @@ GetGroupChatsConversionRequest::GetGroupChatsConversionRequest(::google::protobu
 inline PROTOBUF_NDEBUG_INLINE GetGroupChatsConversionRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetGroupChatsConversionRequest::GetGroupChatsConversionRequest(
@@ -9174,7 +9204,7 @@ GetGroupChatsConversionRequest::GetGroupChatsConversionRequest(
 inline PROTOBUF_NDEBUG_INLINE GetGroupChatsConversionRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetGroupChatsConversionRequest::SharedCtor(::_pb::Arena* arena) {
@@ -9193,7 +9223,7 @@ GetGroupChatsConversionRequest::~GetGroupChatsConversionRequest() {
 }
 inline void GetGroupChatsConversionRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -9204,7 +9234,7 @@ PROTOBUF_NOINLINE void GetGroupChatsConversionRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   ::memset(&_impl_.offset_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.count_) -
       reinterpret_cast<char*>(&_impl_.offset_)) + sizeof(_impl_.count_));
@@ -9219,7 +9249,7 @@ const char* GetGroupChatsConversionRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 55, 2> GetGroupChatsConversionRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 56, 2> GetGroupChatsConversionRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -9234,9 +9264,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 55, 2> GetGroupChatsConversionRequest::_tabl
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.user_id_)}},
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetGroupChatsConversionRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.offset_)}},
@@ -9246,8 +9276,8 @@ const ::_pbi::TcParseTable<2, 3, 0, 55, 2> GetGroupChatsConversionRequest::_tabl
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.offset_), 0, 0,
@@ -9258,9 +9288,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 55, 2> GetGroupChatsConversionRequest::_tabl
   }},
   // no aux_entries
   {{
-    "\50\6\0\0\0\0\0\0"
+    "\50\7\0\0\0\0\0\0"
     "messenger.GetGroupChatsConversionRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -9271,11 +9301,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 55, 2> GetGroupChatsConversionRequest::_tabl
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetGroupChatsConversionRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetGroupChatsConversionRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -9310,10 +9340,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 55, 2> GetGroupChatsConversionRequest::_tabl
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // int64 offset = 2;
@@ -9347,8 +9377,8 @@ void GetGroupChatsConversionRequest::MergeImpl(::google::protobuf::Message& to_m
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -9378,7 +9408,7 @@ void GetGroupChatsConversionRequest::InternalSwap(GetGroupChatsConversionRequest
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(GetGroupChatsConversionRequest, _impl_.count_)
       + sizeof(GetGroupChatsConversionRequest::_impl_.count_)
@@ -9589,7 +9619,7 @@ GetNewGroupChatsRequest::GetNewGroupChatsRequest(::google::protobuf::Arena* aren
 inline PROTOBUF_NDEBUG_INLINE GetNewGroupChatsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetNewGroupChatsRequest::GetNewGroupChatsRequest(
@@ -9608,7 +9638,7 @@ GetNewGroupChatsRequest::GetNewGroupChatsRequest(
 inline PROTOBUF_NDEBUG_INLINE GetNewGroupChatsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetNewGroupChatsRequest::SharedCtor(::_pb::Arena* arena) {
@@ -9622,7 +9652,7 @@ GetNewGroupChatsRequest::~GetNewGroupChatsRequest() {
 }
 inline void GetNewGroupChatsRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -9633,7 +9663,7 @@ PROTOBUF_NOINLINE void GetNewGroupChatsRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.offset_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -9646,7 +9676,7 @@ const char* GetNewGroupChatsRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 48, 2> GetNewGroupChatsRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 49, 2> GetNewGroupChatsRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -9663,14 +9693,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 48, 2> GetNewGroupChatsRequest::_table_ = {
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetNewGroupChatsRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewGroupChatsRequest, _impl_.offset_)}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewGroupChatsRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewGroupChatsRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetNewGroupChatsRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetNewGroupChatsRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetNewGroupChatsRequest, _impl_.offset_), 0, 0,
@@ -9678,9 +9708,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 48, 2> GetNewGroupChatsRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\41\6\0\0\0\0\0\0"
+    "\41\7\0\0\0\0\0\0"
     "messenger.GetNewGroupChatsRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -9691,11 +9721,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 48, 2> GetNewGroupChatsRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewGroupChatsRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewGroupChatsRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -9723,10 +9753,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 48, 2> GetNewGroupChatsRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // int64 offset = 2;
@@ -9754,8 +9784,8 @@ void GetNewGroupChatsRequest::MergeImpl(::google::protobuf::Message& to_msg, con
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -9782,7 +9812,7 @@ void GetNewGroupChatsRequest::InternalSwap(GetNewGroupChatsRequest* PROTOBUF_RES
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
         swap(_impl_.offset_, other->_impl_.offset_);
 }
 
@@ -9805,8 +9835,8 @@ AddGroupMemberRequest::AddGroupMemberRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE AddGroupMemberRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : groupid_(arena, from.groupid_),
-        memberid_(arena, from.memberid_),
+      : group_id_(arena, from.group_id_),
+        member_id_(arena, from.member_id_),
         _cached_size_{0} {}
 
 AddGroupMemberRequest::AddGroupMemberRequest(
@@ -9824,8 +9854,8 @@ AddGroupMemberRequest::AddGroupMemberRequest(
 inline PROTOBUF_NDEBUG_INLINE AddGroupMemberRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : groupid_(arena),
-        memberid_(arena),
+      : group_id_(arena),
+        member_id_(arena),
         _cached_size_{0} {}
 
 inline void AddGroupMemberRequest::SharedCtor(::_pb::Arena* arena) {
@@ -9838,8 +9868,8 @@ AddGroupMemberRequest::~AddGroupMemberRequest() {
 }
 inline void AddGroupMemberRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.groupid_.Destroy();
-  _impl_.memberid_.Destroy();
+  _impl_.group_id_.Destroy();
+  _impl_.member_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -9850,8 +9880,8 @@ PROTOBUF_NOINLINE void AddGroupMemberRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.groupid_.ClearToEmpty();
-  _impl_.memberid_.ClearToEmpty();
+  _impl_.group_id_.ClearToEmpty();
+  _impl_.member_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -9863,7 +9893,7 @@ const char* AddGroupMemberRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddGroupMemberRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 57, 2> AddGroupMemberRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -9877,28 +9907,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddGroupMemberRequest::_table_ = {
     &_AddGroupMemberRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string memberId = 2;
+    // string member_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.memberid_)}},
-    // string groupId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.member_id_)}},
+    // string group_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.groupid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.group_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string groupId = 1;
-    {PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.groupid_), 0, 0,
+    // string group_id = 1;
+    {PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.group_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string memberId = 2;
-    {PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.memberid_), 0, 0,
+    // string member_id = 2;
+    {PROTOBUF_FIELD_OFFSET(AddGroupMemberRequest, _impl_.member_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\37\7\10\0\0\0\0\0"
+    "\37\10\11\0\0\0\0\0"
     "messenger.AddGroupMemberRequest"
-    "groupId"
-    "memberId"
+    "group_id"
+    "member_id"
   }},
 };
 
@@ -9909,19 +9939,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddGroupMemberRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string groupId = 1;
-  if (!this->_internal_groupid().empty()) {
-    const std::string& _s = this->_internal_groupid();
+  // string group_id = 1;
+  if (!this->_internal_group_id().empty()) {
+    const std::string& _s = this->_internal_group_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddGroupMemberRequest.groupId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddGroupMemberRequest.group_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string memberId = 2;
-  if (!this->_internal_memberid().empty()) {
-    const std::string& _s = this->_internal_memberid();
+  // string member_id = 2;
+  if (!this->_internal_member_id().empty()) {
+    const std::string& _s = this->_internal_member_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddGroupMemberRequest.memberId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddGroupMemberRequest.member_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -9942,16 +9972,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddGroupMemberRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string groupId = 1;
-  if (!this->_internal_groupid().empty()) {
+  // string group_id = 1;
+  if (!this->_internal_group_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_groupid());
+                                    this->_internal_group_id());
   }
 
-  // string memberId = 2;
-  if (!this->_internal_memberid().empty()) {
+  // string member_id = 2;
+  if (!this->_internal_member_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_memberid());
+                                    this->_internal_member_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -9973,11 +10003,11 @@ void AddGroupMemberRequest::MergeImpl(::google::protobuf::Message& to_msg, const
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_groupid().empty()) {
-    _this->_internal_set_groupid(from._internal_groupid());
+  if (!from._internal_group_id().empty()) {
+    _this->_internal_set_group_id(from._internal_group_id());
   }
-  if (!from._internal_memberid().empty()) {
-    _this->_internal_set_memberid(from._internal_memberid());
+  if (!from._internal_member_id().empty()) {
+    _this->_internal_set_member_id(from._internal_member_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -10001,8 +10031,8 @@ void AddGroupMemberRequest::InternalSwap(AddGroupMemberRequest* PROTOBUF_RESTRIC
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.groupid_, &other->_impl_.groupid_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.memberid_, &other->_impl_.memberid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.group_id_, &other->_impl_.group_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.member_id_, &other->_impl_.member_id_, arena);
 }
 
 ::google::protobuf::Metadata AddGroupMemberRequest::GetMetadata() const {
@@ -10239,8 +10269,8 @@ RemoveGroupMemberRequest::RemoveGroupMemberRequest(::google::protobuf::Arena* ar
 inline PROTOBUF_NDEBUG_INLINE RemoveGroupMemberRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : groupid_(arena, from.groupid_),
-        memberid_(arena, from.memberid_),
+      : group_id_(arena, from.group_id_),
+        member_id_(arena, from.member_id_),
         _cached_size_{0} {}
 
 RemoveGroupMemberRequest::RemoveGroupMemberRequest(
@@ -10258,8 +10288,8 @@ RemoveGroupMemberRequest::RemoveGroupMemberRequest(
 inline PROTOBUF_NDEBUG_INLINE RemoveGroupMemberRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : groupid_(arena),
-        memberid_(arena),
+      : group_id_(arena),
+        member_id_(arena),
         _cached_size_{0} {}
 
 inline void RemoveGroupMemberRequest::SharedCtor(::_pb::Arena* arena) {
@@ -10272,8 +10302,8 @@ RemoveGroupMemberRequest::~RemoveGroupMemberRequest() {
 }
 inline void RemoveGroupMemberRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.groupid_.Destroy();
-  _impl_.memberid_.Destroy();
+  _impl_.group_id_.Destroy();
+  _impl_.member_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -10284,8 +10314,8 @@ PROTOBUF_NOINLINE void RemoveGroupMemberRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.groupid_.ClearToEmpty();
-  _impl_.memberid_.ClearToEmpty();
+  _impl_.group_id_.ClearToEmpty();
+  _impl_.member_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -10297,7 +10327,7 @@ const char* RemoveGroupMemberRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 58, 2> RemoveGroupMemberRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 60, 2> RemoveGroupMemberRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -10311,28 +10341,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 58, 2> RemoveGroupMemberRequest::_table_ = {
     &_RemoveGroupMemberRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string memberId = 2;
+    // string member_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.memberid_)}},
-    // string groupId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.member_id_)}},
+    // string group_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.groupid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.group_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string groupId = 1;
-    {PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.groupid_), 0, 0,
+    // string group_id = 1;
+    {PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.group_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string memberId = 2;
-    {PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.memberid_), 0, 0,
+    // string member_id = 2;
+    {PROTOBUF_FIELD_OFFSET(RemoveGroupMemberRequest, _impl_.member_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\42\7\10\0\0\0\0\0"
+    "\42\10\11\0\0\0\0\0"
     "messenger.RemoveGroupMemberRequest"
-    "groupId"
-    "memberId"
+    "group_id"
+    "member_id"
   }},
 };
 
@@ -10343,19 +10373,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 58, 2> RemoveGroupMemberRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string groupId = 1;
-  if (!this->_internal_groupid().empty()) {
-    const std::string& _s = this->_internal_groupid();
+  // string group_id = 1;
+  if (!this->_internal_group_id().empty()) {
+    const std::string& _s = this->_internal_group_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveGroupMemberRequest.groupId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveGroupMemberRequest.group_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string memberId = 2;
-  if (!this->_internal_memberid().empty()) {
-    const std::string& _s = this->_internal_memberid();
+  // string member_id = 2;
+  if (!this->_internal_member_id().empty()) {
+    const std::string& _s = this->_internal_member_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveGroupMemberRequest.memberId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveGroupMemberRequest.member_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -10376,16 +10406,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 58, 2> RemoveGroupMemberRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string groupId = 1;
-  if (!this->_internal_groupid().empty()) {
+  // string group_id = 1;
+  if (!this->_internal_group_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_groupid());
+                                    this->_internal_group_id());
   }
 
-  // string memberId = 2;
-  if (!this->_internal_memberid().empty()) {
+  // string member_id = 2;
+  if (!this->_internal_member_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_memberid());
+                                    this->_internal_member_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -10407,11 +10437,11 @@ void RemoveGroupMemberRequest::MergeImpl(::google::protobuf::Message& to_msg, co
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_groupid().empty()) {
-    _this->_internal_set_groupid(from._internal_groupid());
+  if (!from._internal_group_id().empty()) {
+    _this->_internal_set_group_id(from._internal_group_id());
   }
-  if (!from._internal_memberid().empty()) {
-    _this->_internal_set_memberid(from._internal_memberid());
+  if (!from._internal_member_id().empty()) {
+    _this->_internal_set_member_id(from._internal_member_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -10435,8 +10465,8 @@ void RemoveGroupMemberRequest::InternalSwap(RemoveGroupMemberRequest* PROTOBUF_R
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.groupid_, &other->_impl_.groupid_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.memberid_, &other->_impl_.memberid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.group_id_, &other->_impl_.group_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.member_id_, &other->_impl_.member_id_, arena);
 }
 
 ::google::protobuf::Metadata RemoveGroupMemberRequest::GetMetadata() const {
@@ -10673,9 +10703,9 @@ ChatFolder::ChatFolder(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE ChatFolder::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : groupchatids_{visibility, arena, from.groupchatids_},
+      : groupchat_ids_{visibility, arena, from.groupchat_ids_},
         id_(arena, from.id_),
-        userid_(arena, from.userid_),
+        user_id_(arena, from.user_id_),
         name_(arena, from.name_),
         _cached_size_{0} {}
 
@@ -10694,9 +10724,9 @@ ChatFolder::ChatFolder(
 inline PROTOBUF_NDEBUG_INLINE ChatFolder::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : groupchatids_{visibility, arena},
+      : groupchat_ids_{visibility, arena},
         id_(arena),
-        userid_(arena),
+        user_id_(arena),
         name_(arena),
         _cached_size_{0} {}
 
@@ -10711,7 +10741,7 @@ ChatFolder::~ChatFolder() {
 inline void ChatFolder::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.id_.Destroy();
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.name_.Destroy();
   _impl_.~Impl_();
 }
@@ -10723,9 +10753,9 @@ PROTOBUF_NOINLINE void ChatFolder::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.groupchatids_.Clear();
+  _impl_.groupchat_ids_.Clear();
   _impl_.id_.ClearToEmpty();
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.name_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -10738,7 +10768,7 @@ const char* ChatFolder::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 0, 55, 2> ChatFolder::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -10752,15 +10782,15 @@ const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
     &_ChatFolder_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // repeated string groupChatIds = 4;
+    // repeated string groupChat_ids = 4;
     {::_pbi::TcParser::FastUR1,
-     {34, 63, 0, PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.groupchatids_)}},
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.groupchat_ids_)}},
     // string id = 1;
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.id_)}},
-    // string userId = 2;
+    // string user_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.userid_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.user_id_)}},
     // string name = 3;
     {::_pbi::TcParser::FastUS1,
      {26, 63, 0, PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.name_)}},
@@ -10770,24 +10800,24 @@ const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
     // string id = 1;
     {PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string userId = 2;
-    {PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.userid_), 0, 0,
+    // string user_id = 2;
+    {PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // string name = 3;
     {PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.name_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // repeated string groupChatIds = 4;
-    {PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.groupchatids_), 0, 0,
+    // repeated string groupChat_ids = 4;
+    {PROTOBUF_FIELD_OFFSET(ChatFolder, _impl_.groupchat_ids_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
   }},
   // no aux_entries
   {{
-    "\24\2\6\4\14\0\0\0"
+    "\24\2\7\4\15\0\0\0"
     "messenger.ChatFolder"
     "id"
-    "userId"
+    "user_id"
     "name"
-    "groupChatIds"
+    "groupChat_ids"
   }},
 };
 
@@ -10806,11 +10836,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatFolder.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatFolder.user_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -10822,11 +10852,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
     target = stream->WriteStringMaybeAliased(3, _s, target);
   }
 
-  // repeated string groupChatIds = 4;
-  for (int i = 0, n = this->_internal_groupchatids_size(); i < n; ++i) {
-    const auto& s = this->_internal_groupchatids().Get(i);
+  // repeated string groupChat_ids = 4;
+  for (int i = 0, n = this->_internal_groupchat_ids_size(); i < n; ++i) {
+    const auto& s = this->_internal_groupchat_ids().Get(i);
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatFolder.groupChatIds");
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ChatFolder.groupChat_ids");
     target = stream->WriteString(4, s, target);
   }
 
@@ -10847,11 +10877,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated string groupChatIds = 4;
-  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_groupchatids().size());
-  for (int i = 0, n = _internal_groupchatids().size(); i < n; ++i) {
+  // repeated string groupChat_ids = 4;
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_groupchat_ids().size());
+  for (int i = 0, n = _internal_groupchat_ids().size(); i < n; ++i) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-        _internal_groupchatids().Get(i));
+        _internal_groupchat_ids().Get(i));
   }
   // string id = 1;
   if (!this->_internal_id().empty()) {
@@ -10859,10 +10889,10 @@ const ::_pbi::TcParseTable<2, 4, 0, 53, 2> ChatFolder::_table_ = {
                                     this->_internal_id());
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // string name = 3;
@@ -10890,12 +10920,12 @@ void ChatFolder::MergeImpl(::google::protobuf::Message& to_msg, const ::google::
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_groupchatids()->MergeFrom(from._internal_groupchatids());
+  _this->_internal_mutable_groupchat_ids()->MergeFrom(from._internal_groupchat_ids());
   if (!from._internal_id().empty()) {
     _this->_internal_set_id(from._internal_id());
   }
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (!from._internal_name().empty()) {
     _this->_internal_set_name(from._internal_name());
@@ -10922,9 +10952,9 @@ void ChatFolder::InternalSwap(ChatFolder* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.groupchatids_.InternalSwap(&other->_impl_.groupchatids_);
+  _impl_.groupchat_ids_.InternalSwap(&other->_impl_.groupchat_ids_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, &other->_impl_.name_, arena);
 }
 
@@ -10947,7 +10977,7 @@ CreateChatFolderRequest::CreateChatFolderRequest(::google::protobuf::Arena* aren
 inline PROTOBUF_NDEBUG_INLINE CreateChatFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         name_(arena, from.name_),
         _cached_size_{0} {}
 
@@ -10966,7 +10996,7 @@ CreateChatFolderRequest::CreateChatFolderRequest(
 inline PROTOBUF_NDEBUG_INLINE CreateChatFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         name_(arena),
         _cached_size_{0} {}
 
@@ -10980,7 +11010,7 @@ CreateChatFolderRequest::~CreateChatFolderRequest() {
 }
 inline void CreateChatFolderRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.name_.Destroy();
   _impl_.~Impl_();
 }
@@ -10992,7 +11022,7 @@ PROTOBUF_NOINLINE void CreateChatFolderRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.name_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -11005,7 +11035,7 @@ const char* CreateChatFolderRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 52, 2> CreateChatFolderRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 53, 2> CreateChatFolderRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -11022,14 +11052,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 52, 2> CreateChatFolderRequest::_table_ = {
     // string name = 2;
     {::_pbi::TcParser::FastUS1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(CreateChatFolderRequest, _impl_.name_)}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(CreateChatFolderRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(CreateChatFolderRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(CreateChatFolderRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(CreateChatFolderRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // string name = 2;
     {PROTOBUF_FIELD_OFFSET(CreateChatFolderRequest, _impl_.name_), 0, 0,
@@ -11037,9 +11067,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 52, 2> CreateChatFolderRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\41\6\4\0\0\0\0\0"
+    "\41\7\4\0\0\0\0\0"
     "messenger.CreateChatFolderRequest"
-    "userId"
+    "user_id"
     "name"
   }},
 };
@@ -11051,11 +11081,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 52, 2> CreateChatFolderRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.CreateChatFolderRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.CreateChatFolderRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -11084,10 +11114,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 52, 2> CreateChatFolderRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // string name = 2;
@@ -11115,8 +11145,8 @@ void CreateChatFolderRequest::MergeImpl(::google::protobuf::Message& to_msg, con
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (!from._internal_name().empty()) {
     _this->_internal_set_name(from._internal_name());
@@ -11143,7 +11173,7 @@ void CreateChatFolderRequest::InternalSwap(CreateChatFolderRequest* PROTOBUF_RES
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, &other->_impl_.name_, arena);
 }
 
@@ -11373,7 +11403,7 @@ UpdateChatFolderRequest::UpdateChatFolderRequest(::google::protobuf::Arena* aren
 inline PROTOBUF_NDEBUG_INLINE UpdateChatFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : folderid_(arena, from.folderid_),
+      : folder_id_(arena, from.folder_id_),
         newname_(arena, from.newname_),
         _cached_size_{0} {}
 
@@ -11392,7 +11422,7 @@ UpdateChatFolderRequest::UpdateChatFolderRequest(
 inline PROTOBUF_NDEBUG_INLINE UpdateChatFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : folderid_(arena),
+      : folder_id_(arena),
         newname_(arena),
         _cached_size_{0} {}
 
@@ -11406,7 +11436,7 @@ UpdateChatFolderRequest::~UpdateChatFolderRequest() {
 }
 inline void UpdateChatFolderRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.folderid_.Destroy();
+  _impl_.folder_id_.Destroy();
   _impl_.newname_.Destroy();
   _impl_.~Impl_();
 }
@@ -11418,7 +11448,7 @@ PROTOBUF_NOINLINE void UpdateChatFolderRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
   _impl_.newname_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -11431,7 +11461,7 @@ const char* UpdateChatFolderRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 57, 2> UpdateChatFolderRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 58, 2> UpdateChatFolderRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -11448,14 +11478,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 57, 2> UpdateChatFolderRequest::_table_ = {
     // string newName = 2;
     {::_pbi::TcParser::FastUS1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(UpdateChatFolderRequest, _impl_.newname_)}},
-    // string folderId = 1;
+    // string folder_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UpdateChatFolderRequest, _impl_.folderid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(UpdateChatFolderRequest, _impl_.folder_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string folderId = 1;
-    {PROTOBUF_FIELD_OFFSET(UpdateChatFolderRequest, _impl_.folderid_), 0, 0,
+    // string folder_id = 1;
+    {PROTOBUF_FIELD_OFFSET(UpdateChatFolderRequest, _impl_.folder_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // string newName = 2;
     {PROTOBUF_FIELD_OFFSET(UpdateChatFolderRequest, _impl_.newname_), 0, 0,
@@ -11463,9 +11493,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 57, 2> UpdateChatFolderRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\41\10\7\0\0\0\0\0"
+    "\41\11\7\0\0\0\0\0"
     "messenger.UpdateChatFolderRequest"
-    "folderId"
+    "folder_id"
     "newName"
   }},
 };
@@ -11477,11 +11507,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 57, 2> UpdateChatFolderRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
-    const std::string& _s = this->_internal_folderid();
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
+    const std::string& _s = this->_internal_folder_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.UpdateChatFolderRequest.folderId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.UpdateChatFolderRequest.folder_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -11510,10 +11540,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 57, 2> UpdateChatFolderRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_folderid());
+                                    this->_internal_folder_id());
   }
 
   // string newName = 2;
@@ -11541,8 +11571,8 @@ void UpdateChatFolderRequest::MergeImpl(::google::protobuf::Message& to_msg, con
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_folderid().empty()) {
-    _this->_internal_set_folderid(from._internal_folderid());
+  if (!from._internal_folder_id().empty()) {
+    _this->_internal_set_folder_id(from._internal_folder_id());
   }
   if (!from._internal_newname().empty()) {
     _this->_internal_set_newname(from._internal_newname());
@@ -11569,7 +11599,7 @@ void UpdateChatFolderRequest::InternalSwap(UpdateChatFolderRequest* PROTOBUF_RES
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folderid_, &other->_impl_.folderid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folder_id_, &other->_impl_.folder_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.newname_, &other->_impl_.newname_, arena);
 }
 
@@ -11761,7 +11791,7 @@ DeleteChatFolderRequest::DeleteChatFolderRequest(::google::protobuf::Arena* aren
 inline PROTOBUF_NDEBUG_INLINE DeleteChatFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : folderid_(arena, from.folderid_),
+      : folder_id_(arena, from.folder_id_),
         _cached_size_{0} {}
 
 DeleteChatFolderRequest::DeleteChatFolderRequest(
@@ -11779,7 +11809,7 @@ DeleteChatFolderRequest::DeleteChatFolderRequest(
 inline PROTOBUF_NDEBUG_INLINE DeleteChatFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : folderid_(arena),
+      : folder_id_(arena),
         _cached_size_{0} {}
 
 inline void DeleteChatFolderRequest::SharedCtor(::_pb::Arena* arena) {
@@ -11792,7 +11822,7 @@ DeleteChatFolderRequest::~DeleteChatFolderRequest() {
 }
 inline void DeleteChatFolderRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.folderid_.Destroy();
+  _impl_.folder_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -11803,7 +11833,7 @@ PROTOBUF_NOINLINE void DeleteChatFolderRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -11815,7 +11845,7 @@ const char* DeleteChatFolderRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 50, 2> DeleteChatFolderRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 51, 2> DeleteChatFolderRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -11829,21 +11859,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> DeleteChatFolderRequest::_table_ = {
     &_DeleteChatFolderRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string folderId = 1;
+    // string folder_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(DeleteChatFolderRequest, _impl_.folderid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(DeleteChatFolderRequest, _impl_.folder_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string folderId = 1;
-    {PROTOBUF_FIELD_OFFSET(DeleteChatFolderRequest, _impl_.folderid_), 0, 0,
+    // string folder_id = 1;
+    {PROTOBUF_FIELD_OFFSET(DeleteChatFolderRequest, _impl_.folder_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\41\10\0\0\0\0\0\0"
+    "\41\11\0\0\0\0\0\0"
     "messenger.DeleteChatFolderRequest"
-    "folderId"
+    "folder_id"
   }},
 };
 
@@ -11854,11 +11884,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> DeleteChatFolderRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
-    const std::string& _s = this->_internal_folderid();
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
+    const std::string& _s = this->_internal_folder_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.DeleteChatFolderRequest.folderId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.DeleteChatFolderRequest.folder_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -11879,10 +11909,10 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> DeleteChatFolderRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_folderid());
+                                    this->_internal_folder_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -11904,8 +11934,8 @@ void DeleteChatFolderRequest::MergeImpl(::google::protobuf::Message& to_msg, con
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_folderid().empty()) {
-    _this->_internal_set_folderid(from._internal_folderid());
+  if (!from._internal_folder_id().empty()) {
+    _this->_internal_set_folder_id(from._internal_folder_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -11929,7 +11959,7 @@ void DeleteChatFolderRequest::InternalSwap(DeleteChatFolderRequest* PROTOBUF_RES
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folderid_, &other->_impl_.folderid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folder_id_, &other->_impl_.folder_id_, arena);
 }
 
 ::google::protobuf::Metadata DeleteChatFolderRequest::GetMetadata() const {
@@ -12120,7 +12150,7 @@ GetFoldersOffsetRequest::GetFoldersOffsetRequest(::google::protobuf::Arena* aren
 inline PROTOBUF_NDEBUG_INLINE GetFoldersOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetFoldersOffsetRequest::GetFoldersOffsetRequest(
@@ -12138,7 +12168,7 @@ GetFoldersOffsetRequest::GetFoldersOffsetRequest(
 inline PROTOBUF_NDEBUG_INLINE GetFoldersOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetFoldersOffsetRequest::SharedCtor(::_pb::Arena* arena) {
@@ -12151,7 +12181,7 @@ GetFoldersOffsetRequest::~GetFoldersOffsetRequest() {
 }
 inline void GetFoldersOffsetRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -12162,7 +12192,7 @@ PROTOBUF_NOINLINE void GetFoldersOffsetRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -12174,7 +12204,7 @@ const char* GetFoldersOffsetRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 48, 2> GetFoldersOffsetRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 49, 2> GetFoldersOffsetRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -12188,21 +12218,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> GetFoldersOffsetRequest::_table_ = {
     &_GetFoldersOffsetRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetFoldersOffsetRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetFoldersOffsetRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetFoldersOffsetRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetFoldersOffsetRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\41\6\0\0\0\0\0\0"
+    "\41\7\0\0\0\0\0\0"
     "messenger.GetFoldersOffsetRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -12213,11 +12243,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> GetFoldersOffsetRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetFoldersOffsetRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetFoldersOffsetRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -12238,10 +12268,10 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> GetFoldersOffsetRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -12263,8 +12293,8 @@ void GetFoldersOffsetRequest::MergeImpl(::google::protobuf::Message& to_msg, con
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -12288,7 +12318,7 @@ void GetFoldersOffsetRequest::InternalSwap(GetFoldersOffsetRequest* PROTOBUF_RES
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
 }
 
 ::google::protobuf::Metadata GetFoldersOffsetRequest::GetMetadata() const {
@@ -12480,7 +12510,7 @@ GetFoldersRequest::GetFoldersRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE GetFoldersRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetFoldersRequest::GetFoldersRequest(
@@ -12505,7 +12535,7 @@ GetFoldersRequest::GetFoldersRequest(
 inline PROTOBUF_NDEBUG_INLINE GetFoldersRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetFoldersRequest::SharedCtor(::_pb::Arena* arena) {
@@ -12524,7 +12554,7 @@ GetFoldersRequest::~GetFoldersRequest() {
 }
 inline void GetFoldersRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -12535,7 +12565,7 @@ PROTOBUF_NOINLINE void GetFoldersRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   ::memset(&_impl_.offset_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.count_) -
       reinterpret_cast<char*>(&_impl_.offset_)) + sizeof(_impl_.count_));
@@ -12550,7 +12580,7 @@ const char* GetFoldersRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 42, 2> GetFoldersRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 43, 2> GetFoldersRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -12565,9 +12595,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 42, 2> GetFoldersRequest::_table_ = {
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.user_id_)}},
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetFoldersRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.offset_)}},
@@ -12577,8 +12607,8 @@ const ::_pbi::TcParseTable<2, 3, 0, 42, 2> GetFoldersRequest::_table_ = {
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.offset_), 0, 0,
@@ -12589,9 +12619,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 42, 2> GetFoldersRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\33\6\0\0\0\0\0\0"
+    "\33\7\0\0\0\0\0\0"
     "messenger.GetFoldersRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -12602,11 +12632,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 42, 2> GetFoldersRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetFoldersRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetFoldersRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -12641,10 +12671,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 42, 2> GetFoldersRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // int64 offset = 2;
@@ -12678,8 +12708,8 @@ void GetFoldersRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::g
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -12709,7 +12739,7 @@ void GetFoldersRequest::InternalSwap(GetFoldersRequest* PROTOBUF_RESTRICT other)
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(GetFoldersRequest, _impl_.count_)
       + sizeof(GetFoldersRequest::_impl_.count_)
@@ -12920,7 +12950,7 @@ GetNewFoldersRequest::GetNewFoldersRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE GetNewFoldersRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetNewFoldersRequest::GetNewFoldersRequest(
@@ -12938,7 +12968,7 @@ GetNewFoldersRequest::GetNewFoldersRequest(
 inline PROTOBUF_NDEBUG_INLINE GetNewFoldersRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetNewFoldersRequest::SharedCtor(::_pb::Arena* arena) {
@@ -12951,7 +12981,7 @@ GetNewFoldersRequest::~GetNewFoldersRequest() {
 }
 inline void GetNewFoldersRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -12962,7 +12992,7 @@ PROTOBUF_NOINLINE void GetNewFoldersRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -12974,7 +13004,7 @@ const char* GetNewFoldersRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 45, 2> GetNewFoldersRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 46, 2> GetNewFoldersRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -12988,21 +13018,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 45, 2> GetNewFoldersRequest::_table_ = {
     &_GetNewFoldersRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewFoldersRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewFoldersRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetNewFoldersRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetNewFoldersRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\36\6\0\0\0\0\0\0"
+    "\36\7\0\0\0\0\0\0"
     "messenger.GetNewFoldersRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -13013,11 +13043,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 45, 2> GetNewFoldersRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewFoldersRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewFoldersRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -13038,10 +13068,10 @@ const ::_pbi::TcParseTable<0, 1, 0, 45, 2> GetNewFoldersRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -13063,8 +13093,8 @@ void GetNewFoldersRequest::MergeImpl(::google::protobuf::Message& to_msg, const 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -13088,7 +13118,7 @@ void GetNewFoldersRequest::InternalSwap(GetNewFoldersRequest* PROTOBUF_RESTRICT 
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
 }
 
 ::google::protobuf::Metadata GetNewFoldersRequest::GetMetadata() const {
@@ -13110,8 +13140,8 @@ AddChatToFolderRequest::AddChatToFolderRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE AddChatToFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : folderid_(arena, from.folderid_),
-        chatid_(arena, from.chatid_),
+      : folder_id_(arena, from.folder_id_),
+        chat_id_(arena, from.chat_id_),
         _cached_size_{0} {}
 
 AddChatToFolderRequest::AddChatToFolderRequest(
@@ -13129,8 +13159,8 @@ AddChatToFolderRequest::AddChatToFolderRequest(
 inline PROTOBUF_NDEBUG_INLINE AddChatToFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : folderid_(arena),
-        chatid_(arena),
+      : folder_id_(arena),
+        chat_id_(arena),
         _cached_size_{0} {}
 
 inline void AddChatToFolderRequest::SharedCtor(::_pb::Arena* arena) {
@@ -13143,8 +13173,8 @@ AddChatToFolderRequest::~AddChatToFolderRequest() {
 }
 inline void AddChatToFolderRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.folderid_.Destroy();
-  _impl_.chatid_.Destroy();
+  _impl_.folder_id_.Destroy();
+  _impl_.chat_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -13155,8 +13185,8 @@ PROTOBUF_NOINLINE void AddChatToFolderRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.folderid_.ClearToEmpty();
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -13168,7 +13198,7 @@ const char* AddChatToFolderRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddChatToFolderRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 57, 2> AddChatToFolderRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -13182,28 +13212,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddChatToFolderRequest::_table_ = {
     &_AddChatToFolderRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string chatId = 2;
+    // string chat_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.chatid_)}},
-    // string folderId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.chat_id_)}},
+    // string folder_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.folderid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.folder_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string folderId = 1;
-    {PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.folderid_), 0, 0,
+    // string folder_id = 1;
+    {PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.folder_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string chatId = 2;
-    {PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.chatid_), 0, 0,
+    // string chat_id = 2;
+    {PROTOBUF_FIELD_OFFSET(AddChatToFolderRequest, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\40\10\6\0\0\0\0\0"
+    "\40\11\7\0\0\0\0\0"
     "messenger.AddChatToFolderRequest"
-    "folderId"
-    "chatId"
+    "folder_id"
+    "chat_id"
   }},
 };
 
@@ -13214,19 +13244,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddChatToFolderRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
-    const std::string& _s = this->_internal_folderid();
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
+    const std::string& _s = this->_internal_folder_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddChatToFolderRequest.folderId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddChatToFolderRequest.folder_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string chatId = 2;
-  if (!this->_internal_chatid().empty()) {
-    const std::string& _s = this->_internal_chatid();
+  // string chat_id = 2;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddChatToFolderRequest.chatId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.AddChatToFolderRequest.chat_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -13247,16 +13277,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 55, 2> AddChatToFolderRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_folderid());
+                                    this->_internal_folder_id());
   }
 
-  // string chatId = 2;
-  if (!this->_internal_chatid().empty()) {
+  // string chat_id = 2;
+  if (!this->_internal_chat_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_chatid());
+                                    this->_internal_chat_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -13278,11 +13308,11 @@ void AddChatToFolderRequest::MergeImpl(::google::protobuf::Message& to_msg, cons
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_folderid().empty()) {
-    _this->_internal_set_folderid(from._internal_folderid());
+  if (!from._internal_folder_id().empty()) {
+    _this->_internal_set_folder_id(from._internal_folder_id());
   }
-  if (!from._internal_chatid().empty()) {
-    _this->_internal_set_chatid(from._internal_chatid());
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -13306,8 +13336,8 @@ void AddChatToFolderRequest::InternalSwap(AddChatToFolderRequest* PROTOBUF_RESTR
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folderid_, &other->_impl_.folderid_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chatid_, &other->_impl_.chatid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folder_id_, &other->_impl_.folder_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
 }
 
 ::google::protobuf::Metadata AddChatToFolderRequest::GetMetadata() const {
@@ -13498,8 +13528,8 @@ RemoveChatFromFolderRequest::RemoveChatFromFolderRequest(::google::protobuf::Are
 inline PROTOBUF_NDEBUG_INLINE RemoveChatFromFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : folderid_(arena, from.folderid_),
-        chatid_(arena, from.chatid_),
+      : folder_id_(arena, from.folder_id_),
+        chat_id_(arena, from.chat_id_),
         _cached_size_{0} {}
 
 RemoveChatFromFolderRequest::RemoveChatFromFolderRequest(
@@ -13517,8 +13547,8 @@ RemoveChatFromFolderRequest::RemoveChatFromFolderRequest(
 inline PROTOBUF_NDEBUG_INLINE RemoveChatFromFolderRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : folderid_(arena),
-        chatid_(arena),
+      : folder_id_(arena),
+        chat_id_(arena),
         _cached_size_{0} {}
 
 inline void RemoveChatFromFolderRequest::SharedCtor(::_pb::Arena* arena) {
@@ -13531,8 +13561,8 @@ RemoveChatFromFolderRequest::~RemoveChatFromFolderRequest() {
 }
 inline void RemoveChatFromFolderRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.folderid_.Destroy();
-  _impl_.chatid_.Destroy();
+  _impl_.folder_id_.Destroy();
+  _impl_.chat_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -13543,8 +13573,8 @@ PROTOBUF_NOINLINE void RemoveChatFromFolderRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.folderid_.ClearToEmpty();
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -13556,7 +13586,7 @@ const char* RemoveChatFromFolderRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 60, 2> RemoveChatFromFolderRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 62, 2> RemoveChatFromFolderRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -13570,28 +13600,28 @@ const ::_pbi::TcParseTable<1, 2, 0, 60, 2> RemoveChatFromFolderRequest::_table_ 
     &_RemoveChatFromFolderRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string chatId = 2;
+    // string chat_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.chatid_)}},
-    // string folderId = 1;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.chat_id_)}},
+    // string folder_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.folderid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.folder_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string folderId = 1;
-    {PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.folderid_), 0, 0,
+    // string folder_id = 1;
+    {PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.folder_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string chatId = 2;
-    {PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.chatid_), 0, 0,
+    // string chat_id = 2;
+    {PROTOBUF_FIELD_OFFSET(RemoveChatFromFolderRequest, _impl_.chat_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\45\10\6\0\0\0\0\0"
+    "\45\11\7\0\0\0\0\0"
     "messenger.RemoveChatFromFolderRequest"
-    "folderId"
-    "chatId"
+    "folder_id"
+    "chat_id"
   }},
 };
 
@@ -13602,19 +13632,19 @@ const ::_pbi::TcParseTable<1, 2, 0, 60, 2> RemoveChatFromFolderRequest::_table_ 
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
-    const std::string& _s = this->_internal_folderid();
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
+    const std::string& _s = this->_internal_folder_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveChatFromFolderRequest.folderId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveChatFromFolderRequest.folder_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string chatId = 2;
-  if (!this->_internal_chatid().empty()) {
-    const std::string& _s = this->_internal_chatid();
+  // string chat_id = 2;
+  if (!this->_internal_chat_id().empty()) {
+    const std::string& _s = this->_internal_chat_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveChatFromFolderRequest.chatId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.RemoveChatFromFolderRequest.chat_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -13635,16 +13665,16 @@ const ::_pbi::TcParseTable<1, 2, 0, 60, 2> RemoveChatFromFolderRequest::_table_ 
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string folderId = 1;
-  if (!this->_internal_folderid().empty()) {
+  // string folder_id = 1;
+  if (!this->_internal_folder_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_folderid());
+                                    this->_internal_folder_id());
   }
 
-  // string chatId = 2;
-  if (!this->_internal_chatid().empty()) {
+  // string chat_id = 2;
+  if (!this->_internal_chat_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_chatid());
+                                    this->_internal_chat_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -13666,11 +13696,11 @@ void RemoveChatFromFolderRequest::MergeImpl(::google::protobuf::Message& to_msg,
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_folderid().empty()) {
-    _this->_internal_set_folderid(from._internal_folderid());
+  if (!from._internal_folder_id().empty()) {
+    _this->_internal_set_folder_id(from._internal_folder_id());
   }
-  if (!from._internal_chatid().empty()) {
-    _this->_internal_set_chatid(from._internal_chatid());
+  if (!from._internal_chat_id().empty()) {
+    _this->_internal_set_chat_id(from._internal_chat_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -13694,8 +13724,8 @@ void RemoveChatFromFolderRequest::InternalSwap(RemoveChatFromFolderRequest* PROT
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folderid_, &other->_impl_.folderid_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chatid_, &other->_impl_.chatid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.folder_id_, &other->_impl_.folder_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.chat_id_, &other->_impl_.chat_id_, arena);
 }
 
 ::google::protobuf::Metadata RemoveChatFromFolderRequest::GetMetadata() const {
@@ -13887,7 +13917,7 @@ inline PROTOBUF_NDEBUG_INLINE FileMessage::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
       : id_(arena, from.id_),
-        senderid_(arena, from.senderid_),
+        sender_id_(arena, from.sender_id_),
         filename_(arena, from.filename_),
         data_(arena, from.data_),
         _cached_size_{0} {}
@@ -13909,7 +13939,7 @@ inline PROTOBUF_NDEBUG_INLINE FileMessage::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
       : id_(arena),
-        senderid_(arena),
+        sender_id_(arena),
         filename_(arena),
         data_(arena),
         _cached_size_{0} {}
@@ -13926,7 +13956,7 @@ FileMessage::~FileMessage() {
 inline void FileMessage::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.id_.Destroy();
-  _impl_.senderid_.Destroy();
+  _impl_.sender_id_.Destroy();
   _impl_.filename_.Destroy();
   _impl_.data_.Destroy();
   _impl_.~Impl_();
@@ -13940,7 +13970,7 @@ PROTOBUF_NOINLINE void FileMessage::Clear() {
   (void) cached_has_bits;
 
   _impl_.id_.ClearToEmpty();
-  _impl_.senderid_.ClearToEmpty();
+  _impl_.sender_id_.ClearToEmpty();
   _impl_.filename_.ClearToEmpty();
   _impl_.data_.ClearToEmpty();
   _impl_.type_ = 0;
@@ -13955,7 +13985,7 @@ const char* FileMessage::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<3, 5, 0, 48, 2> FileMessage::_table_ = {
+const ::_pbi::TcParseTable<3, 5, 0, 49, 2> FileMessage::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -13973,9 +14003,9 @@ const ::_pbi::TcParseTable<3, 5, 0, 48, 2> FileMessage::_table_ = {
     // string id = 1;
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.id_)}},
-    // string senderId = 2;
+    // string sender_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.senderid_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.sender_id_)}},
     // .messenger.FileType type = 3;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(FileMessage, _impl_.type_), 63>(),
      {24, 63, 0, PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.type_)}},
@@ -13993,8 +14023,8 @@ const ::_pbi::TcParseTable<3, 5, 0, 48, 2> FileMessage::_table_ = {
     // string id = 1;
     {PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string senderId = 2;
-    {PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.senderid_), 0, 0,
+    // string sender_id = 2;
+    {PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.sender_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // .messenger.FileType type = 3;
     {PROTOBUF_FIELD_OFFSET(FileMessage, _impl_.type_), 0, 0,
@@ -14008,10 +14038,10 @@ const ::_pbi::TcParseTable<3, 5, 0, 48, 2> FileMessage::_table_ = {
   }},
   // no aux_entries
   {{
-    "\25\2\10\0\10\0\0\0"
+    "\25\2\11\0\10\0\0\0"
     "messenger.FileMessage"
     "id"
-    "senderId"
+    "sender_id"
     "filename"
   }},
 };
@@ -14031,11 +14061,11 @@ const ::_pbi::TcParseTable<3, 5, 0, 48, 2> FileMessage::_table_ = {
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string senderId = 2;
-  if (!this->_internal_senderid().empty()) {
-    const std::string& _s = this->_internal_senderid();
+  // string sender_id = 2;
+  if (!this->_internal_sender_id().empty()) {
+    const std::string& _s = this->_internal_sender_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.FileMessage.senderId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.FileMessage.sender_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -14083,10 +14113,10 @@ const ::_pbi::TcParseTable<3, 5, 0, 48, 2> FileMessage::_table_ = {
                                     this->_internal_id());
   }
 
-  // string senderId = 2;
-  if (!this->_internal_senderid().empty()) {
+  // string sender_id = 2;
+  if (!this->_internal_sender_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_senderid());
+                                    this->_internal_sender_id());
   }
 
   // string filename = 4;
@@ -14129,8 +14159,8 @@ void FileMessage::MergeImpl(::google::protobuf::Message& to_msg, const ::google:
   if (!from._internal_id().empty()) {
     _this->_internal_set_id(from._internal_id());
   }
-  if (!from._internal_senderid().empty()) {
-    _this->_internal_set_senderid(from._internal_senderid());
+  if (!from._internal_sender_id().empty()) {
+    _this->_internal_set_sender_id(from._internal_sender_id());
   }
   if (!from._internal_filename().empty()) {
     _this->_internal_set_filename(from._internal_filename());
@@ -14164,7 +14194,7 @@ void FileMessage::InternalSwap(FileMessage* PROTOBUF_RESTRICT other) {
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.senderid_, &other->_impl_.senderid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.sender_id_, &other->_impl_.sender_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.filename_, &other->_impl_.filename_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.data_, &other->_impl_.data_, arena);
   swap(_impl_.type_, other->_impl_.type_);
@@ -14190,7 +14220,7 @@ inline PROTOBUF_NDEBUG_INLINE SearchRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
       : query_(arena, from.query_),
-        userid_(arena, from.userid_),
+        user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 SearchRequest::SearchRequest(
@@ -14210,7 +14240,7 @@ inline PROTOBUF_NDEBUG_INLINE SearchRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
       : query_(arena),
-        userid_(arena),
+        user_id_(arena),
         _cached_size_{0} {}
 
 inline void SearchRequest::SharedCtor(::_pb::Arena* arena) {
@@ -14225,7 +14255,7 @@ SearchRequest::~SearchRequest() {
 inline void SearchRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.query_.Destroy();
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -14237,7 +14267,7 @@ PROTOBUF_NOINLINE void SearchRequest::Clear() {
   (void) cached_has_bits;
 
   _impl_.query_.ClearToEmpty();
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.limit_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -14250,7 +14280,7 @@ const char* SearchRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 43, 2> SearchRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 44, 2> SearchRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -14268,9 +14298,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 43, 2> SearchRequest::_table_ = {
     // string query = 1;
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.query_)}},
-    // string userId = 2;
+    // string user_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.userid_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.user_id_)}},
     // int32 limit = 3;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(SearchRequest, _impl_.limit_), 63>(),
      {24, 63, 0, PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.limit_)}},
@@ -14280,8 +14310,8 @@ const ::_pbi::TcParseTable<2, 3, 0, 43, 2> SearchRequest::_table_ = {
     // string query = 1;
     {PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.query_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string userId = 2;
-    {PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.userid_), 0, 0,
+    // string user_id = 2;
+    {PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int32 limit = 3;
     {PROTOBUF_FIELD_OFFSET(SearchRequest, _impl_.limit_), 0, 0,
@@ -14289,10 +14319,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 43, 2> SearchRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\27\5\6\0\0\0\0\0"
+    "\27\5\7\0\0\0\0\0"
     "messenger.SearchRequest"
     "query"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -14311,11 +14341,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 43, 2> SearchRequest::_table_ = {
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.SearchRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.SearchRequest.user_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -14349,10 +14379,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 43, 2> SearchRequest::_table_ = {
                                     this->_internal_query());
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // int32 limit = 3;
@@ -14383,8 +14413,8 @@ void SearchRequest::MergeImpl(::google::protobuf::Message& to_msg, const ::googl
   if (!from._internal_query().empty()) {
     _this->_internal_set_query(from._internal_query());
   }
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_limit() != 0) {
     _this->_internal_set_limit(from._internal_limit());
@@ -14412,7 +14442,7 @@ void SearchRequest::InternalSwap(SearchRequest* PROTOBUF_RESTRICT other) {
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.query_, &other->_impl_.query_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
         swap(_impl_.limit_, other->_impl_.limit_);
 }
 
@@ -15244,7 +15274,7 @@ inline PROTOBUF_NDEBUG_INLINE Reminder::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
       : id_(arena, from.id_),
-        userid_(arena, from.userid_),
+        user_id_(arena, from.user_id_),
         message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -15265,7 +15295,7 @@ inline PROTOBUF_NDEBUG_INLINE Reminder::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
       : id_(arena),
-        userid_(arena),
+        user_id_(arena),
         message_(arena),
         _cached_size_{0} {}
 
@@ -15281,7 +15311,7 @@ Reminder::~Reminder() {
 inline void Reminder::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.id_.Destroy();
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.message_.Destroy();
   _impl_.~Impl_();
 }
@@ -15294,7 +15324,7 @@ PROTOBUF_NOINLINE void Reminder::Clear() {
   (void) cached_has_bits;
 
   _impl_.id_.ClearToEmpty();
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.message_.ClearToEmpty();
   _impl_.timestamp_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -15308,7 +15338,7 @@ const char* Reminder::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 0, 42, 2> Reminder::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 0, 43, 2> Reminder::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -15328,9 +15358,9 @@ const ::_pbi::TcParseTable<2, 4, 0, 42, 2> Reminder::_table_ = {
     // string id = 1;
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(Reminder, _impl_.id_)}},
-    // string userId = 2;
+    // string user_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(Reminder, _impl_.userid_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(Reminder, _impl_.user_id_)}},
     // string message = 3;
     {::_pbi::TcParser::FastUS1,
      {26, 63, 0, PROTOBUF_FIELD_OFFSET(Reminder, _impl_.message_)}},
@@ -15340,8 +15370,8 @@ const ::_pbi::TcParseTable<2, 4, 0, 42, 2> Reminder::_table_ = {
     // string id = 1;
     {PROTOBUF_FIELD_OFFSET(Reminder, _impl_.id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string userId = 2;
-    {PROTOBUF_FIELD_OFFSET(Reminder, _impl_.userid_), 0, 0,
+    // string user_id = 2;
+    {PROTOBUF_FIELD_OFFSET(Reminder, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // string message = 3;
     {PROTOBUF_FIELD_OFFSET(Reminder, _impl_.message_), 0, 0,
@@ -15352,10 +15382,10 @@ const ::_pbi::TcParseTable<2, 4, 0, 42, 2> Reminder::_table_ = {
   }},
   // no aux_entries
   {{
-    "\22\2\6\7\0\0\0\0"
+    "\22\2\7\7\0\0\0\0"
     "messenger.Reminder"
     "id"
-    "userId"
+    "user_id"
     "message"
   }},
 };
@@ -15375,11 +15405,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 42, 2> Reminder::_table_ = {
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.Reminder.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.Reminder.user_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -15421,10 +15451,10 @@ const ::_pbi::TcParseTable<2, 4, 0, 42, 2> Reminder::_table_ = {
                                     this->_internal_id());
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // string message = 3;
@@ -15461,8 +15491,8 @@ void Reminder::MergeImpl(::google::protobuf::Message& to_msg, const ::google::pr
   if (!from._internal_id().empty()) {
     _this->_internal_set_id(from._internal_id());
   }
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (!from._internal_message().empty()) {
     _this->_internal_set_message(from._internal_message());
@@ -15493,7 +15523,7 @@ void Reminder::InternalSwap(Reminder* PROTOBUF_RESTRICT other) {
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_, &other->_impl_.message_, arena);
         swap(_impl_.timestamp_, other->_impl_.timestamp_);
 }
@@ -15517,7 +15547,7 @@ NotificationSettings::NotificationSettings(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE NotificationSettings::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 NotificationSettings::NotificationSettings(
@@ -15536,7 +15566,7 @@ NotificationSettings::NotificationSettings(
 inline PROTOBUF_NDEBUG_INLINE NotificationSettings::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void NotificationSettings::SharedCtor(::_pb::Arena* arena) {
@@ -15550,7 +15580,7 @@ NotificationSettings::~NotificationSettings() {
 }
 inline void NotificationSettings::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -15561,7 +15591,7 @@ PROTOBUF_NOINLINE void NotificationSettings::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.enablenotifications_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -15574,7 +15604,7 @@ const char* NotificationSettings::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 45, 2> NotificationSettings::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 46, 2> NotificationSettings::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -15591,14 +15621,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 45, 2> NotificationSettings::_table_ = {
     // bool enableNotifications = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(NotificationSettings, _impl_.enablenotifications_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(NotificationSettings, _impl_.enablenotifications_)}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(NotificationSettings, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(NotificationSettings, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(NotificationSettings, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(NotificationSettings, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // bool enableNotifications = 2;
     {PROTOBUF_FIELD_OFFSET(NotificationSettings, _impl_.enablenotifications_), 0, 0,
@@ -15606,9 +15636,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 45, 2> NotificationSettings::_table_ = {
   }},
   // no aux_entries
   {{
-    "\36\6\0\0\0\0\0\0"
+    "\36\7\0\0\0\0\0\0"
     "messenger.NotificationSettings"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -15619,11 +15649,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 45, 2> NotificationSettings::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.NotificationSettings.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.NotificationSettings.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -15651,10 +15681,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 45, 2> NotificationSettings::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // bool enableNotifications = 2;
@@ -15681,8 +15711,8 @@ void NotificationSettings::MergeImpl(::google::protobuf::Message& to_msg, const 
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_enablenotifications() != 0) {
     _this->_internal_set_enablenotifications(from._internal_enablenotifications());
@@ -15709,7 +15739,7 @@ void NotificationSettings::InternalSwap(NotificationSettings* PROTOBUF_RESTRICT 
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
         swap(_impl_.enablenotifications_, other->_impl_.enablenotifications_);
 }
 
@@ -16155,7 +16185,7 @@ inline PROTOBUF_NDEBUG_INLINE ToDoItem::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
       : id_(arena, from.id_),
-        userid_(arena, from.userid_),
+        user_id_(arena, from.user_id_),
         description_(arena, from.description_),
         _cached_size_{0} {}
 
@@ -16176,7 +16206,7 @@ inline PROTOBUF_NDEBUG_INLINE ToDoItem::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
       : id_(arena),
-        userid_(arena),
+        user_id_(arena),
         description_(arena),
         _cached_size_{0} {}
 
@@ -16192,7 +16222,7 @@ ToDoItem::~ToDoItem() {
 inline void ToDoItem::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
   _impl_.id_.Destroy();
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.description_.Destroy();
   _impl_.~Impl_();
 }
@@ -16205,7 +16235,7 @@ PROTOBUF_NOINLINE void ToDoItem::Clear() {
   (void) cached_has_bits;
 
   _impl_.id_.ClearToEmpty();
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.description_.ClearToEmpty();
   _impl_.completed_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
@@ -16219,7 +16249,7 @@ const char* ToDoItem::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 0, 46, 2> ToDoItem::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 0, 47, 2> ToDoItem::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -16239,9 +16269,9 @@ const ::_pbi::TcParseTable<2, 4, 0, 46, 2> ToDoItem::_table_ = {
     // string id = 1;
     {::_pbi::TcParser::FastUS1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.id_)}},
-    // string userId = 2;
+    // string user_id = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.userid_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.user_id_)}},
     // string description = 3;
     {::_pbi::TcParser::FastUS1,
      {26, 63, 0, PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.description_)}},
@@ -16251,8 +16281,8 @@ const ::_pbi::TcParseTable<2, 4, 0, 46, 2> ToDoItem::_table_ = {
     // string id = 1;
     {PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-    // string userId = 2;
-    {PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.userid_), 0, 0,
+    // string user_id = 2;
+    {PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // string description = 3;
     {PROTOBUF_FIELD_OFFSET(ToDoItem, _impl_.description_), 0, 0,
@@ -16263,10 +16293,10 @@ const ::_pbi::TcParseTable<2, 4, 0, 46, 2> ToDoItem::_table_ = {
   }},
   // no aux_entries
   {{
-    "\22\2\6\13\0\0\0\0"
+    "\22\2\7\13\0\0\0\0"
     "messenger.ToDoItem"
     "id"
-    "userId"
+    "user_id"
     "description"
   }},
 };
@@ -16286,11 +16316,11 @@ const ::_pbi::TcParseTable<2, 4, 0, 46, 2> ToDoItem::_table_ = {
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ToDoItem.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.ToDoItem.user_id");
     target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
@@ -16332,10 +16362,10 @@ const ::_pbi::TcParseTable<2, 4, 0, 46, 2> ToDoItem::_table_ = {
                                     this->_internal_id());
   }
 
-  // string userId = 2;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 2;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // string description = 3;
@@ -16371,8 +16401,8 @@ void ToDoItem::MergeImpl(::google::protobuf::Message& to_msg, const ::google::pr
   if (!from._internal_id().empty()) {
     _this->_internal_set_id(from._internal_id());
   }
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (!from._internal_description().empty()) {
     _this->_internal_set_description(from._internal_description());
@@ -16403,7 +16433,7 @@ void ToDoItem::InternalSwap(ToDoItem* PROTOBUF_RESTRICT other) {
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.id_, &other->_impl_.id_, arena);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.description_, &other->_impl_.description_, arena);
         swap(_impl_.completed_, other->_impl_.completed_);
 }
@@ -16427,7 +16457,7 @@ GetToDoItemsOffsetRequest::GetToDoItemsOffsetRequest(::google::protobuf::Arena* 
 inline PROTOBUF_NDEBUG_INLINE GetToDoItemsOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetToDoItemsOffsetRequest::GetToDoItemsOffsetRequest(
@@ -16445,7 +16475,7 @@ GetToDoItemsOffsetRequest::GetToDoItemsOffsetRequest(
 inline PROTOBUF_NDEBUG_INLINE GetToDoItemsOffsetRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetToDoItemsOffsetRequest::SharedCtor(::_pb::Arena* arena) {
@@ -16458,7 +16488,7 @@ GetToDoItemsOffsetRequest::~GetToDoItemsOffsetRequest() {
 }
 inline void GetToDoItemsOffsetRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -16469,7 +16499,7 @@ PROTOBUF_NOINLINE void GetToDoItemsOffsetRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -16481,7 +16511,7 @@ const char* GetToDoItemsOffsetRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 50, 2> GetToDoItemsOffsetRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 51, 2> GetToDoItemsOffsetRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -16495,21 +16525,21 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> GetToDoItemsOffsetRequest::_table_ = 
     &_GetToDoItemsOffsetRequest_default_instance_._instance,
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsOffsetRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\43\6\0\0\0\0\0\0"
+    "\43\7\0\0\0\0\0\0"
     "messenger.GetToDoItemsOffsetRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -16520,11 +16550,11 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> GetToDoItemsOffsetRequest::_table_ = 
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetToDoItemsOffsetRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetToDoItemsOffsetRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -16545,10 +16575,10 @@ const ::_pbi::TcParseTable<0, 1, 0, 50, 2> GetToDoItemsOffsetRequest::_table_ = 
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -16570,8 +16600,8 @@ void GetToDoItemsOffsetRequest::MergeImpl(::google::protobuf::Message& to_msg, c
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -16595,7 +16625,7 @@ void GetToDoItemsOffsetRequest::InternalSwap(GetToDoItemsOffsetRequest* PROTOBUF
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
 }
 
 ::google::protobuf::Metadata GetToDoItemsOffsetRequest::GetMetadata() const {
@@ -16787,7 +16817,7 @@ GetToDoItemsRequest::GetToDoItemsRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE GetToDoItemsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetToDoItemsRequest::GetToDoItemsRequest(
@@ -16812,7 +16842,7 @@ GetToDoItemsRequest::GetToDoItemsRequest(
 inline PROTOBUF_NDEBUG_INLINE GetToDoItemsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetToDoItemsRequest::SharedCtor(::_pb::Arena* arena) {
@@ -16831,7 +16861,7 @@ GetToDoItemsRequest::~GetToDoItemsRequest() {
 }
 inline void GetToDoItemsRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -16842,7 +16872,7 @@ PROTOBUF_NOINLINE void GetToDoItemsRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   ::memset(&_impl_.offset_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.count_) -
       reinterpret_cast<char*>(&_impl_.offset_)) + sizeof(_impl_.count_));
@@ -16857,7 +16887,7 @@ const char* GetToDoItemsRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 45, 2> GetToDoItemsRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -16872,9 +16902,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
     ::_pbi::TcParser::GenericFallback,  // fallback
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.user_id_)}},
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetToDoItemsRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.offset_)}},
@@ -16884,8 +16914,8 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.offset_), 0, 0,
@@ -16896,9 +16926,9 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\35\6\0\0\0\0\0\0"
+    "\35\7\0\0\0\0\0\0"
     "messenger.GetToDoItemsRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -16909,11 +16939,11 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetToDoItemsRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetToDoItemsRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -16948,10 +16978,10 @@ const ::_pbi::TcParseTable<2, 3, 0, 44, 2> GetToDoItemsRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // int64 offset = 2;
@@ -16985,8 +17015,8 @@ void GetToDoItemsRequest::MergeImpl(::google::protobuf::Message& to_msg, const :
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -17016,7 +17046,7 @@ void GetToDoItemsRequest::InternalSwap(GetToDoItemsRequest* PROTOBUF_RESTRICT ot
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(GetToDoItemsRequest, _impl_.count_)
       + sizeof(GetToDoItemsRequest::_impl_.count_)
@@ -17227,7 +17257,7 @@ GetNewToDoItemsRequest::GetNewToDoItemsRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE GetNewToDoItemsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from)
-      : userid_(arena, from.userid_),
+      : user_id_(arena, from.user_id_),
         _cached_size_{0} {}
 
 GetNewToDoItemsRequest::GetNewToDoItemsRequest(
@@ -17246,7 +17276,7 @@ GetNewToDoItemsRequest::GetNewToDoItemsRequest(
 inline PROTOBUF_NDEBUG_INLINE GetNewToDoItemsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : userid_(arena),
+      : user_id_(arena),
         _cached_size_{0} {}
 
 inline void GetNewToDoItemsRequest::SharedCtor(::_pb::Arena* arena) {
@@ -17260,7 +17290,7 @@ GetNewToDoItemsRequest::~GetNewToDoItemsRequest() {
 }
 inline void GetNewToDoItemsRequest::SharedDtor() {
   ABSL_DCHECK(GetArena() == nullptr);
-  _impl_.userid_.Destroy();
+  _impl_.user_id_.Destroy();
   _impl_.~Impl_();
 }
 
@@ -17271,7 +17301,7 @@ PROTOBUF_NOINLINE void GetNewToDoItemsRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
   _impl_.offset_ = ::int64_t{0};
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -17284,7 +17314,7 @@ const char* GetNewToDoItemsRequest::_InternalParse(
 
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewToDoItemsRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 48, 2> GetNewToDoItemsRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -17301,14 +17331,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewToDoItemsRequest::_table_ = {
     // int64 offset = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(GetNewToDoItemsRequest, _impl_.offset_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.offset_)}},
-    // string userId = 1;
+    // string user_id = 1;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.userid_)}},
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.user_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string userId = 1;
-    {PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.userid_), 0, 0,
+    // string user_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.user_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
     // int64 offset = 2;
     {PROTOBUF_FIELD_OFFSET(GetNewToDoItemsRequest, _impl_.offset_), 0, 0,
@@ -17316,9 +17346,9 @@ const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewToDoItemsRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\40\6\0\0\0\0\0\0"
+    "\40\7\0\0\0\0\0\0"
     "messenger.GetNewToDoItemsRequest"
-    "userId"
+    "user_id"
   }},
 };
 
@@ -17329,11 +17359,11 @@ const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewToDoItemsRequest::_table_ = {
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
-    const std::string& _s = this->_internal_userid();
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
+    const std::string& _s = this->_internal_user_id();
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewToDoItemsRequest.userId");
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "messenger.GetNewToDoItemsRequest.user_id");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -17361,10 +17391,10 @@ const ::_pbi::TcParseTable<1, 2, 0, 47, 2> GetNewToDoItemsRequest::_table_ = {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string userId = 1;
-  if (!this->_internal_userid().empty()) {
+  // string user_id = 1;
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
-                                    this->_internal_userid());
+                                    this->_internal_user_id());
   }
 
   // int64 offset = 2;
@@ -17392,8 +17422,8 @@ void GetNewToDoItemsRequest::MergeImpl(::google::protobuf::Message& to_msg, cons
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_userid().empty()) {
-    _this->_internal_set_userid(from._internal_userid());
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_offset() != 0) {
     _this->_internal_set_offset(from._internal_offset());
@@ -17420,7 +17450,7 @@ void GetNewToDoItemsRequest::InternalSwap(GetNewToDoItemsRequest* PROTOBUF_RESTR
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.userid_, &other->_impl_.userid_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
         swap(_impl_.offset_, other->_impl_.offset_);
 }
 

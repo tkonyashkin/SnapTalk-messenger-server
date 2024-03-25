@@ -104,7 +104,7 @@ message LogoutResponse {
 }
 
 message UserProfile {
-  string userId = 1;
+  string user_id = 1;
   string username = 2;
   UserStatus status = 3;
 }
@@ -119,7 +119,7 @@ message UpdateUserProfileResponse {
 }
 
 message UpdateMessageStatusRequest {
-  string messageId = 1;
+  string message_id = 1;
   MessageStatus status = 2;
 }
 
@@ -130,8 +130,8 @@ message UpdateMessageStatusResponse {
 
 // Управления контактами
 message AddContactRequest {
-  string userId = 1;
-  string contactId = 2;
+  string user_id = 1;
+  string contact_id = 2;
 }
 
 message AddContactResponse {
@@ -140,8 +140,8 @@ message AddContactResponse {
 }
 
 message RemoveContactRequest {
-  string userId = 1;
-  string contactId = 2;
+  string user_id = 1;
+  string contact_id = 2;
 }
 
 message RemoveContactResponse {
@@ -150,21 +150,22 @@ message RemoveContactResponse {
 }
 
 message ContactList {
-  string userId = 1;
-  repeated string contactIds = 2;
+  string user_id = 1;
+  repeated string contact_ids = 2;
 }
 
 // Сообщение в чате
 message SentMessage {
-  string id = 1;
-  MessageType type = 2;
-  string content = 3; // Для текстовых сообщений или ссылки на медиа
+  string chat_id = 1;
+  MessageType type = 3;
+  string content = 4;
 }
 
 /////////
 
 message GetMessagesOffsetRequest {
-  string chatId = 1;
+  string chat_id = 1;
+  int64 offset = 2;
 }
 
 message GetMessagesOffsetResponse {
@@ -172,7 +173,7 @@ message GetMessagesOffsetResponse {
 }
 
 message GetMessagesConversionRequest {
-  string chatId = 1;
+  string chat_id = 1;
   int64 offset = 2;
   int32 count = 3;
 }
@@ -186,15 +187,15 @@ message GetMessagesConversionResponse {
 
 // Сообщение в чате
 message ChatMessage {
-  string id = 1;
-  string senderId = 2; // не нужно, на
+  string chat_id = 1;
+  string id = 2;
   MessageType type = 3;
   bytes content = 4; // Для текстовых сообщений, ссылок на медиа и воис
 }
 
 // Сообщения для удаления и редактирования сообщений
 message DeleteMessageRequest {
-  string messageId = 1;
+  string message_id = 1;
 }
 
 message DeleteMessageResponse {
@@ -203,7 +204,7 @@ message DeleteMessageResponse {
 }
 
 message EditMessageRequest {
-  string messageId = 1;
+  string message_id = 1;
   bytes newContent = 2;
 }
 
@@ -216,20 +217,20 @@ message EditMessageResponse {
 message GroupChat {
   string id = 1;
   string name = 2;
-  repeated string memberIds = 3;
+  repeated string member_ids = 3;
   repeated Role roles = 4;
-  string folderId = 5; // разделить на создание и добавление в папку TODO
+  string folder_id = 5; // разделить на создание и добавление в папку TODO
 }
 
 /////
 
 message GetNewMessagesRequest {
-  string chatId = 1;
+  string chat_id = 1;
   int64 offset = 2;
 }
 
 message GetGroupChatsOffsetRequest {
-  string userId = 1;
+  string user_id = 1;
 }
 
 message GetGroupChatsOffsetResponse {
@@ -237,7 +238,7 @@ message GetGroupChatsOffsetResponse {
 }
 
 message GetGroupChatsConversionRequest {
-  string userId = 1;
+  string user_id = 1;
   int64 offset = 2;
   int32 count = 3;
 }
@@ -247,7 +248,7 @@ message GetGroupChatsConversionResponse {
 }
 
 message GetNewGroupChatsRequest {
-  string userId = 1;
+  string user_id = 1;
   int64 offset = 2;
 }
 
@@ -255,8 +256,8 @@ message GetNewGroupChatsRequest {
 
 // Сообщения для управления участниками группы
 message AddGroupMemberRequest {
-  string groupId = 1;
-  string memberId = 2;
+  string group_id = 1;
+  string member_id = 2;
 }
 
 message AddGroupMemberResponse {
@@ -265,8 +266,8 @@ message AddGroupMemberResponse {
 }
 
 message RemoveGroupMemberRequest {
-  string groupId = 1;
-  string memberId = 2;
+  string group_id = 1;
+  string member_id = 2;
 }
 
 message RemoveGroupMemberResponse {
@@ -277,15 +278,15 @@ message RemoveGroupMemberResponse {
 // Папка для группировки чатов
 message ChatFolder {
   string id = 1;
-  string userId = 2;
+  string user_id = 2;
   string name = 3;
-  repeated string groupChatIds = 4; // Идентификаторы групповых чатов в папке
+  repeated string groupChat_ids = 4; // Идентификаторы групповых чатов в папке
 }
 
 // Запросы и ответы для управления папками чатов
 
 message CreateChatFolderRequest {
-  string userId = 1;
+  string user_id = 1;
   string name = 2;
 }
 
@@ -294,7 +295,7 @@ message CreateChatFolderResponse {
 }
 
 message UpdateChatFolderRequest {
-  string folderId = 1;
+  string folder_id = 1;
   string newName = 2;
 }
 
@@ -303,7 +304,7 @@ message UpdateChatFolderResponse {
 }
 
 message DeleteChatFolderRequest {
-  string folderId = 1;
+  string folder_id = 1;
 }
 
 message DeleteChatFolderResponse {
@@ -311,7 +312,7 @@ message DeleteChatFolderResponse {
 }
 
 message GetFoldersOffsetRequest {
-  string userId = 1;
+  string user_id = 1;
 }
 
 message GetFoldersOffsetResponse {
@@ -320,7 +321,7 @@ message GetFoldersOffsetResponse {
 
 // Запрос для получения списка папок, начиная с определенного смещения
 message GetFoldersRequest {
-  string userId = 1;
+  string user_id = 1;
   int64 offset = 2; // Смещение для начала списка
   int32 count = 3; // Количество папок для получения
 }
@@ -331,12 +332,12 @@ message GetFoldersResponse {
 
 // Запрос для подписки на поток новых папок
 message GetNewFoldersRequest {
-  string userId = 1;
+  string user_id = 1;
 }
 
 message AddChatToFolderRequest {
-  string folderId = 1;
-  string chatId = 2;
+  string folder_id = 1;
+  string chat_id = 2;
 }
 
 message AddChatToFolderResponse {
@@ -344,8 +345,8 @@ message AddChatToFolderResponse {
 }
 
 message RemoveChatFromFolderRequest {
-  string folderId = 1;
-  string chatId = 2;
+  string folder_id = 1;
+  string chat_id = 2;
 }
 
 message RemoveChatFromFolderResponse {
@@ -355,7 +356,7 @@ message RemoveChatFromFolderResponse {
 // Описания файла
 message FileMessage {
   string id = 1;
-  string senderId = 2;
+  string sender_id = 2;
   FileType type = 3;
   string filename = 4;
   bytes data = 5;
@@ -364,7 +365,7 @@ message FileMessage {
 // Запроса поиска
 message SearchRequest {
   string query = 1; // Поисковый запрос
-  string userId = 2; // Идентификатор пользователя, который инициирует поиск
+  string user_id = 2; // Идентификатор пользователя, который инициирует поиск
   int32 limit = 3; // Ограничение на количество результатов
 }
 
@@ -392,14 +393,14 @@ message Role {
 // Напоминание
 message Reminder {
   string id = 1;
-  string userId = 2;
+  string user_id = 2;
   string message = 3;
   int64 timestamp = 4; // Время, когда напоминание должно быть отправлено
 }
 
 // Управление уведомлениями
 message NotificationSettings {
-  string userId = 1;
+  string user_id = 1;
   bool enableNotifications = 2;
 }
 
@@ -415,13 +416,13 @@ message UpdateNotificationSettingsResponse {
 // Задача в списке дел
 message ToDoItem {
   string id = 1;
-  string userId = 2;
+  string user_id = 2;
   string description = 3;
   bool completed = 4;
 }
 
 message GetToDoItemsOffsetRequest {
-  string userId = 1;
+  string user_id = 1;
 }
 
 message GetToDoItemsOffsetResponse {
@@ -429,7 +430,7 @@ message GetToDoItemsOffsetResponse {
 }
 
 message GetToDoItemsRequest {
-  string userId = 1;
+  string user_id = 1;
   int64 offset = 2;
   int32 count = 3;
 }
@@ -439,7 +440,7 @@ message GetToDoItemsResponse {
 }
 
 message GetNewToDoItemsRequest {
-  string userId = 1;
+  string user_id = 1;
   int64 offset = 2;
 }
 
@@ -527,9 +528,9 @@ service MessengerService {
 // auth_token - быстро протухает(5 минут), он во всех всех сообщениях фигурирует;
 // refresh_token - долго действует (30 дней), одноразовый: referesh_token -> refresh_token_new, auth_token
 
-// GetOffset(chatId)
-// GetMessages(chatId, offset, message_count)
-// GetNewMessages(chatId, offset) -> stream Message
+// GetOffset(chat_id)
+// GetMessages(chat_id, offset, message_count)
+// GetNewMessages(chat_id, offset) -> stream Message
 
 // План:
 // Посмотреть про поддержку токенов в gRPC

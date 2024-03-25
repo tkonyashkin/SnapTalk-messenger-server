@@ -581,20 +581,20 @@ class UserProfile final :
     kUsernameFieldNumber = 2,
     kStatusFieldNumber = 3,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // string username = 2;
@@ -630,7 +630,7 @@ class UserProfile final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      44, 2>
+      45, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -646,7 +646,7 @@ class UserProfile final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::google::protobuf::internal::ArenaStringPtr username_;
     int status_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -1370,20 +1370,20 @@ class UpdateMessageStatusRequest final :
     kMessageIdFieldNumber = 1,
     kStatusFieldNumber = 2,
   };
-  // string messageId = 1;
-  void clear_messageid() ;
-  const std::string& messageid() const;
+  // string message_id = 1;
+  void clear_message_id() ;
+  const std::string& message_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_messageid(Arg_&& arg, Args_... args);
-  std::string* mutable_messageid();
-  PROTOBUF_NODISCARD std::string* release_messageid();
-  void set_allocated_messageid(std::string* value);
+  void set_message_id(Arg_&& arg, Args_... args);
+  std::string* mutable_message_id();
+  PROTOBUF_NODISCARD std::string* release_message_id();
+  void set_allocated_message_id(std::string* value);
 
   private:
-  const std::string& _internal_messageid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_messageid(
+  const std::string& _internal_message_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_message_id(
       const std::string& value);
-  std::string* _internal_mutable_messageid();
+  std::string* _internal_mutable_message_id();
 
   public:
   // .messenger.MessageStatus status = 2;
@@ -1403,7 +1403,7 @@ class UpdateMessageStatusRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      54, 2>
+      55, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -1419,7 +1419,7 @@ class UpdateMessageStatusRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr messageid_;
+    ::google::protobuf::internal::ArenaStringPtr message_id_;
     int status_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -1738,20 +1738,20 @@ class UpdateChatFolderRequest final :
     kFolderIdFieldNumber = 1,
     kNewNameFieldNumber = 2,
   };
-  // string folderId = 1;
-  void clear_folderid() ;
-  const std::string& folderid() const;
+  // string folder_id = 1;
+  void clear_folder_id() ;
+  const std::string& folder_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_folderid(Arg_&& arg, Args_... args);
-  std::string* mutable_folderid();
-  PROTOBUF_NODISCARD std::string* release_folderid();
-  void set_allocated_folderid(std::string* value);
+  void set_folder_id(Arg_&& arg, Args_... args);
+  std::string* mutable_folder_id();
+  PROTOBUF_NODISCARD std::string* release_folder_id();
+  void set_allocated_folder_id(std::string* value);
 
   private:
-  const std::string& _internal_folderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folderid(
+  const std::string& _internal_folder_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folder_id(
       const std::string& value);
-  std::string* _internal_mutable_folderid();
+  std::string* _internal_mutable_folder_id();
 
   public:
   // string newName = 2;
@@ -1777,7 +1777,7 @@ class UpdateChatFolderRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      57, 2>
+      58, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -1793,7 +1793,7 @@ class UpdateChatFolderRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr folderid_;
+    ::google::protobuf::internal::ArenaStringPtr folder_id_;
     ::google::protobuf::internal::ArenaStringPtr newname_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -1955,20 +1955,20 @@ class ToDoItem final :
   std::string* _internal_mutable_id();
 
   public:
-  // string userId = 2;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 2;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // string description = 3;
@@ -2004,7 +2004,7 @@ class ToDoItem final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 4, 0,
-      46, 2>
+      47, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -2021,7 +2021,7 @@ class ToDoItem final :
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
     ::google::protobuf::internal::ArenaStringPtr id_;
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::google::protobuf::internal::ArenaStringPtr description_;
     bool completed_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -2163,27 +2163,27 @@ class SentMessage final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kIdFieldNumber = 1,
-    kContentFieldNumber = 3,
-    kTypeFieldNumber = 2,
+    kChatIdFieldNumber = 1,
+    kContentFieldNumber = 4,
+    kTypeFieldNumber = 3,
   };
-  // string id = 1;
-  void clear_id() ;
-  const std::string& id() const;
+  // string chat_id = 1;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_id(Arg_&& arg, Args_... args);
-  std::string* mutable_id();
-  PROTOBUF_NODISCARD std::string* release_id();
-  void set_allocated_id(std::string* value);
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
 
   private:
-  const std::string& _internal_id() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_id(
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
       const std::string& value);
-  std::string* _internal_mutable_id();
+  std::string* _internal_mutable_chat_id();
 
   public:
-  // string content = 3;
+  // string content = 4;
   void clear_content() ;
   const std::string& content() const;
   template <typename Arg_ = const std::string&, typename... Args_>
@@ -2199,7 +2199,7 @@ class SentMessage final :
   std::string* _internal_mutable_content();
 
   public:
-  // .messenger.MessageType type = 2;
+  // .messenger.MessageType type = 3;
   void clear_type() ;
   ::messenger::MessageType type() const;
   void set_type(::messenger::MessageType value);
@@ -2216,7 +2216,7 @@ class SentMessage final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      39, 2>
+      44, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -2232,7 +2232,7 @@ class SentMessage final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr id_;
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
     ::google::protobuf::internal::ArenaStringPtr content_;
     int type_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -2394,20 +2394,20 @@ class SearchRequest final :
   std::string* _internal_mutable_query();
 
   public:
-  // string userId = 2;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 2;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // int32 limit = 3;
@@ -2427,7 +2427,7 @@ class SearchRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      43, 2>
+      44, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -2444,7 +2444,7 @@ class SearchRequest final :
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
     ::google::protobuf::internal::ArenaStringPtr query_;
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::int32_t limit_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -2781,36 +2781,36 @@ class RemoveGroupMemberRequest final :
     kGroupIdFieldNumber = 1,
     kMemberIdFieldNumber = 2,
   };
-  // string groupId = 1;
-  void clear_groupid() ;
-  const std::string& groupid() const;
+  // string group_id = 1;
+  void clear_group_id() ;
+  const std::string& group_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_groupid(Arg_&& arg, Args_... args);
-  std::string* mutable_groupid();
-  PROTOBUF_NODISCARD std::string* release_groupid();
-  void set_allocated_groupid(std::string* value);
+  void set_group_id(Arg_&& arg, Args_... args);
+  std::string* mutable_group_id();
+  PROTOBUF_NODISCARD std::string* release_group_id();
+  void set_allocated_group_id(std::string* value);
 
   private:
-  const std::string& _internal_groupid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_groupid(
+  const std::string& _internal_group_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_group_id(
       const std::string& value);
-  std::string* _internal_mutable_groupid();
+  std::string* _internal_mutable_group_id();
 
   public:
-  // string memberId = 2;
-  void clear_memberid() ;
-  const std::string& memberid() const;
+  // string member_id = 2;
+  void clear_member_id() ;
+  const std::string& member_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_memberid(Arg_&& arg, Args_... args);
-  std::string* mutable_memberid();
-  PROTOBUF_NODISCARD std::string* release_memberid();
-  void set_allocated_memberid(std::string* value);
+  void set_member_id(Arg_&& arg, Args_... args);
+  std::string* mutable_member_id();
+  PROTOBUF_NODISCARD std::string* release_member_id();
+  void set_allocated_member_id(std::string* value);
 
   private:
-  const std::string& _internal_memberid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_memberid(
+  const std::string& _internal_member_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_member_id(
       const std::string& value);
-  std::string* _internal_mutable_memberid();
+  std::string* _internal_mutable_member_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.RemoveGroupMemberRequest)
@@ -2820,7 +2820,7 @@ class RemoveGroupMemberRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      58, 2>
+      60, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -2836,8 +2836,8 @@ class RemoveGroupMemberRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr groupid_;
-    ::google::protobuf::internal::ArenaStringPtr memberid_;
+    ::google::protobuf::internal::ArenaStringPtr group_id_;
+    ::google::protobuf::internal::ArenaStringPtr member_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -3173,36 +3173,36 @@ class RemoveContactRequest final :
     kUserIdFieldNumber = 1,
     kContactIdFieldNumber = 2,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
-  // string contactId = 2;
-  void clear_contactid() ;
-  const std::string& contactid() const;
+  // string contact_id = 2;
+  void clear_contact_id() ;
+  const std::string& contact_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_contactid(Arg_&& arg, Args_... args);
-  std::string* mutable_contactid();
-  PROTOBUF_NODISCARD std::string* release_contactid();
-  void set_allocated_contactid(std::string* value);
+  void set_contact_id(Arg_&& arg, Args_... args);
+  std::string* mutable_contact_id();
+  PROTOBUF_NODISCARD std::string* release_contact_id();
+  void set_allocated_contact_id(std::string* value);
 
   private:
-  const std::string& _internal_contactid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_contactid(
+  const std::string& _internal_contact_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_contact_id(
       const std::string& value);
-  std::string* _internal_mutable_contactid();
+  std::string* _internal_mutable_contact_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.RemoveContactRequest)
@@ -3212,7 +3212,7 @@ class RemoveContactRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      54, 2>
+      56, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -3228,8 +3228,8 @@ class RemoveContactRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
-    ::google::protobuf::internal::ArenaStringPtr contactid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
+    ::google::protobuf::internal::ArenaStringPtr contact_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -3547,36 +3547,36 @@ class RemoveChatFromFolderRequest final :
     kFolderIdFieldNumber = 1,
     kChatIdFieldNumber = 2,
   };
-  // string folderId = 1;
-  void clear_folderid() ;
-  const std::string& folderid() const;
+  // string folder_id = 1;
+  void clear_folder_id() ;
+  const std::string& folder_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_folderid(Arg_&& arg, Args_... args);
-  std::string* mutable_folderid();
-  PROTOBUF_NODISCARD std::string* release_folderid();
-  void set_allocated_folderid(std::string* value);
+  void set_folder_id(Arg_&& arg, Args_... args);
+  std::string* mutable_folder_id();
+  PROTOBUF_NODISCARD std::string* release_folder_id();
+  void set_allocated_folder_id(std::string* value);
 
   private:
-  const std::string& _internal_folderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folderid(
+  const std::string& _internal_folder_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folder_id(
       const std::string& value);
-  std::string* _internal_mutable_folderid();
+  std::string* _internal_mutable_folder_id();
 
   public:
-  // string chatId = 2;
-  void clear_chatid() ;
-  const std::string& chatid() const;
+  // string chat_id = 2;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_chatid(Arg_&& arg, Args_... args);
-  std::string* mutable_chatid();
-  PROTOBUF_NODISCARD std::string* release_chatid();
-  void set_allocated_chatid(std::string* value);
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
 
   private:
-  const std::string& _internal_chatid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chatid(
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
       const std::string& value);
-  std::string* _internal_mutable_chatid();
+  std::string* _internal_mutable_chat_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.RemoveChatFromFolderRequest)
@@ -3586,7 +3586,7 @@ class RemoveChatFromFolderRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      60, 2>
+      62, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -3602,8 +3602,8 @@ class RemoveChatFromFolderRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr folderid_;
-    ::google::protobuf::internal::ArenaStringPtr chatid_;
+    ::google::protobuf::internal::ArenaStringPtr folder_id_;
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -3764,20 +3764,20 @@ class Reminder final :
   std::string* _internal_mutable_id();
 
   public:
-  // string userId = 2;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 2;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // string message = 3;
@@ -3813,7 +3813,7 @@ class Reminder final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 4, 0,
-      42, 2>
+      43, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -3830,7 +3830,7 @@ class Reminder final :
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
     ::google::protobuf::internal::ArenaStringPtr id_;
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::google::protobuf::internal::ArenaStringPtr message_;
     ::int64_t timestamp_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -4554,20 +4554,20 @@ class NotificationSettings final :
     kUserIdFieldNumber = 1,
     kEnableNotificationsFieldNumber = 2,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // bool enableNotifications = 2;
@@ -4587,7 +4587,7 @@ class NotificationSettings final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      45, 2>
+      46, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -4603,7 +4603,7 @@ class NotificationSettings final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     bool enablenotifications_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -5532,20 +5532,20 @@ class GetToDoItemsRequest final :
     kOffsetFieldNumber = 2,
     kCountFieldNumber = 3,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // int64 offset = 2;
@@ -5575,7 +5575,7 @@ class GetToDoItemsRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      44, 2>
+      45, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -5591,7 +5591,7 @@ class GetToDoItemsRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::int64_t offset_;
     ::int32_t count_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -5910,20 +5910,20 @@ class GetToDoItemsOffsetRequest final :
   enum : int {
     kUserIdFieldNumber = 1,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.GetToDoItemsOffsetRequest)
@@ -5933,7 +5933,7 @@ class GetToDoItemsOffsetRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      50, 2>
+      51, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -5949,7 +5949,7 @@ class GetToDoItemsOffsetRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -6092,20 +6092,20 @@ class GetNewToDoItemsRequest final :
     kUserIdFieldNumber = 1,
     kOffsetFieldNumber = 2,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // int64 offset = 2;
@@ -6125,7 +6125,7 @@ class GetNewToDoItemsRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      47, 2>
+      48, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -6141,7 +6141,7 @@ class GetNewToDoItemsRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::int64_t offset_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -6285,20 +6285,20 @@ class GetNewMessagesRequest final :
     kChatIdFieldNumber = 1,
     kOffsetFieldNumber = 2,
   };
-  // string chatId = 1;
-  void clear_chatid() ;
-  const std::string& chatid() const;
+  // string chat_id = 1;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_chatid(Arg_&& arg, Args_... args);
-  std::string* mutable_chatid();
-  PROTOBUF_NODISCARD std::string* release_chatid();
-  void set_allocated_chatid(std::string* value);
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
 
   private:
-  const std::string& _internal_chatid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chatid(
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
       const std::string& value);
-  std::string* _internal_mutable_chatid();
+  std::string* _internal_mutable_chat_id();
 
   public:
   // int64 offset = 2;
@@ -6318,7 +6318,7 @@ class GetNewMessagesRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      46, 2>
+      47, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -6334,7 +6334,7 @@ class GetNewMessagesRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr chatid_;
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
     ::int64_t offset_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -6478,20 +6478,20 @@ class GetNewGroupChatsRequest final :
     kUserIdFieldNumber = 1,
     kOffsetFieldNumber = 2,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // int64 offset = 2;
@@ -6511,7 +6511,7 @@ class GetNewGroupChatsRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      48, 2>
+      49, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -6527,7 +6527,7 @@ class GetNewGroupChatsRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::int64_t offset_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -6670,20 +6670,20 @@ class GetNewFoldersRequest final :
   enum : int {
     kUserIdFieldNumber = 1,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.GetNewFoldersRequest)
@@ -6693,7 +6693,7 @@ class GetNewFoldersRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      45, 2>
+      46, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -6709,7 +6709,7 @@ class GetNewFoldersRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -7025,21 +7025,32 @@ class GetMessagesOffsetRequest final :
 
   enum : int {
     kChatIdFieldNumber = 1,
+    kOffsetFieldNumber = 2,
   };
-  // string chatId = 1;
-  void clear_chatid() ;
-  const std::string& chatid() const;
+  // string chat_id = 1;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_chatid(Arg_&& arg, Args_... args);
-  std::string* mutable_chatid();
-  PROTOBUF_NODISCARD std::string* release_chatid();
-  void set_allocated_chatid(std::string* value);
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
 
   private:
-  const std::string& _internal_chatid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chatid(
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
       const std::string& value);
-  std::string* _internal_mutable_chatid();
+  std::string* _internal_mutable_chat_id();
+
+  public:
+  // int64 offset = 2;
+  void clear_offset() ;
+  ::int64_t offset() const;
+  void set_offset(::int64_t value);
+
+  private:
+  ::int64_t _internal_offset() const;
+  void _internal_set_offset(::int64_t value);
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.GetMessagesOffsetRequest)
@@ -7048,8 +7059,8 @@ class GetMessagesOffsetRequest final :
 
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
-      0, 1, 0,
-      49, 2>
+      1, 2, 0,
+      50, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -7065,7 +7076,8 @@ class GetMessagesOffsetRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr chatid_;
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
+    ::int64_t offset_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -7209,20 +7221,20 @@ class GetMessagesConversionRequest final :
     kOffsetFieldNumber = 2,
     kCountFieldNumber = 3,
   };
-  // string chatId = 1;
-  void clear_chatid() ;
-  const std::string& chatid() const;
+  // string chat_id = 1;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_chatid(Arg_&& arg, Args_... args);
-  std::string* mutable_chatid();
-  PROTOBUF_NODISCARD std::string* release_chatid();
-  void set_allocated_chatid(std::string* value);
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
 
   private:
-  const std::string& _internal_chatid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chatid(
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
       const std::string& value);
-  std::string* _internal_mutable_chatid();
+  std::string* _internal_mutable_chat_id();
 
   public:
   // int64 offset = 2;
@@ -7252,7 +7264,7 @@ class GetMessagesConversionRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      53, 2>
+      54, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -7268,7 +7280,7 @@ class GetMessagesConversionRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr chatid_;
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
     ::int64_t offset_;
     ::int32_t count_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -7587,20 +7599,20 @@ class GetGroupChatsOffsetRequest final :
   enum : int {
     kUserIdFieldNumber = 1,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.GetGroupChatsOffsetRequest)
@@ -7610,7 +7622,7 @@ class GetGroupChatsOffsetRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      51, 2>
+      52, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -7626,7 +7638,7 @@ class GetGroupChatsOffsetRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -7770,20 +7782,20 @@ class GetGroupChatsConversionRequest final :
     kOffsetFieldNumber = 2,
     kCountFieldNumber = 3,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // int64 offset = 2;
@@ -7813,7 +7825,7 @@ class GetGroupChatsConversionRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      55, 2>
+      56, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -7829,7 +7841,7 @@ class GetGroupChatsConversionRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::int64_t offset_;
     ::int32_t count_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -7975,20 +7987,20 @@ class GetFoldersRequest final :
     kOffsetFieldNumber = 2,
     kCountFieldNumber = 3,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // int64 offset = 2;
@@ -8018,7 +8030,7 @@ class GetFoldersRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      42, 2>
+      43, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -8034,7 +8046,7 @@ class GetFoldersRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::int64_t offset_;
     ::int32_t count_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -8353,20 +8365,20 @@ class GetFoldersOffsetRequest final :
   enum : int {
     kUserIdFieldNumber = 1,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.GetFoldersOffsetRequest)
@@ -8376,7 +8388,7 @@ class GetFoldersOffsetRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      48, 2>
+      49, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -8392,7 +8404,7 @@ class GetFoldersOffsetRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -8554,20 +8566,20 @@ class FileMessage final :
   std::string* _internal_mutable_id();
 
   public:
-  // string senderId = 2;
-  void clear_senderid() ;
-  const std::string& senderid() const;
+  // string sender_id = 2;
+  void clear_sender_id() ;
+  const std::string& sender_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_senderid(Arg_&& arg, Args_... args);
-  std::string* mutable_senderid();
-  PROTOBUF_NODISCARD std::string* release_senderid();
-  void set_allocated_senderid(std::string* value);
+  void set_sender_id(Arg_&& arg, Args_... args);
+  std::string* mutable_sender_id();
+  PROTOBUF_NODISCARD std::string* release_sender_id();
+  void set_allocated_sender_id(std::string* value);
 
   private:
-  const std::string& _internal_senderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_senderid(
+  const std::string& _internal_sender_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_sender_id(
       const std::string& value);
-  std::string* _internal_mutable_senderid();
+  std::string* _internal_mutable_sender_id();
 
   public:
   // string filename = 4;
@@ -8619,7 +8631,7 @@ class FileMessage final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       3, 5, 0,
-      48, 2>
+      49, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -8636,7 +8648,7 @@ class FileMessage final :
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
     ::google::protobuf::internal::ArenaStringPtr id_;
-    ::google::protobuf::internal::ArenaStringPtr senderid_;
+    ::google::protobuf::internal::ArenaStringPtr sender_id_;
     ::google::protobuf::internal::ArenaStringPtr filename_;
     ::google::protobuf::internal::ArenaStringPtr data_;
     int type_;
@@ -8975,20 +8987,20 @@ class EditMessageRequest final :
     kMessageIdFieldNumber = 1,
     kNewContentFieldNumber = 2,
   };
-  // string messageId = 1;
-  void clear_messageid() ;
-  const std::string& messageid() const;
+  // string message_id = 1;
+  void clear_message_id() ;
+  const std::string& message_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_messageid(Arg_&& arg, Args_... args);
-  std::string* mutable_messageid();
-  PROTOBUF_NODISCARD std::string* release_messageid();
-  void set_allocated_messageid(std::string* value);
+  void set_message_id(Arg_&& arg, Args_... args);
+  std::string* mutable_message_id();
+  PROTOBUF_NODISCARD std::string* release_message_id();
+  void set_allocated_message_id(std::string* value);
 
   private:
-  const std::string& _internal_messageid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_messageid(
+  const std::string& _internal_message_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_message_id(
       const std::string& value);
-  std::string* _internal_mutable_messageid();
+  std::string* _internal_mutable_message_id();
 
   public:
   // bytes newContent = 2;
@@ -9014,7 +9026,7 @@ class EditMessageRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      46, 2>
+      47, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -9030,7 +9042,7 @@ class EditMessageRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr messageid_;
+    ::google::protobuf::internal::ArenaStringPtr message_id_;
     ::google::protobuf::internal::ArenaStringPtr newcontent_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -9366,20 +9378,20 @@ class DeleteMessageRequest final :
   enum : int {
     kMessageIdFieldNumber = 1,
   };
-  // string messageId = 1;
-  void clear_messageid() ;
-  const std::string& messageid() const;
+  // string message_id = 1;
+  void clear_message_id() ;
+  const std::string& message_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_messageid(Arg_&& arg, Args_... args);
-  std::string* mutable_messageid();
-  PROTOBUF_NODISCARD std::string* release_messageid();
-  void set_allocated_messageid(std::string* value);
+  void set_message_id(Arg_&& arg, Args_... args);
+  std::string* mutable_message_id();
+  PROTOBUF_NODISCARD std::string* release_message_id();
+  void set_allocated_message_id(std::string* value);
 
   private:
-  const std::string& _internal_messageid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_messageid(
+  const std::string& _internal_message_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_message_id(
       const std::string& value);
-  std::string* _internal_mutable_messageid();
+  std::string* _internal_mutable_message_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.DeleteMessageRequest)
@@ -9389,7 +9401,7 @@ class DeleteMessageRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      48, 2>
+      49, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -9405,7 +9417,7 @@ class DeleteMessageRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr messageid_;
+    ::google::protobuf::internal::ArenaStringPtr message_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -9722,20 +9734,20 @@ class DeleteChatFolderRequest final :
   enum : int {
     kFolderIdFieldNumber = 1,
   };
-  // string folderId = 1;
-  void clear_folderid() ;
-  const std::string& folderid() const;
+  // string folder_id = 1;
+  void clear_folder_id() ;
+  const std::string& folder_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_folderid(Arg_&& arg, Args_... args);
-  std::string* mutable_folderid();
-  PROTOBUF_NODISCARD std::string* release_folderid();
-  void set_allocated_folderid(std::string* value);
+  void set_folder_id(Arg_&& arg, Args_... args);
+  std::string* mutable_folder_id();
+  PROTOBUF_NODISCARD std::string* release_folder_id();
+  void set_allocated_folder_id(std::string* value);
 
   private:
-  const std::string& _internal_folderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folderid(
+  const std::string& _internal_folder_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folder_id(
       const std::string& value);
-  std::string* _internal_mutable_folderid();
+  std::string* _internal_mutable_folder_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.DeleteChatFolderRequest)
@@ -9745,7 +9757,7 @@ class DeleteChatFolderRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      50, 2>
+      51, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -9761,7 +9773,7 @@ class DeleteChatFolderRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr folderid_;
+    ::google::protobuf::internal::ArenaStringPtr folder_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -9904,20 +9916,20 @@ class CreateChatFolderRequest final :
     kUserIdFieldNumber = 1,
     kNameFieldNumber = 2,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // string name = 2;
@@ -9943,7 +9955,7 @@ class CreateChatFolderRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      52, 2>
+      53, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -9959,7 +9971,7 @@ class CreateChatFolderRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::google::protobuf::internal::ArenaStringPtr name_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -10103,48 +10115,48 @@ class ContactList final :
     kContactIdsFieldNumber = 2,
     kUserIdFieldNumber = 1,
   };
-  // repeated string contactIds = 2;
-  int contactids_size() const;
+  // repeated string contact_ids = 2;
+  int contact_ids_size() const;
   private:
-  int _internal_contactids_size() const;
+  int _internal_contact_ids_size() const;
 
   public:
-  void clear_contactids() ;
-  const std::string& contactids(int index) const;
-  std::string* mutable_contactids(int index);
-  void set_contactids(int index, const std::string& value);
-  void set_contactids(int index, std::string&& value);
-  void set_contactids(int index, const char* value);
-  void set_contactids(int index, const char* value, std::size_t size);
-  void set_contactids(int index, absl::string_view value);
-  std::string* add_contactids();
-  void add_contactids(const std::string& value);
-  void add_contactids(std::string&& value);
-  void add_contactids(const char* value);
-  void add_contactids(const char* value, std::size_t size);
-  void add_contactids(absl::string_view value);
-  const ::google::protobuf::RepeatedPtrField<std::string>& contactids() const;
-  ::google::protobuf::RepeatedPtrField<std::string>* mutable_contactids();
+  void clear_contact_ids() ;
+  const std::string& contact_ids(int index) const;
+  std::string* mutable_contact_ids(int index);
+  void set_contact_ids(int index, const std::string& value);
+  void set_contact_ids(int index, std::string&& value);
+  void set_contact_ids(int index, const char* value);
+  void set_contact_ids(int index, const char* value, std::size_t size);
+  void set_contact_ids(int index, absl::string_view value);
+  std::string* add_contact_ids();
+  void add_contact_ids(const std::string& value);
+  void add_contact_ids(std::string&& value);
+  void add_contact_ids(const char* value);
+  void add_contact_ids(const char* value, std::size_t size);
+  void add_contact_ids(absl::string_view value);
+  const ::google::protobuf::RepeatedPtrField<std::string>& contact_ids() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* mutable_contact_ids();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_contactids() const;
-  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_contactids();
+  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_contact_ids() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_contact_ids();
 
   public:
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.ContactList)
@@ -10154,7 +10166,7 @@ class ContactList final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      46, 2>
+      48, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -10170,8 +10182,8 @@ class ContactList final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::RepeatedPtrField<std::string> contactids_;
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::RepeatedPtrField<std::string> contact_ids_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -10311,12 +10323,28 @@ class ChatMessage final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kIdFieldNumber = 1,
-    kSenderIdFieldNumber = 2,
+    kChatIdFieldNumber = 1,
+    kIdFieldNumber = 2,
     kContentFieldNumber = 4,
     kTypeFieldNumber = 3,
   };
-  // string id = 1;
+  // string chat_id = 1;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
+
+  private:
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
+      const std::string& value);
+  std::string* _internal_mutable_chat_id();
+
+  public:
+  // string id = 2;
   void clear_id() ;
   const std::string& id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
@@ -10330,22 +10358,6 @@ class ChatMessage final :
   inline PROTOBUF_ALWAYS_INLINE void _internal_set_id(
       const std::string& value);
   std::string* _internal_mutable_id();
-
-  public:
-  // string senderId = 2;
-  void clear_senderid() ;
-  const std::string& senderid() const;
-  template <typename Arg_ = const std::string&, typename... Args_>
-  void set_senderid(Arg_&& arg, Args_... args);
-  std::string* mutable_senderid();
-  PROTOBUF_NODISCARD std::string* release_senderid();
-  void set_allocated_senderid(std::string* value);
-
-  private:
-  const std::string& _internal_senderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_senderid(
-      const std::string& value);
-  std::string* _internal_mutable_senderid();
 
   public:
   // bytes content = 4;
@@ -10381,7 +10393,7 @@ class ChatMessage final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 4, 0,
-      40, 2>
+      39, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -10397,8 +10409,8 @@ class ChatMessage final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
     ::google::protobuf::internal::ArenaStringPtr id_;
-    ::google::protobuf::internal::ArenaStringPtr senderid_;
     ::google::protobuf::internal::ArenaStringPtr content_;
     int type_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -10545,32 +10557,32 @@ class ChatFolder final :
     kUserIdFieldNumber = 2,
     kNameFieldNumber = 3,
   };
-  // repeated string groupChatIds = 4;
-  int groupchatids_size() const;
+  // repeated string groupChat_ids = 4;
+  int groupchat_ids_size() const;
   private:
-  int _internal_groupchatids_size() const;
+  int _internal_groupchat_ids_size() const;
 
   public:
-  void clear_groupchatids() ;
-  const std::string& groupchatids(int index) const;
-  std::string* mutable_groupchatids(int index);
-  void set_groupchatids(int index, const std::string& value);
-  void set_groupchatids(int index, std::string&& value);
-  void set_groupchatids(int index, const char* value);
-  void set_groupchatids(int index, const char* value, std::size_t size);
-  void set_groupchatids(int index, absl::string_view value);
-  std::string* add_groupchatids();
-  void add_groupchatids(const std::string& value);
-  void add_groupchatids(std::string&& value);
-  void add_groupchatids(const char* value);
-  void add_groupchatids(const char* value, std::size_t size);
-  void add_groupchatids(absl::string_view value);
-  const ::google::protobuf::RepeatedPtrField<std::string>& groupchatids() const;
-  ::google::protobuf::RepeatedPtrField<std::string>* mutable_groupchatids();
+  void clear_groupchat_ids() ;
+  const std::string& groupchat_ids(int index) const;
+  std::string* mutable_groupchat_ids(int index);
+  void set_groupchat_ids(int index, const std::string& value);
+  void set_groupchat_ids(int index, std::string&& value);
+  void set_groupchat_ids(int index, const char* value);
+  void set_groupchat_ids(int index, const char* value, std::size_t size);
+  void set_groupchat_ids(int index, absl::string_view value);
+  std::string* add_groupchat_ids();
+  void add_groupchat_ids(const std::string& value);
+  void add_groupchat_ids(std::string&& value);
+  void add_groupchat_ids(const char* value);
+  void add_groupchat_ids(const char* value, std::size_t size);
+  void add_groupchat_ids(absl::string_view value);
+  const ::google::protobuf::RepeatedPtrField<std::string>& groupchat_ids() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* mutable_groupchat_ids();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_groupchatids() const;
-  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_groupchatids();
+  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_groupchat_ids() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_groupchat_ids();
 
   public:
   // string id = 1;
@@ -10589,20 +10601,20 @@ class ChatFolder final :
   std::string* _internal_mutable_id();
 
   public:
-  // string userId = 2;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 2;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
   // string name = 3;
@@ -10628,7 +10640,7 @@ class ChatFolder final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 4, 0,
-      53, 2>
+      55, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -10644,9 +10656,9 @@ class ChatFolder final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::RepeatedPtrField<std::string> groupchatids_;
+    ::google::protobuf::RepeatedPtrField<std::string> groupchat_ids_;
     ::google::protobuf::internal::ArenaStringPtr id_;
-    ::google::protobuf::internal::ArenaStringPtr userid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
     ::google::protobuf::internal::ArenaStringPtr name_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -10983,36 +10995,36 @@ class AddGroupMemberRequest final :
     kGroupIdFieldNumber = 1,
     kMemberIdFieldNumber = 2,
   };
-  // string groupId = 1;
-  void clear_groupid() ;
-  const std::string& groupid() const;
+  // string group_id = 1;
+  void clear_group_id() ;
+  const std::string& group_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_groupid(Arg_&& arg, Args_... args);
-  std::string* mutable_groupid();
-  PROTOBUF_NODISCARD std::string* release_groupid();
-  void set_allocated_groupid(std::string* value);
+  void set_group_id(Arg_&& arg, Args_... args);
+  std::string* mutable_group_id();
+  PROTOBUF_NODISCARD std::string* release_group_id();
+  void set_allocated_group_id(std::string* value);
 
   private:
-  const std::string& _internal_groupid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_groupid(
+  const std::string& _internal_group_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_group_id(
       const std::string& value);
-  std::string* _internal_mutable_groupid();
+  std::string* _internal_mutable_group_id();
 
   public:
-  // string memberId = 2;
-  void clear_memberid() ;
-  const std::string& memberid() const;
+  // string member_id = 2;
+  void clear_member_id() ;
+  const std::string& member_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_memberid(Arg_&& arg, Args_... args);
-  std::string* mutable_memberid();
-  PROTOBUF_NODISCARD std::string* release_memberid();
-  void set_allocated_memberid(std::string* value);
+  void set_member_id(Arg_&& arg, Args_... args);
+  std::string* mutable_member_id();
+  PROTOBUF_NODISCARD std::string* release_member_id();
+  void set_allocated_member_id(std::string* value);
 
   private:
-  const std::string& _internal_memberid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_memberid(
+  const std::string& _internal_member_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_member_id(
       const std::string& value);
-  std::string* _internal_mutable_memberid();
+  std::string* _internal_mutable_member_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.AddGroupMemberRequest)
@@ -11022,7 +11034,7 @@ class AddGroupMemberRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      55, 2>
+      57, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -11038,8 +11050,8 @@ class AddGroupMemberRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr groupid_;
-    ::google::protobuf::internal::ArenaStringPtr memberid_;
+    ::google::protobuf::internal::ArenaStringPtr group_id_;
+    ::google::protobuf::internal::ArenaStringPtr member_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -11375,36 +11387,36 @@ class AddContactRequest final :
     kUserIdFieldNumber = 1,
     kContactIdFieldNumber = 2,
   };
-  // string userId = 1;
-  void clear_userid() ;
-  const std::string& userid() const;
+  // string user_id = 1;
+  void clear_user_id() ;
+  const std::string& user_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_userid(Arg_&& arg, Args_... args);
-  std::string* mutable_userid();
-  PROTOBUF_NODISCARD std::string* release_userid();
-  void set_allocated_userid(std::string* value);
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
 
   private:
-  const std::string& _internal_userid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_userid(
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
       const std::string& value);
-  std::string* _internal_mutable_userid();
+  std::string* _internal_mutable_user_id();
 
   public:
-  // string contactId = 2;
-  void clear_contactid() ;
-  const std::string& contactid() const;
+  // string contact_id = 2;
+  void clear_contact_id() ;
+  const std::string& contact_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_contactid(Arg_&& arg, Args_... args);
-  std::string* mutable_contactid();
-  PROTOBUF_NODISCARD std::string* release_contactid();
-  void set_allocated_contactid(std::string* value);
+  void set_contact_id(Arg_&& arg, Args_... args);
+  std::string* mutable_contact_id();
+  PROTOBUF_NODISCARD std::string* release_contact_id();
+  void set_allocated_contact_id(std::string* value);
 
   private:
-  const std::string& _internal_contactid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_contactid(
+  const std::string& _internal_contact_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_contact_id(
       const std::string& value);
-  std::string* _internal_mutable_contactid();
+  std::string* _internal_mutable_contact_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.AddContactRequest)
@@ -11414,7 +11426,7 @@ class AddContactRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      51, 2>
+      53, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -11430,8 +11442,8 @@ class AddContactRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr userid_;
-    ::google::protobuf::internal::ArenaStringPtr contactid_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
+    ::google::protobuf::internal::ArenaStringPtr contact_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -11749,36 +11761,36 @@ class AddChatToFolderRequest final :
     kFolderIdFieldNumber = 1,
     kChatIdFieldNumber = 2,
   };
-  // string folderId = 1;
-  void clear_folderid() ;
-  const std::string& folderid() const;
+  // string folder_id = 1;
+  void clear_folder_id() ;
+  const std::string& folder_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_folderid(Arg_&& arg, Args_... args);
-  std::string* mutable_folderid();
-  PROTOBUF_NODISCARD std::string* release_folderid();
-  void set_allocated_folderid(std::string* value);
+  void set_folder_id(Arg_&& arg, Args_... args);
+  std::string* mutable_folder_id();
+  PROTOBUF_NODISCARD std::string* release_folder_id();
+  void set_allocated_folder_id(std::string* value);
 
   private:
-  const std::string& _internal_folderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folderid(
+  const std::string& _internal_folder_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folder_id(
       const std::string& value);
-  std::string* _internal_mutable_folderid();
+  std::string* _internal_mutable_folder_id();
 
   public:
-  // string chatId = 2;
-  void clear_chatid() ;
-  const std::string& chatid() const;
+  // string chat_id = 2;
+  void clear_chat_id() ;
+  const std::string& chat_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_chatid(Arg_&& arg, Args_... args);
-  std::string* mutable_chatid();
-  PROTOBUF_NODISCARD std::string* release_chatid();
-  void set_allocated_chatid(std::string* value);
+  void set_chat_id(Arg_&& arg, Args_... args);
+  std::string* mutable_chat_id();
+  PROTOBUF_NODISCARD std::string* release_chat_id();
+  void set_allocated_chat_id(std::string* value);
 
   private:
-  const std::string& _internal_chatid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chatid(
+  const std::string& _internal_chat_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_chat_id(
       const std::string& value);
-  std::string* _internal_mutable_chatid();
+  std::string* _internal_mutable_chat_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.AddChatToFolderRequest)
@@ -11788,7 +11800,7 @@ class AddChatToFolderRequest final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      55, 2>
+      57, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -11804,8 +11816,8 @@ class AddChatToFolderRequest final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::internal::ArenaStringPtr folderid_;
-    ::google::protobuf::internal::ArenaStringPtr chatid_;
+    ::google::protobuf::internal::ArenaStringPtr folder_id_;
+    ::google::protobuf::internal::ArenaStringPtr chat_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -13425,32 +13437,32 @@ class GroupChat final :
     kNameFieldNumber = 2,
     kFolderIdFieldNumber = 5,
   };
-  // repeated string memberIds = 3;
-  int memberids_size() const;
+  // repeated string member_ids = 3;
+  int member_ids_size() const;
   private:
-  int _internal_memberids_size() const;
+  int _internal_member_ids_size() const;
 
   public:
-  void clear_memberids() ;
-  const std::string& memberids(int index) const;
-  std::string* mutable_memberids(int index);
-  void set_memberids(int index, const std::string& value);
-  void set_memberids(int index, std::string&& value);
-  void set_memberids(int index, const char* value);
-  void set_memberids(int index, const char* value, std::size_t size);
-  void set_memberids(int index, absl::string_view value);
-  std::string* add_memberids();
-  void add_memberids(const std::string& value);
-  void add_memberids(std::string&& value);
-  void add_memberids(const char* value);
-  void add_memberids(const char* value, std::size_t size);
-  void add_memberids(absl::string_view value);
-  const ::google::protobuf::RepeatedPtrField<std::string>& memberids() const;
-  ::google::protobuf::RepeatedPtrField<std::string>* mutable_memberids();
+  void clear_member_ids() ;
+  const std::string& member_ids(int index) const;
+  std::string* mutable_member_ids(int index);
+  void set_member_ids(int index, const std::string& value);
+  void set_member_ids(int index, std::string&& value);
+  void set_member_ids(int index, const char* value);
+  void set_member_ids(int index, const char* value, std::size_t size);
+  void set_member_ids(int index, absl::string_view value);
+  std::string* add_member_ids();
+  void add_member_ids(const std::string& value);
+  void add_member_ids(std::string&& value);
+  void add_member_ids(const char* value);
+  void add_member_ids(const char* value, std::size_t size);
+  void add_member_ids(absl::string_view value);
+  const ::google::protobuf::RepeatedPtrField<std::string>& member_ids() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* mutable_member_ids();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_memberids() const;
-  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_memberids();
+  const ::google::protobuf::RepeatedPtrField<std::string>& _internal_member_ids() const;
+  ::google::protobuf::RepeatedPtrField<std::string>* _internal_mutable_member_ids();
 
   public:
   // repeated .messenger.Role roles = 4;
@@ -13503,20 +13515,20 @@ class GroupChat final :
   std::string* _internal_mutable_name();
 
   public:
-  // string folderId = 5;
-  void clear_folderid() ;
-  const std::string& folderid() const;
+  // string folder_id = 5;
+  void clear_folder_id() ;
+  const std::string& folder_id() const;
   template <typename Arg_ = const std::string&, typename... Args_>
-  void set_folderid(Arg_&& arg, Args_... args);
-  std::string* mutable_folderid();
-  PROTOBUF_NODISCARD std::string* release_folderid();
-  void set_allocated_folderid(std::string* value);
+  void set_folder_id(Arg_&& arg, Args_... args);
+  std::string* mutable_folder_id();
+  PROTOBUF_NODISCARD std::string* release_folder_id();
+  void set_allocated_folder_id(std::string* value);
 
   private:
-  const std::string& _internal_folderid() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folderid(
+  const std::string& _internal_folder_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_folder_id(
       const std::string& value);
-  std::string* _internal_mutable_folderid();
+  std::string* _internal_mutable_folder_id();
 
   public:
   // @@protoc_insertion_point(class_scope:messenger.GroupChat)
@@ -13526,7 +13538,7 @@ class GroupChat final :
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       3, 5, 1,
-      51, 2>
+      53, 2>
       _table_;
   friend class ::google::protobuf::MessageLite;
   friend class ::google::protobuf::Arena;
@@ -13542,11 +13554,11 @@ class GroupChat final :
                               ::google::protobuf::Arena* arena);
         inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                               ::google::protobuf::Arena* arena, const Impl_& from);
-    ::google::protobuf::RepeatedPtrField<std::string> memberids_;
+    ::google::protobuf::RepeatedPtrField<std::string> member_ids_;
     ::google::protobuf::RepeatedPtrField< ::messenger::Role > roles_;
     ::google::protobuf::internal::ArenaStringPtr id_;
     ::google::protobuf::internal::ArenaStringPtr name_;
-    ::google::protobuf::internal::ArenaStringPtr folderid_;
+    ::google::protobuf::internal::ArenaStringPtr folder_id_;
     mutable ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -14506,57 +14518,57 @@ inline void LogoutResponse::set_allocated_error(std::string* value) {
 
 // UserProfile
 
-// string userId = 1;
-inline void UserProfile::clear_userid() {
+// string user_id = 1;
+inline void UserProfile::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& UserProfile::userid() const
+inline const std::string& UserProfile::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.UserProfile.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.UserProfile.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void UserProfile::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void UserProfile::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.UserProfile.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.UserProfile.user_id)
 }
-inline std::string* UserProfile::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.UserProfile.userId)
+inline std::string* UserProfile::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.UserProfile.user_id)
   return _s;
 }
-inline const std::string& UserProfile::_internal_userid() const {
+inline const std::string& UserProfile::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void UserProfile::_internal_set_userid(const std::string& value) {
+inline void UserProfile::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* UserProfile::_internal_mutable_userid() {
+inline std::string* UserProfile::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* UserProfile::release_userid() {
+inline std::string* UserProfile::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.UserProfile.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.UserProfile.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void UserProfile::set_allocated_userid(std::string* value) {
+inline void UserProfile::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.UserProfile.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.UserProfile.user_id)
 }
 
 // string username = 2;
@@ -14819,57 +14831,57 @@ inline void UpdateUserProfileResponse::set_allocated_error(std::string* value) {
 
 // UpdateMessageStatusRequest
 
-// string messageId = 1;
-inline void UpdateMessageStatusRequest::clear_messageid() {
+// string message_id = 1;
+inline void UpdateMessageStatusRequest::clear_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.messageid_.ClearToEmpty();
+  _impl_.message_id_.ClearToEmpty();
 }
-inline const std::string& UpdateMessageStatusRequest::messageid() const
+inline const std::string& UpdateMessageStatusRequest::message_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.UpdateMessageStatusRequest.messageId)
-  return _internal_messageid();
+  // @@protoc_insertion_point(field_get:messenger.UpdateMessageStatusRequest.message_id)
+  return _internal_message_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void UpdateMessageStatusRequest::set_messageid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void UpdateMessageStatusRequest::set_message_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.messageid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.UpdateMessageStatusRequest.messageId)
+  _impl_.message_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.UpdateMessageStatusRequest.message_id)
 }
-inline std::string* UpdateMessageStatusRequest::mutable_messageid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_messageid();
-  // @@protoc_insertion_point(field_mutable:messenger.UpdateMessageStatusRequest.messageId)
+inline std::string* UpdateMessageStatusRequest::mutable_message_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_message_id();
+  // @@protoc_insertion_point(field_mutable:messenger.UpdateMessageStatusRequest.message_id)
   return _s;
 }
-inline const std::string& UpdateMessageStatusRequest::_internal_messageid() const {
+inline const std::string& UpdateMessageStatusRequest::_internal_message_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.messageid_.Get();
+  return _impl_.message_id_.Get();
 }
-inline void UpdateMessageStatusRequest::_internal_set_messageid(const std::string& value) {
+inline void UpdateMessageStatusRequest::_internal_set_message_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.messageid_.Set(value, GetArena());
+  _impl_.message_id_.Set(value, GetArena());
 }
-inline std::string* UpdateMessageStatusRequest::_internal_mutable_messageid() {
+inline std::string* UpdateMessageStatusRequest::_internal_mutable_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.messageid_.Mutable( GetArena());
+  return _impl_.message_id_.Mutable( GetArena());
 }
-inline std::string* UpdateMessageStatusRequest::release_messageid() {
+inline std::string* UpdateMessageStatusRequest::release_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.UpdateMessageStatusRequest.messageId)
-  return _impl_.messageid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.UpdateMessageStatusRequest.message_id)
+  return _impl_.message_id_.Release();
 }
-inline void UpdateMessageStatusRequest::set_allocated_messageid(std::string* value) {
+inline void UpdateMessageStatusRequest::set_allocated_message_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.messageid_.SetAllocated(value, GetArena());
+  _impl_.message_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.messageid_.IsDefault()) {
-          _impl_.messageid_.Set("", GetArena());
+        if (_impl_.message_id_.IsDefault()) {
+          _impl_.message_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.UpdateMessageStatusRequest.messageId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.UpdateMessageStatusRequest.message_id)
 }
 
 // .messenger.MessageStatus status = 2;
@@ -14979,110 +14991,110 @@ inline void UpdateMessageStatusResponse::set_allocated_error(std::string* value)
 
 // AddContactRequest
 
-// string userId = 1;
-inline void AddContactRequest::clear_userid() {
+// string user_id = 1;
+inline void AddContactRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& AddContactRequest::userid() const
+inline const std::string& AddContactRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.AddContactRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.AddContactRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void AddContactRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void AddContactRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.AddContactRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.AddContactRequest.user_id)
 }
-inline std::string* AddContactRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.AddContactRequest.userId)
+inline std::string* AddContactRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.AddContactRequest.user_id)
   return _s;
 }
-inline const std::string& AddContactRequest::_internal_userid() const {
+inline const std::string& AddContactRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void AddContactRequest::_internal_set_userid(const std::string& value) {
+inline void AddContactRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* AddContactRequest::_internal_mutable_userid() {
+inline std::string* AddContactRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* AddContactRequest::release_userid() {
+inline std::string* AddContactRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.AddContactRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.AddContactRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void AddContactRequest::set_allocated_userid(std::string* value) {
+inline void AddContactRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.AddContactRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.AddContactRequest.user_id)
 }
 
-// string contactId = 2;
-inline void AddContactRequest::clear_contactid() {
+// string contact_id = 2;
+inline void AddContactRequest::clear_contact_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.contactid_.ClearToEmpty();
+  _impl_.contact_id_.ClearToEmpty();
 }
-inline const std::string& AddContactRequest::contactid() const
+inline const std::string& AddContactRequest::contact_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.AddContactRequest.contactId)
-  return _internal_contactid();
+  // @@protoc_insertion_point(field_get:messenger.AddContactRequest.contact_id)
+  return _internal_contact_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void AddContactRequest::set_contactid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void AddContactRequest::set_contact_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.contactid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.AddContactRequest.contactId)
+  _impl_.contact_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.AddContactRequest.contact_id)
 }
-inline std::string* AddContactRequest::mutable_contactid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_contactid();
-  // @@protoc_insertion_point(field_mutable:messenger.AddContactRequest.contactId)
+inline std::string* AddContactRequest::mutable_contact_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_contact_id();
+  // @@protoc_insertion_point(field_mutable:messenger.AddContactRequest.contact_id)
   return _s;
 }
-inline const std::string& AddContactRequest::_internal_contactid() const {
+inline const std::string& AddContactRequest::_internal_contact_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.contactid_.Get();
+  return _impl_.contact_id_.Get();
 }
-inline void AddContactRequest::_internal_set_contactid(const std::string& value) {
+inline void AddContactRequest::_internal_set_contact_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.contactid_.Set(value, GetArena());
+  _impl_.contact_id_.Set(value, GetArena());
 }
-inline std::string* AddContactRequest::_internal_mutable_contactid() {
+inline std::string* AddContactRequest::_internal_mutable_contact_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.contactid_.Mutable( GetArena());
+  return _impl_.contact_id_.Mutable( GetArena());
 }
-inline std::string* AddContactRequest::release_contactid() {
+inline std::string* AddContactRequest::release_contact_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.AddContactRequest.contactId)
-  return _impl_.contactid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.AddContactRequest.contact_id)
+  return _impl_.contact_id_.Release();
 }
-inline void AddContactRequest::set_allocated_contactid(std::string* value) {
+inline void AddContactRequest::set_allocated_contact_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.contactid_.SetAllocated(value, GetArena());
+  _impl_.contact_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.contactid_.IsDefault()) {
-          _impl_.contactid_.Set("", GetArena());
+        if (_impl_.contact_id_.IsDefault()) {
+          _impl_.contact_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.AddContactRequest.contactId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.AddContactRequest.contact_id)
 }
 
 // -------------------------------------------------------------------
@@ -15169,110 +15181,110 @@ inline void AddContactResponse::set_allocated_error(std::string* value) {
 
 // RemoveContactRequest
 
-// string userId = 1;
-inline void RemoveContactRequest::clear_userid() {
+// string user_id = 1;
+inline void RemoveContactRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& RemoveContactRequest::userid() const
+inline const std::string& RemoveContactRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.RemoveContactRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.RemoveContactRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void RemoveContactRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void RemoveContactRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.RemoveContactRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.RemoveContactRequest.user_id)
 }
-inline std::string* RemoveContactRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.RemoveContactRequest.userId)
+inline std::string* RemoveContactRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.RemoveContactRequest.user_id)
   return _s;
 }
-inline const std::string& RemoveContactRequest::_internal_userid() const {
+inline const std::string& RemoveContactRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void RemoveContactRequest::_internal_set_userid(const std::string& value) {
+inline void RemoveContactRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* RemoveContactRequest::_internal_mutable_userid() {
+inline std::string* RemoveContactRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* RemoveContactRequest::release_userid() {
+inline std::string* RemoveContactRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.RemoveContactRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.RemoveContactRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void RemoveContactRequest::set_allocated_userid(std::string* value) {
+inline void RemoveContactRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveContactRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveContactRequest.user_id)
 }
 
-// string contactId = 2;
-inline void RemoveContactRequest::clear_contactid() {
+// string contact_id = 2;
+inline void RemoveContactRequest::clear_contact_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.contactid_.ClearToEmpty();
+  _impl_.contact_id_.ClearToEmpty();
 }
-inline const std::string& RemoveContactRequest::contactid() const
+inline const std::string& RemoveContactRequest::contact_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.RemoveContactRequest.contactId)
-  return _internal_contactid();
+  // @@protoc_insertion_point(field_get:messenger.RemoveContactRequest.contact_id)
+  return _internal_contact_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void RemoveContactRequest::set_contactid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void RemoveContactRequest::set_contact_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.contactid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.RemoveContactRequest.contactId)
+  _impl_.contact_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.RemoveContactRequest.contact_id)
 }
-inline std::string* RemoveContactRequest::mutable_contactid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_contactid();
-  // @@protoc_insertion_point(field_mutable:messenger.RemoveContactRequest.contactId)
+inline std::string* RemoveContactRequest::mutable_contact_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_contact_id();
+  // @@protoc_insertion_point(field_mutable:messenger.RemoveContactRequest.contact_id)
   return _s;
 }
-inline const std::string& RemoveContactRequest::_internal_contactid() const {
+inline const std::string& RemoveContactRequest::_internal_contact_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.contactid_.Get();
+  return _impl_.contact_id_.Get();
 }
-inline void RemoveContactRequest::_internal_set_contactid(const std::string& value) {
+inline void RemoveContactRequest::_internal_set_contact_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.contactid_.Set(value, GetArena());
+  _impl_.contact_id_.Set(value, GetArena());
 }
-inline std::string* RemoveContactRequest::_internal_mutable_contactid() {
+inline std::string* RemoveContactRequest::_internal_mutable_contact_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.contactid_.Mutable( GetArena());
+  return _impl_.contact_id_.Mutable( GetArena());
 }
-inline std::string* RemoveContactRequest::release_contactid() {
+inline std::string* RemoveContactRequest::release_contact_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.RemoveContactRequest.contactId)
-  return _impl_.contactid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.RemoveContactRequest.contact_id)
+  return _impl_.contact_id_.Release();
 }
-inline void RemoveContactRequest::set_allocated_contactid(std::string* value) {
+inline void RemoveContactRequest::set_allocated_contact_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.contactid_.SetAllocated(value, GetArena());
+  _impl_.contact_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.contactid_.IsDefault()) {
-          _impl_.contactid_.Set("", GetArena());
+        if (_impl_.contact_id_.IsDefault()) {
+          _impl_.contact_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveContactRequest.contactId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveContactRequest.contact_id)
 }
 
 // -------------------------------------------------------------------
@@ -15359,218 +15371,218 @@ inline void RemoveContactResponse::set_allocated_error(std::string* value) {
 
 // ContactList
 
-// string userId = 1;
-inline void ContactList::clear_userid() {
+// string user_id = 1;
+inline void ContactList::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& ContactList::userid() const
+inline const std::string& ContactList::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.ContactList.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.ContactList.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void ContactList::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void ContactList::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.ContactList.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.ContactList.user_id)
 }
-inline std::string* ContactList::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.ContactList.userId)
+inline std::string* ContactList::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.ContactList.user_id)
   return _s;
 }
-inline const std::string& ContactList::_internal_userid() const {
+inline const std::string& ContactList::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void ContactList::_internal_set_userid(const std::string& value) {
+inline void ContactList::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* ContactList::_internal_mutable_userid() {
+inline std::string* ContactList::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* ContactList::release_userid() {
+inline std::string* ContactList::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.ContactList.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.ContactList.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void ContactList::set_allocated_userid(std::string* value) {
+inline void ContactList::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.ContactList.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.ContactList.user_id)
 }
 
-// repeated string contactIds = 2;
-inline int ContactList::_internal_contactids_size() const {
-  return _internal_contactids().size();
+// repeated string contact_ids = 2;
+inline int ContactList::_internal_contact_ids_size() const {
+  return _internal_contact_ids().size();
 }
-inline int ContactList::contactids_size() const {
-  return _internal_contactids_size();
+inline int ContactList::contact_ids_size() const {
+  return _internal_contact_ids_size();
 }
-inline void ContactList::clear_contactids() {
+inline void ContactList::clear_contact_ids() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.contactids_.Clear();
+  _impl_.contact_ids_.Clear();
 }
-inline std::string* ContactList::add_contactids()
+inline std::string* ContactList::add_contact_ids()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  std::string* _s = _internal_mutable_contactids()->Add();
-  // @@protoc_insertion_point(field_add_mutable:messenger.ContactList.contactIds)
+  std::string* _s = _internal_mutable_contact_ids()->Add();
+  // @@protoc_insertion_point(field_add_mutable:messenger.ContactList.contact_ids)
   return _s;
 }
-inline const std::string& ContactList::contactids(int index) const
+inline const std::string& ContactList::contact_ids(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.ContactList.contactIds)
-  return _internal_contactids().Get(index);
+  // @@protoc_insertion_point(field_get:messenger.ContactList.contact_ids)
+  return _internal_contact_ids().Get(index);
 }
-inline std::string* ContactList::mutable_contactids(int index)
+inline std::string* ContactList::mutable_contact_ids(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:messenger.ContactList.contactIds)
-  return _internal_mutable_contactids()->Mutable(index);
+  // @@protoc_insertion_point(field_mutable:messenger.ContactList.contact_ids)
+  return _internal_mutable_contact_ids()->Mutable(index);
 }
-inline void ContactList::set_contactids(int index, const std::string& value) {
-  _internal_mutable_contactids()->Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:messenger.ContactList.contactIds)
+inline void ContactList::set_contact_ids(int index, const std::string& value) {
+  _internal_mutable_contact_ids()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:messenger.ContactList.contact_ids)
 }
-inline void ContactList::set_contactids(int index, std::string&& value) {
-  _internal_mutable_contactids()->Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:messenger.ContactList.contactIds)
+inline void ContactList::set_contact_ids(int index, std::string&& value) {
+  _internal_mutable_contact_ids()->Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:messenger.ContactList.contact_ids)
 }
-inline void ContactList::set_contactids(int index, const char* value) {
+inline void ContactList::set_contact_ids(int index, const char* value) {
   ABSL_DCHECK(value != nullptr);
-  _internal_mutable_contactids()->Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:messenger.ContactList.contactIds)
+  _internal_mutable_contact_ids()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:messenger.ContactList.contact_ids)
 }
-inline void ContactList::set_contactids(int index, const char* value,
+inline void ContactList::set_contact_ids(int index, const char* value,
                               std::size_t size) {
-  _internal_mutable_contactids()->Mutable(index)->assign(
+  _internal_mutable_contact_ids()->Mutable(index)->assign(
       reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:messenger.ContactList.contactIds)
+  // @@protoc_insertion_point(field_set_pointer:messenger.ContactList.contact_ids)
 }
-inline void ContactList::set_contactids(int index, absl::string_view value) {
-  _internal_mutable_contactids()->Mutable(index)->assign(value.data(),
+inline void ContactList::set_contact_ids(int index, absl::string_view value) {
+  _internal_mutable_contact_ids()->Mutable(index)->assign(value.data(),
                                                      value.size());
-  // @@protoc_insertion_point(field_set_string_piece:messenger.ContactList.contactIds)
+  // @@protoc_insertion_point(field_set_string_piece:messenger.ContactList.contact_ids)
 }
-inline void ContactList::add_contactids(const std::string& value) {
+inline void ContactList::add_contact_ids(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_contactids()->Add()->assign(value);
-  // @@protoc_insertion_point(field_add:messenger.ContactList.contactIds)
+  _internal_mutable_contact_ids()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add:messenger.ContactList.contact_ids)
 }
-inline void ContactList::add_contactids(std::string&& value) {
+inline void ContactList::add_contact_ids(std::string&& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_contactids()->Add(std::move(value));
-  // @@protoc_insertion_point(field_add:messenger.ContactList.contactIds)
+  _internal_mutable_contact_ids()->Add(std::move(value));
+  // @@protoc_insertion_point(field_add:messenger.ContactList.contact_ids)
 }
-inline void ContactList::add_contactids(const char* value) {
+inline void ContactList::add_contact_ids(const char* value) {
   ABSL_DCHECK(value != nullptr);
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_contactids()->Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:messenger.ContactList.contactIds)
+  _internal_mutable_contact_ids()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:messenger.ContactList.contact_ids)
 }
-inline void ContactList::add_contactids(const char* value, std::size_t size) {
+inline void ContactList::add_contact_ids(const char* value, std::size_t size) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_contactids()->Add()->assign(
+  _internal_mutable_contact_ids()->Add()->assign(
       reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:messenger.ContactList.contactIds)
+  // @@protoc_insertion_point(field_add_pointer:messenger.ContactList.contact_ids)
 }
-inline void ContactList::add_contactids(absl::string_view value) {
+inline void ContactList::add_contact_ids(absl::string_view value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_contactids()->Add()->assign(value.data(), value.size());
-  // @@protoc_insertion_point(field_add_string_piece:messenger.ContactList.contactIds)
+  _internal_mutable_contact_ids()->Add()->assign(value.data(), value.size());
+  // @@protoc_insertion_point(field_add_string_piece:messenger.ContactList.contact_ids)
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
-ContactList::contactids() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:messenger.ContactList.contactIds)
-  return _internal_contactids();
+ContactList::contact_ids() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_list:messenger.ContactList.contact_ids)
+  return _internal_contact_ids();
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
-ContactList::mutable_contactids() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:messenger.ContactList.contactIds)
+ContactList::mutable_contact_ids() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_list:messenger.ContactList.contact_ids)
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  return _internal_mutable_contactids();
+  return _internal_mutable_contact_ids();
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
-ContactList::_internal_contactids() const {
+ContactList::_internal_contact_ids() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.contactids_;
+  return _impl_.contact_ids_;
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
-ContactList::_internal_mutable_contactids() {
+ContactList::_internal_mutable_contact_ids() {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return &_impl_.contactids_;
+  return &_impl_.contact_ids_;
 }
 
 // -------------------------------------------------------------------
 
 // SentMessage
 
-// string id = 1;
-inline void SentMessage::clear_id() {
+// string chat_id = 1;
+inline void SentMessage::clear_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.id_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
 }
-inline const std::string& SentMessage::id() const
+inline const std::string& SentMessage::chat_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.SentMessage.id)
-  return _internal_id();
+  // @@protoc_insertion_point(field_get:messenger.SentMessage.chat_id)
+  return _internal_chat_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void SentMessage::set_id(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void SentMessage::set_chat_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.SentMessage.id)
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.SentMessage.chat_id)
 }
-inline std::string* SentMessage::mutable_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_id();
-  // @@protoc_insertion_point(field_mutable:messenger.SentMessage.id)
+inline std::string* SentMessage::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.SentMessage.chat_id)
   return _s;
 }
-inline const std::string& SentMessage::_internal_id() const {
+inline const std::string& SentMessage::_internal_chat_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.id_.Get();
+  return _impl_.chat_id_.Get();
 }
-inline void SentMessage::_internal_set_id(const std::string& value) {
+inline void SentMessage::_internal_set_chat_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.id_.Set(value, GetArena());
+  _impl_.chat_id_.Set(value, GetArena());
 }
-inline std::string* SentMessage::_internal_mutable_id() {
+inline std::string* SentMessage::_internal_mutable_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.id_.Mutable( GetArena());
+  return _impl_.chat_id_.Mutable( GetArena());
 }
-inline std::string* SentMessage::release_id() {
+inline std::string* SentMessage::release_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.SentMessage.id)
-  return _impl_.id_.Release();
+  // @@protoc_insertion_point(field_release:messenger.SentMessage.chat_id)
+  return _impl_.chat_id_.Release();
 }
-inline void SentMessage::set_allocated_id(std::string* value) {
+inline void SentMessage::set_allocated_chat_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.id_.SetAllocated(value, GetArena());
+  _impl_.chat_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.id_.IsDefault()) {
-          _impl_.id_.Set("", GetArena());
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.SentMessage.id)
+  // @@protoc_insertion_point(field_set_allocated:messenger.SentMessage.chat_id)
 }
 
-// .messenger.MessageType type = 2;
+// .messenger.MessageType type = 3;
 inline void SentMessage::clear_type() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_.type_ = 0;
@@ -15593,7 +15605,7 @@ inline void SentMessage::_internal_set_type(::messenger::MessageType value) {
   _impl_.type_ = value;
 }
 
-// string content = 3;
+// string content = 4;
 inline void SentMessage::clear_content() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_.content_.ClearToEmpty();
@@ -15650,57 +15662,80 @@ inline void SentMessage::set_allocated_content(std::string* value) {
 
 // GetMessagesOffsetRequest
 
-// string chatId = 1;
-inline void GetMessagesOffsetRequest::clear_chatid() {
+// string chat_id = 1;
+inline void GetMessagesOffsetRequest::clear_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
 }
-inline const std::string& GetMessagesOffsetRequest::chatid() const
+inline const std::string& GetMessagesOffsetRequest::chat_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetMessagesOffsetRequest.chatId)
-  return _internal_chatid();
+  // @@protoc_insertion_point(field_get:messenger.GetMessagesOffsetRequest.chat_id)
+  return _internal_chat_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetMessagesOffsetRequest::set_chatid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetMessagesOffsetRequest::set_chat_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetMessagesOffsetRequest.chatId)
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetMessagesOffsetRequest.chat_id)
 }
-inline std::string* GetMessagesOffsetRequest::mutable_chatid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_chatid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetMessagesOffsetRequest.chatId)
+inline std::string* GetMessagesOffsetRequest::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetMessagesOffsetRequest.chat_id)
   return _s;
 }
-inline const std::string& GetMessagesOffsetRequest::_internal_chatid() const {
+inline const std::string& GetMessagesOffsetRequest::_internal_chat_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.chatid_.Get();
+  return _impl_.chat_id_.Get();
 }
-inline void GetMessagesOffsetRequest::_internal_set_chatid(const std::string& value) {
+inline void GetMessagesOffsetRequest::_internal_set_chat_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(value, GetArena());
+  _impl_.chat_id_.Set(value, GetArena());
 }
-inline std::string* GetMessagesOffsetRequest::_internal_mutable_chatid() {
+inline std::string* GetMessagesOffsetRequest::_internal_mutable_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.chatid_.Mutable( GetArena());
+  return _impl_.chat_id_.Mutable( GetArena());
 }
-inline std::string* GetMessagesOffsetRequest::release_chatid() {
+inline std::string* GetMessagesOffsetRequest::release_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetMessagesOffsetRequest.chatId)
-  return _impl_.chatid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetMessagesOffsetRequest.chat_id)
+  return _impl_.chat_id_.Release();
 }
-inline void GetMessagesOffsetRequest::set_allocated_chatid(std::string* value) {
+inline void GetMessagesOffsetRequest::set_allocated_chat_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.SetAllocated(value, GetArena());
+  _impl_.chat_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.chatid_.IsDefault()) {
-          _impl_.chatid_.Set("", GetArena());
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetMessagesOffsetRequest.chatId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetMessagesOffsetRequest.chat_id)
+}
+
+// int64 offset = 2;
+inline void GetMessagesOffsetRequest::clear_offset() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.offset_ = ::int64_t{0};
+}
+inline ::int64_t GetMessagesOffsetRequest::offset() const {
+  // @@protoc_insertion_point(field_get:messenger.GetMessagesOffsetRequest.offset)
+  return _internal_offset();
+}
+inline void GetMessagesOffsetRequest::set_offset(::int64_t value) {
+  _internal_set_offset(value);
+  // @@protoc_insertion_point(field_set:messenger.GetMessagesOffsetRequest.offset)
+}
+inline ::int64_t GetMessagesOffsetRequest::_internal_offset() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.offset_;
+}
+inline void GetMessagesOffsetRequest::_internal_set_offset(::int64_t value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.offset_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -15734,57 +15769,57 @@ inline void GetMessagesOffsetResponse::_internal_set_offset(::int64_t value) {
 
 // GetMessagesConversionRequest
 
-// string chatId = 1;
-inline void GetMessagesConversionRequest::clear_chatid() {
+// string chat_id = 1;
+inline void GetMessagesConversionRequest::clear_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
 }
-inline const std::string& GetMessagesConversionRequest::chatid() const
+inline const std::string& GetMessagesConversionRequest::chat_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetMessagesConversionRequest.chatId)
-  return _internal_chatid();
+  // @@protoc_insertion_point(field_get:messenger.GetMessagesConversionRequest.chat_id)
+  return _internal_chat_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetMessagesConversionRequest::set_chatid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetMessagesConversionRequest::set_chat_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetMessagesConversionRequest.chatId)
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetMessagesConversionRequest.chat_id)
 }
-inline std::string* GetMessagesConversionRequest::mutable_chatid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_chatid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetMessagesConversionRequest.chatId)
+inline std::string* GetMessagesConversionRequest::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetMessagesConversionRequest.chat_id)
   return _s;
 }
-inline const std::string& GetMessagesConversionRequest::_internal_chatid() const {
+inline const std::string& GetMessagesConversionRequest::_internal_chat_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.chatid_.Get();
+  return _impl_.chat_id_.Get();
 }
-inline void GetMessagesConversionRequest::_internal_set_chatid(const std::string& value) {
+inline void GetMessagesConversionRequest::_internal_set_chat_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(value, GetArena());
+  _impl_.chat_id_.Set(value, GetArena());
 }
-inline std::string* GetMessagesConversionRequest::_internal_mutable_chatid() {
+inline std::string* GetMessagesConversionRequest::_internal_mutable_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.chatid_.Mutable( GetArena());
+  return _impl_.chat_id_.Mutable( GetArena());
 }
-inline std::string* GetMessagesConversionRequest::release_chatid() {
+inline std::string* GetMessagesConversionRequest::release_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetMessagesConversionRequest.chatId)
-  return _impl_.chatid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetMessagesConversionRequest.chat_id)
+  return _impl_.chat_id_.Release();
 }
-inline void GetMessagesConversionRequest::set_allocated_chatid(std::string* value) {
+inline void GetMessagesConversionRequest::set_allocated_chat_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.SetAllocated(value, GetArena());
+  _impl_.chat_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.chatid_.IsDefault()) {
-          _impl_.chatid_.Set("", GetArena());
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetMessagesConversionRequest.chatId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetMessagesConversionRequest.chat_id)
 }
 
 // int64 offset = 2;
@@ -15890,7 +15925,60 @@ GetMessagesConversionResponse::_internal_mutable_messages() {
 
 // ChatMessage
 
-// string id = 1;
+// string chat_id = 1;
+inline void ChatMessage::clear_chat_id() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.chat_id_.ClearToEmpty();
+}
+inline const std::string& ChatMessage::chat_id() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:messenger.ChatMessage.chat_id)
+  return _internal_chat_id();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void ChatMessage::set_chat_id(Arg_&& arg,
+                                                     Args_... args) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.ChatMessage.chat_id)
+}
+inline std::string* ChatMessage::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.ChatMessage.chat_id)
+  return _s;
+}
+inline const std::string& ChatMessage::_internal_chat_id() const {
+  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
+  return _impl_.chat_id_.Get();
+}
+inline void ChatMessage::_internal_set_chat_id(const std::string& value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  _impl_.chat_id_.Set(value, GetArena());
+}
+inline std::string* ChatMessage::_internal_mutable_chat_id() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  ;
+  return _impl_.chat_id_.Mutable( GetArena());
+}
+inline std::string* ChatMessage::release_chat_id() {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  // @@protoc_insertion_point(field_release:messenger.ChatMessage.chat_id)
+  return _impl_.chat_id_.Release();
+}
+inline void ChatMessage::set_allocated_chat_id(std::string* value) {
+  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
+  _impl_.chat_id_.SetAllocated(value, GetArena());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
+        }
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:messenger.ChatMessage.chat_id)
+}
+
+// string id = 2;
 inline void ChatMessage::clear_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_.id_.ClearToEmpty();
@@ -15941,59 +16029,6 @@ inline void ChatMessage::set_allocated_id(std::string* value) {
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   // @@protoc_insertion_point(field_set_allocated:messenger.ChatMessage.id)
-}
-
-// string senderId = 2;
-inline void ChatMessage::clear_senderid() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.senderid_.ClearToEmpty();
-}
-inline const std::string& ChatMessage::senderid() const
-    ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.ChatMessage.senderId)
-  return _internal_senderid();
-}
-template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void ChatMessage::set_senderid(Arg_&& arg,
-                                                     Args_... args) {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  ;
-  _impl_.senderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.ChatMessage.senderId)
-}
-inline std::string* ChatMessage::mutable_senderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_senderid();
-  // @@protoc_insertion_point(field_mutable:messenger.ChatMessage.senderId)
-  return _s;
-}
-inline const std::string& ChatMessage::_internal_senderid() const {
-  PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.senderid_.Get();
-}
-inline void ChatMessage::_internal_set_senderid(const std::string& value) {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  ;
-  _impl_.senderid_.Set(value, GetArena());
-}
-inline std::string* ChatMessage::_internal_mutable_senderid() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  ;
-  return _impl_.senderid_.Mutable( GetArena());
-}
-inline std::string* ChatMessage::release_senderid() {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.ChatMessage.senderId)
-  return _impl_.senderid_.Release();
-}
-inline void ChatMessage::set_allocated_senderid(std::string* value) {
-  PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.senderid_.SetAllocated(value, GetArena());
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.senderid_.IsDefault()) {
-          _impl_.senderid_.Set("", GetArena());
-        }
-  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.ChatMessage.senderId)
 }
 
 // .messenger.MessageType type = 3;
@@ -16076,57 +16111,57 @@ inline void ChatMessage::set_allocated_content(std::string* value) {
 
 // DeleteMessageRequest
 
-// string messageId = 1;
-inline void DeleteMessageRequest::clear_messageid() {
+// string message_id = 1;
+inline void DeleteMessageRequest::clear_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.messageid_.ClearToEmpty();
+  _impl_.message_id_.ClearToEmpty();
 }
-inline const std::string& DeleteMessageRequest::messageid() const
+inline const std::string& DeleteMessageRequest::message_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.DeleteMessageRequest.messageId)
-  return _internal_messageid();
+  // @@protoc_insertion_point(field_get:messenger.DeleteMessageRequest.message_id)
+  return _internal_message_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void DeleteMessageRequest::set_messageid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void DeleteMessageRequest::set_message_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.messageid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.DeleteMessageRequest.messageId)
+  _impl_.message_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.DeleteMessageRequest.message_id)
 }
-inline std::string* DeleteMessageRequest::mutable_messageid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_messageid();
-  // @@protoc_insertion_point(field_mutable:messenger.DeleteMessageRequest.messageId)
+inline std::string* DeleteMessageRequest::mutable_message_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_message_id();
+  // @@protoc_insertion_point(field_mutable:messenger.DeleteMessageRequest.message_id)
   return _s;
 }
-inline const std::string& DeleteMessageRequest::_internal_messageid() const {
+inline const std::string& DeleteMessageRequest::_internal_message_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.messageid_.Get();
+  return _impl_.message_id_.Get();
 }
-inline void DeleteMessageRequest::_internal_set_messageid(const std::string& value) {
+inline void DeleteMessageRequest::_internal_set_message_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.messageid_.Set(value, GetArena());
+  _impl_.message_id_.Set(value, GetArena());
 }
-inline std::string* DeleteMessageRequest::_internal_mutable_messageid() {
+inline std::string* DeleteMessageRequest::_internal_mutable_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.messageid_.Mutable( GetArena());
+  return _impl_.message_id_.Mutable( GetArena());
 }
-inline std::string* DeleteMessageRequest::release_messageid() {
+inline std::string* DeleteMessageRequest::release_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.DeleteMessageRequest.messageId)
-  return _impl_.messageid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.DeleteMessageRequest.message_id)
+  return _impl_.message_id_.Release();
 }
-inline void DeleteMessageRequest::set_allocated_messageid(std::string* value) {
+inline void DeleteMessageRequest::set_allocated_message_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.messageid_.SetAllocated(value, GetArena());
+  _impl_.message_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.messageid_.IsDefault()) {
-          _impl_.messageid_.Set("", GetArena());
+        if (_impl_.message_id_.IsDefault()) {
+          _impl_.message_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.DeleteMessageRequest.messageId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.DeleteMessageRequest.message_id)
 }
 
 // -------------------------------------------------------------------
@@ -16213,57 +16248,57 @@ inline void DeleteMessageResponse::set_allocated_error(std::string* value) {
 
 // EditMessageRequest
 
-// string messageId = 1;
-inline void EditMessageRequest::clear_messageid() {
+// string message_id = 1;
+inline void EditMessageRequest::clear_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.messageid_.ClearToEmpty();
+  _impl_.message_id_.ClearToEmpty();
 }
-inline const std::string& EditMessageRequest::messageid() const
+inline const std::string& EditMessageRequest::message_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.EditMessageRequest.messageId)
-  return _internal_messageid();
+  // @@protoc_insertion_point(field_get:messenger.EditMessageRequest.message_id)
+  return _internal_message_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void EditMessageRequest::set_messageid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void EditMessageRequest::set_message_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.messageid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.EditMessageRequest.messageId)
+  _impl_.message_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.EditMessageRequest.message_id)
 }
-inline std::string* EditMessageRequest::mutable_messageid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_messageid();
-  // @@protoc_insertion_point(field_mutable:messenger.EditMessageRequest.messageId)
+inline std::string* EditMessageRequest::mutable_message_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_message_id();
+  // @@protoc_insertion_point(field_mutable:messenger.EditMessageRequest.message_id)
   return _s;
 }
-inline const std::string& EditMessageRequest::_internal_messageid() const {
+inline const std::string& EditMessageRequest::_internal_message_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.messageid_.Get();
+  return _impl_.message_id_.Get();
 }
-inline void EditMessageRequest::_internal_set_messageid(const std::string& value) {
+inline void EditMessageRequest::_internal_set_message_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.messageid_.Set(value, GetArena());
+  _impl_.message_id_.Set(value, GetArena());
 }
-inline std::string* EditMessageRequest::_internal_mutable_messageid() {
+inline std::string* EditMessageRequest::_internal_mutable_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.messageid_.Mutable( GetArena());
+  return _impl_.message_id_.Mutable( GetArena());
 }
-inline std::string* EditMessageRequest::release_messageid() {
+inline std::string* EditMessageRequest::release_message_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.EditMessageRequest.messageId)
-  return _impl_.messageid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.EditMessageRequest.message_id)
+  return _impl_.message_id_.Release();
 }
-inline void EditMessageRequest::set_allocated_messageid(std::string* value) {
+inline void EditMessageRequest::set_allocated_message_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.messageid_.SetAllocated(value, GetArena());
+  _impl_.message_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.messageid_.IsDefault()) {
-          _impl_.messageid_.Set("", GetArena());
+        if (_impl_.message_id_.IsDefault()) {
+          _impl_.message_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.EditMessageRequest.messageId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.EditMessageRequest.message_id)
 }
 
 // bytes newContent = 2;
@@ -16509,105 +16544,105 @@ inline void GroupChat::set_allocated_name(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.GroupChat.name)
 }
 
-// repeated string memberIds = 3;
-inline int GroupChat::_internal_memberids_size() const {
-  return _internal_memberids().size();
+// repeated string member_ids = 3;
+inline int GroupChat::_internal_member_ids_size() const {
+  return _internal_member_ids().size();
 }
-inline int GroupChat::memberids_size() const {
-  return _internal_memberids_size();
+inline int GroupChat::member_ids_size() const {
+  return _internal_member_ids_size();
 }
-inline void GroupChat::clear_memberids() {
+inline void GroupChat::clear_member_ids() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.memberids_.Clear();
+  _impl_.member_ids_.Clear();
 }
-inline std::string* GroupChat::add_memberids()
+inline std::string* GroupChat::add_member_ids()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  std::string* _s = _internal_mutable_memberids()->Add();
-  // @@protoc_insertion_point(field_add_mutable:messenger.GroupChat.memberIds)
+  std::string* _s = _internal_mutable_member_ids()->Add();
+  // @@protoc_insertion_point(field_add_mutable:messenger.GroupChat.member_ids)
   return _s;
 }
-inline const std::string& GroupChat::memberids(int index) const
+inline const std::string& GroupChat::member_ids(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GroupChat.memberIds)
-  return _internal_memberids().Get(index);
+  // @@protoc_insertion_point(field_get:messenger.GroupChat.member_ids)
+  return _internal_member_ids().Get(index);
 }
-inline std::string* GroupChat::mutable_memberids(int index)
+inline std::string* GroupChat::mutable_member_ids(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:messenger.GroupChat.memberIds)
-  return _internal_mutable_memberids()->Mutable(index);
+  // @@protoc_insertion_point(field_mutable:messenger.GroupChat.member_ids)
+  return _internal_mutable_member_ids()->Mutable(index);
 }
-inline void GroupChat::set_memberids(int index, const std::string& value) {
-  _internal_mutable_memberids()->Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:messenger.GroupChat.memberIds)
+inline void GroupChat::set_member_ids(int index, const std::string& value) {
+  _internal_mutable_member_ids()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::set_memberids(int index, std::string&& value) {
-  _internal_mutable_memberids()->Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:messenger.GroupChat.memberIds)
+inline void GroupChat::set_member_ids(int index, std::string&& value) {
+  _internal_mutable_member_ids()->Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::set_memberids(int index, const char* value) {
+inline void GroupChat::set_member_ids(int index, const char* value) {
   ABSL_DCHECK(value != nullptr);
-  _internal_mutable_memberids()->Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:messenger.GroupChat.memberIds)
+  _internal_mutable_member_ids()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::set_memberids(int index, const char* value,
+inline void GroupChat::set_member_ids(int index, const char* value,
                               std::size_t size) {
-  _internal_mutable_memberids()->Mutable(index)->assign(
+  _internal_mutable_member_ids()->Mutable(index)->assign(
       reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:messenger.GroupChat.memberIds)
+  // @@protoc_insertion_point(field_set_pointer:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::set_memberids(int index, absl::string_view value) {
-  _internal_mutable_memberids()->Mutable(index)->assign(value.data(),
+inline void GroupChat::set_member_ids(int index, absl::string_view value) {
+  _internal_mutable_member_ids()->Mutable(index)->assign(value.data(),
                                                      value.size());
-  // @@protoc_insertion_point(field_set_string_piece:messenger.GroupChat.memberIds)
+  // @@protoc_insertion_point(field_set_string_piece:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::add_memberids(const std::string& value) {
+inline void GroupChat::add_member_ids(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_memberids()->Add()->assign(value);
-  // @@protoc_insertion_point(field_add:messenger.GroupChat.memberIds)
+  _internal_mutable_member_ids()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::add_memberids(std::string&& value) {
+inline void GroupChat::add_member_ids(std::string&& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_memberids()->Add(std::move(value));
-  // @@protoc_insertion_point(field_add:messenger.GroupChat.memberIds)
+  _internal_mutable_member_ids()->Add(std::move(value));
+  // @@protoc_insertion_point(field_add:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::add_memberids(const char* value) {
+inline void GroupChat::add_member_ids(const char* value) {
   ABSL_DCHECK(value != nullptr);
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_memberids()->Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:messenger.GroupChat.memberIds)
+  _internal_mutable_member_ids()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::add_memberids(const char* value, std::size_t size) {
+inline void GroupChat::add_member_ids(const char* value, std::size_t size) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_memberids()->Add()->assign(
+  _internal_mutable_member_ids()->Add()->assign(
       reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:messenger.GroupChat.memberIds)
+  // @@protoc_insertion_point(field_add_pointer:messenger.GroupChat.member_ids)
 }
-inline void GroupChat::add_memberids(absl::string_view value) {
+inline void GroupChat::add_member_ids(absl::string_view value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_memberids()->Add()->assign(value.data(), value.size());
-  // @@protoc_insertion_point(field_add_string_piece:messenger.GroupChat.memberIds)
+  _internal_mutable_member_ids()->Add()->assign(value.data(), value.size());
+  // @@protoc_insertion_point(field_add_string_piece:messenger.GroupChat.member_ids)
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
-GroupChat::memberids() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:messenger.GroupChat.memberIds)
-  return _internal_memberids();
+GroupChat::member_ids() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_list:messenger.GroupChat.member_ids)
+  return _internal_member_ids();
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
-GroupChat::mutable_memberids() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:messenger.GroupChat.memberIds)
+GroupChat::mutable_member_ids() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_list:messenger.GroupChat.member_ids)
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  return _internal_mutable_memberids();
+  return _internal_mutable_member_ids();
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
-GroupChat::_internal_memberids() const {
+GroupChat::_internal_member_ids() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.memberids_;
+  return _impl_.member_ids_;
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
-GroupChat::_internal_mutable_memberids() {
+GroupChat::_internal_mutable_member_ids() {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return &_impl_.memberids_;
+  return &_impl_.member_ids_;
 }
 
 // repeated .messenger.Role roles = 4;
@@ -16659,114 +16694,114 @@ GroupChat::_internal_mutable_roles() {
   return &_impl_.roles_;
 }
 
-// string folderId = 5;
-inline void GroupChat::clear_folderid() {
+// string folder_id = 5;
+inline void GroupChat::clear_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
 }
-inline const std::string& GroupChat::folderid() const
+inline const std::string& GroupChat::folder_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GroupChat.folderId)
-  return _internal_folderid();
+  // @@protoc_insertion_point(field_get:messenger.GroupChat.folder_id)
+  return _internal_folder_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GroupChat::set_folderid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GroupChat::set_folder_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GroupChat.folderId)
+  _impl_.folder_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GroupChat.folder_id)
 }
-inline std::string* GroupChat::mutable_folderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_folderid();
-  // @@protoc_insertion_point(field_mutable:messenger.GroupChat.folderId)
+inline std::string* GroupChat::mutable_folder_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_folder_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GroupChat.folder_id)
   return _s;
 }
-inline const std::string& GroupChat::_internal_folderid() const {
+inline const std::string& GroupChat::_internal_folder_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.folderid_.Get();
+  return _impl_.folder_id_.Get();
 }
-inline void GroupChat::_internal_set_folderid(const std::string& value) {
+inline void GroupChat::_internal_set_folder_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(value, GetArena());
+  _impl_.folder_id_.Set(value, GetArena());
 }
-inline std::string* GroupChat::_internal_mutable_folderid() {
+inline std::string* GroupChat::_internal_mutable_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.folderid_.Mutable( GetArena());
+  return _impl_.folder_id_.Mutable( GetArena());
 }
-inline std::string* GroupChat::release_folderid() {
+inline std::string* GroupChat::release_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GroupChat.folderId)
-  return _impl_.folderid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GroupChat.folder_id)
+  return _impl_.folder_id_.Release();
 }
-inline void GroupChat::set_allocated_folderid(std::string* value) {
+inline void GroupChat::set_allocated_folder_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.SetAllocated(value, GetArena());
+  _impl_.folder_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.folderid_.IsDefault()) {
-          _impl_.folderid_.Set("", GetArena());
+        if (_impl_.folder_id_.IsDefault()) {
+          _impl_.folder_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GroupChat.folderId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GroupChat.folder_id)
 }
 
 // -------------------------------------------------------------------
 
 // GetNewMessagesRequest
 
-// string chatId = 1;
-inline void GetNewMessagesRequest::clear_chatid() {
+// string chat_id = 1;
+inline void GetNewMessagesRequest::clear_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
 }
-inline const std::string& GetNewMessagesRequest::chatid() const
+inline const std::string& GetNewMessagesRequest::chat_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetNewMessagesRequest.chatId)
-  return _internal_chatid();
+  // @@protoc_insertion_point(field_get:messenger.GetNewMessagesRequest.chat_id)
+  return _internal_chat_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetNewMessagesRequest::set_chatid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetNewMessagesRequest::set_chat_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetNewMessagesRequest.chatId)
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetNewMessagesRequest.chat_id)
 }
-inline std::string* GetNewMessagesRequest::mutable_chatid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_chatid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetNewMessagesRequest.chatId)
+inline std::string* GetNewMessagesRequest::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetNewMessagesRequest.chat_id)
   return _s;
 }
-inline const std::string& GetNewMessagesRequest::_internal_chatid() const {
+inline const std::string& GetNewMessagesRequest::_internal_chat_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.chatid_.Get();
+  return _impl_.chat_id_.Get();
 }
-inline void GetNewMessagesRequest::_internal_set_chatid(const std::string& value) {
+inline void GetNewMessagesRequest::_internal_set_chat_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(value, GetArena());
+  _impl_.chat_id_.Set(value, GetArena());
 }
-inline std::string* GetNewMessagesRequest::_internal_mutable_chatid() {
+inline std::string* GetNewMessagesRequest::_internal_mutable_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.chatid_.Mutable( GetArena());
+  return _impl_.chat_id_.Mutable( GetArena());
 }
-inline std::string* GetNewMessagesRequest::release_chatid() {
+inline std::string* GetNewMessagesRequest::release_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetNewMessagesRequest.chatId)
-  return _impl_.chatid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetNewMessagesRequest.chat_id)
+  return _impl_.chat_id_.Release();
 }
-inline void GetNewMessagesRequest::set_allocated_chatid(std::string* value) {
+inline void GetNewMessagesRequest::set_allocated_chat_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.SetAllocated(value, GetArena());
+  _impl_.chat_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.chatid_.IsDefault()) {
-          _impl_.chatid_.Set("", GetArena());
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewMessagesRequest.chatId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewMessagesRequest.chat_id)
 }
 
 // int64 offset = 2;
@@ -16796,57 +16831,57 @@ inline void GetNewMessagesRequest::_internal_set_offset(::int64_t value) {
 
 // GetGroupChatsOffsetRequest
 
-// string userId = 1;
-inline void GetGroupChatsOffsetRequest::clear_userid() {
+// string user_id = 1;
+inline void GetGroupChatsOffsetRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetGroupChatsOffsetRequest::userid() const
+inline const std::string& GetGroupChatsOffsetRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetGroupChatsOffsetRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetGroupChatsOffsetRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetGroupChatsOffsetRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetGroupChatsOffsetRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetGroupChatsOffsetRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetGroupChatsOffsetRequest.user_id)
 }
-inline std::string* GetGroupChatsOffsetRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetGroupChatsOffsetRequest.userId)
+inline std::string* GetGroupChatsOffsetRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetGroupChatsOffsetRequest.user_id)
   return _s;
 }
-inline const std::string& GetGroupChatsOffsetRequest::_internal_userid() const {
+inline const std::string& GetGroupChatsOffsetRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetGroupChatsOffsetRequest::_internal_set_userid(const std::string& value) {
+inline void GetGroupChatsOffsetRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetGroupChatsOffsetRequest::_internal_mutable_userid() {
+inline std::string* GetGroupChatsOffsetRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetGroupChatsOffsetRequest::release_userid() {
+inline std::string* GetGroupChatsOffsetRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetGroupChatsOffsetRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetGroupChatsOffsetRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetGroupChatsOffsetRequest::set_allocated_userid(std::string* value) {
+inline void GetGroupChatsOffsetRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetGroupChatsOffsetRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetGroupChatsOffsetRequest.user_id)
 }
 
 // -------------------------------------------------------------------
@@ -16880,57 +16915,57 @@ inline void GetGroupChatsOffsetResponse::_internal_set_offset(::int64_t value) {
 
 // GetGroupChatsConversionRequest
 
-// string userId = 1;
-inline void GetGroupChatsConversionRequest::clear_userid() {
+// string user_id = 1;
+inline void GetGroupChatsConversionRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetGroupChatsConversionRequest::userid() const
+inline const std::string& GetGroupChatsConversionRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetGroupChatsConversionRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetGroupChatsConversionRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetGroupChatsConversionRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetGroupChatsConversionRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetGroupChatsConversionRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetGroupChatsConversionRequest.user_id)
 }
-inline std::string* GetGroupChatsConversionRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetGroupChatsConversionRequest.userId)
+inline std::string* GetGroupChatsConversionRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetGroupChatsConversionRequest.user_id)
   return _s;
 }
-inline const std::string& GetGroupChatsConversionRequest::_internal_userid() const {
+inline const std::string& GetGroupChatsConversionRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetGroupChatsConversionRequest::_internal_set_userid(const std::string& value) {
+inline void GetGroupChatsConversionRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetGroupChatsConversionRequest::_internal_mutable_userid() {
+inline std::string* GetGroupChatsConversionRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetGroupChatsConversionRequest::release_userid() {
+inline std::string* GetGroupChatsConversionRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetGroupChatsConversionRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetGroupChatsConversionRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetGroupChatsConversionRequest::set_allocated_userid(std::string* value) {
+inline void GetGroupChatsConversionRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetGroupChatsConversionRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetGroupChatsConversionRequest.user_id)
 }
 
 // int64 offset = 2;
@@ -17036,57 +17071,57 @@ GetGroupChatsConversionResponse::_internal_mutable_chats() {
 
 // GetNewGroupChatsRequest
 
-// string userId = 1;
-inline void GetNewGroupChatsRequest::clear_userid() {
+// string user_id = 1;
+inline void GetNewGroupChatsRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetNewGroupChatsRequest::userid() const
+inline const std::string& GetNewGroupChatsRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetNewGroupChatsRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetNewGroupChatsRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetNewGroupChatsRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetNewGroupChatsRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetNewGroupChatsRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetNewGroupChatsRequest.user_id)
 }
-inline std::string* GetNewGroupChatsRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetNewGroupChatsRequest.userId)
+inline std::string* GetNewGroupChatsRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetNewGroupChatsRequest.user_id)
   return _s;
 }
-inline const std::string& GetNewGroupChatsRequest::_internal_userid() const {
+inline const std::string& GetNewGroupChatsRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetNewGroupChatsRequest::_internal_set_userid(const std::string& value) {
+inline void GetNewGroupChatsRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetNewGroupChatsRequest::_internal_mutable_userid() {
+inline std::string* GetNewGroupChatsRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetNewGroupChatsRequest::release_userid() {
+inline std::string* GetNewGroupChatsRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetNewGroupChatsRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetNewGroupChatsRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetNewGroupChatsRequest::set_allocated_userid(std::string* value) {
+inline void GetNewGroupChatsRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewGroupChatsRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewGroupChatsRequest.user_id)
 }
 
 // int64 offset = 2;
@@ -17116,110 +17151,110 @@ inline void GetNewGroupChatsRequest::_internal_set_offset(::int64_t value) {
 
 // AddGroupMemberRequest
 
-// string groupId = 1;
-inline void AddGroupMemberRequest::clear_groupid() {
+// string group_id = 1;
+inline void AddGroupMemberRequest::clear_group_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.groupid_.ClearToEmpty();
+  _impl_.group_id_.ClearToEmpty();
 }
-inline const std::string& AddGroupMemberRequest::groupid() const
+inline const std::string& AddGroupMemberRequest::group_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.AddGroupMemberRequest.groupId)
-  return _internal_groupid();
+  // @@protoc_insertion_point(field_get:messenger.AddGroupMemberRequest.group_id)
+  return _internal_group_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void AddGroupMemberRequest::set_groupid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void AddGroupMemberRequest::set_group_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.groupid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.AddGroupMemberRequest.groupId)
+  _impl_.group_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.AddGroupMemberRequest.group_id)
 }
-inline std::string* AddGroupMemberRequest::mutable_groupid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_groupid();
-  // @@protoc_insertion_point(field_mutable:messenger.AddGroupMemberRequest.groupId)
+inline std::string* AddGroupMemberRequest::mutable_group_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_group_id();
+  // @@protoc_insertion_point(field_mutable:messenger.AddGroupMemberRequest.group_id)
   return _s;
 }
-inline const std::string& AddGroupMemberRequest::_internal_groupid() const {
+inline const std::string& AddGroupMemberRequest::_internal_group_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.groupid_.Get();
+  return _impl_.group_id_.Get();
 }
-inline void AddGroupMemberRequest::_internal_set_groupid(const std::string& value) {
+inline void AddGroupMemberRequest::_internal_set_group_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.groupid_.Set(value, GetArena());
+  _impl_.group_id_.Set(value, GetArena());
 }
-inline std::string* AddGroupMemberRequest::_internal_mutable_groupid() {
+inline std::string* AddGroupMemberRequest::_internal_mutable_group_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.groupid_.Mutable( GetArena());
+  return _impl_.group_id_.Mutable( GetArena());
 }
-inline std::string* AddGroupMemberRequest::release_groupid() {
+inline std::string* AddGroupMemberRequest::release_group_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.AddGroupMemberRequest.groupId)
-  return _impl_.groupid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.AddGroupMemberRequest.group_id)
+  return _impl_.group_id_.Release();
 }
-inline void AddGroupMemberRequest::set_allocated_groupid(std::string* value) {
+inline void AddGroupMemberRequest::set_allocated_group_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.groupid_.SetAllocated(value, GetArena());
+  _impl_.group_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.groupid_.IsDefault()) {
-          _impl_.groupid_.Set("", GetArena());
+        if (_impl_.group_id_.IsDefault()) {
+          _impl_.group_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.AddGroupMemberRequest.groupId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.AddGroupMemberRequest.group_id)
 }
 
-// string memberId = 2;
-inline void AddGroupMemberRequest::clear_memberid() {
+// string member_id = 2;
+inline void AddGroupMemberRequest::clear_member_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.memberid_.ClearToEmpty();
+  _impl_.member_id_.ClearToEmpty();
 }
-inline const std::string& AddGroupMemberRequest::memberid() const
+inline const std::string& AddGroupMemberRequest::member_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.AddGroupMemberRequest.memberId)
-  return _internal_memberid();
+  // @@protoc_insertion_point(field_get:messenger.AddGroupMemberRequest.member_id)
+  return _internal_member_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void AddGroupMemberRequest::set_memberid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void AddGroupMemberRequest::set_member_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.memberid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.AddGroupMemberRequest.memberId)
+  _impl_.member_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.AddGroupMemberRequest.member_id)
 }
-inline std::string* AddGroupMemberRequest::mutable_memberid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_memberid();
-  // @@protoc_insertion_point(field_mutable:messenger.AddGroupMemberRequest.memberId)
+inline std::string* AddGroupMemberRequest::mutable_member_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_member_id();
+  // @@protoc_insertion_point(field_mutable:messenger.AddGroupMemberRequest.member_id)
   return _s;
 }
-inline const std::string& AddGroupMemberRequest::_internal_memberid() const {
+inline const std::string& AddGroupMemberRequest::_internal_member_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.memberid_.Get();
+  return _impl_.member_id_.Get();
 }
-inline void AddGroupMemberRequest::_internal_set_memberid(const std::string& value) {
+inline void AddGroupMemberRequest::_internal_set_member_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.memberid_.Set(value, GetArena());
+  _impl_.member_id_.Set(value, GetArena());
 }
-inline std::string* AddGroupMemberRequest::_internal_mutable_memberid() {
+inline std::string* AddGroupMemberRequest::_internal_mutable_member_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.memberid_.Mutable( GetArena());
+  return _impl_.member_id_.Mutable( GetArena());
 }
-inline std::string* AddGroupMemberRequest::release_memberid() {
+inline std::string* AddGroupMemberRequest::release_member_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.AddGroupMemberRequest.memberId)
-  return _impl_.memberid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.AddGroupMemberRequest.member_id)
+  return _impl_.member_id_.Release();
 }
-inline void AddGroupMemberRequest::set_allocated_memberid(std::string* value) {
+inline void AddGroupMemberRequest::set_allocated_member_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.memberid_.SetAllocated(value, GetArena());
+  _impl_.member_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.memberid_.IsDefault()) {
-          _impl_.memberid_.Set("", GetArena());
+        if (_impl_.member_id_.IsDefault()) {
+          _impl_.member_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.AddGroupMemberRequest.memberId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.AddGroupMemberRequest.member_id)
 }
 
 // -------------------------------------------------------------------
@@ -17306,110 +17341,110 @@ inline void AddGroupMemberResponse::set_allocated_error(std::string* value) {
 
 // RemoveGroupMemberRequest
 
-// string groupId = 1;
-inline void RemoveGroupMemberRequest::clear_groupid() {
+// string group_id = 1;
+inline void RemoveGroupMemberRequest::clear_group_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.groupid_.ClearToEmpty();
+  _impl_.group_id_.ClearToEmpty();
 }
-inline const std::string& RemoveGroupMemberRequest::groupid() const
+inline const std::string& RemoveGroupMemberRequest::group_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.RemoveGroupMemberRequest.groupId)
-  return _internal_groupid();
+  // @@protoc_insertion_point(field_get:messenger.RemoveGroupMemberRequest.group_id)
+  return _internal_group_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void RemoveGroupMemberRequest::set_groupid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void RemoveGroupMemberRequest::set_group_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.groupid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.RemoveGroupMemberRequest.groupId)
+  _impl_.group_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.RemoveGroupMemberRequest.group_id)
 }
-inline std::string* RemoveGroupMemberRequest::mutable_groupid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_groupid();
-  // @@protoc_insertion_point(field_mutable:messenger.RemoveGroupMemberRequest.groupId)
+inline std::string* RemoveGroupMemberRequest::mutable_group_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_group_id();
+  // @@protoc_insertion_point(field_mutable:messenger.RemoveGroupMemberRequest.group_id)
   return _s;
 }
-inline const std::string& RemoveGroupMemberRequest::_internal_groupid() const {
+inline const std::string& RemoveGroupMemberRequest::_internal_group_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.groupid_.Get();
+  return _impl_.group_id_.Get();
 }
-inline void RemoveGroupMemberRequest::_internal_set_groupid(const std::string& value) {
+inline void RemoveGroupMemberRequest::_internal_set_group_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.groupid_.Set(value, GetArena());
+  _impl_.group_id_.Set(value, GetArena());
 }
-inline std::string* RemoveGroupMemberRequest::_internal_mutable_groupid() {
+inline std::string* RemoveGroupMemberRequest::_internal_mutable_group_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.groupid_.Mutable( GetArena());
+  return _impl_.group_id_.Mutable( GetArena());
 }
-inline std::string* RemoveGroupMemberRequest::release_groupid() {
+inline std::string* RemoveGroupMemberRequest::release_group_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.RemoveGroupMemberRequest.groupId)
-  return _impl_.groupid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.RemoveGroupMemberRequest.group_id)
+  return _impl_.group_id_.Release();
 }
-inline void RemoveGroupMemberRequest::set_allocated_groupid(std::string* value) {
+inline void RemoveGroupMemberRequest::set_allocated_group_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.groupid_.SetAllocated(value, GetArena());
+  _impl_.group_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.groupid_.IsDefault()) {
-          _impl_.groupid_.Set("", GetArena());
+        if (_impl_.group_id_.IsDefault()) {
+          _impl_.group_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveGroupMemberRequest.groupId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveGroupMemberRequest.group_id)
 }
 
-// string memberId = 2;
-inline void RemoveGroupMemberRequest::clear_memberid() {
+// string member_id = 2;
+inline void RemoveGroupMemberRequest::clear_member_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.memberid_.ClearToEmpty();
+  _impl_.member_id_.ClearToEmpty();
 }
-inline const std::string& RemoveGroupMemberRequest::memberid() const
+inline const std::string& RemoveGroupMemberRequest::member_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.RemoveGroupMemberRequest.memberId)
-  return _internal_memberid();
+  // @@protoc_insertion_point(field_get:messenger.RemoveGroupMemberRequest.member_id)
+  return _internal_member_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void RemoveGroupMemberRequest::set_memberid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void RemoveGroupMemberRequest::set_member_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.memberid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.RemoveGroupMemberRequest.memberId)
+  _impl_.member_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.RemoveGroupMemberRequest.member_id)
 }
-inline std::string* RemoveGroupMemberRequest::mutable_memberid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_memberid();
-  // @@protoc_insertion_point(field_mutable:messenger.RemoveGroupMemberRequest.memberId)
+inline std::string* RemoveGroupMemberRequest::mutable_member_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_member_id();
+  // @@protoc_insertion_point(field_mutable:messenger.RemoveGroupMemberRequest.member_id)
   return _s;
 }
-inline const std::string& RemoveGroupMemberRequest::_internal_memberid() const {
+inline const std::string& RemoveGroupMemberRequest::_internal_member_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.memberid_.Get();
+  return _impl_.member_id_.Get();
 }
-inline void RemoveGroupMemberRequest::_internal_set_memberid(const std::string& value) {
+inline void RemoveGroupMemberRequest::_internal_set_member_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.memberid_.Set(value, GetArena());
+  _impl_.member_id_.Set(value, GetArena());
 }
-inline std::string* RemoveGroupMemberRequest::_internal_mutable_memberid() {
+inline std::string* RemoveGroupMemberRequest::_internal_mutable_member_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.memberid_.Mutable( GetArena());
+  return _impl_.member_id_.Mutable( GetArena());
 }
-inline std::string* RemoveGroupMemberRequest::release_memberid() {
+inline std::string* RemoveGroupMemberRequest::release_member_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.RemoveGroupMemberRequest.memberId)
-  return _impl_.memberid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.RemoveGroupMemberRequest.member_id)
+  return _impl_.member_id_.Release();
 }
-inline void RemoveGroupMemberRequest::set_allocated_memberid(std::string* value) {
+inline void RemoveGroupMemberRequest::set_allocated_member_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.memberid_.SetAllocated(value, GetArena());
+  _impl_.member_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.memberid_.IsDefault()) {
-          _impl_.memberid_.Set("", GetArena());
+        if (_impl_.member_id_.IsDefault()) {
+          _impl_.member_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveGroupMemberRequest.memberId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveGroupMemberRequest.member_id)
 }
 
 // -------------------------------------------------------------------
@@ -17549,57 +17584,57 @@ inline void ChatFolder::set_allocated_id(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.ChatFolder.id)
 }
 
-// string userId = 2;
-inline void ChatFolder::clear_userid() {
+// string user_id = 2;
+inline void ChatFolder::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& ChatFolder::userid() const
+inline const std::string& ChatFolder::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.ChatFolder.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.ChatFolder.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void ChatFolder::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void ChatFolder::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.ChatFolder.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.ChatFolder.user_id)
 }
-inline std::string* ChatFolder::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.ChatFolder.userId)
+inline std::string* ChatFolder::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.ChatFolder.user_id)
   return _s;
 }
-inline const std::string& ChatFolder::_internal_userid() const {
+inline const std::string& ChatFolder::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void ChatFolder::_internal_set_userid(const std::string& value) {
+inline void ChatFolder::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* ChatFolder::_internal_mutable_userid() {
+inline std::string* ChatFolder::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* ChatFolder::release_userid() {
+inline std::string* ChatFolder::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.ChatFolder.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.ChatFolder.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void ChatFolder::set_allocated_userid(std::string* value) {
+inline void ChatFolder::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.ChatFolder.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.ChatFolder.user_id)
 }
 
 // string name = 3;
@@ -17655,162 +17690,162 @@ inline void ChatFolder::set_allocated_name(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.ChatFolder.name)
 }
 
-// repeated string groupChatIds = 4;
-inline int ChatFolder::_internal_groupchatids_size() const {
-  return _internal_groupchatids().size();
+// repeated string groupChat_ids = 4;
+inline int ChatFolder::_internal_groupchat_ids_size() const {
+  return _internal_groupchat_ids().size();
 }
-inline int ChatFolder::groupchatids_size() const {
-  return _internal_groupchatids_size();
+inline int ChatFolder::groupchat_ids_size() const {
+  return _internal_groupchat_ids_size();
 }
-inline void ChatFolder::clear_groupchatids() {
+inline void ChatFolder::clear_groupchat_ids() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.groupchatids_.Clear();
+  _impl_.groupchat_ids_.Clear();
 }
-inline std::string* ChatFolder::add_groupchatids()
+inline std::string* ChatFolder::add_groupchat_ids()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  std::string* _s = _internal_mutable_groupchatids()->Add();
-  // @@protoc_insertion_point(field_add_mutable:messenger.ChatFolder.groupChatIds)
+  std::string* _s = _internal_mutable_groupchat_ids()->Add();
+  // @@protoc_insertion_point(field_add_mutable:messenger.ChatFolder.groupChat_ids)
   return _s;
 }
-inline const std::string& ChatFolder::groupchatids(int index) const
+inline const std::string& ChatFolder::groupchat_ids(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.ChatFolder.groupChatIds)
-  return _internal_groupchatids().Get(index);
+  // @@protoc_insertion_point(field_get:messenger.ChatFolder.groupChat_ids)
+  return _internal_groupchat_ids().Get(index);
 }
-inline std::string* ChatFolder::mutable_groupchatids(int index)
+inline std::string* ChatFolder::mutable_groupchat_ids(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:messenger.ChatFolder.groupChatIds)
-  return _internal_mutable_groupchatids()->Mutable(index);
+  // @@protoc_insertion_point(field_mutable:messenger.ChatFolder.groupChat_ids)
+  return _internal_mutable_groupchat_ids()->Mutable(index);
 }
-inline void ChatFolder::set_groupchatids(int index, const std::string& value) {
-  _internal_mutable_groupchatids()->Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:messenger.ChatFolder.groupChatIds)
+inline void ChatFolder::set_groupchat_ids(int index, const std::string& value) {
+  _internal_mutable_groupchat_ids()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::set_groupchatids(int index, std::string&& value) {
-  _internal_mutable_groupchatids()->Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:messenger.ChatFolder.groupChatIds)
+inline void ChatFolder::set_groupchat_ids(int index, std::string&& value) {
+  _internal_mutable_groupchat_ids()->Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::set_groupchatids(int index, const char* value) {
+inline void ChatFolder::set_groupchat_ids(int index, const char* value) {
   ABSL_DCHECK(value != nullptr);
-  _internal_mutable_groupchatids()->Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:messenger.ChatFolder.groupChatIds)
+  _internal_mutable_groupchat_ids()->Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::set_groupchatids(int index, const char* value,
+inline void ChatFolder::set_groupchat_ids(int index, const char* value,
                               std::size_t size) {
-  _internal_mutable_groupchatids()->Mutable(index)->assign(
+  _internal_mutable_groupchat_ids()->Mutable(index)->assign(
       reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:messenger.ChatFolder.groupChatIds)
+  // @@protoc_insertion_point(field_set_pointer:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::set_groupchatids(int index, absl::string_view value) {
-  _internal_mutable_groupchatids()->Mutable(index)->assign(value.data(),
+inline void ChatFolder::set_groupchat_ids(int index, absl::string_view value) {
+  _internal_mutable_groupchat_ids()->Mutable(index)->assign(value.data(),
                                                      value.size());
-  // @@protoc_insertion_point(field_set_string_piece:messenger.ChatFolder.groupChatIds)
+  // @@protoc_insertion_point(field_set_string_piece:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::add_groupchatids(const std::string& value) {
+inline void ChatFolder::add_groupchat_ids(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_groupchatids()->Add()->assign(value);
-  // @@protoc_insertion_point(field_add:messenger.ChatFolder.groupChatIds)
+  _internal_mutable_groupchat_ids()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::add_groupchatids(std::string&& value) {
+inline void ChatFolder::add_groupchat_ids(std::string&& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_groupchatids()->Add(std::move(value));
-  // @@protoc_insertion_point(field_add:messenger.ChatFolder.groupChatIds)
+  _internal_mutable_groupchat_ids()->Add(std::move(value));
+  // @@protoc_insertion_point(field_add:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::add_groupchatids(const char* value) {
+inline void ChatFolder::add_groupchat_ids(const char* value) {
   ABSL_DCHECK(value != nullptr);
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_groupchatids()->Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:messenger.ChatFolder.groupChatIds)
+  _internal_mutable_groupchat_ids()->Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::add_groupchatids(const char* value, std::size_t size) {
+inline void ChatFolder::add_groupchat_ids(const char* value, std::size_t size) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_groupchatids()->Add()->assign(
+  _internal_mutable_groupchat_ids()->Add()->assign(
       reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:messenger.ChatFolder.groupChatIds)
+  // @@protoc_insertion_point(field_add_pointer:messenger.ChatFolder.groupChat_ids)
 }
-inline void ChatFolder::add_groupchatids(absl::string_view value) {
+inline void ChatFolder::add_groupchat_ids(absl::string_view value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _internal_mutable_groupchatids()->Add()->assign(value.data(), value.size());
-  // @@protoc_insertion_point(field_add_string_piece:messenger.ChatFolder.groupChatIds)
+  _internal_mutable_groupchat_ids()->Add()->assign(value.data(), value.size());
+  // @@protoc_insertion_point(field_add_string_piece:messenger.ChatFolder.groupChat_ids)
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
-ChatFolder::groupchatids() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:messenger.ChatFolder.groupChatIds)
-  return _internal_groupchatids();
+ChatFolder::groupchat_ids() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_list:messenger.ChatFolder.groupChat_ids)
+  return _internal_groupchat_ids();
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
-ChatFolder::mutable_groupchatids() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:messenger.ChatFolder.groupChatIds)
+ChatFolder::mutable_groupchat_ids() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_list:messenger.ChatFolder.groupChat_ids)
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  return _internal_mutable_groupchatids();
+  return _internal_mutable_groupchat_ids();
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
-ChatFolder::_internal_groupchatids() const {
+ChatFolder::_internal_groupchat_ids() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.groupchatids_;
+  return _impl_.groupchat_ids_;
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
-ChatFolder::_internal_mutable_groupchatids() {
+ChatFolder::_internal_mutable_groupchat_ids() {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return &_impl_.groupchatids_;
+  return &_impl_.groupchat_ids_;
 }
 
 // -------------------------------------------------------------------
 
 // CreateChatFolderRequest
 
-// string userId = 1;
-inline void CreateChatFolderRequest::clear_userid() {
+// string user_id = 1;
+inline void CreateChatFolderRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& CreateChatFolderRequest::userid() const
+inline const std::string& CreateChatFolderRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.CreateChatFolderRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.CreateChatFolderRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void CreateChatFolderRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void CreateChatFolderRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.CreateChatFolderRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.CreateChatFolderRequest.user_id)
 }
-inline std::string* CreateChatFolderRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.CreateChatFolderRequest.userId)
+inline std::string* CreateChatFolderRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.CreateChatFolderRequest.user_id)
   return _s;
 }
-inline const std::string& CreateChatFolderRequest::_internal_userid() const {
+inline const std::string& CreateChatFolderRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void CreateChatFolderRequest::_internal_set_userid(const std::string& value) {
+inline void CreateChatFolderRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* CreateChatFolderRequest::_internal_mutable_userid() {
+inline std::string* CreateChatFolderRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* CreateChatFolderRequest::release_userid() {
+inline std::string* CreateChatFolderRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.CreateChatFolderRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.CreateChatFolderRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void CreateChatFolderRequest::set_allocated_userid(std::string* value) {
+inline void CreateChatFolderRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.CreateChatFolderRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.CreateChatFolderRequest.user_id)
 }
 
 // string name = 2;
@@ -17970,57 +18005,57 @@ inline void CreateChatFolderResponse::set_allocated_folder(::messenger::ChatFold
 
 // UpdateChatFolderRequest
 
-// string folderId = 1;
-inline void UpdateChatFolderRequest::clear_folderid() {
+// string folder_id = 1;
+inline void UpdateChatFolderRequest::clear_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
 }
-inline const std::string& UpdateChatFolderRequest::folderid() const
+inline const std::string& UpdateChatFolderRequest::folder_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.UpdateChatFolderRequest.folderId)
-  return _internal_folderid();
+  // @@protoc_insertion_point(field_get:messenger.UpdateChatFolderRequest.folder_id)
+  return _internal_folder_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void UpdateChatFolderRequest::set_folderid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void UpdateChatFolderRequest::set_folder_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.UpdateChatFolderRequest.folderId)
+  _impl_.folder_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.UpdateChatFolderRequest.folder_id)
 }
-inline std::string* UpdateChatFolderRequest::mutable_folderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_folderid();
-  // @@protoc_insertion_point(field_mutable:messenger.UpdateChatFolderRequest.folderId)
+inline std::string* UpdateChatFolderRequest::mutable_folder_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_folder_id();
+  // @@protoc_insertion_point(field_mutable:messenger.UpdateChatFolderRequest.folder_id)
   return _s;
 }
-inline const std::string& UpdateChatFolderRequest::_internal_folderid() const {
+inline const std::string& UpdateChatFolderRequest::_internal_folder_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.folderid_.Get();
+  return _impl_.folder_id_.Get();
 }
-inline void UpdateChatFolderRequest::_internal_set_folderid(const std::string& value) {
+inline void UpdateChatFolderRequest::_internal_set_folder_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(value, GetArena());
+  _impl_.folder_id_.Set(value, GetArena());
 }
-inline std::string* UpdateChatFolderRequest::_internal_mutable_folderid() {
+inline std::string* UpdateChatFolderRequest::_internal_mutable_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.folderid_.Mutable( GetArena());
+  return _impl_.folder_id_.Mutable( GetArena());
 }
-inline std::string* UpdateChatFolderRequest::release_folderid() {
+inline std::string* UpdateChatFolderRequest::release_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.UpdateChatFolderRequest.folderId)
-  return _impl_.folderid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.UpdateChatFolderRequest.folder_id)
+  return _impl_.folder_id_.Release();
 }
-inline void UpdateChatFolderRequest::set_allocated_folderid(std::string* value) {
+inline void UpdateChatFolderRequest::set_allocated_folder_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.SetAllocated(value, GetArena());
+  _impl_.folder_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.folderid_.IsDefault()) {
-          _impl_.folderid_.Set("", GetArena());
+        if (_impl_.folder_id_.IsDefault()) {
+          _impl_.folder_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.UpdateChatFolderRequest.folderId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.UpdateChatFolderRequest.folder_id)
 }
 
 // string newName = 2;
@@ -18107,57 +18142,57 @@ inline void UpdateChatFolderResponse::_internal_set_success(bool value) {
 
 // DeleteChatFolderRequest
 
-// string folderId = 1;
-inline void DeleteChatFolderRequest::clear_folderid() {
+// string folder_id = 1;
+inline void DeleteChatFolderRequest::clear_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
 }
-inline const std::string& DeleteChatFolderRequest::folderid() const
+inline const std::string& DeleteChatFolderRequest::folder_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.DeleteChatFolderRequest.folderId)
-  return _internal_folderid();
+  // @@protoc_insertion_point(field_get:messenger.DeleteChatFolderRequest.folder_id)
+  return _internal_folder_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void DeleteChatFolderRequest::set_folderid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void DeleteChatFolderRequest::set_folder_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.DeleteChatFolderRequest.folderId)
+  _impl_.folder_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.DeleteChatFolderRequest.folder_id)
 }
-inline std::string* DeleteChatFolderRequest::mutable_folderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_folderid();
-  // @@protoc_insertion_point(field_mutable:messenger.DeleteChatFolderRequest.folderId)
+inline std::string* DeleteChatFolderRequest::mutable_folder_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_folder_id();
+  // @@protoc_insertion_point(field_mutable:messenger.DeleteChatFolderRequest.folder_id)
   return _s;
 }
-inline const std::string& DeleteChatFolderRequest::_internal_folderid() const {
+inline const std::string& DeleteChatFolderRequest::_internal_folder_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.folderid_.Get();
+  return _impl_.folder_id_.Get();
 }
-inline void DeleteChatFolderRequest::_internal_set_folderid(const std::string& value) {
+inline void DeleteChatFolderRequest::_internal_set_folder_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(value, GetArena());
+  _impl_.folder_id_.Set(value, GetArena());
 }
-inline std::string* DeleteChatFolderRequest::_internal_mutable_folderid() {
+inline std::string* DeleteChatFolderRequest::_internal_mutable_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.folderid_.Mutable( GetArena());
+  return _impl_.folder_id_.Mutable( GetArena());
 }
-inline std::string* DeleteChatFolderRequest::release_folderid() {
+inline std::string* DeleteChatFolderRequest::release_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.DeleteChatFolderRequest.folderId)
-  return _impl_.folderid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.DeleteChatFolderRequest.folder_id)
+  return _impl_.folder_id_.Release();
 }
-inline void DeleteChatFolderRequest::set_allocated_folderid(std::string* value) {
+inline void DeleteChatFolderRequest::set_allocated_folder_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.SetAllocated(value, GetArena());
+  _impl_.folder_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.folderid_.IsDefault()) {
-          _impl_.folderid_.Set("", GetArena());
+        if (_impl_.folder_id_.IsDefault()) {
+          _impl_.folder_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.DeleteChatFolderRequest.folderId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.DeleteChatFolderRequest.folder_id)
 }
 
 // -------------------------------------------------------------------
@@ -18191,57 +18226,57 @@ inline void DeleteChatFolderResponse::_internal_set_success(bool value) {
 
 // GetFoldersOffsetRequest
 
-// string userId = 1;
-inline void GetFoldersOffsetRequest::clear_userid() {
+// string user_id = 1;
+inline void GetFoldersOffsetRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetFoldersOffsetRequest::userid() const
+inline const std::string& GetFoldersOffsetRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetFoldersOffsetRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetFoldersOffsetRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetFoldersOffsetRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetFoldersOffsetRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetFoldersOffsetRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetFoldersOffsetRequest.user_id)
 }
-inline std::string* GetFoldersOffsetRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetFoldersOffsetRequest.userId)
+inline std::string* GetFoldersOffsetRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetFoldersOffsetRequest.user_id)
   return _s;
 }
-inline const std::string& GetFoldersOffsetRequest::_internal_userid() const {
+inline const std::string& GetFoldersOffsetRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetFoldersOffsetRequest::_internal_set_userid(const std::string& value) {
+inline void GetFoldersOffsetRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetFoldersOffsetRequest::_internal_mutable_userid() {
+inline std::string* GetFoldersOffsetRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetFoldersOffsetRequest::release_userid() {
+inline std::string* GetFoldersOffsetRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetFoldersOffsetRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetFoldersOffsetRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetFoldersOffsetRequest::set_allocated_userid(std::string* value) {
+inline void GetFoldersOffsetRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetFoldersOffsetRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetFoldersOffsetRequest.user_id)
 }
 
 // -------------------------------------------------------------------
@@ -18275,57 +18310,57 @@ inline void GetFoldersOffsetResponse::_internal_set_offset(::int64_t value) {
 
 // GetFoldersRequest
 
-// string userId = 1;
-inline void GetFoldersRequest::clear_userid() {
+// string user_id = 1;
+inline void GetFoldersRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetFoldersRequest::userid() const
+inline const std::string& GetFoldersRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetFoldersRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetFoldersRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetFoldersRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetFoldersRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetFoldersRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetFoldersRequest.user_id)
 }
-inline std::string* GetFoldersRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetFoldersRequest.userId)
+inline std::string* GetFoldersRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetFoldersRequest.user_id)
   return _s;
 }
-inline const std::string& GetFoldersRequest::_internal_userid() const {
+inline const std::string& GetFoldersRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetFoldersRequest::_internal_set_userid(const std::string& value) {
+inline void GetFoldersRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetFoldersRequest::_internal_mutable_userid() {
+inline std::string* GetFoldersRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetFoldersRequest::release_userid() {
+inline std::string* GetFoldersRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetFoldersRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetFoldersRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetFoldersRequest::set_allocated_userid(std::string* value) {
+inline void GetFoldersRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetFoldersRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetFoldersRequest.user_id)
 }
 
 // int64 offset = 2;
@@ -18431,167 +18466,167 @@ GetFoldersResponse::_internal_mutable_folders() {
 
 // GetNewFoldersRequest
 
-// string userId = 1;
-inline void GetNewFoldersRequest::clear_userid() {
+// string user_id = 1;
+inline void GetNewFoldersRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetNewFoldersRequest::userid() const
+inline const std::string& GetNewFoldersRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetNewFoldersRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetNewFoldersRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetNewFoldersRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetNewFoldersRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetNewFoldersRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetNewFoldersRequest.user_id)
 }
-inline std::string* GetNewFoldersRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetNewFoldersRequest.userId)
+inline std::string* GetNewFoldersRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetNewFoldersRequest.user_id)
   return _s;
 }
-inline const std::string& GetNewFoldersRequest::_internal_userid() const {
+inline const std::string& GetNewFoldersRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetNewFoldersRequest::_internal_set_userid(const std::string& value) {
+inline void GetNewFoldersRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetNewFoldersRequest::_internal_mutable_userid() {
+inline std::string* GetNewFoldersRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetNewFoldersRequest::release_userid() {
+inline std::string* GetNewFoldersRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetNewFoldersRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetNewFoldersRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetNewFoldersRequest::set_allocated_userid(std::string* value) {
+inline void GetNewFoldersRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewFoldersRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewFoldersRequest.user_id)
 }
 
 // -------------------------------------------------------------------
 
 // AddChatToFolderRequest
 
-// string folderId = 1;
-inline void AddChatToFolderRequest::clear_folderid() {
+// string folder_id = 1;
+inline void AddChatToFolderRequest::clear_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
 }
-inline const std::string& AddChatToFolderRequest::folderid() const
+inline const std::string& AddChatToFolderRequest::folder_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.AddChatToFolderRequest.folderId)
-  return _internal_folderid();
+  // @@protoc_insertion_point(field_get:messenger.AddChatToFolderRequest.folder_id)
+  return _internal_folder_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void AddChatToFolderRequest::set_folderid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void AddChatToFolderRequest::set_folder_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.AddChatToFolderRequest.folderId)
+  _impl_.folder_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.AddChatToFolderRequest.folder_id)
 }
-inline std::string* AddChatToFolderRequest::mutable_folderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_folderid();
-  // @@protoc_insertion_point(field_mutable:messenger.AddChatToFolderRequest.folderId)
+inline std::string* AddChatToFolderRequest::mutable_folder_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_folder_id();
+  // @@protoc_insertion_point(field_mutable:messenger.AddChatToFolderRequest.folder_id)
   return _s;
 }
-inline const std::string& AddChatToFolderRequest::_internal_folderid() const {
+inline const std::string& AddChatToFolderRequest::_internal_folder_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.folderid_.Get();
+  return _impl_.folder_id_.Get();
 }
-inline void AddChatToFolderRequest::_internal_set_folderid(const std::string& value) {
+inline void AddChatToFolderRequest::_internal_set_folder_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(value, GetArena());
+  _impl_.folder_id_.Set(value, GetArena());
 }
-inline std::string* AddChatToFolderRequest::_internal_mutable_folderid() {
+inline std::string* AddChatToFolderRequest::_internal_mutable_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.folderid_.Mutable( GetArena());
+  return _impl_.folder_id_.Mutable( GetArena());
 }
-inline std::string* AddChatToFolderRequest::release_folderid() {
+inline std::string* AddChatToFolderRequest::release_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.AddChatToFolderRequest.folderId)
-  return _impl_.folderid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.AddChatToFolderRequest.folder_id)
+  return _impl_.folder_id_.Release();
 }
-inline void AddChatToFolderRequest::set_allocated_folderid(std::string* value) {
+inline void AddChatToFolderRequest::set_allocated_folder_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.SetAllocated(value, GetArena());
+  _impl_.folder_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.folderid_.IsDefault()) {
-          _impl_.folderid_.Set("", GetArena());
+        if (_impl_.folder_id_.IsDefault()) {
+          _impl_.folder_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.AddChatToFolderRequest.folderId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.AddChatToFolderRequest.folder_id)
 }
 
-// string chatId = 2;
-inline void AddChatToFolderRequest::clear_chatid() {
+// string chat_id = 2;
+inline void AddChatToFolderRequest::clear_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
 }
-inline const std::string& AddChatToFolderRequest::chatid() const
+inline const std::string& AddChatToFolderRequest::chat_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.AddChatToFolderRequest.chatId)
-  return _internal_chatid();
+  // @@protoc_insertion_point(field_get:messenger.AddChatToFolderRequest.chat_id)
+  return _internal_chat_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void AddChatToFolderRequest::set_chatid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void AddChatToFolderRequest::set_chat_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.AddChatToFolderRequest.chatId)
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.AddChatToFolderRequest.chat_id)
 }
-inline std::string* AddChatToFolderRequest::mutable_chatid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_chatid();
-  // @@protoc_insertion_point(field_mutable:messenger.AddChatToFolderRequest.chatId)
+inline std::string* AddChatToFolderRequest::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.AddChatToFolderRequest.chat_id)
   return _s;
 }
-inline const std::string& AddChatToFolderRequest::_internal_chatid() const {
+inline const std::string& AddChatToFolderRequest::_internal_chat_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.chatid_.Get();
+  return _impl_.chat_id_.Get();
 }
-inline void AddChatToFolderRequest::_internal_set_chatid(const std::string& value) {
+inline void AddChatToFolderRequest::_internal_set_chat_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(value, GetArena());
+  _impl_.chat_id_.Set(value, GetArena());
 }
-inline std::string* AddChatToFolderRequest::_internal_mutable_chatid() {
+inline std::string* AddChatToFolderRequest::_internal_mutable_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.chatid_.Mutable( GetArena());
+  return _impl_.chat_id_.Mutable( GetArena());
 }
-inline std::string* AddChatToFolderRequest::release_chatid() {
+inline std::string* AddChatToFolderRequest::release_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.AddChatToFolderRequest.chatId)
-  return _impl_.chatid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.AddChatToFolderRequest.chat_id)
+  return _impl_.chat_id_.Release();
 }
-inline void AddChatToFolderRequest::set_allocated_chatid(std::string* value) {
+inline void AddChatToFolderRequest::set_allocated_chat_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.SetAllocated(value, GetArena());
+  _impl_.chat_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.chatid_.IsDefault()) {
-          _impl_.chatid_.Set("", GetArena());
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.AddChatToFolderRequest.chatId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.AddChatToFolderRequest.chat_id)
 }
 
 // -------------------------------------------------------------------
@@ -18625,110 +18660,110 @@ inline void AddChatToFolderResponse::_internal_set_success(bool value) {
 
 // RemoveChatFromFolderRequest
 
-// string folderId = 1;
-inline void RemoveChatFromFolderRequest::clear_folderid() {
+// string folder_id = 1;
+inline void RemoveChatFromFolderRequest::clear_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.ClearToEmpty();
+  _impl_.folder_id_.ClearToEmpty();
 }
-inline const std::string& RemoveChatFromFolderRequest::folderid() const
+inline const std::string& RemoveChatFromFolderRequest::folder_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.RemoveChatFromFolderRequest.folderId)
-  return _internal_folderid();
+  // @@protoc_insertion_point(field_get:messenger.RemoveChatFromFolderRequest.folder_id)
+  return _internal_folder_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void RemoveChatFromFolderRequest::set_folderid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void RemoveChatFromFolderRequest::set_folder_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.RemoveChatFromFolderRequest.folderId)
+  _impl_.folder_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.RemoveChatFromFolderRequest.folder_id)
 }
-inline std::string* RemoveChatFromFolderRequest::mutable_folderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_folderid();
-  // @@protoc_insertion_point(field_mutable:messenger.RemoveChatFromFolderRequest.folderId)
+inline std::string* RemoveChatFromFolderRequest::mutable_folder_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_folder_id();
+  // @@protoc_insertion_point(field_mutable:messenger.RemoveChatFromFolderRequest.folder_id)
   return _s;
 }
-inline const std::string& RemoveChatFromFolderRequest::_internal_folderid() const {
+inline const std::string& RemoveChatFromFolderRequest::_internal_folder_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.folderid_.Get();
+  return _impl_.folder_id_.Get();
 }
-inline void RemoveChatFromFolderRequest::_internal_set_folderid(const std::string& value) {
+inline void RemoveChatFromFolderRequest::_internal_set_folder_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.folderid_.Set(value, GetArena());
+  _impl_.folder_id_.Set(value, GetArena());
 }
-inline std::string* RemoveChatFromFolderRequest::_internal_mutable_folderid() {
+inline std::string* RemoveChatFromFolderRequest::_internal_mutable_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.folderid_.Mutable( GetArena());
+  return _impl_.folder_id_.Mutable( GetArena());
 }
-inline std::string* RemoveChatFromFolderRequest::release_folderid() {
+inline std::string* RemoveChatFromFolderRequest::release_folder_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.RemoveChatFromFolderRequest.folderId)
-  return _impl_.folderid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.RemoveChatFromFolderRequest.folder_id)
+  return _impl_.folder_id_.Release();
 }
-inline void RemoveChatFromFolderRequest::set_allocated_folderid(std::string* value) {
+inline void RemoveChatFromFolderRequest::set_allocated_folder_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.folderid_.SetAllocated(value, GetArena());
+  _impl_.folder_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.folderid_.IsDefault()) {
-          _impl_.folderid_.Set("", GetArena());
+        if (_impl_.folder_id_.IsDefault()) {
+          _impl_.folder_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveChatFromFolderRequest.folderId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveChatFromFolderRequest.folder_id)
 }
 
-// string chatId = 2;
-inline void RemoveChatFromFolderRequest::clear_chatid() {
+// string chat_id = 2;
+inline void RemoveChatFromFolderRequest::clear_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.ClearToEmpty();
+  _impl_.chat_id_.ClearToEmpty();
 }
-inline const std::string& RemoveChatFromFolderRequest::chatid() const
+inline const std::string& RemoveChatFromFolderRequest::chat_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.RemoveChatFromFolderRequest.chatId)
-  return _internal_chatid();
+  // @@protoc_insertion_point(field_get:messenger.RemoveChatFromFolderRequest.chat_id)
+  return _internal_chat_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void RemoveChatFromFolderRequest::set_chatid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void RemoveChatFromFolderRequest::set_chat_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.RemoveChatFromFolderRequest.chatId)
+  _impl_.chat_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.RemoveChatFromFolderRequest.chat_id)
 }
-inline std::string* RemoveChatFromFolderRequest::mutable_chatid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_chatid();
-  // @@protoc_insertion_point(field_mutable:messenger.RemoveChatFromFolderRequest.chatId)
+inline std::string* RemoveChatFromFolderRequest::mutable_chat_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_chat_id();
+  // @@protoc_insertion_point(field_mutable:messenger.RemoveChatFromFolderRequest.chat_id)
   return _s;
 }
-inline const std::string& RemoveChatFromFolderRequest::_internal_chatid() const {
+inline const std::string& RemoveChatFromFolderRequest::_internal_chat_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.chatid_.Get();
+  return _impl_.chat_id_.Get();
 }
-inline void RemoveChatFromFolderRequest::_internal_set_chatid(const std::string& value) {
+inline void RemoveChatFromFolderRequest::_internal_set_chat_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.chatid_.Set(value, GetArena());
+  _impl_.chat_id_.Set(value, GetArena());
 }
-inline std::string* RemoveChatFromFolderRequest::_internal_mutable_chatid() {
+inline std::string* RemoveChatFromFolderRequest::_internal_mutable_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.chatid_.Mutable( GetArena());
+  return _impl_.chat_id_.Mutable( GetArena());
 }
-inline std::string* RemoveChatFromFolderRequest::release_chatid() {
+inline std::string* RemoveChatFromFolderRequest::release_chat_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.RemoveChatFromFolderRequest.chatId)
-  return _impl_.chatid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.RemoveChatFromFolderRequest.chat_id)
+  return _impl_.chat_id_.Release();
 }
-inline void RemoveChatFromFolderRequest::set_allocated_chatid(std::string* value) {
+inline void RemoveChatFromFolderRequest::set_allocated_chat_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.chatid_.SetAllocated(value, GetArena());
+  _impl_.chat_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.chatid_.IsDefault()) {
-          _impl_.chatid_.Set("", GetArena());
+        if (_impl_.chat_id_.IsDefault()) {
+          _impl_.chat_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveChatFromFolderRequest.chatId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.RemoveChatFromFolderRequest.chat_id)
 }
 
 // -------------------------------------------------------------------
@@ -18815,57 +18850,57 @@ inline void FileMessage::set_allocated_id(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.FileMessage.id)
 }
 
-// string senderId = 2;
-inline void FileMessage::clear_senderid() {
+// string sender_id = 2;
+inline void FileMessage::clear_sender_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.senderid_.ClearToEmpty();
+  _impl_.sender_id_.ClearToEmpty();
 }
-inline const std::string& FileMessage::senderid() const
+inline const std::string& FileMessage::sender_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.FileMessage.senderId)
-  return _internal_senderid();
+  // @@protoc_insertion_point(field_get:messenger.FileMessage.sender_id)
+  return _internal_sender_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void FileMessage::set_senderid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void FileMessage::set_sender_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.senderid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.FileMessage.senderId)
+  _impl_.sender_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.FileMessage.sender_id)
 }
-inline std::string* FileMessage::mutable_senderid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_senderid();
-  // @@protoc_insertion_point(field_mutable:messenger.FileMessage.senderId)
+inline std::string* FileMessage::mutable_sender_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_sender_id();
+  // @@protoc_insertion_point(field_mutable:messenger.FileMessage.sender_id)
   return _s;
 }
-inline const std::string& FileMessage::_internal_senderid() const {
+inline const std::string& FileMessage::_internal_sender_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.senderid_.Get();
+  return _impl_.sender_id_.Get();
 }
-inline void FileMessage::_internal_set_senderid(const std::string& value) {
+inline void FileMessage::_internal_set_sender_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.senderid_.Set(value, GetArena());
+  _impl_.sender_id_.Set(value, GetArena());
 }
-inline std::string* FileMessage::_internal_mutable_senderid() {
+inline std::string* FileMessage::_internal_mutable_sender_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.senderid_.Mutable( GetArena());
+  return _impl_.sender_id_.Mutable( GetArena());
 }
-inline std::string* FileMessage::release_senderid() {
+inline std::string* FileMessage::release_sender_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.FileMessage.senderId)
-  return _impl_.senderid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.FileMessage.sender_id)
+  return _impl_.sender_id_.Release();
 }
-inline void FileMessage::set_allocated_senderid(std::string* value) {
+inline void FileMessage::set_allocated_sender_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.senderid_.SetAllocated(value, GetArena());
+  _impl_.sender_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.senderid_.IsDefault()) {
-          _impl_.senderid_.Set("", GetArena());
+        if (_impl_.sender_id_.IsDefault()) {
+          _impl_.sender_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.FileMessage.senderId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.FileMessage.sender_id)
 }
 
 // .messenger.FileType type = 3;
@@ -19054,57 +19089,57 @@ inline void SearchRequest::set_allocated_query(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.SearchRequest.query)
 }
 
-// string userId = 2;
-inline void SearchRequest::clear_userid() {
+// string user_id = 2;
+inline void SearchRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& SearchRequest::userid() const
+inline const std::string& SearchRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.SearchRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.SearchRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void SearchRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void SearchRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.SearchRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.SearchRequest.user_id)
 }
-inline std::string* SearchRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.SearchRequest.userId)
+inline std::string* SearchRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.SearchRequest.user_id)
   return _s;
 }
-inline const std::string& SearchRequest::_internal_userid() const {
+inline const std::string& SearchRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void SearchRequest::_internal_set_userid(const std::string& value) {
+inline void SearchRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* SearchRequest::_internal_mutable_userid() {
+inline std::string* SearchRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* SearchRequest::release_userid() {
+inline std::string* SearchRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.SearchRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.SearchRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void SearchRequest::set_allocated_userid(std::string* value) {
+inline void SearchRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.SearchRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.SearchRequest.user_id)
 }
 
 // int32 limit = 3;
@@ -19496,57 +19531,57 @@ inline void Reminder::set_allocated_id(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.Reminder.id)
 }
 
-// string userId = 2;
-inline void Reminder::clear_userid() {
+// string user_id = 2;
+inline void Reminder::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& Reminder::userid() const
+inline const std::string& Reminder::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.Reminder.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.Reminder.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void Reminder::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void Reminder::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.Reminder.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.Reminder.user_id)
 }
-inline std::string* Reminder::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.Reminder.userId)
+inline std::string* Reminder::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.Reminder.user_id)
   return _s;
 }
-inline const std::string& Reminder::_internal_userid() const {
+inline const std::string& Reminder::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void Reminder::_internal_set_userid(const std::string& value) {
+inline void Reminder::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* Reminder::_internal_mutable_userid() {
+inline std::string* Reminder::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* Reminder::release_userid() {
+inline std::string* Reminder::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.Reminder.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.Reminder.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void Reminder::set_allocated_userid(std::string* value) {
+inline void Reminder::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.Reminder.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.Reminder.user_id)
 }
 
 // string message = 3;
@@ -19629,57 +19664,57 @@ inline void Reminder::_internal_set_timestamp(::int64_t value) {
 
 // NotificationSettings
 
-// string userId = 1;
-inline void NotificationSettings::clear_userid() {
+// string user_id = 1;
+inline void NotificationSettings::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& NotificationSettings::userid() const
+inline const std::string& NotificationSettings::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.NotificationSettings.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.NotificationSettings.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void NotificationSettings::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void NotificationSettings::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.NotificationSettings.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.NotificationSettings.user_id)
 }
-inline std::string* NotificationSettings::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.NotificationSettings.userId)
+inline std::string* NotificationSettings::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.NotificationSettings.user_id)
   return _s;
 }
-inline const std::string& NotificationSettings::_internal_userid() const {
+inline const std::string& NotificationSettings::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void NotificationSettings::_internal_set_userid(const std::string& value) {
+inline void NotificationSettings::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* NotificationSettings::_internal_mutable_userid() {
+inline std::string* NotificationSettings::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* NotificationSettings::release_userid() {
+inline std::string* NotificationSettings::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.NotificationSettings.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.NotificationSettings.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void NotificationSettings::set_allocated_userid(std::string* value) {
+inline void NotificationSettings::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.NotificationSettings.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.NotificationSettings.user_id)
 }
 
 // bool enableNotifications = 2;
@@ -19942,57 +19977,57 @@ inline void ToDoItem::set_allocated_id(std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:messenger.ToDoItem.id)
 }
 
-// string userId = 2;
-inline void ToDoItem::clear_userid() {
+// string user_id = 2;
+inline void ToDoItem::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& ToDoItem::userid() const
+inline const std::string& ToDoItem::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.ToDoItem.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.ToDoItem.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void ToDoItem::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void ToDoItem::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.ToDoItem.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.ToDoItem.user_id)
 }
-inline std::string* ToDoItem::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.ToDoItem.userId)
+inline std::string* ToDoItem::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.ToDoItem.user_id)
   return _s;
 }
-inline const std::string& ToDoItem::_internal_userid() const {
+inline const std::string& ToDoItem::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void ToDoItem::_internal_set_userid(const std::string& value) {
+inline void ToDoItem::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* ToDoItem::_internal_mutable_userid() {
+inline std::string* ToDoItem::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* ToDoItem::release_userid() {
+inline std::string* ToDoItem::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.ToDoItem.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.ToDoItem.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void ToDoItem::set_allocated_userid(std::string* value) {
+inline void ToDoItem::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.ToDoItem.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.ToDoItem.user_id)
 }
 
 // string description = 3;
@@ -20075,57 +20110,57 @@ inline void ToDoItem::_internal_set_completed(bool value) {
 
 // GetToDoItemsOffsetRequest
 
-// string userId = 1;
-inline void GetToDoItemsOffsetRequest::clear_userid() {
+// string user_id = 1;
+inline void GetToDoItemsOffsetRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetToDoItemsOffsetRequest::userid() const
+inline const std::string& GetToDoItemsOffsetRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsOffsetRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsOffsetRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetToDoItemsOffsetRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetToDoItemsOffsetRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsOffsetRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsOffsetRequest.user_id)
 }
-inline std::string* GetToDoItemsOffsetRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsOffsetRequest.userId)
+inline std::string* GetToDoItemsOffsetRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsOffsetRequest.user_id)
   return _s;
 }
-inline const std::string& GetToDoItemsOffsetRequest::_internal_userid() const {
+inline const std::string& GetToDoItemsOffsetRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetToDoItemsOffsetRequest::_internal_set_userid(const std::string& value) {
+inline void GetToDoItemsOffsetRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetToDoItemsOffsetRequest::_internal_mutable_userid() {
+inline std::string* GetToDoItemsOffsetRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetToDoItemsOffsetRequest::release_userid() {
+inline std::string* GetToDoItemsOffsetRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetToDoItemsOffsetRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetToDoItemsOffsetRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetToDoItemsOffsetRequest::set_allocated_userid(std::string* value) {
+inline void GetToDoItemsOffsetRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetToDoItemsOffsetRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetToDoItemsOffsetRequest.user_id)
 }
 
 // -------------------------------------------------------------------
@@ -20159,57 +20194,57 @@ inline void GetToDoItemsOffsetResponse::_internal_set_offset(::int64_t value) {
 
 // GetToDoItemsRequest
 
-// string userId = 1;
-inline void GetToDoItemsRequest::clear_userid() {
+// string user_id = 1;
+inline void GetToDoItemsRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetToDoItemsRequest::userid() const
+inline const std::string& GetToDoItemsRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetToDoItemsRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetToDoItemsRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetToDoItemsRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetToDoItemsRequest.user_id)
 }
-inline std::string* GetToDoItemsRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsRequest.userId)
+inline std::string* GetToDoItemsRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetToDoItemsRequest.user_id)
   return _s;
 }
-inline const std::string& GetToDoItemsRequest::_internal_userid() const {
+inline const std::string& GetToDoItemsRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetToDoItemsRequest::_internal_set_userid(const std::string& value) {
+inline void GetToDoItemsRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetToDoItemsRequest::_internal_mutable_userid() {
+inline std::string* GetToDoItemsRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetToDoItemsRequest::release_userid() {
+inline std::string* GetToDoItemsRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetToDoItemsRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetToDoItemsRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetToDoItemsRequest::set_allocated_userid(std::string* value) {
+inline void GetToDoItemsRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetToDoItemsRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetToDoItemsRequest.user_id)
 }
 
 // int64 offset = 2;
@@ -20315,57 +20350,57 @@ GetToDoItemsResponse::_internal_mutable_items() {
 
 // GetNewToDoItemsRequest
 
-// string userId = 1;
-inline void GetNewToDoItemsRequest::clear_userid() {
+// string user_id = 1;
+inline void GetNewToDoItemsRequest::clear_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
 }
-inline const std::string& GetNewToDoItemsRequest::userid() const
+inline const std::string& GetNewToDoItemsRequest::user_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:messenger.GetNewToDoItemsRequest.userId)
-  return _internal_userid();
+  // @@protoc_insertion_point(field_get:messenger.GetNewToDoItemsRequest.user_id)
+  return _internal_user_id();
 }
 template <typename Arg_, typename... Args_>
-inline PROTOBUF_ALWAYS_INLINE void GetNewToDoItemsRequest::set_userid(Arg_&& arg,
+inline PROTOBUF_ALWAYS_INLINE void GetNewToDoItemsRequest::set_user_id(Arg_&& arg,
                                                      Args_... args) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:messenger.GetNewToDoItemsRequest.userId)
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:messenger.GetNewToDoItemsRequest.user_id)
 }
-inline std::string* GetNewToDoItemsRequest::mutable_userid() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  std::string* _s = _internal_mutable_userid();
-  // @@protoc_insertion_point(field_mutable:messenger.GetNewToDoItemsRequest.userId)
+inline std::string* GetNewToDoItemsRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:messenger.GetNewToDoItemsRequest.user_id)
   return _s;
 }
-inline const std::string& GetNewToDoItemsRequest::_internal_userid() const {
+inline const std::string& GetNewToDoItemsRequest::_internal_user_id() const {
   PROTOBUF_TSAN_READ(&_impl_._tsan_detect_race);
-  return _impl_.userid_.Get();
+  return _impl_.user_id_.Get();
 }
-inline void GetNewToDoItemsRequest::_internal_set_userid(const std::string& value) {
+inline void GetNewToDoItemsRequest::_internal_set_user_id(const std::string& value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  _impl_.userid_.Set(value, GetArena());
+  _impl_.user_id_.Set(value, GetArena());
 }
-inline std::string* GetNewToDoItemsRequest::_internal_mutable_userid() {
+inline std::string* GetNewToDoItemsRequest::_internal_mutable_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   ;
-  return _impl_.userid_.Mutable( GetArena());
+  return _impl_.user_id_.Mutable( GetArena());
 }
-inline std::string* GetNewToDoItemsRequest::release_userid() {
+inline std::string* GetNewToDoItemsRequest::release_user_id() {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  // @@protoc_insertion_point(field_release:messenger.GetNewToDoItemsRequest.userId)
-  return _impl_.userid_.Release();
+  // @@protoc_insertion_point(field_release:messenger.GetNewToDoItemsRequest.user_id)
+  return _impl_.user_id_.Release();
 }
-inline void GetNewToDoItemsRequest::set_allocated_userid(std::string* value) {
+inline void GetNewToDoItemsRequest::set_allocated_user_id(std::string* value) {
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
-  _impl_.userid_.SetAllocated(value, GetArena());
+  _impl_.user_id_.SetAllocated(value, GetArena());
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-        if (_impl_.userid_.IsDefault()) {
-          _impl_.userid_.Set("", GetArena());
+        if (_impl_.user_id_.IsDefault()) {
+          _impl_.user_id_.Set("", GetArena());
         }
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewToDoItemsRequest.userId)
+  // @@protoc_insertion_point(field_set_allocated:messenger.GetNewToDoItemsRequest.user_id)
 }
 
 // int64 offset = 2;
