@@ -1,0 +1,192 @@
+//---------------------------------------------------------------------------
+
+#ifndef udmDataH
+#define udmDataH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Data.DB.hpp>
+#include <Data.DBXCommon.hpp>
+#include <Data.DBXDataSnap.hpp>
+#include <Data.SqlExpr.hpp>
+#include <Datasnap.DBClient.hpp>
+#include <Datasnap.DSConnect.hpp>
+#include <IndyPeerImpl.hpp>
+#include <Vcl.ActnList.hpp>
+#include <Vcl.ActnMan.hpp>
+#include <Vcl.ActnPopup.hpp>
+#include <Vcl.AppEvnts.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.ImgList.hpp>
+#include <Vcl.Menus.hpp>
+#include <Vcl.PlatformDefaultStyleActnCtrls.hpp>
+#include "ufMain.h"
+#include "udssmRemoteDataClient.h"
+#include "uCommon.hpp"
+//---------------------------------------------------------------------------
+#include "ufUserEditor.h"
+//---------------------------------------------------------------------------
+const UnicodeString c_Settings_File = "Settings.ini";
+const UnicodeString c_Settings_Section_Connection = "Connection";
+const int c_User_type_Admin_user = 1;
+const int c_User_type_Dispatcher_user = 2;
+const int c_User_type_Master_user = 3;
+const c_Max_errors = -1;
+//---------------------------------------------------------------------------
+class TdmData : public TDataModule
+{
+__published:	// IDE-managed Components
+	TSQLConnection *SQLConnection;
+	TDSProviderConnection *DSProviderConnection;
+	TClientDataSet *cdsUserInfo;
+	TDataSource *dsUserInfo;
+	TImageList *ilMainE;
+	TImageList *ilDataSet32E_2;
+	TApplicationEvents *aeMain;
+	TClientDataSet *cdsUser;
+	TDataSource *dsUser;
+	TClientDataSet *cdsUserType;
+	TDataSource *dsUserType;
+	TImageList *ilDataSet32D_2;
+	TActionManager *amRequest;
+	TPopupActionBar *pmRequest;
+	TMenuItem *N1;
+	TMenuItem *N2;
+	TMenuItem *N3;
+	TMenuItem *N4;
+	TMenuItem *N5;
+	TMenuItem *N6;
+	TImageList *ilMainD;
+	TClientDataSet *cdsParams;
+	TDataSource *dsParams;
+	TAutoIncField *cdsUserКод;
+	TWideStringField *cdsUserФамилия;
+	TWideStringField *cdsUserИмя;
+	TWideStringField *cdsUserОтчество;
+	TWideStringField *cdsUserТелефон;
+	TIntegerField *cdsUserКод_Тип_пользователя;
+	TWideStringField *cdsUserЛогин;
+	TWideStringField *cdsUserПароль;
+	TBooleanField *cdsUserБлокировать_доступ;
+	TDateTimeField *cdsUserДата_регистрации;
+	TWideStringField *cdsUserEmail;
+	TStringField *cdsUserТип_пользователя;
+	TClientDataSet *cdsUserList;
+	TDataSource *dsUserList;
+	TIntegerField *cdsParamsКод;
+	TWideStringField *cdsParamsНазвание_организации;
+	TAutoIncField *cdsUserInfoКод;
+	TDateTimeField *cdsUserInfoДата_регистрации;
+	TWideStringField *cdsUserInfoФамилия;
+	TWideStringField *cdsUserInfoИмя;
+	TWideStringField *cdsUserInfoОтчество;
+	TWideStringField *cdsUserInfoТелефон;
+	TWideStringField *cdsUserInfoEmail;
+	TIntegerField *cdsUserInfoКод_Тип_пользователя;
+	TWideStringField *cdsUserInfoЛогин;
+	TWideStringField *cdsUserInfoПароль;
+	TBooleanField *cdsUserInfoБлокировать_доступ;
+	TWideStringField *cdsUserInfoТип_пользователя;
+	TWideStringField *cdsUserInfoПользователь;
+	TAutoIncField *cdsUserListКод;
+	TDateTimeField *cdsUserListДата_регистрации;
+	TWideStringField *cdsUserListФамилия;
+	TWideStringField *cdsUserListИмя;
+	TWideStringField *cdsUserListОтчество;
+	TWideStringField *cdsUserListТелефон;
+	TWideStringField *cdsUserListEmail;
+	TIntegerField *cdsUserListКод_Тип_пользователя;
+	TWideStringField *cdsUserListЛогин;
+	TWideStringField *cdsUserListПароль;
+	TBooleanField *cdsUserListБлокировать_доступ;
+	TWideStringField *cdsUserListТип_пользователя;
+	TWideStringField *cdsUserListПользователь;
+	TWideStringField *cdsParamsАдрес;
+	TClientDataSet *cdsChatList;
+	TDataSource *dsChatList;
+	TAutoIncField *cdsChatListКод;
+	TDateTimeField *cdsChatListДата_регистрации;
+	TWideStringField *cdsChatListНазвание;
+	TIntegerField *cdsChatListКод_Пользователь;
+	TWideStringField *cdsChatListПользователь;
+	TIntegerField *cdsChatListКоличество_участников;
+	TIntegerField *cdsChatListКоличество_сообщений;
+	TWideStringField *cdsChatListЛогин;
+	TClientDataSet *cdsChat;
+	TDataSource *dsChat;
+	TClientDataSet *cdsChatParticipantList;
+	TDataSource *dsChatParticipantList;
+	TClientDataSet *cdsChatMessages;
+	TDataSource *dsChatMessages;
+	TClientDataSet *cdsChatMessageReport;
+	TDataSource *dsChatMessageReport;
+	TAutoIncField *cdsChatMessagesКод;
+	TIntegerField *cdsChatMessagesКод_Беседа;
+	TDateTimeField *cdsChatMessagesДата_регистрации;
+	TIntegerField *cdsChatMessagesКод_Пользователь;
+	TWideStringField *cdsChatMessagesПользователь;
+	TWideStringField *cdsChatMessagesЛогин;
+	TWideStringField *cdsChatMessagesТекст;
+	TIntegerField *cdsChatParticipantListКод_Беседа;
+	TIntegerField *cdsChatParticipantListКод_Пользователь;
+	TWideStringField *cdsChatParticipantListПользователь;
+	TWideStringField *cdsChatParticipantListЛогин;
+	TIntegerField *cdsChatListКоличество_новых_сообщений;
+	TAutoIncField *cdsChatКод;
+	TDateTimeField *cdsChatДата_регистрации;
+	TWideStringField *cdsChatНазвание;
+	TIntegerField *cdsChatКод_Пользователь;
+
+
+	void __fastcall DataModuleCreate(TObject *Sender);
+	void __fastcall aeMainException(TObject *Sender, Exception * E);
+	void __fastcall cdsCommonAfterCancel(TDataSet *DataSet);
+	void __fastcall cdsCommonAfterDelete(TDataSet *DataSet);
+	void __fastcall cdsCommonAfterPost(TDataSet *DataSet);
+	void __fastcall cdsCommonReconcileError (TCustomClientDataSet *DataSet,
+		  EReconcileError *E, TUpdateKind UpdateKind, TReconcileAction &Action);
+	void __fastcall cdsCommonBeforeDelete(TDataSet *DataSet);
+	void __fastcall cdsUserAfterEdit(TDataSet *DataSet);
+	void __fastcall cdsUserAfterInsert(TDataSet *DataSet);
+	void __fastcall SQLConnectionAfterConnect(TObject *Sender);
+	void __fastcall SQLConnectionBeforeDisconnect(TObject *Sender);
+	void __fastcall DataModuleDestroy(TObject *Sender);
+
+	void __fastcall cdsUserListCalcFields(TDataSet *DataSet);
+	void __fastcall cdsRentListBeforeInsert(TDataSet *DataSet);
+	void __fastcall cdsRentListBeforeEdit(TDataSet *DataSet);
+	void __fastcall cdsClientListBeforeInsert(TDataSet *DataSet);
+	void __fastcall cdsClientListBeforeEdit(TDataSet *DataSet);
+	void __fastcall cdsClientListBeforeDelete(TDataSet *DataSet);
+	void __fastcall cdsRentListBeforeDelete(TDataSet *DataSet);
+	void __fastcall cdsApartmentListBeforeDelete(TDataSet *DataSet);
+	void __fastcall cdsApartmentListBeforeEdit(TDataSet *DataSet);
+	void __fastcall cdsApartmentListBeforeInsert(TDataSet *DataSet);
+
+
+private:	// User declarations
+	bool FShowOpForm;
+	int FNewMessageCount;
+	TIniFile *FSettings;
+	/// <summary>
+	///    Проекция серверного класса
+	/// </summary>
+	TdssmRemoteDataClient *FRemoteMethods;
+public:		// User declarations
+
+	__fastcall TdmData(TComponent* Owner);
+	void __fastcall ExecOpForm (TForm *F);
+	void __fastcall TestActiveConnection ();
+	void __fastcall ActiveCDS (bool Value);
+
+
+	__property TIniFile *Settings = {read=FSettings};
+	__property bool ShowOpForm = {read=FShowOpForm, write=FShowOpForm};
+	__property TdssmRemoteDataClient *RemoteMethods = {read=FRemoteMethods};
+	__property int NewMessageCount = {read=FNewMessageCount, write=FNewMessageCount};
+
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TdmData *dmData;
+//---------------------------------------------------------------------------
+#endif
