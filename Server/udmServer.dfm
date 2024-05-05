@@ -3,12 +3,17 @@ object dmServer: TdmServer
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
   Height = 295
-  Width = 160
+  Width = 392
   object DSTCPServerTransport: TDSTCPServerTransport
     Port = 5000
     Server = DSServer
     BufferKBSize = 32
-    Filters = <>
+    Filters = <
+      item
+        FilterId = 'PC1'
+        Properties.Strings = (
+          'Key=UJ7pfvu!YZJ2SYGo')
+      end>
     AuthenticationManager = DSAuthenticationManager
     OnConnect = DSTCPServerTransportConnect
     OnDisconnect = DSTCPServerTransportDisconnect
